@@ -1,0 +1,14 @@
+# Sensitive environment files
+.env
+.env.local
+
+# Lead data logs (protect user privacy)
+storage/leads.json
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.php",
+      "use": "vercel-php@0.7.0"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.php"
+    },
+    {
+      "src": "/courses",
+      "dest": "/courses.php"
+    },
+    {
+      "src": "/course-detail",
+      "dest": "/course-detail.php"
+    },
+    {
+      "src": "/faculty-facilities",
+      "dest": "/faculty-facilities.php"
+    },
+    {
+      "src": "/results",
+      "dest": "/results.php"
+    },
+    {
+      "src": "/blog",
+      "dest": "/blog.php"
+    },
+    {
+      "src": "/blog-single",
+      "dest": "/blog-single.php"
+    },
+    {
+      "src": "/gallery",
+      "dest": "/gallery.php"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.php"
+    },
+    {
+      "src": "/privacy-policy",
+      "dest": "/privacy-policy.php"
+    },
+    {
+      "src": "/terms",
+      "dest": "/terms.php"
+    },
+    {
+      "src": "/send-enquiry",
+      "dest": "/send-enquiry.php"
+    },
+    {
+      "src": "/",
+      "dest": "/index.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

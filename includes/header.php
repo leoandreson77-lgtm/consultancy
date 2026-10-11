@@ -1,0 +1,178 @@
+<?php
+/**
+ * Header Template - Dehradun Defence College
+ */
+require_once __DIR__ . '/../config.php';
+
+// Default page variables if not defined by caller
+$page_title = $page_title ?? (SITE_NAME . ' | ' . SITE_TAGLINE);
+$page_desc = $page_desc ?? 'Join Dehradun Defence College for the best NDA coaching in Dehradun with expert faculty, SSB training, residential hostel, and complete defence exam preparation.';
+$current_page = $current_page ?? 'home';
+$canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ? '' : $current_page . '.php'));
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo htmlspecialchars($page_title); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+    <meta property="og:site_name" content="<?php echo SITE_NAME; ?>">
+    <meta property="og:image" content="<?php echo SITE_URL; ?>/assets/images/hero-cadets.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta name="twitter:image" content="<?php echo SITE_URL; ?>/assets/images/hero-cadets.jpg">
+
+    <!-- Schema.org Educational Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "<?php echo SITE_NAME; ?>",
+      "alternateName": "DDC Dehradun",
+      "url": "<?php echo SITE_URL; ?>",
+      "logo": "<?php echo SITE_URL; ?>/assets/images/hero-cadets.jpg",
+      "description": "Premier defence coaching academy in Dehradun providing NDA Foundation, CDS, AFCAT, and SSB interview training with residential hostel campus.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maldevta Road, Near Laal Pull (Red Bridge), Lwarkha",
+        "addressLocality": "Dehradun",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "248008",
+        "addressCountry": "IN"
+      },
+      "telephone": ["<?php echo CONTACT_PHONE_1; ?>", "<?php echo CONTACT_PHONE_2; ?>", "<?php echo CONTACT_PHONE_3; ?>"],
+      "email": "<?php echo CONTACT_EMAIL; ?>",
+      "founder": {
+        "@type": "Person",
+        "name": "<?php echo DIRECTOR_NAME; ?>",
+        "jobTitle": "<?php echo DIRECTOR_ROLE; ?>"
+      },
+      "openingHours": "Mo-Su 08:00-18:00"
+    }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- 1. Top Announcement Bar -->
+    <div class="top-notice-bar">
+        <div class="container top-notice-content">
+            <div class="top-notice-left">
+                <span class="top-notice-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Admissions Helpdesk:</span>
+                    <a href="tel:<?php echo CONTACT_PHONE_1_RAW; ?>"><?php echo CONTACT_PHONE_1; ?></a>
+                </span>
+                <span class="top-notice-item">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:<?php echo CONTACT_EMAIL; ?>"><?php echo CONTACT_EMAIL; ?></a>
+                </span>
+            </div>
+
+            <div class="top-marquee-wrap">
+                <span class="top-marquee-tag">Admissions 2026</span>
+                <marquee behavior="scroll" direction="left" scrollamount="5" style="color: rgba(255,255,255,0.9); font-size: 0.825rem;">
+                    ★ Fresh Batches for NDA 2 2026 & NDA Foundation (After 10th) Admissions Now Open! Limited Seats with In-Campus Hostel & Daily SSB Ground Training. ★
+                </marquee>
+            </div>
+
+            <div class="top-social-links">
+                <a href="<?php echo WHATSAPP_LINK; ?>" target="_blank" rel="noopener" aria-label="WhatsApp Us">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                </a>
+                <a href="<?php echo FACEBOOK_LINK; ?>" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="<?php echo INSTAGRAM_LINK; ?>" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="<?php echo YOUTUBE_LINK; ?>" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Sticky Header Bar -->
+    <header class="site-header" id="masthead">
+        <div class="container header-container">
+            <!-- Brand Identity -->
+            <a href="index.php" class="brand-logo" title="<?php echo SITE_NAME; ?>">
+                <div class="brand-crest">
+                    <!-- Military Crest Emblem -->
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="rgba(212, 175, 55, 0.15)"/>
+                        <path d="M12 6l2.5 5h5l-4 3.5 1.5 5.5-5-3.5-5 3.5 1.5-5.5-4-3.5h5L12 6z" fill="#D4AF37"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">Dehradun Defence College</span>
+                    <span class="brand-subtitle">Excellence is the Only Aim</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="primaryNav" aria-label="Main Navigation">
+                <a href="index.php" class="nav-link <?php echo ($current_page === 'home') ? 'active' : ''; ?>">Home</a>
+                <a href="about.php" class="nav-link <?php echo ($current_page === 'about') ? 'active' : ''; ?>">About Us</a>
+                
+                <!-- Courses Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="courses.php" class="nav-link nav-dropdown-toggle <?php echo (strpos($current_page, 'course') !== false) ? 'active' : ''; ?>">
+                        <span>Courses</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="course-detail.php?course=nda-foundation-10" class="dropdown-item">NDA Foundation (After 10th)</a>
+                        <a href="course-detail.php?course=nda-girls-10" class="dropdown-item">NDA (Girls) Special Wing</a>
+                        <a href="course-detail.php?course=nda-target-12" class="dropdown-item">NDA Target / Dropper Batch</a>
+                        <a href="course-detail.php?course=cds-training" class="dropdown-item">CDS Training (IMA/OTA/AFA)</a>
+                        <a href="course-detail.php?course=afcat-coaching" class="dropdown-item">AFCAT (Air Force Exam)</a>
+                        <a href="course-detail.php?course=ssb-interview" class="dropdown-item">SSB 14-Day Practical Camp</a>
+                        <a href="course-detail.php?course=rimc-sainik" class="dropdown-item">RIMC & Sainik School</a>
+                        <a href="courses.php" class="dropdown-item" style="color: var(--accent-gold-hover); font-weight: 700; border-top: 1px solid var(--border-light); margin-top: 4px; padding-top: 8px;">View All Courses →</a>
+                    </div>
+                </div>
+
+                <a href="faculty-facilities.php" class="nav-link <?php echo ($current_page === 'faculty-facilities') ? 'active' : ''; ?>">Faculty & Campus</a>
+                <a href="results.php" class="nav-link <?php echo ($current_page === 'results') ? 'active' : ''; ?>">Results</a>
+                <a href="gallery.php" class="nav-link <?php echo ($current_page === 'gallery') ? 'active' : ''; ?>">Gallery</a>
+                <a href="blog.php" class="nav-link <?php echo ($current_page === 'blog') ? 'active' : ''; ?>">Defence Blog</a>
+                <a href="contact.php" class="nav-link <?php echo ($current_page === 'contact') ? 'active' : ''; ?>">Contact Us</a>
+            </nav>
+
+            <!-- Header Action CTAs -->
+            <div class="header-cta-group">
+                <a href="tel:<?php echo CONTACT_PHONE_1_RAW; ?>" class="btn btn-primary btn-sm btn-icon-pulse" style="display: none;" id="headerCallBtn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Call Now</span>
+                </a>
+
+                <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="General Enquiry">
+                    <span>Enquire Now</span>
+                </button>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button type="button" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>

@@ -1,0 +1,92 @@
+/*
+Theme Name: Dehradun Defence College
+Theme URI: https://dehradundefencecollege.com
+Author: Dehradun Defence College Team
+Author URI: https://dehradundefencecollege.com
+Description: Premium, conversion-focused, and fully responsive custom WordPress theme for Dehradun Defence College. Specializing in NDA Foundation Coaching, CDS, AFCAT, and SSB Interview Preparation with residential campus and GTO obstacle grounds.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dehradun-defence-college
+Tags: education, defence, military-academy, custom-menu, featured-images, custom-logo, translation-ready, theme-options
+*/
+
+/* Import Main Master Stylesheet */
+@import url('assets/css/style.css');
+
+/* WordPress Specific Core Classes */
+.alignwide {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignfull {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.alignleft {
+  float: left;
+  margin: 0.5rem 1.5rem 1.5rem 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0.5rem 0 1.5rem 1.5rem;
+}
+
+.aligncenter {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.wp-caption-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
