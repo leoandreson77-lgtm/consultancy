@@ -91,6 +91,16 @@ $theme_uri = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/gallery/')); ?>" class="nav-link">Gallery</a>
                     <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="nav-link">Contact</a>
                 <?php } ?>
+
+                <div class="mobile-nav-footer">
+                    <a href="tel:<?php echo esc_attr(get_theme_mod('ddc_phone_1', '+919997001313')); ?>" class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem;">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Call Admissions</span>
+                    </a>
+                    <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="General Website Enquiry" style="width: 100%; justify-content: center;">
+                        <span>Enquire Now</span>
+                    </button>
+                </div>
             </nav>
 
             <!-- Header Action CTAs -->

@@ -63,17 +63,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Mobile Submenu Accordion
+  // Mobile Submenu Accordion (<= 1080px)
   const navDropdowns = document.querySelectorAll('.nav-dropdown');
   navDropdowns.forEach(function (dropdown) {
     const toggle = dropdown.querySelector('.nav-dropdown-toggle');
-    if (toggle && window.innerWidth <= 768) {
+    if (toggle) {
       toggle.addEventListener('click', function (e) {
-        e.preventDefault();
-        dropdown.classList.toggle('is-active');
+        if (window.innerWidth <= 1080) {
+          e.preventDefault();
+          dropdown.classList.toggle('is-active');
+        }
       });
     }
   });
+
+  // Close mobile drawer when an item or action button inside is clicked
+  if (navMenu && mobileNavToggle) {
+    const drawerLinks = navMenu.querySelectorAll('.nav-link:not(.nav-dropdown-toggle), .dropdown-item, .open-enquiry-modal, .mobile-nav-footer a');
+    drawerLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 1080) {
+          navMenu.classList.remove('is-open');
+          mobileNavToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
 
   // -------------------------------------------------------------
   // 3. Course Filter Tabs
