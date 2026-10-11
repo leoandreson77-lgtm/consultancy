@@ -1,10 +1,95 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/(.*)\\.php",
-      "destination": "/$1.html"
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/course-detail.php",
+      "has": [
+        {
+          "type": "query",
+          "key": "course",
+          "value": "(?<course>.*)"
+        }
+      ],
+      "destination": "/course-detail?course=:course",
+      "permanent": false
+    },
+    {
+      "source": "/course-detail.php",
+      "destination": "/course-detail",
+      "permanent": false
+    },
+    {
+      "source": "/about.php",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/courses.php",
+      "destination": "/courses",
+      "permanent": false
+    },
+    {
+      "source": "/faculty-facilities.php",
+      "destination": "/faculty-facilities",
+      "permanent": false
+    },
+    {
+      "source": "/gallery.php",
+      "destination": "/gallery",
+      "permanent": false
+    },
+    {
+      "source": "/results.php",
+      "destination": "/results",
+      "permanent": false
+    },
+    {
+      "source": "/blog.php",
+      "destination": "/blog",
+      "permanent": false
+    },
+    {
+      "source": "/blog-single.php",
+      "has": [
+        {
+          "type": "query",
+          "key": "post",
+          "value": "(?<post>.*)"
+        }
+      ],
+      "destination": "/blog-single?post=:post",
+      "permanent": false
+    },
+    {
+      "source": "/blog-single.php",
+      "destination": "/blog-single",
+      "permanent": false
+    },
+    {
+      "source": "/contact.php",
+      "destination": "/contact",
+      "permanent": false
+    },
+    {
+      "source": "/privacy-policy.php",
+      "destination": "/privacy-policy",
+      "permanent": false
+    },
+    {
+      "source": "/terms.php",
+      "destination": "/terms",
+      "permanent": false
+    },
+    {
+      "source": "/404.php",
+      "destination": "/404",
+      "permanent": false
     }
   ]
 }

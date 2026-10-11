@@ -26,11 +26,11 @@ include __DIR__ . '/includes/header.php';
             <div style="display: flex; gap: 0.5rem; font-size: 0.85rem; color: var(--accent-gold); margin-bottom: 0.75rem;">
                 <a href="index.php" style="color: #FFFFFF;">Home</a> &gt; 
                 <a href="courses.php" style="color: #FFFFFF;">Courses</a> &gt; 
-                <span><?php echo htmlspecialchars($c['title']); ?></span>
+                <span class="course-title-dynamic"><?php echo htmlspecialchars($c['title']); ?></span>
             </div>
-            <span class="badge-gold"><?php echo htmlspecialchars($c['badge']); ?></span>
-            <h1 style="color: #FFFFFF; margin: 0.75rem 0 0.75rem 0; font-size: 2.65rem;"><?php echo htmlspecialchars($c['title']); ?></h1>
-            <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 800px;">
+            <span class="badge-gold course-badge-dynamic"><?php echo htmlspecialchars($c['badge']); ?></span>
+            <h1 style="color: #FFFFFF; margin: 0.75rem 0 0.75rem 0; font-size: 2.65rem;" class="course-title-dynamic"><?php echo htmlspecialchars($c['title']); ?></h1>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 800px;" class="course-desc-dynamic">
                 <?php echo htmlspecialchars($c['description']); ?>
             </p>
         </div>
@@ -48,20 +48,20 @@ include __DIR__ . '/includes/header.php';
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem; background-color: var(--bg-slate); padding: 1.25rem; border-radius: var(--radius-md);">
                         <div>
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Target Audience:</span>
-                            <div style="font-weight: 700; color: var(--primary-navy);"><?php echo htmlspecialchars($c['target']); ?></div>
+                            <div style="font-weight: 700; color: var(--primary-navy);" class="course-target-dynamic"><?php echo htmlspecialchars($c['target']); ?></div>
                         </div>
                         <div>
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Batch Duration:</span>
-                            <div style="font-weight: 700; color: var(--primary-navy);"><?php echo htmlspecialchars($c['duration']); ?></div>
+                            <div style="font-weight: 700; color: var(--primary-navy);" class="course-duration-dynamic"><?php echo htmlspecialchars($c['duration']); ?></div>
                         </div>
                         <div style="grid-column: span 2;">
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Eligibility Requirement:</span>
-                            <div style="font-weight: 700; color: var(--primary-navy);"><?php echo htmlspecialchars($c['eligibility']); ?></div>
+                            <div style="font-weight: 700; color: var(--primary-navy);" class="course-eligibility-dynamic"><?php echo htmlspecialchars($c['eligibility']); ?></div>
                         </div>
                     </div>
 
                     <h3 style="font-size: 1.35rem; margin: 1.5rem 0 1rem 0;">Key Deliverables Included:</h3>
-                    <ul style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+                    <ul style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;" id="course-features-list">
                         <?php foreach ($c['features'] as $f): ?>
                         <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--tricolor-green); flex-shrink: 0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
@@ -178,5 +178,50 @@ include __DIR__ . '/includes/header.php';
             </div>
         </div>
     </section>
+
+    <!-- Client-Side Dynamic Course Loader for Static Hosting -->
+    <script id="ddc-courses-data" type="application/json">
+    <?php echo json_encode($DDC_COURSES, JSON_HEX_TAG | JSON_HEX_AMP); ?>
+    </script>
+    <script>
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var slug = params.get('course');
+        if (!slug) return;
+        try {
+            var dataEl = document.getElementById('ddc-courses-data');
+            if (!dataEl) return;
+            var allCourses = JSON.parse(dataEl.textContent);
+            if (!allCourses[slug]) return;
+            var c = allCourses[slug];
+
+            document.title = c.title + " | Dehradun Defence College";
+            document.querySelectorAll('.course-title-dynamic').forEach(function(el) { el.textContent = c.title; });
+            document.querySelectorAll('.course-badge-dynamic').forEach(function(el) { el.textContent = c.badge; });
+            document.querySelectorAll('.course-desc-dynamic').forEach(function(el) { el.textContent = c.description; });
+            document.querySelectorAll('.course-target-dynamic').forEach(function(el) { el.textContent = c.target; });
+            document.querySelectorAll('.course-duration-dynamic').forEach(function(el) { el.textContent = c.duration; });
+            document.querySelectorAll('.course-eligibility-dynamic').forEach(function(el) { el.textContent = c.eligibility; });
+
+            var featUl = document.getElementById('course-features-list');
+            if (featUl && c.features) {
+                featUl.innerHTML = '';
+                c.features.forEach(function(f) {
+                    var li = document.createElement('li');
+                    li.style.cssText = 'display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem;';
+                    li.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--tricolor-green); flex-shrink: 0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>' + f + '</span>';
+                    featUl.appendChild(li);
+                });
+            }
+
+            var selectEl = document.querySelector('select[name="course_interest"]');
+            if (selectEl) {
+                selectEl.innerHTML = '<option value="' + c.title + '" selected>' + c.title + '</option>';
+            }
+        } catch(e) {
+            console.error('Course dynamic update error:', e);
+        }
+    })();
+    </script>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
