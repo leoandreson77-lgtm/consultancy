@@ -91,5 +91,20 @@
       "destination": "/404",
       "permanent": false
     }
+  ],
+  "headers": [
+    {
+      "source": "/assets/downloads/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }

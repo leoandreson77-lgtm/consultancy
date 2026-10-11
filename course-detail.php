@@ -71,6 +71,61 @@ include __DIR__ . '/includes/header.php';
                     </ul>
                 </div>
 
+                <!-- Daily Timetable & Preparation Plan Section -->
+                <div id="course-timetable-section" style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+                        <div>
+                            <span class="badge-gold">Official Batch Schedule</span>
+                            <h2 style="font-size: 1.75rem; margin-top: 0.5rem; margin-bottom: 0.25rem;">Daily Timetable & Preparation Plan</h2>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;" class="course-hours-dynamic">
+                                <?php echo htmlspecialchars($c['timetable_hours'] ?? 'Disciplined Cadets Daily Routine'); ?>
+                            </p>
+                        </div>
+                        <?php if (!empty($c['timetable_pdf'])): ?>
+                        <a href="<?php echo htmlspecialchars($c['timetable_pdf']); ?>" download class="btn btn-gold btn-sm course-timetable-dl-btn" style="box-shadow: var(--shadow-gold); gap: 0.5rem;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download Timetable (PDF)</span>
+                        </a>
+                        <?php endif; ?>
+                    </div>
+
+                    <div style="overflow-x: auto; border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 1.25rem;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.925rem;">
+                            <thead>
+                                <tr style="background-color: var(--primary-navy); color: #FFFFFF; text-align: left;">
+                                    <th style="padding: 0.85rem 1.25rem; font-family: var(--font-heading); width: 28%;">Time / Slot</th>
+                                    <th style="padding: 0.85rem 1.25rem; font-family: var(--font-heading);">Activity & Routine</th>
+                                </tr>
+                            </thead>
+                            <tbody id="course-routine-tbody">
+                                <?php if (!empty($c['daily_routine'])): ?>
+                                    <?php foreach ($c['daily_routine'] as $idx => $slot): ?>
+                                    <tr style="border-bottom: 1px solid var(--border-light); <?php echo ($idx % 2 === 1) ? 'background-color: var(--bg-slate);' : ''; ?>">
+                                        <td style="padding: 0.85rem 1.25rem; font-weight: 700; color: var(--primary-navy); white-space: nowrap;">
+                                            <?php echo htmlspecialchars($slot['time']); ?>
+                                        </td>
+                                        <td style="padding: 0.85rem 1.25rem; color: var(--text-main);">
+                                            <?php echo htmlspecialchars($slot['activity']); ?>
+                                        </td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="background-color: var(--bg-light-blue); border-left: 3px solid var(--accent-gold); padding: 1rem 1.25rem; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+                        <div style="font-size: 0.875rem; color: var(--text-main);">
+                            <strong>Need offline access or printable sheet?</strong> Download the official PDF timetable document.
+                        </div>
+                        <?php if (!empty($c['timetable_pdf'])): ?>
+                        <a href="<?php echo htmlspecialchars($c['timetable_pdf']); ?>" download class="course-timetable-dl-link" style="color: var(--primary-navy); font-weight: 700; font-size: 0.85rem; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.35rem;">
+                            <span>Download PDF Now</span> →
+                        </a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
                 <!-- Academic Syllabus & Pedagogy -->
                 <div style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
                     <h2 style="font-size: 1.75rem; margin-bottom: 1.25rem;">Academic Curriculum & UPSC Module</h2>
@@ -175,6 +230,28 @@ include __DIR__ . '/includes/header.php';
                         <span>Chat With Admission Desk</span>
                     </a>
                 </div>
+
+                <!-- Sidebar Timetable Download Card -->
+                <?php if (!empty($c['timetable_pdf'])): ?>
+                <div id="course-sidebar-timetable-box" style="background: linear-gradient(135deg, #0B1B3D 0%, #162B56 100%); color: #FFFFFF; padding: 1.5rem; border-radius: var(--radius-lg); margin-top: 1.5rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-md);">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                        <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(212,175,55,0.2); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); flex-shrink: 0;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <div>
+                            <h4 style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 2px;">Official Timetable</h4>
+                            <span style="font-size: 0.75rem; color: var(--accent-gold); font-weight: 700; text-transform: uppercase;">Free PDF Study Plan</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.85); margin-bottom: 1rem; line-height: 1.5;">
+                        Complete batch timetable, daily study hours, weekly mock test schedule & exam pattern.
+                    </p>
+                    <a href="<?php echo htmlspecialchars($c['timetable_pdf']); ?>" download class="btn btn-gold btn-sm course-timetable-dl-btn" style="width: 100%; justify-content: center; gap: 0.5rem;">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <span>Download Timetable (PDF)</span>
+                    </a>
+                </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -202,6 +279,33 @@ include __DIR__ . '/includes/header.php';
             document.querySelectorAll('.course-target-dynamic').forEach(function(el) { el.textContent = c.target; });
             document.querySelectorAll('.course-duration-dynamic').forEach(function(el) { el.textContent = c.duration; });
             document.querySelectorAll('.course-eligibility-dynamic').forEach(function(el) { el.textContent = c.eligibility; });
+
+            if (c.timetable_hours) {
+                document.querySelectorAll('.course-hours-dynamic').forEach(function(el) { el.textContent = c.timetable_hours; });
+            }
+
+            // Update Timetable PDF links
+            if (c.timetable_pdf) {
+                document.querySelectorAll('.course-timetable-dl-btn, .course-timetable-dl-link').forEach(function(el) {
+                    el.setAttribute('href', c.timetable_pdf);
+                    el.setAttribute('download', '');
+                });
+            }
+
+            // Update Routine Table Rows
+            var routineTbody = document.getElementById('course-routine-tbody');
+            if (routineTbody && c.daily_routine && c.daily_routine.length > 0) {
+                routineTbody.innerHTML = '';
+                c.daily_routine.forEach(function(slot, idx) {
+                    var tr = document.createElement('tr');
+                    tr.style.borderBottom = '1px solid var(--border-light)';
+                    if (idx % 2 === 1) {
+                        tr.style.backgroundColor = 'var(--bg-slate)';
+                    }
+                    tr.innerHTML = '<td style="padding: 0.85rem 1.25rem; font-weight: 700; color: var(--primary-navy); white-space: nowrap;">' + slot.time + '</td><td style="padding: 0.85rem 1.25rem; color: var(--text-main);">' + slot.activity + '</td>';
+                    routineTbody.appendChild(tr);
+                });
+            }
 
             var featUl = document.getElementById('course-features-list');
             if (featUl && c.features) {

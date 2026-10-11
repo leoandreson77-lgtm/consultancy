@@ -85,9 +85,240 @@ include __DIR__ . '/includes/header.php';
                                 Apply / Enquire
                             </button>
                         </div>
+
+                        <?php if (!empty($c['timetable_pdf'])): ?>
+                        <div style="margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px dashed var(--border-light);">
+                            <a href="<?php echo htmlspecialchars($c['timetable_pdf']); ?>" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.825rem; padding: 0.5rem 0.75rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.5rem;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
+                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Batch Timetables & Study Plans Download Center -->
+    <section class="section-padding bg-slate" id="timetable-download-center">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-gold">Download Center</span>
+                <h2>Official Course Timetables & Daily Study Plans</h2>
+                <div class="gold-divider"></div>
+                <p>Download our verified batch timetables, daily hourly schedules, SSB preparation routines, and exam roadmaps in PDF format.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <!-- 1. NDA Foundation -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-saffron" style="font-size: 0.7rem;">Class 11-12</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(212, 175, 55, 0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-gold-hover); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">NDA Foundation Plan</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Weekday routine (2-3 hrs) + weekend test plan (5-6 hrs) alongside Class 11-12 school.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 6:00 AM PT • 5:00 PM Maths • GAT • English
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-nda-foundation-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-nda-foundation-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. NDA Pre-Foundation -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-navy" style="font-size: 0.7rem;">Class 9-10</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(11, 27, 61, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary-navy); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">NDA Pre-Foundation</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">1.5 to 2 hrs daily routine for Class 9 & 10 to build foundational maths & fitness early.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 6:00 AM PT • Maths NCERT • Science • Vocab
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-nda-pre-foundation-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-nda-pre-foundation-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. NDA Target / Dropper -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-md); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-gold" style="font-size: 0.7rem;">6M & 12M Intensive</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, #0B1B3D 0%, #162B56 100%); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">NDA After 12th Batches</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Full-time 6M (8-10 hrs) & 12M (6-8 hrs) daily schedules, weekly mocks & SSB plans.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 5:30 AM PT • Maths Core • GAT • 5h Mock Sunday
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-nda-target-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-nda-target-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. CDS Training -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-navy" style="font-size: 0.7rem;">Graduates</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(212, 175, 55, 0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-gold-hover); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">CDS Syllabus & Timetable</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">IMA, INA, AFA & OTA 5-6 hrs study plan, syllabus breakdown and SSB stages.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 5:30 AM PT • Maths • English • GK • Sunday Mocks
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-cds-syllabus-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-cds-syllabus-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. AFCAT Coaching -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-saffron" style="font-size: 0.7rem;">Air Force</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(11, 27, 61, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary-navy); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">AFCAT Syllabus & Routine</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">3-6 month plan, EKT technical add-on, AFSB guidance & speed reasoning routine.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> Numerical Ability • Reasoning • English • AFSB Prep
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-afcat-syllabus-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-afcat-syllabus-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. RIMC Dehradun -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-gold" style="font-size: 0.7rem;">Class 8 Entry</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(212, 175, 55, 0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-gold-hover); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">RIMC Dehradun Entrance</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">Daily 2-3 hrs routine for young cadets (Class 6-7), Maths, English & Viva-Voce prep.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 6:00 AM Games • 4:30 PM Maths • English • Viva Voce
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-rimc-entrance-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-rimc-entrance-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7. AFMC Pune (NEET UG) -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-saffron" style="font-size: 0.7rem;">Medical Defence</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(11, 27, 61, 0.08); display: flex; align-items: center; justify-content: center; color: var(--primary-navy); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">AFMC Pune (NEET UG)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">NEET 8-10 hrs timetable, NCERT PCB line-by-line strategy, ToELR logic & interview plan.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 5:30 AM PT • 7:00 AM Bio • Physics • Chem • ToELR
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-afmc-neet-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-afmc-neet-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. MNS BSc Nursing -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge-navy" style="font-size: 0.7rem;">Military Nursing</span>
+                    </div>
+                    <div>
+                        <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(212, 175, 55, 0.15); display: flex; align-items: center; justify-content: center; color: var(--accent-gold-hover); margin-bottom: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        </div>
+                        <h3 style="font-size: 1.15rem; color: var(--primary-navy); margin-bottom: 0.35rem;">MNS Nursing (NEET UG)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem;">NEET UG + ToGIGE test timetable, biology high-yield drills & medical board fitness.</p>
+                        <div style="font-size: 0.8rem; background: var(--bg-slate); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+                            <strong>Routine:</strong> 5:30 AM PT • Bio • Physics • Chem • ToGIGE English
+                        </div>
+                    </div>
+                    <div>
+                        <a href="assets/downloads/ddc-mns-nursing-timetable.pdf" download class="btn btn-gold btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Download PDF</span>
+                        </a>
+                        <a href="assets/downloads/ddc-mns-nursing-timetable.pdf" target="_blank" rel="noopener" style="display: block; text-align: center; font-size: 0.785rem; color: var(--text-muted); text-decoration: underline;">
+                            View in Browser
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

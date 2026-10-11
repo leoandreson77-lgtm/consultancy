@@ -259,6 +259,12 @@ include __DIR__ . '/includes/header.php';
                             <a href="course-detail.php?course=nda-foundation-10" class="btn btn-outline-navy btn-sm">Course Details</a>
                             <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="NDA Foundation After 10th">Enquire</button>
                         </div>
+                        <div style="margin-top: 0.65rem;">
+                            <a href="assets/downloads/ddc-nda-foundation-timetable.pdf" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.45rem 0.65rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.4rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -291,6 +297,12 @@ include __DIR__ . '/includes/header.php';
                         <div class="course-card-footer">
                             <a href="course-detail.php?course=nda-girls-10" class="btn btn-outline-navy btn-sm">Course Details</a>
                             <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="NDA Girls Special Batch">Enquire</button>
+                        </div>
+                        <div style="margin-top: 0.65rem;">
+                            <a href="assets/downloads/ddc-nda-foundation-timetable.pdf" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.45rem 0.65rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.4rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -325,6 +337,12 @@ include __DIR__ . '/includes/header.php';
                             <a href="course-detail.php?course=nda-target-12" class="btn btn-outline-navy btn-sm">Course Details</a>
                             <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="NDA Target Batch 12th">Enquire</button>
                         </div>
+                        <div style="margin-top: 0.65rem;">
+                            <a href="assets/downloads/ddc-nda-target-timetable.pdf" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.45rem 0.65rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.4rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -357,6 +375,12 @@ include __DIR__ . '/includes/header.php';
                         <div class="course-card-footer">
                             <a href="course-detail.php?course=cds-training" class="btn btn-outline-navy btn-sm">Course Details</a>
                             <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="CDS Training">Enquire</button>
+                        </div>
+                        <div style="margin-top: 0.65rem;">
+                            <a href="assets/downloads/ddc-cds-syllabus-timetable.pdf" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.45rem 0.65rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.4rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -391,6 +415,12 @@ include __DIR__ . '/includes/header.php';
                             <a href="course-detail.php?course=afcat-coaching" class="btn btn-outline-navy btn-sm">Course Details</a>
                             <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="AFCAT Coaching">Enquire</button>
                         </div>
+                        <div style="margin-top: 0.65rem;">
+                            <a href="assets/downloads/ddc-afcat-syllabus-timetable.pdf" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.45rem 0.65rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.4rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -424,7 +454,59 @@ include __DIR__ . '/includes/header.php';
                             <a href="course-detail.php?course=ssb-interview" class="btn btn-outline-navy btn-sm">Course Details</a>
                             <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="SSB Interview Camp">Enquire</button>
                         </div>
+                        <div style="margin-top: 0.65rem;">
+                            <a href="assets/downloads/ddc-nda-target-timetable.pdf" download class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 0.45rem 0.65rem; background-color: var(--bg-light-blue); border-color: rgba(11, 27, 61, 0.15); gap: 0.4rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold-hover);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                <span>Download Timetable (PDF)</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Homepage Timetable Download Banner -->
+            <div style="margin-top: 3.5rem; background: linear-gradient(135deg, #061127 0%, #0B1B3D 50%, #162B56 100%); border-radius: var(--radius-xl); padding: 2.5rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-xl); color: #FFFFFF; display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.5rem; align-items: center;">
+                <div>
+                    <span class="badge-gold" style="margin-bottom: 0.75rem;">Official Academics</span>
+                    <h3 style="color: #FFFFFF; font-size: 1.85rem; margin-bottom: 0.75rem;">Download Batch Timetable & Daily Study Plans</h3>
+                    <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                        Get verified daily schedules, subject hourly allocations, PT drills, and SSB preparation routines prepared by our academic directors in downloadable PDF format.
+                    </p>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="courses.php#timetable-download-center" class="btn btn-gold btn-sm" style="gap: 0.5rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>Browse All 8 Timetable PDFs</span>
+                        </a>
+                        <a href="assets/downloads/ddc-nda-target-timetable.pdf" download class="btn btn-outline-white btn-sm">
+                            <span>Download NDA Timetable</span>
+                        </a>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+                    <a href="assets/downloads/ddc-nda-foundation-timetable.pdf" download style="background: rgba(255,255,255,0.08); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid rgba(212,175,55,0.3); color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; transition: background 0.2s;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span style="font-size: 0.825rem; font-weight: 600;">NDA Foundation</span>
+                    </a>
+                    <a href="assets/downloads/ddc-nda-target-timetable.pdf" download style="background: rgba(255,255,255,0.08); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid rgba(212,175,55,0.3); color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; transition: background 0.2s;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span style="font-size: 0.825rem; font-weight: 600;">NDA Target 12th</span>
+                    </a>
+                    <a href="assets/downloads/ddc-cds-syllabus-timetable.pdf" download style="background: rgba(255,255,255,0.08); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid rgba(212,175,55,0.3); color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; transition: background 0.2s;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span style="font-size: 0.825rem; font-weight: 600;">CDS Study Plan</span>
+                    </a>
+                    <a href="assets/downloads/ddc-afcat-syllabus-timetable.pdf" download style="background: rgba(255,255,255,0.08); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid rgba(212,175,55,0.3); color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; transition: background 0.2s;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span style="font-size: 0.825rem; font-weight: 600;">AFCAT Air Force</span>
+                    </a>
+                    <a href="assets/downloads/ddc-rimc-entrance-timetable.pdf" download style="background: rgba(255,255,255,0.08); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid rgba(212,175,55,0.3); color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; transition: background 0.2s;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span style="font-size: 0.825rem; font-weight: 600;">RIMC Dehradun</span>
+                    </a>
+                    <a href="assets/downloads/ddc-afmc-neet-timetable.pdf" download style="background: rgba(255,255,255,0.08); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid rgba(212,175,55,0.3); color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; transition: background 0.2s;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span style="font-size: 0.825rem; font-weight: 600;">AFMC + NEET Plan</span>
+                    </a>
                 </div>
             </div>
 

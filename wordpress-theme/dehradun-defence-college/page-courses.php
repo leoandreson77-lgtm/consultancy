@@ -60,14 +60,13 @@ $theme_uri = get_template_directory_uri();
                     endwhile;
                     wp_reset_postdata();
                 else :
-                    // Built-in cards
                     $static_courses = [
-                        ['title' => 'NDA Foundation (After 10th)', 'badge' => '2 Years Integrated', 'desc' => 'Comprehensive 2-year integrated schooling and NDA preparation balancing academic board exams with intensive defence training.'],
-                        ['title' => 'NDA (Girls) Special Batch', 'badge' => 'Dedicated Girls Wing', 'desc' => 'Specialized batches for female aspirants preparing to join the National Defence Academy with dedicated residential facilities.'],
-                        ['title' => 'NDA Target & Dropper Batch', 'badge' => 'Fast Track 6M / 1Y', 'desc' => 'Rigorous exam-focused program covering UPSC Mathematics, General Ability Test (GAT), and English with weekly full-length mock tests.'],
-                        ['title' => 'CDS Training Program', 'badge' => 'Graduate Entry', 'desc' => 'Complete preparation for Combined Defence Services Examination for permanent and short service commissions across Army, Navy, and Air Force.'],
-                        ['title' => 'AFCAT Coaching', 'badge' => 'Air Force Entry', 'desc' => 'Specialized curriculum targeting AFCAT Numerical Ability, Verbal Ability, Reasoning & Military Aptitude, and General Awareness.'],
-                        ['title' => 'SSB 14-Day Practical Camp', 'badge' => 'Live Ground Camp', 'desc' => 'Complete outdoor GTO ground obstacle course, psychology dossier evaluation, and one-on-one personal interview mocks.']
+                        ['title' => 'NDA Foundation (After 10th)', 'badge' => '2 Years Integrated', 'desc' => 'Comprehensive 2-year integrated schooling and NDA preparation balancing academic board exams with intensive defence training.', 'pdf' => 'ddc-nda-foundation-timetable.pdf'],
+                        ['title' => 'NDA (Girls) Special Batch', 'badge' => 'Dedicated Girls Wing', 'desc' => 'Specialized batches for female aspirants preparing to join the National Defence Academy with dedicated residential facilities.', 'pdf' => 'ddc-nda-foundation-timetable.pdf'],
+                        ['title' => 'NDA Target & Dropper Batch', 'badge' => 'Fast Track 6M / 1Y', 'desc' => 'Rigorous exam-focused program covering UPSC Mathematics, General Ability Test (GAT), and English with weekly full-length mock tests.', 'pdf' => 'ddc-nda-target-timetable.pdf'],
+                        ['title' => 'CDS Training Program', 'badge' => 'Graduate Entry', 'desc' => 'Complete preparation for Combined Defence Services Examination for permanent and short service commissions across Army, Navy, and Air Force.', 'pdf' => 'ddc-cds-syllabus-timetable.pdf'],
+                        ['title' => 'AFCAT Coaching', 'badge' => 'Air Force Entry', 'desc' => 'Specialized curriculum targeting AFCAT Numerical Ability, Verbal Ability, Reasoning & Military Aptitude, and General Awareness.', 'pdf' => 'ddc-afcat-syllabus-timetable.pdf'],
+                        ['title' => 'SSB 14-Day Practical Camp', 'badge' => 'Live Ground Camp', 'desc' => 'Complete outdoor GTO ground obstacle course, psychology dossier evaluation, and one-on-one personal interview mocks.', 'pdf' => 'ddc-cds-syllabus-timetable.pdf']
                     ];
                     foreach ($static_courses as $sc):
                 ?>
@@ -79,9 +78,12 @@ $theme_uri = get_template_directory_uri();
                         <div class="course-card-body">
                             <h3 class="course-card-title"><?php echo esc_html($sc['title']); ?></h3>
                             <p class="course-card-desc"><?php echo esc_html($sc['desc']); ?></p>
-                            <div class="course-card-footer">
-                                <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" style="width: 100%;" data-course="<?php echo esc_attr($sc['title']); ?>">
-                                    Apply / Enquire Now
+                            <div class="course-card-footer" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="<?php echo esc_url($theme_uri . '/assets/downloads/' . $sc['pdf']); ?>" download class="btn btn-outline-navy btn-sm" style="flex: 1; text-align: center; white-space: nowrap;">
+                                    Download Timetable
+                                </a>
+                                <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" style="flex: 1;" data-course="<?php echo esc_attr($sc['title']); ?>">
+                                    Enquire Now
                                 </button>
                             </div>
                         </div>
