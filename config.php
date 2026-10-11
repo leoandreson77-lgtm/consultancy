@@ -40,6 +40,30 @@ define('SITE_LOGO', 'assets/images/logo.png');
 define('SITE_FAVICON', 'assets/images/favicon.png');
 define('SITE_URL', ddc_env('SITE_URL', 'http://localhost/consultancy'));
 
+// Master SEO Keywords List
+$DDC_SEO_KEYWORDS = [
+    'Best NDA Coaching in Dehradun',
+    'Top NDA Coaching Institute in India',
+    'Dreamers Edu Hub Dehradun',
+    'Doon Defence Dreamers',
+    'Best Defence Academy in Dehradun',
+    'NDA Coaching with Hostel and Mess Facilities',
+    'NDA Coaching with Schooling in Dehradun',
+    'NDA Foundation Course after 10th',
+    'Pre-NDA Foundation Course (8th to 10th class)',
+    'CDS Coaching in Dehradun',
+    'CDS OTA Coaching Institute',
+    'AFCAT Exam Preparation Coaching',
+    'SSB Interview Coaching Dehradun',
+    'Best GTO Ground for SSB Training',
+    'RIMC and Sainik School Coaching Dehradun',
+    'Military Nursing Service (MNS) Coaching',
+    'NDA coaching near Sahastradhara Road Dehradun',
+    'Top-rated defence academy near JK Tower Dehradun',
+    'Best NDA written and SSB coaching in Uttarakhand'
+];
+define('SITE_KEYWORDS', implode(', ', $DDC_SEO_KEYWORDS));
+
 // Director & Leadership Team
 define('DIRECTOR_NAME', 'Mr. Zaheer Ahmed, Mr. Gaurav Sharma & Mr. Mahendra Kukreja');
 define('DIRECTOR_ROLE', 'Board of Directors');

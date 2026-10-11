@@ -99,6 +99,36 @@ $theme_uri    = get_template_directory_uri();
                         </button>
                     </div>
                 </div>
+        </div>
+
+        <!-- Popular Search Terms & SEO Discovery Hub -->
+        <div class="footer-seo-section">
+            <div class="container">
+                <div class="footer-seo-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--accent-gold);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <span>Popular Search Terms & Defence Aspirants Quick Links:</span>
+                </div>
+                <div class="footer-seo-tags-cloud">
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">Best NDA Coaching in Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">Top NDA Coaching Institute in India</a>
+                    <a href="<?php echo esc_url(home_url('/about-us/')); ?>" class="seo-tag-item">Dreamers Edu Hub Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/about-us/')); ?>" class="seo-tag-item">Doon Defence Dreamers</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">Best Defence Academy in Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/faculty-campus/')); ?>" class="seo-tag-item">NDA Coaching with Hostel and Mess Facilities</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">NDA Coaching with Schooling in Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">NDA Foundation Course after 10th</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">Pre-NDA Foundation Course (8th to 10th class)</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">CDS Coaching in Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">CDS OTA Coaching Institute</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">AFCAT Exam Preparation Coaching</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">SSB Interview Coaching Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/faculty-campus/')); ?>" class="seo-tag-item">Best GTO Ground for SSB Training</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">RIMC and Sainik School Coaching Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/defence-courses/')); ?>" class="seo-tag-item">Military Nursing Service (MNS) Coaching</a>
+                    <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="seo-tag-item">NDA coaching near Sahastradhara Road Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="seo-tag-item">Top-rated defence academy near JK Tower Dehradun</a>
+                    <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="seo-tag-item">Best NDA written and SSB coaching in Uttarakhand</a>
+                </div>
             </div>
         </div>
 

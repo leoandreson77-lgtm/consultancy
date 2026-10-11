@@ -17,6 +17,7 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($page_title); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta name="keywords" content="<?php echo htmlspecialchars($page_keywords ?? SITE_KEYWORDS); ?>">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
     
@@ -48,10 +49,24 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "name": "<?php echo SITE_NAME; ?>",
-      "alternateName": "DDC Dehradun",
+      "alternateName": ["Dehradun Defence College", "DDC Dehradun", "Best NDA Coaching in Dehradun", "Top NDA Coaching Institute in India"],
       "url": "<?php echo SITE_URL; ?>",
       "logo": "<?php echo SITE_URL; ?>/assets/images/logo.png",
       "description": "Premier defence coaching academy in Dehradun providing NDA Foundation, CDS, AFCAT, and SSB interview training with residential hostel campus.",
+      "keywords": "<?php echo SITE_KEYWORDS; ?>",
+      "knowsAbout": [
+        "NDA Exam Preparation",
+        "NDA Foundation Course after 10th",
+        "Pre-NDA Foundation Course (8th to 10th class)",
+        "SSB Interview Coaching",
+        "Best GTO Ground for SSB Training",
+        "CDS Coaching",
+        "CDS OTA Coaching",
+        "AFCAT Exam Preparation",
+        "RIMC and Sainik School Coaching",
+        "Military Nursing Service (MNS) Coaching"
+      ],
+      "areaServed": ["Dehradun", "Uttarakhand", "Sahastradhara Road", "JK Tower Area", "India"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Maldevta Road, Near Laal Pull (Red Bridge), Lwarkha",

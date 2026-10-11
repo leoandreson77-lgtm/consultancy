@@ -85,6 +85,7 @@ include __DIR__ . '/includes/header.php';
                         <h4 style="font-size: 1.05rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Campus Location</h4>
                         <p style="font-size: 0.925rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
                             <?php echo CONTACT_ADDRESS; ?>
+                            <br><small style="color: var(--primary-navy); font-weight: 600; display: block; margin-top: 0.35rem;">Conveniently accessible from Sahastradhara Road, JK Tower, Raipur, and Dehradun Railway Station.</small>
                         </p>
                     </div>
                 </div>
@@ -246,6 +247,17 @@ include __DIR__ . '/includes/header.php';
                     <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.6;">
                         <strong>Distance:</strong> ~22 km (Approx. 45 mins)<br>
                         Interstate buses connect Delhi, Chandigarh, UP, Bihar, and Haryana to ISBT Dehradun. Local connecting taxis operate regularly to Maldevta.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3>From Sahastradhara Rd / JK Tower</h3>
+                    <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        <strong>Distance:</strong> ~11 km (Approx. 20 mins)<br>
+                        Aspirants seeking <strong>NDA coaching near Sahastradhara Road Dehradun</strong> or a <strong>top-rated defence academy near JK Tower Dehradun</strong> reach our Maldevta campus via Raipur Road in just 20 minutes, with institute transport available.
                     </p>
                 </div>
             </div>

@@ -50,6 +50,7 @@ $address = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Brid
                     <h4 style="font-size: 1.05rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Campus Location</h4>
                     <p style="font-size: 0.925rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
                         <?php echo esc_html($address); ?>
+                        <br><small style="color: var(--primary-navy); font-weight: 600; display: block; margin-top: 0.35rem;">Conveniently accessible from Sahastradhara Road, JK Tower, Raipur, and Dehradun Railway Station.</small>
                     </p>
                 </div>
             </div>
@@ -122,15 +123,16 @@ $address = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Brid
         </div>
     </section>
 
-    <!-- Google Map Embed -->
+    <!-- Google Map Embed & Transit Directions -->
     <section class="section-padding" style="background-color: #FFFFFF;">
         <div class="container">
             <div class="section-header">
                 <span class="badge-gold">Directions</span>
-                <h2>Campus Map & Directions</h2>
+                <h2>How to Reach Dehradun Defence College</h2>
                 <div class="gold-divider"></div>
+                <p>Located on Maldevta Road near Laal Pull (Red Bridge) in the serene foothills of Dehradun.</p>
             </div>
-            <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 2px solid var(--border-light); height: 420px;">
+            <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 2px solid var(--border-light); height: 420px; margin-bottom: 3.5rem;">
                 <iframe 
                     src="https://maps.google.com/maps?q=Dehradun%20Defence%20College%20Maldevta%20-%20NDA%20Coaching%20in%20Dehradun&t=m&z=14&output=embed&iwloc=near" 
                     width="100%" 
@@ -140,6 +142,53 @@ $address = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Brid
                     loading="lazy" 
                     title="Campus Location Map">
                 </iframe>
+            </div>
+
+            <!-- Transit Guide Cards -->
+            <div class="facilities-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17h10"/><path d="M7 13h10"/><path d="M7 9h10"/></svg>
+                    </div>
+                    <h3>From Dehradun Railway Station</h3>
+                    <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        <strong>Distance:</strong> ~16 km (Approx. 35 mins)<br>
+                        Taxis, auto-rickshaws, and city Vikram vans are readily available towards Raipur / Maldevta. Direct pickup can be arranged on prior intimation.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5c-.5-.5-2.5 0-4 1.5L13.5 8.5 5.3 6.7c-.7-.2-1.4.1-1.8.7l-.5.7 6.2 3.8-3.4 3.4-2.8-.7c-.4-.1-.8.1-1.1.4l-.4.4 2.8 2.2 2.2 2.8.4-.4c.3-.3.5-.7.4-1.1l-.7-2.8 3.4-3.4 3.8 6.2.7-.5c.6-.4.9-1.1.7-1.8z"/></svg>
+                    </div>
+                    <h3>From Jolly Grant Airport (DED)</h3>
+                    <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        <strong>Distance:</strong> ~28 km (Approx. 45 mins)<br>
+                        Direct scenic drive via Thano - Raipur route without entering crowded city traffic. Airport cabs take you directly to our Maldevta campus gates.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>From ISBT Dehradun (Bus Stand)</h3>
+                    <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        <strong>Distance:</strong> ~22 km (Approx. 45 mins)<br>
+                        Interstate buses connect Delhi, Chandigarh, UP, Bihar, and Haryana to ISBT Dehradun. Local connecting taxis operate regularly to Maldevta.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3>From Sahastradhara Rd / JK Tower</h3>
+                    <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        <strong>Distance:</strong> ~11 km (Approx. 20 mins)<br>
+                        Aspirants seeking <strong>NDA coaching near Sahastradhara Road Dehradun</strong> or a <strong>top-rated defence academy near JK Tower Dehradun</strong> reach our Maldevta campus via Raipur Road in just 20 minutes, with institute transport available.
+                    </p>
+                </div>
             </div>
         </div>
     </section>

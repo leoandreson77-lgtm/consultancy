@@ -830,97 +830,168 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <div class="faq-accordion">
-                <!-- FAQ 1 -->
+                <!-- FAQ 1: Best NDA Coaching in Dehradun -->
                 <div class="faq-item active">
                     <button type="button" class="faq-question">
-                        <span>1. Which is the best NDA coaching institute in Dehradun?</span>
+                        <span>1. Which is the Best NDA Coaching in Dehradun & Top NDA Coaching Institute in India?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        Dehradun Defence College is widely recognized as a premier institute for NDA preparation in Dehradun. We offer expert faculty, comprehensive study materials, daily mock tests, an authentic on-campus GTO obstacle course, and rigorous physical training to ensure consistently high selection rates for the National Defence Academy.
+                        <strong>Dehradun Defence College (DDC)</strong> is widely recognized as the <strong>Best NDA Coaching in Dehradun</strong> and among the top NDA coaching institutes in India. With a dedicated 14-acre residential campus, retired armed forces faculty, daily 8-10 hours academic rigor, an authentic outdoor GTO obstacle ground, and direct integration with Doon Public Senior Secondary School, DDC produces top officer selections year after year in UPSC NDA, CDS, AFCAT, and SSB boards.
                     </div>
                 </div>
 
-                <!-- FAQ 2 -->
+                <!-- FAQ 2: Schooling & Hostel -->
                 <div class="faq-item">
                     <button type="button" class="faq-question">
-                        <span>2. What courses are offered at Dehradun Defence College?</span>
+                        <span>2. Do you provide NDA Coaching with Schooling, Hostel and Mess Facilities in Dehradun?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        We provide specialized, result-oriented coaching for a variety of defense entrance exams, including NDA Foundation (after 8th and 10th), NDA Target Batch (after 12th), NDA Special Wing for Girls, CDS (Combined Defence Services), AFCAT, CAPF (AC), OTA Training, and comprehensive 14-day SSB Interview practical camps.
+                        Yes! DDC specializes in integrated <strong>NDA Coaching with Schooling in Dehradun</strong> in partnership with <em>Doon Public Senior Secondary School</em>. Students prepare for their CBSE 11th & 12th board exams and NDA syllabus simultaneously. Our <strong>NDA Coaching with Hostel and Mess Facilities</strong> includes separate secure residential buildings for boys and girls, hygienic dining mess providing nutritious military diet, 24/7 security, evening library study halls, and disciplined daily routines.
                     </div>
                 </div>
 
-                <!-- FAQ 3 -->
+                <!-- FAQ 3: NDA Foundation & Pre-NDA -->
                 <div class="faq-item">
                     <button type="button" class="faq-question">
-                        <span>3. Do you provide hostel facilities for outstation students?</span>
+                        <span>3. What is the NDA Foundation Course after 10th and Pre-NDA Foundation Course (8th to 10th)?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        Yes, Dehradun Defence College offers secure, disciplined, and hygienic hostel facilities with separate buildings for boys and girls. Our hostels provide a true "fauji" lifestyle environment, complete with nutritious mess food, dedicated study rooms, 24/7 wardens, and strict schedules to keep aspirants focused on their goals.
+                        Our <strong>NDA Foundation Course after 10th</strong> is a comprehensive 2-year integrated program covering Class 11th & 12th PCM along with UPSC NDA Mathematics, GAT, and SSB interview conditioning. For younger cadets, our <strong>Pre-NDA Foundation Course (8th to 10th class)</strong> builds rock-solid conceptual mastery in NCERT Mathematics, English, General Science, and officer personality traits so they easily clear defence entrances on their first attempt.
                     </div>
                 </div>
 
-                <!-- FAQ 4 -->
+                <!-- FAQ 4: CDS, OTA & AFCAT -->
                 <div class="faq-item">
                     <button type="button" class="faq-question">
-                        <span>4. How does Dehradun Defence College prepare students for the SSB Interview?</span>
+                        <span>4. Do you offer CDS Coaching in Dehradun, CDS OTA Coaching, and AFCAT Preparation?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        Our SSB Interview preparation is led by highly experienced ex-defence officers. The training includes psychological test dossier evaluation (TAT, WAT, SRT, SDT), personal mock interviews conducted by ex-interviewing officers, English communication and lecturette sessions, and practical on-ground GTO tasks on our campus obstacle course to build genuine Officer-Like Qualities (OLQs).
+                        Yes. We are a premier <strong>CDS Coaching in Dehradun</strong> and leading <strong>CDS OTA Coaching Institute</strong> for graduate defence aspirants targeting IMA, INA, AFA, and OTA Chennai. Furthermore, our <strong>AFCAT Exam Preparation Coaching</strong> targets numerical ability, verbal ability, military reasoning, and general awareness with specialized shortcut solving methods and regular full-length mock drills.
                     </div>
                 </div>
 
-                <!-- FAQ 5 -->
+                <!-- FAQ 5: SSB & GTO Ground -->
                 <div class="faq-item">
                     <button type="button" class="faq-question">
-                        <span>5. What is the fee structure for NDA/CDS coaching?</span>
+                        <span>5. Why is DDC rated for the Best GTO Ground and SSB Interview Coaching in Dehradun?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        We offer competitive and transparent fee structures depending on course duration (e.g. 6-month crash course, 1-year dropper batch, or 2-year integrated foundation). For detailed fee breakdowns, installment schedules, and current scholarship opportunities, please call our admission counseling desk directly at +91 9719104024.
+                        Dehradun Defence College features the <strong>Best GTO Ground for SSB Training</strong> in Uttarakhand, complete with Burma Bridge, Tiger Leap, Tarzan Swing, Commando Walk, Double Ditch, PGT, HGT, and Snake Race obstacles built to exact military testing dimensions. Our <strong>SSB Interview Coaching Dehradun</strong> includes individual psychology dossiers (TAT, WAT, SRT, SDT), daily Group Discussions, and 1-on-1 personal interview mocks led by ex-SSB board presidents and psychologists.
                     </div>
                 </div>
 
-                <!-- FAQ 6 -->
+                <!-- FAQ 6: RIMC, Sainik & MNS -->
                 <div class="faq-item">
                     <button type="button" class="faq-question">
-                        <span>6. Are physical training and ground activities included in the curriculum?</span>
+                        <span>6. Do you provide RIMC, Sainik School, and Military Nursing Service (MNS) Coaching?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        Absolutely. Written exam success is only half the battle. We conduct daily morning PT (Physical Training) and regular sports activities under the guidance of retired military physical instructors to ensure our cadets meet the strict medical and physical standards of the Indian Armed Forces.
+                        Yes! We provide specialized <strong>RIMC and Sainik School Coaching Dehradun</strong> for Class 6th and 8th young entrants, including written exam practice and viva-voce interview grooming. Additionally, our dedicated women wing conducts <strong>Military Nursing Service (MNS) Coaching</strong> integrated with NEET UG, ToGIGE screening, and medical fitness training to commission female aspirants as Nursing Officers in the Armed Forces.
                     </div>
                 </div>
 
-                <!-- FAQ 7 -->
+                <!-- FAQ 7: Location & Sahastradhara / JK Tower -->
                 <div class="faq-item">
                     <button type="button" class="faq-question">
-                        <span>7. Can students from non-math backgrounds crack the NDA exam?</span>
+                        <span>7. How is DDC connected to Sahastradhara Road, JK Tower, and Dreamers Edu Hub Dehradun?</span>
                         <span class="faq-toggle-icon">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </span>
                     </button>
                     <div class="faq-answer">
-                        Yes! We have dedicated basic-to-advanced foundation classes specifically structured for students who feel weak in mathematics. Our experienced faculty teaches from root concepts using shortcut techniques and time-management strategies that make clearing the NDA math cutoff fully achievable.
+                        Aspirants searching for <strong>NDA coaching near Sahastradhara Road Dehradun</strong>, <strong>top-rated defence academy near JK Tower Dehradun</strong>, or hubs like <strong>Dreamers Edu Hub Dehradun</strong> / <strong>Doon Defence Dreamers</strong> can reach our expansive residential campus in under 20 minutes via Raipur - Maldevta Road. Situated in a pollution-free green valley, our campus provides the ideal quiet atmosphere, clean mountain air, and physical obstacle grounds that crowded city centers cannot offer.
+                    </div>
+                </div>
+
+                <!-- FAQ 8: Best in Uttarakhand -->
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        <span>8. Why choose DDC as the Best NDA written and SSB coaching in Uttarakhand?</span>
+                        <span class="faq-toggle-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        Dehradun Defence College stands as the <strong>Best NDA written and SSB coaching in Uttarakhand</strong> because of its complete 360-degree ecosystem: CBSE school education, experienced UPSC faculty, exhaustive chapter-wise question banks, weekly OMR mock tests, daily SSB Officer-Like Qualities (OLQ) training, and dedicated physical fitness conditioning led by ex-officers.
                     </div>
                 </div>
             </div>
+
+            <!-- Schema.org FAQPage Structured Data -->
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Which is the Best NDA Coaching in Dehradun & Top NDA Coaching Institute in India?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dehradun Defence College is widely recognized as the Best NDA Coaching in Dehradun and among the top NDA coaching institutes in India, offering expert faculty, schooling integration with Doon Public Senior Secondary School, in-campus hostel, and authentic outdoor GTO obstacle grounds."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you provide NDA Coaching with Schooling, Hostel and Mess Facilities in Dehradun?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DDC offers comprehensive NDA Coaching with Schooling in Dehradun in partnership with Doon Public Senior Secondary School, along with disciplined residential hostel and mess facilities for boys and girls."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the NDA Foundation Course after 10th and Pre-NDA Foundation Course?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The NDA Foundation Course after 10th covers CBSE 11th & 12th board syllabus alongside UPSC NDA preparation. The Pre-NDA Foundation Course (8th to 10th class) builds core fundamentals in Maths, Science, and English for younger cadets."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you offer CDS Coaching in Dehradun, CDS OTA Coaching, and AFCAT Preparation?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Dehradun Defence College provides premier CDS Coaching in Dehradun, CDS OTA Coaching for short service commission, and specialized AFCAT Exam Preparation Coaching."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why is DDC rated for the Best GTO Ground and SSB Interview Coaching in Dehradun?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DDC features the Best GTO Ground for SSB Training in Uttarakhand with full-scale outdoor obstacles, psychological dossier evaluations (TAT, WAT, SRT), and 1-on-1 interview mocks led by ex-defence officers."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How to reach DDC from Sahastradhara Road, JK Tower, and Dreamers Edu Hub Dehradun?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aspirants searching for NDA coaching near Sahastradhara Road Dehradun or near JK Tower Dehradun can reach our Maldevta campus in under 20 minutes via Raipur Road."
+                  }
+                }
+              ]
+            }
+            </script>
         </div>
     </section>
 
