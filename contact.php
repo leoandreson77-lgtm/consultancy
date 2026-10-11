@@ -215,7 +215,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Transit Guide Cards -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;" class="facilities-grid">
+            <div class="facilities-grid">
                 <div class="feature-box">
                     <div class="feature-icon-wrapper">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17h10"/><path d="M7 13h10"/><path d="M7 9h10"/></svg>

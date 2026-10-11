@@ -30,7 +30,7 @@ $theme_uri = get_template_directory_uri();
             </div>
 
             <!-- Board of Directors Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
+            <div class="directors-grid">
                 <!-- Zaheer Ahmed -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); display: flex; flex-direction: column;" class="leader-card">
                     <div style="height: 340px; overflow: hidden; background: #0B1B3D;">
@@ -93,18 +93,18 @@ $theme_uri = get_template_directory_uri();
             </div>
 
             <!-- Joint Leadership Box -->
-            <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); padding: 3rem 2.5rem;">
+            <div class="leadership-pledge-card">
                 <div class="about-grid" style="align-items: center;">
                     <div>
                         <span class="badge-saffron">Leadership Pledge</span>
-                        <h2 style="margin: 0.75rem 0 1.25rem 0; font-size: 1.85rem;">"Where Excellence Meets Discipline: Turning Aspirations into Uniform Reality"</h2>
+                        <h2 class="pledge-title">"Where Excellence Meets Discipline: Turning Aspirations into Uniform Reality"</h2>
                         <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
                             Under the joint patronage of <strong>Doon Public Senior Secondary School</strong> and <strong>Dehradun Defence College</strong>, we have built an ecosystem that eliminates the compromise between school board results and military commission goals.
                         </p>
                         <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
                             We shape individuals into officers through unwavering integrity, self-discipline, mental resilience, and officer-like qualities (OLQs) essential for the Indian Armed Forces.
                         </p>
-                        <div style="display: flex; gap: 1rem; align-items: center;">
+                        <div class="pledge-cta-group">
                             <button type="button" class="btn btn-gold open-enquiry-modal" data-course="Director Counseling">
                                 <span>Schedule Counseling</span>
                             </button>

@@ -78,7 +78,7 @@ $articles = [
     <!-- Blog Grid Section -->
     <section class="section-padding bg-slate">
         <div class="container">
-            <div class="courses-grid" style="grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));">
+            <div class="courses-grid">
                 <?php foreach ($articles as $art): ?>
                 <article class="course-card">
                     <div class="course-card-banner">

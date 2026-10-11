@@ -38,14 +38,14 @@ include __DIR__ . '/includes/header.php';
 
     <!-- Course Detail Grid & Sidebar Form -->
     <section class="section-padding bg-slate">
-        <div class="container" style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 3.5rem; align-items: start;">
+        <div class="container course-detail-layout">
             <!-- Left Main Content -->
             <div class="course-main-content">
                 <!-- Course Overview Box -->
-                <div style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
+                <div class="course-overview-box course-content-block" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
                     <h2 style="font-size: 1.75rem; margin-bottom: 1.25rem;">Program Highlights & Structure</h2>
                     
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.5rem; background-color: var(--bg-slate); padding: 1.25rem; border-radius: var(--radius-md);">
+                    <div class="course-specs-grid">
                         <div>
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Target Audience:</span>
                             <div style="font-weight: 700; color: var(--primary-navy);" class="course-target-dynamic"><?php echo htmlspecialchars($c['target']); ?></div>
@@ -72,7 +72,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
 
                 <!-- Daily Timetable & Preparation Plan Section -->
-                <div id="course-timetable-section" style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
+                <div id="course-timetable-section" class="course-content-block" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
                         <div>
                             <span class="badge-gold">Official Batch Schedule</span>
@@ -89,7 +89,7 @@ include __DIR__ . '/includes/header.php';
                         <?php endif; ?>
                     </div>
 
-                    <div style="overflow-x: auto; border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 1.25rem;">
+                    <div class="table-responsive" style="border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 1.25rem;">
                         <table style="width: 100%; border-collapse: collapse; font-size: 0.925rem;">
                             <thead>
                                 <tr style="background-color: var(--primary-navy); color: #FFFFFF; text-align: left;">
@@ -102,7 +102,7 @@ include __DIR__ . '/includes/header.php';
                                     <?php foreach ($c['daily_routine'] as $idx => $slot): ?>
                                     <tr style="border-bottom: 1px solid var(--border-light); <?php echo ($idx % 2 === 1) ? 'background-color: var(--bg-slate);' : ''; ?>">
                                         <td style="padding: 0.85rem 1.25rem; font-weight: 700; color: var(--primary-navy); white-space: nowrap;">
-                                            <?php echo htmlspecialchars($slot['time']); ?>
+                                             <?php echo htmlspecialchars($slot['time']); ?>
                                         </td>
                                         <td style="padding: 0.85rem 1.25rem; color: var(--text-main);">
                                             <?php echo htmlspecialchars($slot['activity']); ?>
@@ -127,7 +127,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
 
                 <!-- Academic Syllabus & Pedagogy -->
-                <div style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
+                <div class="course-content-block" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
                     <h2 style="font-size: 1.75rem; margin-bottom: 1.25rem;">Academic Curriculum & UPSC Module</h2>
                     <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                         Our teaching methodology combines conceptual depth with rigorous shortcut techniques to maximize marks within the strict UPSC time limits.
@@ -156,7 +156,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
 
                 <!-- Visual Campus Facilities for Course -->
-                <div style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                <div class="course-content-block" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
                     <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Residential Life & Daily Conditioning</h2>
                     <img src="assets/images/ssb-gto-ground.jpg" alt="Outdoor Training for Cadets" style="border-radius: var(--radius-md); margin-bottom: 1.25rem; width: 100%;">
                     <p style="color: var(--text-muted); line-height: 1.7;">
@@ -166,7 +166,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Right Sidebar: Direct Course Registration Form -->
-            <div class="course-sidebar-card" style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); position: sticky; top: 100px;">
+            <div class="course-sidebar-card" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); position: sticky; top: 100px;">
                 <div class="hero-form-header">
                     <span class="badge-saffron">Enrollment 2026</span>
                     <h3 style="font-size: 1.5rem; margin-top: 0.5rem;">Register for this Course</h3>

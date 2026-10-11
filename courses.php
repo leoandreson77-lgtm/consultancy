@@ -111,7 +111,7 @@ include __DIR__ . '/includes/header.php';
                 <p>Download our verified batch timetables, daily hourly schedules, SSB preparation routines, and exam roadmaps in PDF format.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <div class="timetable-dl-grid">
                 <!-- 1. NDA Foundation -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
                     <div style="position: absolute; top: 1rem; right: 1rem;">
@@ -333,7 +333,7 @@ include __DIR__ . '/includes/header.php';
                 <p>Quick reference guide to evaluate courses against your current academic standing.</p>
             </div>
 
-            <div style="overflow-x: auto; background: #FFFFFF; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-light);">
+            <div class="table-responsive" style="background: #FFFFFF; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-light);">
                 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.925rem;">
                     <thead>
                         <tr style="background-color: var(--primary-navy); color: #FFFFFF; border-bottom: 3px solid var(--accent-gold);">

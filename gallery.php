@@ -181,7 +181,7 @@ $gallery_images = [
                 <p>Watch our cadets in training, hear parent testimonials, and experience our obstacle grounds.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;">
+            <div class="video-features-grid">
                 <!-- Video 1 -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-light);">
                     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #000;">

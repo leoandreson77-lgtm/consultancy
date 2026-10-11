@@ -33,7 +33,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Board of Directors Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
+            <div class="directors-grid">
                 <?php foreach ($DDC_LEADERSHIP as $leader): ?>
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); display: flex; flex-direction: column; transition: transform var(--transition-normal), box-shadow var(--transition-normal);" class="leader-card">
                     <div style="height: 340px; overflow: hidden; background: #0B1B3D; position: relative;">
@@ -52,11 +52,11 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Joint Leadership Message Box -->
-            <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); padding: 3rem 2.5rem;">
+            <div class="leadership-pledge-card">
                 <div class="about-grid" style="align-items: center;">
                     <div>
                         <span class="badge-saffron">Our Pledge to Aspirants</span>
-                        <h2 style="margin: 0.75rem 0 1.25rem 0; font-size: 1.85rem;">"Where Excellence Meets Discipline: Turning Aspirations into Uniform Reality"</h2>
+                        <h2 class="pledge-title">"Where Excellence Meets Discipline: Turning Aspirations into Uniform Reality"</h2>
                         
                         <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
                             Under the joint patronage of <strong>Doon Public Senior Secondary School</strong> and <strong>Dehradun Defence College</strong>, we have built an ecosystem that eliminates the compromise between school board results and military commission goals.
@@ -66,7 +66,7 @@ include __DIR__ . '/includes/header.php';
                             We believe in shaping individuals into officers. That means instilling the unwavering integrity, self-discipline, mental resilience, and officer-like qualities (OLQs) that define leaders in the Indian Armed Forces. Whether entering after Class 10th or preparing for graduate CDS/AFCAT entries, cadets receive round-the-clock mentorship from ex-defence assessors, certified psychologists, and senior educational mentors.
                         </p>
 
-                        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <div class="pledge-cta-group">
                             <button type="button" class="btn btn-gold open-enquiry-modal" data-course="Director Counseling">
                                 <span>Schedule Director Counseling</span>
                             </button>
@@ -104,7 +104,7 @@ include __DIR__ . '/includes/header.php';
                 <div class="gold-divider"></div>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.25rem;" class="facilities-grid">
+            <div class="facilities-grid">
                 <!-- Vision -->
                 <div class="feature-box" style="border-top: 4px solid var(--primary-navy);">
                     <div class="feature-icon-wrapper">
