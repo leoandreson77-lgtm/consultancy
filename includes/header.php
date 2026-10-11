@@ -160,16 +160,17 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
                         <a href="course-detail.php?course=cds-training" class="dropdown-item">CDS Training (IMA/OTA/AFA)</a>
                         <a href="course-detail.php?course=afcat-coaching" class="dropdown-item">AFCAT (Air Force Exam)</a>
                         <a href="course-detail.php?course=ssb-interview" class="dropdown-item">SSB 14-Day Practical Camp</a>
-                        <a href="course-detail.php?course=rimc-sainik" class="dropdown-item">RIMC & Sainik School</a>
-                        <a href="courses.php" class="dropdown-item" style="color: var(--accent-gold-hover); font-weight: 700; border-top: 1px solid var(--border-light); margin-top: 4px; padding-top: 8px;">View All Courses →</a>
+                        <a href="course-detail.php?course=rimc-sainik" class="dropdown-item">RIMC & RMS Military Schools</a>
+                        <a href="course-detail.php?course=mns-nursing" class="dropdown-item">MNS (Military Nursing) & NEET</a>
+                        <a href="courses.php" class="dropdown-item" style="color: var(--accent-gold-hover); font-weight: 700; border-top: 1px solid var(--border-light); margin-top: 4px; padding-top: 8px;">View All 10 Courses & Fees →</a>
                     </div>
                 </div>
 
+                <a href="director.php" class="nav-link <?php echo ($current_page === 'director') ? 'active' : ''; ?>">Directors</a>
                 <a href="faculty-facilities.php" class="nav-link <?php echo ($current_page === 'faculty-facilities') ? 'active' : ''; ?>">Faculty & Campus</a>
-                <a href="results.php" class="nav-link <?php echo ($current_page === 'results') ? 'active' : ''; ?>">Results</a>
-                <a href="gallery.php" class="nav-link <?php echo ($current_page === 'gallery') ? 'active' : ''; ?>">Gallery</a>
-                <a href="blog.php" class="nav-link <?php echo ($current_page === 'blog') ? 'active' : ''; ?>">Defence Blog</a>
-                <a href="contact.php" class="nav-link <?php echo ($current_page === 'contact') ? 'active' : ''; ?>">Contact Us</a>
+                <a href="results.php" class="nav-link <?php echo ($current_page === 'results') ? 'active' : ''; ?>">Selections 2026</a>
+                <a href="gallery.php" class="nav-link <?php echo ($current_page === 'gallery') ? 'active' : ''; ?>">Activities</a>
+                <a href="contact.php" class="nav-link <?php echo ($current_page === 'contact') ? 'active' : ''; ?>">Contact</a>
 
                 <div class="mobile-nav-footer">
                     <a href="tel:<?php echo CONTACT_PHONE_1_RAW; ?>" class="btn btn-outline-navy btn-sm" style="width: 100%; justify-content: center; gap: 0.5rem;">

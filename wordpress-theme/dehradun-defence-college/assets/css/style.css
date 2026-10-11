@@ -2439,4 +2439,459 @@ h6 { font-size: 0.95rem; }
   }
 }
 
+/* ============================================================
+   22. HERO DYNAMIC CAROUSEL (MILITARY SLIDER)
+   ============================================================ */
+.hero-slider {
+  position: relative;
+  min-height: 640px;
+  background-color: var(--primary-navy);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 4.5rem 0 3.5rem 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.hero-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(11, 37, 69, 0.94) 0%, rgba(11, 37, 69, 0.86) 60%, rgba(11, 37, 69, 0.72) 100%);
+  z-index: 1;
+}
+
+.hero-slide .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-slide-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(11, 37, 69, 0.75);
+  border: 2px solid var(--accent-gold);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(4px);
+}
+
+.slider-btn:hover {
+  background: var(--accent-gold);
+  color: var(--primary-navy);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+}
+
+.slider-btn-prev {
+  left: 1.5rem;
+}
+
+.slider-btn-next {
+  right: 1.5rem;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.65rem;
+  z-index: 10;
+}
+
+.slider-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.slider-dot.active {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  width: 32px;
+  border-radius: 8px;
+}
+
+.slider-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: var(--accent-gold);
+  z-index: 11;
+  width: 0%;
+  transition: width linear;
+}
+
+/* ============================================================
+   23. WALL OF FAME & 2025-2026 SELECTIONS SHOWCASE
+   ============================================================ */
+.selection-poster-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 3px solid var(--accent-gold);
+  box-shadow: var(--shadow-lg);
+  background: #0B2545;
+  transition: transform var(--transition-normal);
+}
+
+.selection-poster-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px rgba(11, 37, 69, 0.35);
+}
+
+.selection-poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.selection-cadets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.cadet-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  position: relative;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cadet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-gold);
+}
+
+.cadet-card-badge {
+  display: inline-block;
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.5rem;
+}
+
+.cadet-badge-iaf {
+  background: #E0F2FE;
+  color: #0369A1;
+  border: 1px solid #BAE6FD;
+}
+
+.cadet-badge-nda {
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.cadet-badge-ota {
+  background: #DCFCE7;
+  color: #166534;
+  border: 1px solid #BBF7D0;
+}
+
+.cadet-badge-girls {
+  background: #FCE7F3;
+  color: #9D174D;
+  border: 1px solid #FBCFE8;
+}
+
+.cadet-badge-jee {
+  background: #EDE9FE;
+  color: #5B21B6;
+  border: 1px solid #DDD6FE;
+}
+
+.cadet-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0.25rem 0;
+}
+
+.cadet-role {
+  font-size: 0.85rem;
+  color: var(--accent-gold-hover);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.cadet-detail {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ============================================================
+   24. SEPARATE IN-HOUSE HOSTEL SHOWCASE (USP)
+   ============================================================ */
+.hostel-banner-box {
+  background: linear-gradient(135deg, var(--primary-navy) 0%, #061930 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--accent-gold);
+  box-shadow: var(--shadow-lg);
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hostel-banner-box::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hostel-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.hostel-pillar-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all var(--transition-normal);
+}
+
+.hostel-pillar-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-gold);
+  transform: translateY(-3px);
+}
+
+.hostel-pillar-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   25. TRANSPARENT FEE STRUCTURE TABLE & SCHOLARSHIP
+   ============================================================ */
+.fee-table-wrap {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.fee-table th {
+  background: var(--primary-navy);
+  color: #FFFFFF;
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fee-table th:last-child {
+  border-right: none;
+}
+
+.fee-table td {
+  padding: 1.15rem 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: middle;
+}
+
+.fee-table tr:nth-child(even) {
+  background: #F8FAFC;
+}
+
+.fee-table tr:hover {
+  background: #FEF3C7;
+}
+
+.fee-price-tag {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+}
+
+.fee-hostel-tag {
+  font-size: 0.9rem;
+  color: var(--accent-gold-hover);
+  font-weight: 600;
+}
+
+/* ============================================================
+   26. CAMPUS ACTIVITIES & DRILL GALLERY
+   ============================================================ */
+.activities-masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.activity-tile {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  height: 260px;
+  cursor: pointer;
+  group: hover;
+}
+
+.activity-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.activity-tile:hover img {
+  transform: scale(1.08);
+}
+
+.activity-tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11, 37, 69, 0.92) 0%, rgba(11, 37, 69, 0.3) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  color: #FFFFFF;
+  transition: all var(--transition-normal);
+}
+
+.activity-tile-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.activity-tile-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .hero-slide-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-slider {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    min-height: 540px;
+  }
+
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .slider-btn-prev {
+    left: 0.5rem;
+  }
+
+  .slider-btn-next {
+    right: 0.5rem;
+  }
+
+  .hostel-banner-box {
+    padding: 2rem 1.25rem;
+  }
+
+  .selection-poster-frame {
+    margin-bottom: 1.5rem;
+  }
+}
+
 

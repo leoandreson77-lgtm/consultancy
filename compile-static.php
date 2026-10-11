@@ -11,6 +11,7 @@ $_SERVER['SCRIPT_NAME'] = '/index.php';
 $pages = [
     'index.php'              => 'index.html',
     'about.php'              => 'about.html',
+    'director.php'           => 'director.html',
     'courses.php'            => 'courses.html',
     'course-detail.php'      => 'course-detail.html',
     'faculty-facilities.php' => 'faculty-facilities.html',
@@ -39,7 +40,7 @@ function clean_static_links($html) {
 
     // 3. Other internal pages
     $staticPages = [
-        'about', 'courses', 'faculty-facilities', 'gallery',
+        'about', 'director', 'courses', 'faculty-facilities', 'gallery',
         'results', 'blog', 'blog-single', 'contact',
         'privacy-policy', 'terms', '404'
     ];

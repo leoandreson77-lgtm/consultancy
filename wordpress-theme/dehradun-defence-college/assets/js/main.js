@@ -419,4 +419,130 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  // -------------------------------------------------------------
+  // 8. Hero Military Carousel Slider
+  // -------------------------------------------------------------
+  const heroSlider = document.querySelector('.hero-slider');
+  if (heroSlider) {
+    const slides = heroSlider.querySelectorAll('.hero-slide');
+    const prevBtn = heroSlider.querySelector('.slider-btn-prev');
+    const nextBtn = heroSlider.querySelector('.slider-btn-next');
+    const dots = heroSlider.querySelectorAll('.slider-dot');
+    const progressBar = heroSlider.querySelector('.slider-progress-bar');
+    let currentIndex = 0;
+    let slideInterval = null;
+    const intervalDuration = 5500; // 5.5 seconds per slide
+
+    function showSlide(index) {
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+      currentIndex = index;
+
+      slides.forEach(function (slide, i) {
+        if (i === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      dots.forEach(function (dot, i) {
+        if (i === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+
+      // Animate progress bar
+      if (progressBar) {
+        progressBar.style.transition = 'none';
+        progressBar.style.width = '0%';
+        setTimeout(function () {
+          progressBar.style.transition = 'width ' + intervalDuration + 'ms linear';
+          progressBar.style.width = '100%';
+        }, 50);
+      }
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      if (progressBar) {
+        progressBar.style.transition = 'width ' + intervalDuration + 'ms linear';
+        progressBar.style.width = '100%';
+      }
+      slideInterval = setInterval(nextSlide, intervalDuration);
+    }
+
+    function stopAutoSlide() {
+      if (slideInterval) {
+        clearInterval(slideInterval);
+        slideInterval = null;
+      }
+      if (progressBar) {
+        progressBar.style.transition = 'none';
+        progressBar.style.width = '0%';
+      }
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        nextSlide();
+        startAutoSlide();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        prevSlide();
+        startAutoSlide();
+      });
+    }
+
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        const slideIdx = parseInt(dot.getAttribute('data-slide') || '0', 10);
+        showSlide(slideIdx);
+        startAutoSlide();
+      });
+    });
+
+    heroSlider.addEventListener('mouseenter', stopAutoSlide);
+    heroSlider.addEventListener('mouseleave', startAutoSlide);
+
+    // Mobile touch swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    heroSlider.addEventListener('touchstart', function (e) {
+      if (e.changedTouches && e.changedTouches[0]) {
+        touchStartX = e.changedTouches[0].screenX;
+      }
+    }, { passive: true });
+
+    heroSlider.addEventListener('touchend', function (e) {
+      if (e.changedTouches && e.changedTouches[0]) {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) {
+          nextSlide();
+          startAutoSlide();
+        } else if (touchEndX - touchStartX > 50) {
+          prevSlide();
+          startAutoSlide();
+        }
+      }
+    }, { passive: true });
+
+    // Initialize slide 0 and timer
+    showSlide(0);
+    startAutoSlide();
+  }
 });

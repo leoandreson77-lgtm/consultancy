@@ -30,6 +30,11 @@
       "permanent": false
     },
     {
+      "source": "/director.php",
+      "destination": "/director",
+      "permanent": false
+    },
+    {
       "source": "/courses.php",
       "destination": "/courses",
       "permanent": false

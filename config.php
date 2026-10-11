@@ -265,15 +265,15 @@ $DDC_COURSES = [
         'features'        => ['Complete Spatial & Military Aptitude Training', 'Computer-Based Mock Test Series (CBTS)', 'Speed Maths & Reasoning Shortcut Techniques', 'Daily Aviation & Defence Current Affairs', 'AFSB Preparation (Air Force Selection Board)']
     ],
     'rimc-sainik' => [
-        'title'           => 'RIMC & Sainik School Coaching',
-        'badge'           => 'School Entry (Class 6 & 8)',
-        'target'          => 'Young Cadets for Military Schools',
-        'duration'        => '1 Year Foundation Batch',
-        'description'     => 'Early military grooming and entrance preparation for admission to Rashtriya Indian Military College (RIMC) and All India Sainik Schools.',
-        'eligibility'     => 'Boys & Girls studying in Class 5th, 6th, or 7th',
+        'title'           => 'RIMC Dehradun Coaching (Rashtriya Indian Military College)',
+        'badge'           => 'School Entry (Class 8)',
+        'target'          => 'Young Aspirants for RIMC Dehradun Entrance',
+        'duration'        => '1 Year Intensive Gurukul Batch',
+        'description'     => 'Premier entrance coaching for admission to Rashtriya Indian Military College (RIMC) Dehradun. Covers English writing, advanced Mathematics, General Knowledge, and Viva-Voce mock interviews.',
+        'eligibility'     => 'Boys & Girls studying in Class 7th or passed Class 7th (Age 11.5 - 13 Years)',
         'timetable_pdf'   => 'assets/downloads/ddc-rimc-entrance-timetable.pdf',
         'timetable_title' => 'RIMC Dehradun Entrance Exam Timetable & Plan',
-        'timetable_hours' => '2-3 hrs After School Daily',
+        'timetable_hours' => '3-4 hrs Specialized Daily Mentoring',
         'daily_routine'   => [
             ['time' => '6:00 - 6:45 AM', 'activity' => 'Morning Running, Exercises & Team Games'],
             ['time' => '4:30 - 5:30 PM', 'activity' => 'Mathematics: Class 6-7 Concepts + 20 Problem Solutions'],
@@ -283,7 +283,27 @@ $DDC_COURSES = [
             ['time' => 'Saturday',       'activity' => 'Full Paper Timed Practice or Subject Sectional Test'],
             ['time' => 'Sunday',         'activity' => 'Viva-Voce Mock Interview, General Facts & Outdoor Hobby']
         ],
-        'features'        => ['Foundational Mathematics & Reasoning', 'English Grammar, Composition & General Science', 'Disciplined Gurukul Living & Daily Physical Fitness', 'Regular Chapter Tests & Previous Year Papers Solving', 'Interview Preparation for Final Selection']
+        'features'        => ['Subjective English Descriptive Mastery', 'Speed Mathematics & Conceptual Problem Solving', 'Child-Friendly Gurukul Residential Boarding', 'Personal Interview & Communication Grooming', 'Rigorous Mock Papers on Past 15 Years RIMC Trends']
+    ],
+    'rms-school' => [
+        'title'           => 'RMS Coaching (Rashtriya Military Schools - Class 6 & 9)',
+        'badge'           => 'Class 6 & 9 Entrance',
+        'target'          => 'Cadets targeting Chail, Ajmer, Belgaum, Bengaluru & Dholpur',
+        'duration'        => '6 Months to 1 Year Residential Batch',
+        'description'     => 'Specialized Common Entrance Test (CET) coaching for admission to all 5 Rashtriya Military Schools. Comprehensive syllabus coverage for Intelligence Test, Mathematics, English, General Science, and Social Studies.',
+        'eligibility'     => 'Students studying in Class 5th (for Class 6 entry) or Class 8th (for Class 9 entry)',
+        'timetable_pdf'   => 'assets/downloads/ddc-rimc-entrance-timetable.pdf',
+        'timetable_title' => 'RMS (Rashtriya Military Schools) CET Timetable',
+        'timetable_hours' => '3-4 hrs Daily Study Plan',
+        'daily_routine'   => [
+            ['time' => '6:00 - 6:45 AM', 'activity' => 'Physical PT, Running & Sports Stamina'],
+            ['time' => '4:30 - 5:30 PM', 'activity' => 'Mathematics & Intelligence Reasoning Test (CET Pattern)'],
+            ['time' => '5:45 - 6:45 PM', 'activity' => 'English Grammar & Vocabulary Drills'],
+            ['time' => '7:00 - 8:00 PM', 'activity' => 'General Knowledge, Social Science & Everyday Science'],
+            ['time' => '8:15 - 8:45 PM', 'activity' => 'Daily Revision Test & Mistake Clearing'],
+            ['time' => 'Sunday',         'activity' => 'OMR Based Mock CET Exam Simulation & Assessment']
+        ],
+        'features'        => ['Full CET Syllabus for Class 6 & 9', 'Intelligence & Non-Verbal Reasoning Tricks', 'OMR Speed Training & Time Management', 'Separate Hostel Accommodation with Caretakers', 'Mock Interviews for Medical & Final Merit List']
     ],
     'afmc-neet' => [
         'title'           => 'AFMC Pune (MBBS) with NEET UG',
@@ -364,6 +384,185 @@ $DDC_COURSES = [
             ['time' => '8:30 - 9:30 PM', 'activity' => 'Descriptive Answer Writing Practice & Feedback']
         ],
         'features'        => ['Paper 1 (General Studies) & Paper 2 (Essay & Comprehension)', 'Answer Writing Practice for Descriptive Paper', 'Physical Efficiency Test (PET) Training', 'Personality Test / Interview Mock Sessions', 'Regular Doubt Removal & Mentor Sessions']
+    ]
+];
+
+// -------------------------------------------------------------
+// Comprehensive Fee Structure Breakdown
+// -------------------------------------------------------------
+$DDC_FEE_STRUCTURE = [
+    [
+        'category'    => 'NDA Foundation',
+        'course'      => 'NDA Foundation (Class 11 + 12 + NDA + Schooling)',
+        'duration'    => '2 Years (Integrated)',
+        'tuition_fee' => '₹85,000 / Year',
+        'hostel_fee'  => '₹90,000 / Year',
+        'features'    => 'In-House Separate Hostel, 4 Meals Mess, Daily PT, GTO Ground & CBSE Schooling',
+        'course_key'  => 'nda-foundation-10'
+    ],
+    [
+        'category'    => 'Pre-NDA Foundation',
+        'course'      => 'Pre-NDA Foundation (Class 8th, 9th & 10th)',
+        'duration'    => '2 - 3 Years',
+        'tuition_fee' => '₹65,000 / Year',
+        'hostel_fee'  => '₹85,000 / Year',
+        'features'    => 'Early Defence Grooming, Speed Maths, NCERT Core Mastery, Physical Conditioning',
+        'course_key'  => 'nda-pre-foundation'
+    ],
+    [
+        'category'    => 'NDA Dropper / Target',
+        'course'      => 'NDA Target / Dropper Batch (After 12th)',
+        'duration'    => '6 Months / 1 Year',
+        'tuition_fee' => '₹45,000 (6 Mo) / ₹75,000 (1 Yr)',
+        'hostel_fee'  => '₹45,000 (6 Mo) / ₹85,000 (1 Yr)',
+        'features'    => 'Intensive 8-10 Hrs Daily Study, Test Series, 14-Day SSB Interview Included',
+        'course_key'  => 'nda-target-12'
+    ],
+    [
+        'category'    => 'School Entrance',
+        'course'      => 'RIMC Dehradun & RMS (Military Schools CET)',
+        'duration'    => '1 Year Foundation Batch',
+        'tuition_fee' => '₹55,000 / Year',
+        'hostel_fee'  => '₹80,000 / Year',
+        'features'    => 'Subjective English Writing, Intelligence Reasoning, Caring Residential Gurukul',
+        'course_key'  => 'rimc-sainik'
+    ],
+    [
+        'category'    => 'Graduate Armed Forces',
+        'course'      => 'CDS (IMA, OTA, AFA, INA) & AFCAT Coaching',
+        'duration'    => '6 Months / 1 Year',
+        'tuition_fee' => '₹38,000 (6 Mo) / ₹65,000 (1 Yr)',
+        'hostel_fee'  => '₹8,500 / Month (Optional)',
+        'features'    => 'Ex-Defence Faculty, Special OTA Paper Strategy, SSB Orientation Included',
+        'course_key'  => 'cds-training'
+    ],
+    [
+        'category'    => 'SSB Practical Ground',
+        'course'      => 'SSB Interview 14-Day Practical Obstacle Camp',
+        'duration'    => '14 Days Immersive',
+        'tuition_fee' => '₹18,500 (All Modules)',
+        'hostel_fee'  => '₹6,500 (14-Day Food & Stay)',
+        'features'    => 'Real Military GTO Ground, Psych Dossier TAT/WAT/SRT, Ex-Interviewing Officers',
+        'course_key'  => 'ssb-interview'
+    ],
+    [
+        'category'    => 'Defence Medical',
+        'course'      => 'Military Nursing Service (MNS) & AFMC NEET Wing',
+        'duration'    => '1 Year / 2 Years',
+        'tuition_fee' => '₹65,000 / Year',
+        'hostel_fee'  => '₹85,000 / Year',
+        'features'    => 'Dedicated Girls Residential Wing, NCERT PCB Mastery, ToGIGE & Medical Interview',
+        'course_key'  => 'mns-nursing'
+    ]
+];
+
+// -------------------------------------------------------------
+// Latest DDCIAN Selections of 2025-2026
+// -------------------------------------------------------------
+$DDC_LATEST_SELECTIONS_2026 = [
+    [
+        'name'        => 'Aadarsh Mishra (DDCIAN)',
+        'role'        => 'Flying Officer',
+        'org'         => 'Indian Air Force',
+        'badge'       => 'Commissioned Officer',
+        'detail'      => 'Joined Indian Air Force as Flying Officer',
+        'tag'         => 'Air Force Pilot'
+    ],
+    [
+        'name'        => 'Sanskar Jha (DDCIAN)',
+        'role'        => 'Cadet',
+        'org'         => 'National Defence Academy',
+        'badge'       => 'Cleared Written & SSB',
+        'detail'      => 'Cleared NDA Written Exam & Recommended for NDA Entry',
+        'tag'         => 'NDA Cadet'
+    ],
+    [
+        'name'        => 'Arindam',
+        'role'        => 'Officer Cadet',
+        'org'         => 'OTA Chennai',
+        'badge'       => 'Chest #4',
+        'detail'      => 'Recommended for Officers Training Academy (OTA)',
+        'tag'         => 'OTA Army'
+    ],
+    [
+        'name'        => 'Praneet Singh',
+        'role'        => 'Cadet',
+        'org'         => 'NDA - 18 SSB Allahabad',
+        'badge'       => 'Chest #4',
+        'detail'      => 'Cleared NDA Examination & Recommended from 18 SSB Allahabad',
+        'tag'         => 'NDA Army'
+    ],
+    [
+        'name'        => 'Karuna',
+        'role'        => 'Cadet (Girls Wing)',
+        'org'         => 'SSB Bhopal, NDA',
+        'badge'       => 'Chest #20',
+        'detail'      => 'Proud DDCIAN Cadet recommended for National Defence Academy',
+        'tag'         => 'NDA Girls'
+    ],
+    [
+        'name'        => 'Rishabh Kala',
+        'role'        => 'Gentleman Cadet',
+        'org'         => 'CDS, 18 SSB Allahabad',
+        'badge'       => 'Chest #21',
+        'detail'      => 'Recommended for Indian Military Academy via Combined Defence Services',
+        'tag'         => 'CDS IMA'
+    ],
+    [
+        'name'        => 'Ayush Pathak',
+        'role'        => 'Air Force Cadet',
+        'org'         => '18-SSB Allahabad Board',
+        'badge'       => 'Chest #7',
+        'detail'      => 'Air Force Uniform entry recommended through 18 SSB Allahabad',
+        'tag'         => 'Air Force'
+    ],
+    [
+        'name'        => 'Leroy Fernandes',
+        'role'        => 'Cadet',
+        'org'         => 'NDA - 143 Course',
+        'badge'       => 'Chest #3',
+        'detail'      => 'Recommended for prestigious NDA 143 Course at Khadakwasla',
+        'tag'         => 'NDA 143'
+    ],
+    [
+        'name'        => 'Pooja Ahlawat',
+        'role'        => 'Cadet (Girls Wing)',
+        'org'         => 'NDA Selection',
+        'badge'       => 'Chest #6',
+        'detail'      => 'Selected for National Defence Academy from DDC Girls Residential Wing',
+        'tag'         => 'NDA Girls'
+    ],
+    [
+        'name'        => 'Kshitij Pandey',
+        'role'        => 'Cadet',
+        'org'         => 'NDA Selection',
+        'badge'       => 'Chest #32',
+        'detail'      => 'Cleared NDA Written & SSB Interview with flying colours',
+        'tag'         => 'NDA Cadet'
+    ],
+    [
+        'name'        => 'Yashraj Yadav',
+        'role'        => 'Cadet',
+        'org'         => '19 SSB Allahabad, NDA-143',
+        'badge'       => 'Chest #02',
+        'detail'      => 'Recommended from 19 SSB Allahabad for NDA 143 Batch',
+        'tag'         => 'NDA 143'
+    ],
+    [
+        'name'        => 'Akhand Pratap Singh',
+        'role'        => 'Star Performer',
+        'org'         => 'IIT-JEE Main 2025-26 & NDA',
+        'badge'       => 'Dual Qualifier',
+        'detail'      => 'Outstanding merit in IIT-JEE Main alongside NDA Written qualification',
+        'tag'         => 'Engineering & NDA'
+    ],
+    [
+        'name'        => 'Sujal Singh',
+        'role'        => 'Star Performer',
+        'org'         => 'IIT-JEE Main 2025-26 & NDA',
+        'badge'       => 'Dual Qualifier',
+        'detail'      => 'Cracked IIT-JEE Main 2025-26 and qualified NDA defence entrance',
+        'tag'         => 'Engineering & NDA'
     ]
 ];
 
