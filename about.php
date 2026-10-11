@@ -32,8 +32,8 @@ include __DIR__ . '/includes/header.php';
                 <p>Guided by visionary educational leadership with deep roots in holistic student development and disciplined defence training in Dehradun.</p>
             </div>
 
-            <!-- 3 Directors Grid -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
+            <!-- Board of Directors Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
                 <?php foreach ($DDC_LEADERSHIP as $leader): ?>
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); display: flex; flex-direction: column; transition: transform var(--transition-normal), box-shadow var(--transition-normal);" class="leader-card">
                     <div style="height: 340px; overflow: hidden; background: #0B1B3D; position: relative;">

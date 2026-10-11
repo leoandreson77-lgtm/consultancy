@@ -38,12 +38,17 @@ $gallery_images = [
     ],
     [
         'src'      => 'assets/images/director-zaheer.jpg',
-        'title'    => 'Mr. Zaheer Ahmed — Director & Patron (Owner, Doon Public Sr. Sec. School)',
+        'title'    => 'Mr. Zaheer Ahmed — Director (Owner, Doon Public Sr. Sec. School)',
         'category' => 'campus'
     ],
     [
         'src'      => 'assets/images/director-gaurav.jpg',
-        'title'    => 'Mr. Gaurav Sharma — Director, Dehradun Defence College',
+        'title'    => 'Mr. Gaurav Sharma — Director, DDC & Principal, Doon Public Sr. Sec. School',
+        'category' => 'campus'
+    ],
+    [
+        'src'      => 'assets/images/director-mahendra.jpg',
+        'title'    => 'Mr. Mahendra Kukreja — Founder & Director, Dehradun Defence College',
         'category' => 'campus'
     ],
     [

@@ -38,30 +38,37 @@ define('SITE_MOTTO', 'Excellence is the Only Aim');
 define('SITE_URL', ddc_env('SITE_URL', 'http://localhost/consultancy'));
 
 // Director & Leadership Team
-define('DIRECTOR_NAME', 'Mr. Zaheer Ahmed & Mr. Gaurav Sharma');
+define('DIRECTOR_NAME', 'Mr. Zaheer Ahmed, Mr. Gaurav Sharma & Mr. Mahendra Kukreja');
 define('DIRECTOR_ROLE', 'Board of Directors');
 
 $DDC_LEADERSHIP = [
     'zaheer_ahmed' => [
         'name'  => 'Mr. Zaheer Ahmed',
-        'role'  => 'Director & Patron',
+        'role'  => 'Director',
         'badge' => 'Owner — Doon Public Senior Secondary School',
         'image' => 'assets/images/director-zaheer.jpg',
         'bio'   => 'Visionary educational founder and owner of Doon Public Senior Secondary School, establishing the foundation of academic discipline and holistic cadet development in Dehradun.'
     ],
     'gaurav_sharma' => [
         'name'  => 'Mr. Gaurav Sharma',
-        'role'  => 'Director',
-        'badge' => 'Dehradun Defence College',
+        'role'  => 'Director & Principal',
+        'badge' => 'Director — DDC & Principal — Doon Public Sr. Sec. School',
         'image' => 'assets/images/director-gaurav.jpg',
-        'bio'   => 'Leading strategic training, UPSC syllabus mentorship, and SSB officer grooming to prepare young aspirants for commissions in the Indian Armed Forces.'
+        'bio'   => 'Director of Dehradun Defence College and Principal of Doon Public Senior Secondary School, leading integrated board schooling, UPSC defence curriculum, and SSB officer grooming.'
+    ],
+    'mahendra_kukreja' => [
+        'name'  => 'Mr. Mahendra Kukreja',
+        'role'  => 'Director',
+        'badge' => 'Founder & Director — Dehradun Defence College',
+        'image' => 'assets/images/director-mahendra.jpg',
+        'bio'   => 'Visionary mentor with extensive experience in defence coaching pedagogy, guiding cadets to build unshakeable character, discipline, and Officer-Like Qualities.'
     ],
     'neha_kukreja' => [
         'name'  => 'Ms. Neha Kukreja',
-        'role'  => 'Director & Enrollment Specialist',
+        'role'  => 'Director',
         'badge' => 'College Enrollment Specialist',
         'image' => 'assets/images/director-neha.jpg',
-        'bio'   => 'Guiding parents and defence aspirants through personalized batch counseling, qualification analysis, and seamless enrollment into residential programs.'
+        'bio'   => 'Directing admissions, parent counseling, and student batch allocations with personalized guidance for residential hostel and academic batches.'
     ]
 ];
 

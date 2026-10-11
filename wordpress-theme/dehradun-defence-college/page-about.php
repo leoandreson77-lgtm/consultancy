@@ -29,8 +29,8 @@ $theme_uri = get_template_directory_uri();
                 <p>Guided by visionary educational leadership with deep roots in holistic student development and disciplined defence training in Dehradun.</p>
             </div>
 
-            <!-- 3 Directors Grid -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
+            <!-- Board of Directors Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
                 <!-- Zaheer Ahmed -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); display: flex; flex-direction: column;" class="leader-card">
                     <div style="height: 340px; overflow: hidden; background: #0B1B3D;">
@@ -38,7 +38,7 @@ $theme_uri = get_template_directory_uri();
                     </div>
                     <div style="padding: 1.75rem 1.5rem; flex-grow: 1; display: flex; flex-direction: column; text-align: center;">
                         <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Mr. Zaheer Ahmed</h3>
-                        <div style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;">Director & Patron</div>
+                        <div style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;">Director</div>
                         <span class="badge-navy" style="font-size: 0.75rem; margin: 0 auto 1rem auto; display: inline-block; padding: 0.25rem 0.65rem;">Owner — Doon Public Sr. Sec. School</span>
                         <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">
                             Visionary educational founder establishing the foundation of academic discipline and holistic cadet development in Dehradun.
@@ -53,10 +53,25 @@ $theme_uri = get_template_directory_uri();
                     </div>
                     <div style="padding: 1.75rem 1.5rem; flex-grow: 1; display: flex; flex-direction: column; text-align: center;">
                         <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Mr. Gaurav Sharma</h3>
-                        <div style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;">Director</div>
-                        <span class="badge-navy" style="font-size: 0.75rem; margin: 0 auto 1rem auto; display: inline-block; padding: 0.25rem 0.65rem;">Dehradun Defence College</span>
+                        <div style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;">Director & Principal</div>
+                        <span class="badge-navy" style="font-size: 0.75rem; margin: 0 auto 1rem auto; display: inline-block; padding: 0.25rem 0.65rem;">Director — DDC & Principal — Doon Public School</span>
                         <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">
-                            Leading strategic training, UPSC syllabus mentorship, and SSB officer grooming to prepare young aspirants for Armed Forces commissions.
+                            Leading strategic training, board exam integration, UPSC syllabus mentorship, and Officer-Like Qualities (OLQ) development.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mahendra Kukreja -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); display: flex; flex-direction: column;" class="leader-card">
+                    <div style="height: 340px; overflow: hidden; background: #0B1B3D;">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/director-mahendra.jpg'); ?>" alt="Mr. Mahendra Kukreja" style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+                    </div>
+                    <div style="padding: 1.75rem 1.5rem; flex-grow: 1; display: flex; flex-direction: column; text-align: center;">
+                        <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Mr. Mahendra Kukreja</h3>
+                        <div style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;">Director</div>
+                        <span class="badge-navy" style="font-size: 0.75rem; margin: 0 auto 1rem auto; display: inline-block; padding: 0.25rem 0.65rem;">Founder & Director — Dehradun Defence College</span>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                            Visionary mentor guiding defence entrance pedagogy, cadet lifestyle conditioning, and sustained excellence in Armed Forces selections.
                         </p>
                     </div>
                 </div>
