@@ -317,18 +317,34 @@ $theme_uri = get_template_directory_uri();
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-batch-study.jpg'); ?>" alt="Smart Classrooms and Newspaper Study">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/smart-classroom-lecture-hall.jpg'); ?>" alt="Smart Classrooms and Lecture Hall">
                     <div class="facility-card-overlay">
-                        <h4>Smart Classrooms & Newspaper Analysis</h4>
-                        <p>Tiered lecture halls with mandatory daily newspaper study, defence GK, and UPSC mock exams.</p>
+                        <h4>Smart Classroom Lecture Hall</h4>
+                        <p>Tiered lecture halls with interactive digital smart panels, daily newspaper study, and UPSC mock exams.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/smart-class-lecture.jpg'); ?>" alt="Interactive Smart Panel and Cadet Dais">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/ssb-smart-panel-instruction.jpg'); ?>" alt="Interactive SSB Strategy Panel">
                     <div class="facility-card-overlay">
-                        <h4>Interactive Smart Panel & Lecturette Dais</h4>
-                        <p>Official cadet dais for individual 3-minute lecturettes, public speaking, and SSB interview conditioning.</p>
+                        <h4>Interactive SSB Strategy Panel</h4>
+                        <p>Digital obstacle scenarios and cadet dais for 3-minute lecturettes, public speaking, and SSB interview conditioning.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/kabaddi-outdoor-ground.jpg'); ?>" alt="Outdoor Sports Grounds & Kabaddi">
+                    <div class="facility-card-overlay">
+                        <h4>Outdoor Sports & Conditioning</h4>
+                        <p>Dedicated sports grounds in Maldevta foothills building physical agility, stamina, teamwork, and reflexes.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/chess-indoor-session.jpg'); ?>" alt="Tactical Chess & Mind Gym">
+                    <div class="facility-card-overlay">
+                        <h4>Tactical Chess & Mind Gym</h4>
+                        <p>Strategic chess sessions and Defence Motivation Wall inspiring tactical foresight and unbroken character.</p>
                     </div>
                 </div>
             </div>

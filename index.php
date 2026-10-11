@@ -533,18 +533,34 @@ include __DIR__ . '/includes/header.php';
                 </div>
 
                 <div class="facility-card">
-                    <img src="assets/images/classroom-batch-study.jpg" alt="Smart Classrooms & Daily Newspaper Analysis">
+                    <img src="assets/images/smart-classroom-lecture-hall.jpg" alt="Smart Classrooms & Lecture Hall">
                     <div class="facility-card-overlay">
-                        <h4>Smart Classrooms & Newspaper Analysis</h4>
-                        <p>Tiered lecture halls with mandatory daily newspaper reading, current affairs analysis, and UPSC question drills.</p>
+                        <h4>Smart Classroom Lecture Hall</h4>
+                        <p>Tiered lecture halls with interactive digital smart panels, daily newspaper analysis, and UPSC question drills.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="assets/images/smart-class-lecture.jpg" alt="Interactive Smart Display & Cadet Lecturette Dais">
+                    <img src="assets/images/ssb-smart-panel-instruction.jpg" alt="Interactive SSB Strategy Panel">
                     <div class="facility-card-overlay">
-                        <h4>Smart Display & Lecturette Dais</h4>
-                        <p>Digital smart boards and official cadet dais for 3-minute lecturettes, public presentations, and SSB interview conditioning.</p>
+                        <h4>Interactive SSB Strategy Panel</h4>
+                        <p>Digital obstacle scenarios and cadet dais for 3-minute lecturettes, public presentations, and SSB interview conditioning.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="assets/images/kabaddi-outdoor-ground.jpg" alt="Outdoor Sports Grounds & Kabaddi">
+                    <div class="facility-card-overlay">
+                        <h4>Outdoor Sports & Conditioning</h4>
+                        <p>Dedicated sports grounds in Maldevta foothills building physical agility, stamina, teamwork, and reflexes.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="assets/images/chess-indoor-session.jpg" alt="Tactical Chess & Motivation Room">
+                    <div class="facility-card-overlay">
+                        <h4>Tactical Chess & Mind Gym</h4>
+                        <p>Strategic chess sessions and Defence Motivation Wall inspiring tactical foresight and unbroken character.</p>
                     </div>
                 </div>
             </div>

@@ -207,7 +207,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
                 <div>
                     <span class="badge-gold">Personality & OLQ Development</span>
                     <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">4. Interactive Smart Panel & Cadet Lecturette Dais</h3>
@@ -225,7 +225,7 @@ include __DIR__ . '/includes/header.php';
                         </li>
                         <li class="feature-check-item">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                            <span>Audio-Visual Motivation & Armed Forces Documentary Screenings</span>
+                            <span>SSB GTO Digital Scenario & Field Planning Breakdown</span>
                         </li>
                         <li class="feature-check-item">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
@@ -234,7 +234,69 @@ include __DIR__ . '/includes/header.php';
                     </ul>
                 </div>
                 <div>
-                    <img src="assets/images/smart-class-lecture.jpg" alt="Interactive Smart Panel and Cadet Lecturette at Dais" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
+                    <img src="assets/images/ssb-smart-panel-instruction.jpg" alt="Interactive Smart Panel and SSB Strategy Instruction" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+                <div>
+                    <img src="assets/images/kabaddi-outdoor-ground.jpg" alt="Outdoor Kabaddi and Sports Grounds" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
+                </div>
+                <div>
+                    <span class="badge-navy">Outdoor Athletics & Conditioning</span>
+                    <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">5. Sports Grounds, Kabaddi Field & Badminton Courts</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
+                        Physical conditioning goes beyond drill runs. Our cadets engage in regular sports sessions including Kabaddi, Badminton, Volleyball, and cross-country running along the scenic Maldevta foothills to build endurance, lightning reflexes, and camaraderie.
+                    </p>
+                    <ul class="feature-check-list" style="margin: 1rem 0;">
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Full-Scale Outdoor Kabaddi Match Ground</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Outdoor Badminton Courts for Agility Conditioning</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Daily Evening Games with Physical Trainers & Mentors</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Inter-House Tournaments Fostering Team Bonding & Esprit de Corps</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <span class="badge-saffron">Mind Gym & Military Values</span>
+                    <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">6. Tactical Chess Room & Defence Motivation Wall</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
+                        An officer thinks two moves ahead. Our tactical mind gym hosts regular chess tournament rounds cultivating strategic patience and mental foresight. Surrounding them is our academy Defence Motivation Wall featuring the core ethos — "Nation First", "Courage, Honor, Commitment".
+                    </p>
+                    <ul class="feature-check-list" style="margin: 1rem 0;">
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Dedicated Strategic Chess Arena for Cadets</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Tactical Decision-Making & Anticipation Exercises</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Inspirational Armed Forces Motivational Canvases</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Constant Inspiration of Indian Armed Forces Gallantry Traditions</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/images/chess-indoor-session.jpg" alt="Indoor Tactical Chess Training Session" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
                 </div>
             </div>
         </div>

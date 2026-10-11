@@ -32,6 +32,56 @@ $gallery_images = [
         'category' => 'classroom'
     ],
     [
+        'src'      => 'assets/images/chess-indoor-session.jpg',
+        'title'    => 'Indoor Chess Strategy Session — Cadets Building Tactical Thinking & Decision-Making',
+        'category' => 'campus'
+    ],
+    [
+        'src'      => 'assets/images/chess-closeup-focus.jpg',
+        'title'    => 'Focused Strategic Chess Play — Enhancing Analytical & Problem-Solving Skills',
+        'category' => 'campus'
+    ],
+    [
+        'src'      => 'assets/images/kabaddi-outdoor-ground.jpg',
+        'title'    => 'Outdoor Kabaddi Match — Physical Agility & Team Coordination Training in Maldevta',
+        'category' => 'obstacle'
+    ],
+    [
+        'src'      => 'assets/images/defence-motivation-wall.jpg',
+        'title'    => 'Defence Motivation Wall — "Nation First", "Courage Honor Commitment" Inspiring Our Cadets',
+        'category' => 'campus'
+    ],
+    [
+        'src'      => 'assets/images/smart-classroom-lecture-hall.jpg',
+        'title'    => 'Full Batch Smart Classroom Lecture Hall — Interactive Digital Audio-Visual Pedagogy',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/ssb-smart-panel-instruction.jpg',
+        'title'    => 'SSB GTO Obstacle Course Strategy Session on Interactive Smart Panel with Defence Instructor',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/smart-class-cadet-lecturette.jpg',
+        'title'    => 'Cadet Public Speaking & Current Affairs Lecturette at the Smart Panel Dais',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/faculty-classroom-mentorship.jpg',
+        'title'    => 'Senior Defence Faculty Mentoring & Interactive Academic Guidance',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/badminton-outdoor-court.jpg',
+        'title'    => 'Outdoor Badminton & Sports Session — Physical Agility & Reflex Conditioning',
+        'category' => 'obstacle'
+    ],
+    [
+        'src'      => 'assets/images/cadet-presentation-smart-board.jpg',
+        'title'    => 'Cadet Presentation & Audio-Visual Defence Analysis Under Officer Mentorship',
+        'category' => 'classroom'
+    ],
+    [
         'src'      => 'assets/images/hero-cadets.jpg',
         'title'    => 'Morning Parade & Roll Call Formation',
         'category' => 'parade'

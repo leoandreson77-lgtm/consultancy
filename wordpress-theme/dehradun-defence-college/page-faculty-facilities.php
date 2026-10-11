@@ -34,7 +34,7 @@ $theme_uri = get_template_directory_uri();
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
                     <img src="<?php echo esc_url($theme_uri . '/assets/images/director-zaheer.jpg'); ?>" alt="Mr. Zaheer Ahmed" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
                     <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Zaheer Ahmed</h3>
-                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director & Patron</p>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
                     <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Owner — Doon Public Sr. Sec. School</span>
                     <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
                         Visionary educational founder dedicated to character-driven academic schooling and holistic youth empowerment in Dehradun.
@@ -45,14 +45,25 @@ $theme_uri = get_template_directory_uri();
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
                     <img src="<?php echo esc_url($theme_uri . '/assets/images/director-gaurav.jpg'); ?>" alt="Mr. Gaurav Sharma" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
                     <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Gaurav Sharma</h3>
-                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
-                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Dehradun Defence College</span>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director & Principal</p>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Director — DDC & Principal — Doon Public School</span>
                     <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
                         Spearheading strategic NDA examination preparation, UPSC academic mastery, and Officer-Like Qualities (OLQ) development.
                     </p>
                 </div>
 
-                <!-- Director 3: Neha Kukreja -->
+                <!-- Director 3: Mahendra Kukreja -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/director-mahendra.jpg'); ?>" alt="Mr. Mahendra Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
+                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Mahendra Kukreja</h3>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Founder & Director — Dehradun Defence College</span>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+                        Visionary mentor guiding defence entrance pedagogy, cadet lifestyle conditioning, and sustained excellence in Armed Forces selections.
+                    </p>
+                </div>
+
+                <!-- Director 4: Neha Kukreja -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
                     <img src="<?php echo esc_url($theme_uri . '/assets/images/director-neha.jpg'); ?>" alt="Ms. Neha Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
                     <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Ms. Neha Kukreja</h3>
@@ -115,18 +126,34 @@ $theme_uri = get_template_directory_uri();
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-batch-study.jpg'); ?>" alt="Digital Classrooms and Newspaper Study">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/smart-classroom-lecture-hall.jpg'); ?>" alt="Smart Classrooms and Lecture Hall">
                     <div class="facility-card-overlay">
-                        <h4>Smart Classrooms & Newspaper Analysis</h4>
-                        <p>Tiered lecture halls with mandatory daily newspaper study, defence GK, and UPSC mock exams.</p>
+                        <h4>Smart Classroom Lecture Hall</h4>
+                        <p>Tiered lecture halls with interactive digital smart panels, daily newspaper study, and UPSC mock exams.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/smart-class-lecture.jpg'); ?>" alt="Smart Panel and Cadet Dais">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/ssb-smart-panel-instruction.jpg'); ?>" alt="SSB Digital Panel and Cadet Dais">
                     <div class="facility-card-overlay">
-                        <h4>Interactive Smart Panel & Lecturette Dais</h4>
-                        <p>Official cadet dais for individual 3-minute lecturettes, public speaking, and SSB interview conditioning.</p>
+                        <h4>Interactive SSB Strategy Panel</h4>
+                        <p>Digital obstacle scenario analysis and cadet dais for 3-minute lecturettes and SSB interview grooming.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/kabaddi-outdoor-ground.jpg'); ?>" alt="Sports Ground & Outdoor Conditioning">
+                    <div class="facility-card-overlay">
+                        <h4>Outdoor Sports & Kabaddi/Badminton</h4>
+                        <p>Dedicated sports grounds in Maldevta foothills building agility, physical stamina, and team spirit.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/chess-indoor-session.jpg'); ?>" alt="Indoor Chess & Motivation Wall">
+                    <div class="facility-card-overlay">
+                        <h4>Tactical Chess & Motivation Center</h4>
+                        <p>Indoor strategic games cultivating foresight, mental resilience, and military values.</p>
                     </div>
                 </div>
             </div>
