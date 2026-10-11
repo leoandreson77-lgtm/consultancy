@@ -2302,6 +2302,14 @@ h6 { font-size: 0.95rem; }
     grid-template-columns: 1fr !important;
     gap: 1.25rem !important;
   }
+
+  .ddc-modal-overlay {
+    padding: 0.75rem !important;
+  }
+
+  .ddc-modal-box {
+    padding: 1.5rem 1.15rem !important;
+  }
 }
 
 
