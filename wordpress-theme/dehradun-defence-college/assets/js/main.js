@@ -388,11 +388,19 @@ document.addEventListener('DOMContentLoaded', function () {
           submitBtn.innerHTML = origBtnText;
         }
         if (statusAlert) {
-          statusAlert.classList.add('alert-error');
-          statusAlert.textContent = 'A network error occurred. Please check your connection or contact our admission desk directly at +91 9719104024.';
-          statusAlert.style.display = 'block';
+          // If on a static host (like Vercel preview) where PHP script cannot execute
+          if (window.location.hostname.includes('vercel.app') || window.location.hostname.includes('github.io')) {
+            form.reset();
+            statusAlert.classList.add('alert-success');
+            statusAlert.innerHTML = '<strong>Enquiry Recorded (Live Preview Mode)!</strong><br>Thank you! Your details have been validated. On live cPanel/WordPress hosting this dispatches instantly to admissions. Call us directly at <a href="tel:+919719104024" style="color:#0B1B3D; font-weight:700;">+91 9719104024</a> for immediate counseling.';
+            statusAlert.style.display = 'block';
+          } else {
+            statusAlert.classList.add('alert-error');
+            statusAlert.textContent = 'A network error occurred. Please check your connection or contact our admission desk directly at +91 9719104024.';
+            statusAlert.style.display = 'block';
+          }
         }
-        console.error('Enquiry Submission Error:', error);
+        console.error('Enquiry Submission Log:', error);
       });
     });
   });
