@@ -232,7 +232,7 @@ include __DIR__ . '/includes/header.php';
                 <!-- Course 1 -->
                 <div class="course-card" data-category="nda">
                     <div class="course-card-banner">
-                        <img src="assets/images/classroom-training.jpg" alt="NDA Foundation After 10th">
+                        <img src="assets/images/classroom-batch-study.jpg" alt="NDA Foundation After 10th Classroom Study">
                         <span class="course-card-badge">2 Years Integrated</span>
                     </div>
                     <div class="course-card-body">
@@ -533,10 +533,18 @@ include __DIR__ . '/includes/header.php';
                 </div>
 
                 <div class="facility-card">
-                    <img src="assets/images/classroom-training.jpg" alt="Smart Classrooms & Defence Library">
+                    <img src="assets/images/classroom-batch-study.jpg" alt="Smart Classrooms & Daily Newspaper Analysis">
                     <div class="facility-card-overlay">
-                        <h4>Smart Digital Classrooms</h4>
-                        <p>Interactive smart boards, air-conditioned lecture halls, and exhaustive defence library with past 20 years papers.</p>
+                        <h4>Smart Classrooms & Newspaper Analysis</h4>
+                        <p>Tiered lecture halls with mandatory daily newspaper reading, current affairs analysis, and UPSC question drills.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="assets/images/smart-class-lecture.jpg" alt="Interactive Smart Display & Cadet Lecturette Dais">
+                    <div class="facility-card-overlay">
+                        <h4>Smart Display & Lecturette Dais</h4>
+                        <p>Digital smart boards and official cadet dais for 3-minute lecturettes, public presentations, and SSB interview conditioning.</p>
                     </div>
                 </div>
             </div>

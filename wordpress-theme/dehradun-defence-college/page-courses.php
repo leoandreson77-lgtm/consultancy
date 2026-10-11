@@ -43,7 +43,7 @@ $theme_uri = get_template_directory_uri();
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail('ddc-course-thumb'); ?>
                             <?php else : ?>
-                                <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-training.jpg'); ?>" alt="<?php the_title_attribute(); ?>">
+                                <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-batch-study.jpg'); ?>" alt="<?php the_title_attribute(); ?>">
                             <?php endif; ?>
                             <span class="course-card-badge">Featured Program</span>
                         </div>
@@ -73,7 +73,7 @@ $theme_uri = get_template_directory_uri();
                 ?>
                     <div class="course-card">
                         <div class="course-card-banner">
-                            <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-training.jpg'); ?>" alt="<?php echo esc_attr($sc['title']); ?>">
+                            <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-batch-study.jpg'); ?>" alt="<?php echo esc_attr($sc['title']); ?>">
                             <span class="course-card-badge"><?php echo esc_html($sc['badge']); ?></span>
                         </div>
                         <div class="course-card-body">

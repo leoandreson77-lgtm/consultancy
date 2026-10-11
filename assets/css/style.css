@@ -1160,7 +1160,7 @@ h6 { font-size: 0.95rem; }
 /* --- 12. CAMPUS & FACILITIES SHOWCASE --- */
 .facilities-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 

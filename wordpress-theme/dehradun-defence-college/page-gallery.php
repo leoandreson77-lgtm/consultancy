@@ -31,10 +31,14 @@ $theme_uri = get_template_directory_uri();
             <div class="gallery-grid">
                 <?php
                 $gallery_items = [
+                    ['src' => $theme_uri . '/assets/images/classroom-batch-study.jpg', 'title' => 'Interactive Classroom Batch — Daily Newspaper Reading & Current Affairs Analysis'],
+                    ['src' => $theme_uri . '/assets/images/smart-class-lecture.jpg', 'title' => 'Smart Interactive Digital Display — Audio-Visual Defence Classes'],
+                    ['src' => $theme_uri . '/assets/images/cadet-lecturette-1.jpg', 'title' => 'Cadet Public Speaking & Individual Lecturette Practice at the Dais'],
+                    ['src' => $theme_uri . '/assets/images/cadet-lecturette-2.jpg', 'title' => 'SSB Officer-Like Quality (OLQ) Presentation & Classroom Discussion'],
                     ['src' => $theme_uri . '/assets/images/hero-cadets.jpg', 'title' => 'Morning Parade Formations'],
                     ['src' => $theme_uri . '/assets/images/campus-hostel.jpg', 'title' => 'Residential Hostels & Campus'],
                     ['src' => $theme_uri . '/assets/images/ssb-gto-ground.jpg', 'title' => 'SSB GTO Obstacle Ground Training'],
-                    ['src' => $theme_uri . '/assets/images/classroom-training.jpg', 'title' => 'Smart Digital Lecture Halls'],
+                    ['src' => $theme_uri . '/assets/images/nda-success-cadets.jpg', 'title' => 'Recommendation Celebrations & Qualified Cadets'],
                     ['src' => $theme_uri . '/assets/images/director-zaheer.jpg', 'title' => 'Mr. Zaheer Ahmed — Director (Owner, Doon Public Sr. Sec. School)'],
                     ['src' => $theme_uri . '/assets/images/director-gaurav.jpg', 'title' => 'Mr. Gaurav Sharma — Director, DDC & Principal, Doon Public School'],
                     ['src' => $theme_uri . '/assets/images/director-mahendra.jpg', 'title' => 'Mr. Mahendra Kukreja — Founder & Director, Dehradun Defence College'],

@@ -115,10 +115,18 @@ $theme_uri = get_template_directory_uri();
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-training.jpg'); ?>" alt="Digital Classrooms">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-batch-study.jpg'); ?>" alt="Digital Classrooms and Newspaper Study">
                     <div class="facility-card-overlay">
-                        <h4>Smart Digital Lecture Halls</h4>
-                        <p>Equipped with smart interactive screens, AC comfort, and extensive defence archives.</p>
+                        <h4>Smart Classrooms & Newspaper Analysis</h4>
+                        <p>Tiered lecture halls with mandatory daily newspaper study, defence GK, and UPSC mock exams.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/smart-class-lecture.jpg'); ?>" alt="Smart Panel and Cadet Dais">
+                    <div class="facility-card-overlay">
+                        <h4>Interactive Smart Panel & Lecturette Dais</h4>
+                        <p>Official cadet dais for individual 3-minute lecturettes, public speaking, and SSB interview conditioning.</p>
                     </div>
                 </div>
             </div>

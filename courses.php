@@ -49,11 +49,11 @@ include __DIR__ . '/includes/header.php';
                         $category = 'ssb';
                     }
 
-                    $img = 'assets/images/classroom-training.jpg';
+                    $img = 'assets/images/classroom-batch-study.jpg';
                     if (strpos($slug, 'ssb') !== false) $img = 'assets/images/ssb-gto-ground.jpg';
                     if (strpos($slug, 'girls') !== false) $img = 'assets/images/nda-success-cadets.jpg';
                     if (strpos($slug, 'target') !== false) $img = 'assets/images/hero-cadets.jpg';
-                    if (strpos($slug, 'afcat') !== false) $img = 'assets/images/campus-hostel.jpg';
+                    if (strpos($slug, 'afcat') !== false) $img = 'assets/images/smart-class-lecture.jpg';
                 ?>
                 <div class="course-card" data-category="<?php echo $category; ?>">
                     <div class="course-card-banner">

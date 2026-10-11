@@ -176,34 +176,65 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
                 <div>
-                    <img src="assets/images/classroom-training.jpg" alt="Smart Classrooms and Library" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
+                    <img src="assets/images/classroom-batch-study.jpg" alt="Cadet Classroom Batch Study & Newspaper Analysis" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
                 </div>
                 <div>
                     <span class="badge-saffron">Academic Mastery</span>
-                    <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">3. Smart Digital Classrooms & Defence Library</h3>
+                    <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">3. Tiered Smart Classrooms & Daily Newspaper Analysis</h3>
                     <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
-                        Equipped with high-definition digital smart boards, projector setups, and extensive archives of past 20 years UPSC examination question papers and military strategy literature.
+                        Rigorous academic training conducted in tiered, air-cooled lecture halls. Cadets study national defence strategy, current affairs via mandatory daily newspapers, and solve previous 20-year UPSC exam papers under senior faculty mentorship.
                     </p>
                     <ul class="feature-check-list" style="margin: 1rem 0;">
                         <li class="feature-check-item">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                            <span>Acoustically Treated Lecture Halls</span>
+                            <span>Daily Morning National Newspaper & Editorial Reading</span>
                         </li>
                         <li class="feature-check-item">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                            <span>Online CBT Exam Simulator Lab</span>
+                            <span>Tiered Seating for Clear Visibility & Ergonomic Study</span>
                         </li>
                         <li class="feature-check-item">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                            <span>Silent Reading Rooms & Daily Newspapers</span>
+                            <span>Online CBT Exam Simulator & Weekly Test Series</span>
                         </li>
                         <li class="feature-check-item">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                            <span>Weekly Physics & Science Practicals</span>
+                            <span>One-on-One Faculty Doubt Removal Desks</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <span class="badge-gold">Personality & OLQ Development</span>
+                    <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">4. Interactive Smart Panel & Cadet Lecturette Dais</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
+                        Equipped with high-definition digital smart boards and an official Dehradun Defence College lecture podium. Cadets stand on dais to give 3-minute lecturettes, present defence topics, and eliminate stage fear before their actual SSB interviews.
+                    </p>
+                    <ul class="feature-check-list" style="margin: 1rem 0;">
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Interactive Smart Panels for Multi-Media Battle Analyses</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Cadet Dais & Podium for Individual Public Speaking</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Audio-Visual Motivation & Armed Forces Documentary Screenings</span>
+                        </li>
+                        <li class="feature-check-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Recorded Mock Presentations for Self-Critique & Improvement</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/images/smart-class-lecture.jpg" alt="Interactive Smart Panel and Cadet Lecturette at Dais" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
                 </div>
             </div>
         </div>

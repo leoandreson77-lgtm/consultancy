@@ -77,7 +77,14 @@ consultancy/
 │   │   └── main.js                   # Navigation, filter, lightbox, and AJAX handler
 │   └── images/
 │       ├── hero-cadets.jpg           # Cadets morning parade at Dehradun campus
+│       ├── director-zaheer.jpg       # Director Mr. Zaheer Ahmed (Owner, Doon Public School)
+│       ├── director-gaurav.jpg       # Director & Principal Mr. Gaurav Sharma
 │       ├── director-mahendra.jpg     # Founder & Director Mr. Mahendra Kukreja
+│       ├── director-neha.jpg         # Director Ms. Neha Kukreja (Enrollment Specialist)
+│       ├── classroom-batch-study.jpg # Cadets in tiered smart classroom reading newspapers
+│       ├── smart-class-lecture.jpg   # Smart digital screen with interactive lecture
+│       ├── cadet-lecturette-1.jpg    # Cadet delivering public lecturette at the dais
+│       ├── cadet-lecturette-2.jpg    # Sikh cadet delivering presentation at the dais
 │       ├── ssb-gto-ground.jpg        # Authentic outdoor GTO obstacle grounds
 │       ├── campus-hostel.jpg         # 10-acre campus & residential hostel buildings
 │       ├── classroom-training.jpg    # Smart digital lecture hall & mentors

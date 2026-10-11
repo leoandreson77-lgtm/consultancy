@@ -12,13 +12,33 @@ include __DIR__ . '/includes/header.php';
 
 $gallery_images = [
     [
+        'src'      => 'assets/images/classroom-batch-study.jpg',
+        'title'    => 'Interactive Classroom Batch — Daily Newspaper Reading & Current Affairs Analysis',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/smart-class-lecture.jpg',
+        'title'    => 'Smart Interactive Digital Display — Audio-Visual Defence Concept Classes',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/cadet-lecturette-1.jpg',
+        'title'    => 'Cadet Public Speaking & Individual Lecturette Practice at the Dais',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/cadet-lecturette-2.jpg',
+        'title'    => 'SSB Officer-Like Quality (OLQ) Presentation & Classroom Discussion',
+        'category' => 'classroom'
+    ],
+    [
         'src'      => 'assets/images/hero-cadets.jpg',
-        'title'    => 'Morning Parade & Roll Call',
+        'title'    => 'Morning Parade & Roll Call Formation',
         'category' => 'parade'
     ],
     [
         'src'      => 'assets/images/campus-hostel.jpg',
-        'title'    => '10-Acre Campus & Residential Hostels',
+        'title'    => '10-Acre Campus & Residential Hostels in Maldevta Valley',
         'category' => 'campus'
     ],
     [
@@ -27,13 +47,8 @@ $gallery_images = [
         'category' => 'obstacle'
     ],
     [
-        'src'      => 'assets/images/classroom-training.jpg',
-        'title'    => 'Smart Digital Lecture Halls & Defence Studies',
-        'category' => 'classroom'
-    ],
-    [
         'src'      => 'assets/images/nda-success-cadets.jpg',
-        'title'    => 'Recommendation Letter Celebrations',
+        'title'    => 'Recommendation Letter Celebrations & Qualified Cadets',
         'category' => 'celebrations'
     ],
     [
@@ -57,18 +72,8 @@ $gallery_images = [
         'category' => 'campus'
     ],
     [
-        'src'      => 'assets/images/ssb-gto-ground.jpg',
-        'title'    => 'Burma Bridge & Team Coordination Tasks',
-        'category' => 'obstacle'
-    ],
-    [
-        'src'      => 'assets/images/hero-cadets.jpg',
-        'title'    => 'Drill Formations on the Parade Ground',
-        'category' => 'parade'
-    ],
-    [
         'src'      => 'assets/images/classroom-training.jpg',
-        'title'    => 'Doubt Removal & Mathematics Problem Solving',
+        'title'    => 'UPSC Written Examination Doubt Clearing & Mentoring Session',
         'category' => 'classroom'
     ]
 ];
