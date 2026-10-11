@@ -24,7 +24,7 @@ $office_hours = get_theme_mod('ddc_office_hours', 'Monday - Sunday: 8:00 AM - 6:
                     <div style="margin-top: 1.5rem;">
                         <span class="badge-gold">Leadership</span>
                         <p style="margin-top: 0.4rem; font-weight: 700; color: #FFFFFF; font-size: 0.95rem;">
-                            Mr. Mahendra Kukreja (Founder & Director)
+                            Mr. Zaheer Ahmed & Mr. Gaurav Sharma (Directors) • Ms. Neha Kukreja (Enrollment)
                         </p>
                     </div>
                 </div>

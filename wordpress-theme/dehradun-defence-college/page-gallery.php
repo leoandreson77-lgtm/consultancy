@@ -36,7 +36,7 @@ $theme_uri = get_template_directory_uri();
                     ['src' => $theme_uri . '/assets/images/ssb-gto-ground.jpg', 'title' => 'SSB GTO Obstacle Ground Training'],
                     ['src' => $theme_uri . '/assets/images/classroom-training.jpg', 'title' => 'Smart Digital Lecture Halls'],
                     ['src' => $theme_uri . '/assets/images/nda-success-cadets.jpg', 'title' => 'Recommendation Celebrations'],
-                    ['src' => $theme_uri . '/assets/images/director-mahendra.jpg', 'title' => 'Director Mentorship Desk'],
+                    ['src' => $theme_uri . '/assets/images/director-gaurav.jpg', 'title' => 'Director Gaurav Sharma Mentorship Desk'],
                 ];
                 foreach ($gallery_items as $item):
                 ?>

@@ -37,9 +37,33 @@ define('SITE_TAGLINE', 'Best NDA, CDS, AFCAT & SSB Coaching in Dehradun');
 define('SITE_MOTTO', 'Excellence is the Only Aim');
 define('SITE_URL', ddc_env('SITE_URL', 'http://localhost/consultancy'));
 
-// Director & Leadership
-define('DIRECTOR_NAME', 'Mr. Mahendra Kukreja');
-define('DIRECTOR_ROLE', 'Founder & Director');
+// Director & Leadership Team
+define('DIRECTOR_NAME', 'Mr. Zaheer Ahmed & Mr. Gaurav Sharma');
+define('DIRECTOR_ROLE', 'Board of Directors');
+
+$DDC_LEADERSHIP = [
+    'zaheer_ahmed' => [
+        'name'  => 'Mr. Zaheer Ahmed',
+        'role'  => 'Director & Patron',
+        'badge' => 'Owner — Doon Public Senior Secondary School',
+        'image' => 'assets/images/director-zaheer.jpg',
+        'bio'   => 'Visionary educational founder and owner of Doon Public Senior Secondary School, establishing the foundation of academic discipline and holistic cadet development in Dehradun.'
+    ],
+    'gaurav_sharma' => [
+        'name'  => 'Mr. Gaurav Sharma',
+        'role'  => 'Director',
+        'badge' => 'Dehradun Defence College',
+        'image' => 'assets/images/director-gaurav.jpg',
+        'bio'   => 'Leading strategic training, UPSC syllabus mentorship, and SSB officer grooming to prepare young aspirants for commissions in the Indian Armed Forces.'
+    ],
+    'neha_kukreja' => [
+        'name'  => 'Ms. Neha Kukreja',
+        'role'  => 'Director & Enrollment Specialist',
+        'badge' => 'College Enrollment Specialist',
+        'image' => 'assets/images/director-neha.jpg',
+        'bio'   => 'Guiding parents and defence aspirants through personalized batch counseling, qualification analysis, and seamless enrollment into residential programs.'
+    ]
+];
 
 // -------------------------------------------------------------
 // Contact Details (Centralized & Verified from Reference)

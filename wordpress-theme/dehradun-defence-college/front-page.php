@@ -174,7 +174,7 @@ $theme_uri = get_template_directory_uri();
 
                 <div class="director-quote-box">
                     <p>“One who is an officer is an officer, and will remain one for the rest of one’s life. Our mission extends beyond exams; we instill the integrity, discipline, and officer-like qualities essential for the Indian Armed Forces.”</p>
-                    <div class="author">— Mr. Mahendra Kukreja, Founder & Director</div>
+                    <div class="author">— Mr. Gaurav Sharma, Founder & Director</div>
                 </div>
 
                 <div style="margin-top: 2rem;">

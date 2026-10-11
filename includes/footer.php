@@ -29,9 +29,10 @@ require_once __DIR__ . '/../config.php';
                     </p>
 
                     <div style="margin-top: 1.5rem;">
-                        <span class="badge-gold">Founder & Director</span>
-                        <p style="margin-top: 0.4rem; font-weight: 700; color: #FFFFFF; font-size: 0.95rem;">
-                            <?php echo DIRECTOR_NAME; ?>
+                        <span class="badge-gold">Board of Directors</span>
+                        <p style="margin-top: 0.4rem; font-weight: 700; color: #FFFFFF; font-size: 0.9rem; line-height: 1.5;">
+                            Mr. Zaheer Ahmed & Mr. Gaurav Sharma (Directors)<br>
+                            <span style="font-weight: 400; color: rgba(255,255,255,0.75); font-size: 0.825rem;">Ms. Neha Kukreja (College Enrollment Specialist)</span>
                         </p>
                     </div>
                 </div>

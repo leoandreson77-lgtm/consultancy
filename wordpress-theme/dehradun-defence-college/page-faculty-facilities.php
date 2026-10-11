@@ -30,12 +30,36 @@ $theme_uri = get_template_directory_uri();
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.25rem;" class="facilities-grid">
+                <!-- Director 1: Zaheer Ahmed -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/director-mahendra.jpg'); ?>" alt="Mr. Mahendra Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
-                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Mahendra Kukreja</h3>
-                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Founder & Director</p>
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/director-zaheer.jpg'); ?>" alt="Mr. Zaheer Ahmed" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
+                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Zaheer Ahmed</h3>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director & Patron</p>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Owner — Doon Public Sr. Sec. School</span>
                     <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
-                        Visionary educational leader dedicated to transforming young aspirants into disciplined, high-character defence officers through the Gurukul pedagogy.
+                        Visionary educational founder dedicated to character-driven academic schooling and holistic youth empowerment in Dehradun.
+                    </p>
+                </div>
+
+                <!-- Director 2: Gaurav Sharma -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/director-gaurav.jpg'); ?>" alt="Mr. Gaurav Sharma" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
+                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Gaurav Sharma</h3>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Dehradun Defence College</span>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+                        Spearheading strategic NDA examination preparation, UPSC academic mastery, and Officer-Like Qualities (OLQ) development.
+                    </p>
+                </div>
+
+                <!-- Director 3: Neha Kukreja -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/director-neha.jpg'); ?>" alt="Ms. Neha Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
+                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Ms. Neha Kukreja</h3>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">College Enrollment Specialist</span>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+                        Directing candidate academic admissions, counseling roadmaps, batch enrollments, and student-parent onboarding.
                     </p>
                 </div>
 

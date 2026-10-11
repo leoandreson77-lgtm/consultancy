@@ -125,7 +125,7 @@ consultancy/
 
 ## 📞 Verified Business Identity & Contact Details
 - **Academy Name**: Dehradun Defence College
-- **Founder & Director**: Mr. Mahendra Kukreja
+- **Founder & Director**: Mr. Gaurav Sharma
 - **Primary Phone**: +91 9719104024
 - **Secondary Phone**: +91 8650666609 / +91 7895510755
 - **Official Email**: `dehradundefencecollege@gmail.com`

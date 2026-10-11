@@ -5,7 +5,7 @@
 require_once __DIR__ . '/config.php';
 
 $page_title = 'About Us | Dehradun Defence College - Premier Defence Academy';
-$page_desc = 'Learn about Dehradun Defence College, our visionary Founder & Director Mr. Mahendra Kukreja, our Gurukul training philosophy, and our mission to groom India’s finest armed forces officers.';
+$page_desc = 'Learn about Dehradun Defence College, our visionary Founder & Director Mr. Gaurav Sharma, our Gurukul training philosophy, and our mission to groom India’s finest armed forces officers.';
 $current_page = 'about';
 
 include __DIR__ . '/includes/header.php';
@@ -22,40 +22,74 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <!-- Director's Message Section -->
-    <section class="section-padding bg-slate">
-        <div class="container about-grid">
-            <div>
-                <img src="assets/images/director-mahendra.jpg" alt="Mr. Mahendra Kukreja, Founder & Director" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%; border: 4px solid #FFFFFF;">
-                <div style="margin-top: 1.25rem; text-align: center;">
-                    <h3 style="font-size: 1.35rem; color: var(--primary-navy);"><?php echo DIRECTOR_NAME; ?></h3>
-                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.9rem; text-transform: uppercase;"><?php echo DIRECTOR_ROLE; ?></p>
-                </div>
+    <!-- Board of Directors Section -->
+    <section class="section-padding bg-slate" id="leadership">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-gold">Visionary Guidance</span>
+                <h2>Board of Directors & Institutional Leadership</h2>
+                <div class="gold-divider"></div>
+                <p>Guided by visionary educational leadership with deep roots in holistic student development and disciplined defence training in Dehradun.</p>
             </div>
 
-            <div>
-                <span class="badge-navy">Leadership Message</span>
-                <h2 style="margin: 0.75rem 0 1.25rem 0;">"Dear Aspirants, Let’s Turn Your Dreams Into Uniform Reality"</h2>
-                
-                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
-                    Welcome to <strong>Dehradun Defence College</strong>, your dedicated partner in answering the noble call of serving our great nation. As a premier institution for NDA, CDS, AFCAT, and SSB preparation, our mission extends far beyond simply clearing entrance examinations.
-                </p>
+            <!-- 3 Directors Grid -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;" class="facilities-grid">
+                <?php foreach ($DDC_LEADERSHIP as $leader): ?>
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); display: flex; flex-direction: column; transition: transform var(--transition-normal), box-shadow var(--transition-normal);" class="leader-card">
+                    <div style="height: 340px; overflow: hidden; background: #0B1B3D; position: relative;">
+                        <img src="<?php echo $leader['image']; ?>" alt="<?php echo htmlspecialchars($leader['name']); ?>" style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+                    </div>
+                    <div style="padding: 1.75rem 1.5rem; flex-grow: 1; display: flex; flex-direction: column; text-align: center;">
+                        <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.25rem;"><?php echo htmlspecialchars($leader['name']); ?></h3>
+                        <div style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem;"><?php echo htmlspecialchars($leader['role']); ?></div>
+                        <span class="badge-navy" style="font-size: 0.75rem; margin: 0 auto 1rem auto; display: inline-block; padding: 0.25rem 0.65rem;"><?php echo htmlspecialchars($leader['badge']); ?></span>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                            <?php echo htmlspecialchars($leader['bio']); ?>
+                        </p>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
 
-                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
-                    We believe in shaping individuals into officers. That means instilling the unwavering integrity, self-discipline, mental resilience, and officer-like qualities (OLQs) that define leaders in the Indian Armed Forces. Whether you join us right after class 10th for our 2-Year NDA Foundation program or as a graduate preparing for CDS, you will experience an environment designed solely for your growth.
-                </p>
+            <!-- Joint Leadership Message Box -->
+            <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); padding: 3rem 2.5rem;">
+                <div class="about-grid" style="align-items: center;">
+                    <div>
+                        <span class="badge-saffron">Our Pledge to Aspirants</span>
+                        <h2 style="margin: 0.75rem 0 1.25rem 0; font-size: 1.85rem;">"Where Excellence Meets Discipline: Turning Aspirations into Uniform Reality"</h2>
+                        
+                        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">
+                            Under the joint patronage of <strong>Doon Public Senior Secondary School</strong> and <strong>Dehradun Defence College</strong>, we have built an ecosystem that eliminates the compromise between school board results and military commission goals.
+                        </p>
 
-                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.75rem;">
-                    Success demands tireless perseverance and deep self-belief. With our experienced retired defence assessors, rigorous academic modules, and authentic GTO training grounds, we stand beside you at every step of this sacred journey.
-                </p>
+                        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
+                            We believe in shaping individuals into officers. That means instilling the unwavering integrity, self-discipline, mental resilience, and officer-like qualities (OLQs) that define leaders in the Indian Armed Forces. Whether entering after Class 10th or preparing for graduate CDS/AFCAT entries, cadets receive round-the-clock mentorship from ex-defence assessors, certified psychologists, and senior educational mentors.
+                        </p>
 
-                <div style="display: flex; gap: 1rem; align-items: center;">
-                    <button type="button" class="btn btn-gold open-enquiry-modal" data-course="Director Counseling">
-                        <span>Meet With Director</span>
-                    </button>
-                    <a href="tel:<?php echo CONTACT_PHONE_1_RAW; ?>" class="btn btn-outline-navy">
-                        <span>Call Campus Desk</span>
-                    </a>
+                        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                            <button type="button" class="btn btn-gold open-enquiry-modal" data-course="Director Counseling">
+                                <span>Schedule Director Counseling</span>
+                            </button>
+                            <a href="tel:<?php echo CONTACT_PHONE_1_RAW; ?>" class="btn btn-outline-navy">
+                                <span>Call Admissions Desk</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; background: var(--bg-slate); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+                        <div class="brand-crest" style="margin: 0 auto 1rem auto; width: 64px; height: 64px; border-radius: 50%; background: var(--primary-navy); display: flex; align-items: center; justify-content: center;">
+                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2">
+                                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
+                            </svg>
+                        </div>
+                        <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; font-size: 1.15rem;">Institutional Synergy</h4>
+                        <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            Integrated Academic Schooling via <strong>Doon Public Senior Secondary School</strong> & Defence Academy Training at <strong>Dehradun Defence College</strong>.
+                        </p>
+                        <div style="border-top: 1px solid var(--border-light); padding-top: 1rem; font-size: 0.85rem; color: var(--primary-navy); font-weight: 700;">
+                            Maldevta Valley Campus • Dehradun
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

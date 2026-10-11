@@ -88,11 +88,11 @@ include __DIR__ . '/includes/header.php';
 
                 <!-- Author Bio Box -->
                 <div style="border-top: 2px solid var(--border-light); margin-top: 3rem; padding-top: 2rem; display: flex; gap: 1.5rem; align-items: center;">
-                    <img src="assets/images/director-mahendra.jpg" alt="Mahendra Kukreja" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-gold);">
+                    <img src="assets/images/director-gaurav.jpg" alt="Mr. Gaurav Sharma" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-gold);">
                     <div>
                         <h4 style="color: var(--primary-navy); margin-bottom: 0.2rem;">Authored by the Mentorship Board</h4>
                         <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">
-                            Led by Mr. Mahendra Kukreja and retired military assessors at Dehradun Defence College.
+                            Led by <?php echo DIRECTOR_NAME; ?> and retired military assessors at Dehradun Defence College.
                         </p>
                     </div>
                 </div>

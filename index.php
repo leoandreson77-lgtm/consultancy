@@ -167,7 +167,7 @@ include __DIR__ . '/includes/header.php';
                 <h2 style="margin: 0.75rem 0 1rem 0;">A Next-Generation Gurukul for India’s Future Officers</h2>
                 
                 <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.25rem;">
-                    Welcome to <strong>Dehradun Defence College</strong>, recognized as the premier NDA coaching academy in Dehradun. Located in the serene, unpolluted foothills of Maldevta Valley, our institution bridges the gap between traditional schooling and modern military officer development.
+                    Welcome to <strong>Dehradun Defence College</strong>, operating in synergy with <strong>Doon Public Senior Secondary School</strong> (under the patronage of Director Mr. Zaheer Ahmed) and guided by Director Mr. Gaurav Sharma and College Enrollment Director Ms. Neha Kukreja. Located in the serene foothills of Maldevta Valley, our institution bridges the gap between top board schooling and elite defence officer development.
                 </p>
 
                 <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
