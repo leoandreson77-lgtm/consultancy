@@ -20,6 +20,11 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
     
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
     <!-- Open Graph Metadata -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
@@ -45,7 +50,7 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
       "name": "<?php echo SITE_NAME; ?>",
       "alternateName": "DDC Dehradun",
       "url": "<?php echo SITE_URL; ?>",
-      "logo": "<?php echo SITE_URL; ?>/assets/images/hero-cadets.jpg",
+      "logo": "<?php echo SITE_URL; ?>/assets/images/logo.png",
       "description": "Premier defence coaching academy in Dehradun providing NDA Foundation, CDS, AFCAT, and SSB interview training with residential hostel campus.",
       "address": {
         "@type": "PostalAddress",
@@ -114,17 +119,11 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
     <header class="site-header" id="masthead">
         <div class="container header-container">
             <!-- Brand Identity -->
-            <a href="index.php" class="brand-logo" title="<?php echo SITE_NAME; ?>">
-                <div class="brand-crest">
-                    <!-- Military Crest Emblem -->
-                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                        <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="rgba(212, 175, 55, 0.15)"/>
-                        <path d="M12 6l2.5 5h5l-4 3.5 1.5 5.5-5-3.5-5 3.5 1.5-5.5-4-3.5h5L12 6z" fill="#D4AF37"/>
-                    </svg>
-                </div>
+            <a href="index.php" class="brand-logo" title="<?php echo SITE_NAME; ?> — <?php echo SITE_MOTTO; ?>">
+                <img src="assets/images/logo.png" alt="Dehradun Defence College Official Emblem" class="brand-logo-img">
                 <div class="brand-text">
                     <span class="brand-title">Dehradun Defence College</span>
-                    <span class="brand-subtitle">Excellence is the Only Aim</span>
+                    <span class="brand-subtitle">Gurukul of Next Generation</span>
                 </div>
             </a>
 

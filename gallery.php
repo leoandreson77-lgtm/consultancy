@@ -12,6 +12,11 @@ include __DIR__ . '/includes/header.php';
 
 $gallery_images = [
     [
+        'src'      => 'assets/images/logo.png',
+        'title'    => 'Official Emblem — Dehradun Defence College (Gurukul of Next Generation)',
+        'category' => 'campus'
+    ],
+    [
         'src'      => 'assets/images/classroom-batch-study.jpg',
         'title'    => 'Interactive Classroom Batch — Daily Newspaper Reading & Current Affairs Analysis',
         'category' => 'classroom'

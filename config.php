@@ -34,7 +34,10 @@ function ddc_env($key, $default = '') {
 // -------------------------------------------------------------
 define('SITE_NAME', 'Dehradun Defence College');
 define('SITE_TAGLINE', 'Best NDA, CDS, AFCAT & SSB Coaching in Dehradun');
-define('SITE_MOTTO', 'Excellence is the Only Aim');
+define('SITE_MOTTO', 'Gurukul of Next Generation');
+define('SITE_SLOGAN', 'Nurturing Humanity and Transmuting Values');
+define('SITE_LOGO', 'assets/images/logo.png');
+define('SITE_FAVICON', 'assets/images/favicon.png');
 define('SITE_URL', ddc_env('SITE_URL', 'http://localhost/consultancy'));
 
 // Director & Leadership Team

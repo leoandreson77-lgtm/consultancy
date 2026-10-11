@@ -12,15 +12,10 @@ require_once __DIR__ . '/../config.php';
                 <!-- Column 1: Brand & Philosophy -->
                 <div class="footer-col">
                     <a href="index.php" class="brand-logo" style="margin-bottom: 1.25rem;">
-                        <div class="brand-crest">
-                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="rgba(212, 175, 55, 0.15)"/>
-                                <path d="M12 6l2.5 5h5l-4 3.5 1.5 5.5-5-3.5-5 3.5 1.5-5.5-4-3.5h5L12 6z" fill="#D4AF37"/>
-                            </svg>
-                        </div>
+                        <img src="assets/images/logo.png" alt="Dehradun Defence College Official Emblem" class="brand-logo-img footer-logo-img">
                         <div class="brand-text">
                             <span class="brand-title" style="color: #FFFFFF;">Dehradun Defence College</span>
-                            <span class="brand-subtitle">Excellence is the Only Aim</span>
+                            <span class="brand-subtitle">Gurukul of Next Generation</span>
                         </div>
                     </a>
                     

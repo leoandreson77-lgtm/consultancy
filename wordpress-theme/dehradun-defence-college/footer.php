@@ -10,6 +10,7 @@ $phone2       = get_theme_mod('ddc_phone_2', '+91 8650666609');
 $email        = get_theme_mod('ddc_email', 'dehradundefencecollege@gmail.com');
 $address      = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Bridge), Lwarkha, Dehradun, Uttarakhand - 248008');
 $office_hours = get_theme_mod('ddc_office_hours', 'Monday - Sunday: 8:00 AM - 6:00 PM');
+$theme_uri    = get_template_directory_uri();
 ?>
 
     <footer class="site-footer">
@@ -17,14 +18,21 @@ $office_hours = get_theme_mod('ddc_office_hours', 'Monday - Sunday: 8:00 AM - 6:
             <div class="container footer-grid">
                 <!-- Col 1: About -->
                 <div class="footer-col">
-                    <h4 style="color:#fff;"><?php bloginfo('name'); ?></h4>
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-logo" style="margin-bottom: 1.25rem;">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/logo.png'); ?>" alt="<?php bloginfo('name'); ?>" class="brand-logo-img footer-logo-img">
+                        <div class="brand-text">
+                            <span class="brand-title" style="color: #FFFFFF;"><?php bloginfo('name'); ?></span>
+                            <span class="brand-subtitle">Gurukul of Next Generation</span>
+                        </div>
+                    </a>
                     <p class="footer-desc">
                         A modern Next-Generation Gurukul dedicated to preparing future officers for the Indian Armed Forces. Located in scenic Maldevta Valley, Dehradun, blending academic UPSC excellence with full-fledged GTO obstacle training and residential hostel facilities.
                     </p>
                     <div style="margin-top: 1.5rem;">
-                        <span class="badge-gold">Leadership</span>
-                        <p style="margin-top: 0.4rem; font-weight: 700; color: #FFFFFF; font-size: 0.95rem;">
-                            Mr. Zaheer Ahmed & Mr. Gaurav Sharma (Directors) • Ms. Neha Kukreja (Enrollment)
+                        <span class="badge-gold">Board of Directors</span>
+                        <p style="margin-top: 0.4rem; font-weight: 700; color: #FFFFFF; font-size: 0.9rem; line-height: 1.5;">
+                            Mr. Zaheer Ahmed, Mr. Gaurav Sharma & Mr. Mahendra Kukreja (Directors)<br>
+                            <span style="font-weight: 400; color: rgba(255,255,255,0.75); font-size: 0.825rem;">Ms. Neha Kukreja (Director & College Enrollment Specialist)</span>
                         </p>
                     </div>
                 </div>

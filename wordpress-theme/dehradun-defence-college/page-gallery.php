@@ -31,6 +31,7 @@ $theme_uri = get_template_directory_uri();
             <div class="gallery-grid">
                 <?php
                 $gallery_items = [
+                    ['src' => $theme_uri . '/assets/images/logo.png', 'title' => 'Official Emblem — Dehradun Defence College (Gurukul of Next Generation)'],
                     ['src' => $theme_uri . '/assets/images/classroom-batch-study.jpg', 'title' => 'Interactive Classroom Batch — Daily Newspaper Reading & Current Affairs Analysis'],
                     ['src' => $theme_uri . '/assets/images/smart-class-lecture.jpg', 'title' => 'Smart Interactive Digital Display — Audio-Visual Defence Classes'],
                     ['src' => $theme_uri . '/assets/images/cadet-lecturette-1.jpg', 'title' => 'Cadet Public Speaking & Individual Lecturette Practice at the Dais'],
