@@ -148,6 +148,14 @@ h6 { font-size: 0.95rem; }
 .bg-navy-dark { background-color: var(--primary-navy-dark); color: #FFFFFF; }
 .bg-light-blue { background-color: var(--bg-light-blue); }
 
+.section-padding-sm.bg-navy {
+  position: relative;
+  background: linear-gradient(135deg, rgba(8, 20, 48, 0.88) 0%, rgba(13, 34, 75, 0.84) 100%),
+              url('../images/campus-building-main.jpg') center 30% / cover no-repeat !important;
+  color: #FFFFFF;
+  border-bottom: 3px solid var(--accent-gold);
+}
+
 /* --- 3. BADGES, HEADINGS & DECORATIVE ACCENTS --- */
 .badge-gold {
   display: inline-flex;
@@ -2511,13 +2519,25 @@ h6 { font-size: 0.95rem; }
    ============================================================ */
 .hero-split-section {
   position: relative;
-  background: radial-gradient(ellipse at top, #0d2850 0%, #06152d 100%);
+  background: linear-gradient(135deg, rgba(8, 20, 48, 0.78) 0%, rgba(13, 34, 75, 0.74) 100%),
+              url('../images/campus-building-main.jpg') center 22% / cover no-repeat;
   padding: 2.25rem 0 3.5rem 0;
   overflow: hidden;
   border-bottom: 3px solid var(--accent-gold);
 }
 
+.hero-split-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 15% 25%, rgba(212, 175, 55, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-split-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1.35fr 0.95fr;
   gap: 2.25rem;
@@ -2529,8 +2549,8 @@ h6 { font-size: 0.95rem; }
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 2px solid rgba(212, 175, 55, 0.45);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  border: 2px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.55), 0 0 20px rgba(212, 175, 55, 0.2);
   background: #0B1B3D;
   display: flex;
   flex-direction: column;
@@ -2538,7 +2558,7 @@ h6 { font-size: 0.95rem; }
 
 .hero-slider {
   position: relative;
-  min-height: 570px;
+  min-height: 590px;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -2564,36 +2584,189 @@ h6 { font-size: 0.95rem; }
   z-index: 2;
 }
 
+/* Balanced Slide Overlay: Dark on left for readability, crystal clear on right for campus & student visibility */
 .hero-slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(6, 21, 45, 0.94) 0%, rgba(11, 37, 69, 0.88) 60%, rgba(6, 21, 45, 0.75) 100%);
+  background: linear-gradient(90deg, rgba(6, 21, 45, 0.88) 0%, rgba(6, 21, 45, 0.68) 50%, rgba(6, 21, 45, 0.30) 100%);
   z-index: 1;
+}
+
+.hero-selection-overlay {
+  background: linear-gradient(90deg, rgba(6, 21, 45, 0.92) 0%, rgba(6, 21, 45, 0.74) 54%, rgba(6, 21, 45, 0.24) 100%);
 }
 
 .hero-slide-content {
   position: relative;
   z-index: 3;
-  padding: 3rem 2.25rem 3.75rem 2.25rem;
+  padding: 2.75rem 2.25rem 3.5rem 2.25rem;
   color: #FFFFFF;
   width: 100%;
+}
+
+.hero-badge-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge-campus-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(0, 40, 90, 0.75);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  color: #FFD700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .hero-slide-content h1,
 .hero-slide-content h2 {
   font-size: clamp(1.65rem, 3.2vw, 2.75rem);
   line-height: 1.22;
-  margin: 0.75rem 0 1rem 0;
+  margin: 0.65rem 0 0.85rem 0;
   color: #FFFFFF;
   font-family: var(--font-heading);
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.65);
 }
 
 .hero-slide-subtext {
   font-size: clamp(0.9rem, 1.3vw, 1.05rem);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   line-height: 1.65;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   max-width: 620px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+/* Cadet Selection Spotlight Inside Carousel */
+.hero-cadets-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  margin: 0.85rem 0 1.15rem 0;
+  max-width: 580px;
+}
+
+.hero-cadet-mini-card {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(11, 27, 61, 0.84);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.hero-cadet-mini-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-gold);
+  background: rgba(15, 38, 85, 0.95);
+}
+
+.hero-cadet-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border: 1.5px solid var(--accent-gold);
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-cadet-meta {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hero-cadet-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-cadet-rank {
+  font-size: 0.72rem;
+  color: var(--accent-gold);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Merit Poster Clickable Preview Pill */
+.hero-poster-preview-pill {
+  margin-bottom: 1.25rem;
+  max-width: 580px;
+}
+
+.hero-poster-pill-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.22) 0%, rgba(11, 27, 61, 0.88) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid var(--accent-gold);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.85rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+.hero-poster-pill-btn:hover {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.35) 0%, rgba(15, 38, 85, 0.95) 100%);
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+}
+
+.hero-poster-pill-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1.5px solid var(--accent-gold);
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-poster-pill-btn span {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hero-poster-pill-btn strong {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+}
+
+.hero-poster-pill-btn small {
+  font-size: 0.72rem;
+  color: var(--accent-gold);
+  font-weight: 600;
 }
 
 /* Persistent Side Enquire Form Card on Right */
@@ -2604,7 +2777,7 @@ h6 { font-size: 0.95rem; }
 }
 
 .eye-catchy-form-card {
-  background: rgba(11, 37, 69, 0.95);
+  background: rgba(11, 37, 69, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 2px solid var(--accent-gold);
@@ -3016,7 +3189,8 @@ h6 { font-size: 0.95rem; }
    25. SEPARATE IN-HOUSE HOSTEL SHOWCASE (USP)
    ============================================================ */
 .hostel-banner-box {
-  background: linear-gradient(135deg, var(--primary-navy) 0%, #061930 100%);
+  background: linear-gradient(135deg, rgba(11, 27, 61, 0.88) 0%, rgba(6, 25, 48, 0.84) 100%),
+              url('../images/campus-hostel.jpg') center center / cover no-repeat;
   color: #FFFFFF;
   border-radius: var(--radius-lg);
   border: 2px solid var(--accent-gold);
@@ -3236,7 +3410,22 @@ h6 { font-size: 0.95rem; }
   }
 
   .hero-slider {
-    min-height: 480px;
+    min-height: 520px;
+  }
+
+  .hero-slide-overlay,
+  .hero-selection-overlay {
+    background: linear-gradient(180deg, rgba(6, 21, 45, 0.90) 0%, rgba(6, 21, 45, 0.74) 52%, rgba(6, 21, 45, 0.88) 100%) !important;
+  }
+
+  .hero-cadets-strip {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1rem 0;
+  }
+
+  .hero-cadet-mini-card {
+    padding: 0.4rem 0.65rem;
   }
 
   .hero-slide-content {
