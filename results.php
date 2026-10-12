@@ -59,7 +59,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Spotlight Achiever Hero -->
-            <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--border-light); margin-bottom: 3.5rem; display: grid; grid-template-columns: 1.1fr 1fr; align-items: center;">
+            <div class="results-poster-grid" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--border-light); margin-bottom: 3.5rem;">
                 <div>
                     <img src="assets/images/nda-success-cadets.jpg" alt="NDA and CDS Recommended Cadets Celebrating" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>

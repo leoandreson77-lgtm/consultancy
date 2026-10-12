@@ -358,7 +358,7 @@ $theme_uri = get_template_directory_uri();
                 </p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem; align-items: center; margin-bottom: 3.5rem;">
+            <div class="selection-feature-grid">
                 <div class="selection-poster-frame">
                     <img src="<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>" alt="Official Merit Poster - Our Latest Selection of 2025-2026" class="selection-poster-img" loading="lazy">
                     <div style="background: rgba(11,37,69,0.95); padding: 0.85rem 1.25rem; display: flex; justify-content: space-between; align-items: center;">
@@ -376,7 +376,7 @@ $theme_uri = get_template_directory_uri();
                         Clearing UPSC and earning a recommendation from the Services Selection Board (SSB) requires mental toughness, unshakeable character, and relentless physical conditioning. We celebrate our cadets of the 2025-2026 batch.
                     </p>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="form-row-2col" style="margin-bottom: 1.5rem;">
                         <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm);">
                             <span class="cadet-card-badge cadet-badge-iaf">Air Force Commission</span>
                             <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin: 0.35rem 0 0.2rem 0;">Aadarsh Mishra</h4>

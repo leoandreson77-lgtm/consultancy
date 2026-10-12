@@ -44,7 +44,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- UPPER SIDE: Dr. Neha Kukreja (Managing Director) -->
-            <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); padding: 3rem 2.5rem; margin-bottom: 3.5rem;">
+            <div class="director-profile-box" style="border: 2px solid var(--accent-gold);">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
                         <div style="position: relative; display: inline-block;">
@@ -87,7 +87,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- LOWER SIDE: Mahendra Kukreja (Executive Director) -->
-            <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--border-light); box-shadow: var(--shadow-lg); padding: 3rem 2.5rem; margin-bottom: 3.5rem;">
+            <div class="director-profile-box" style="border: 2px solid var(--border-light);">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
                         <div style="position: relative; display: inline-block;">

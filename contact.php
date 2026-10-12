@@ -24,7 +24,7 @@ include __DIR__ . '/includes/header.php';
 
     <!-- Main Contact & Enquiry Section -->
     <section class="section-padding bg-slate">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1.35fr; gap: 3.5rem; align-items: start;">
+        <div class="container contact-layout-grid">
             <!-- Left Contact Info Cards -->
             <div class="contact-info-panel">
                 <span class="badge-navy">Admissions Office</span>
@@ -111,7 +111,7 @@ include __DIR__ . '/includes/header.php';
                         <div class="form-error-feedback"></div>
                     </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                    <div class="form-row-2col">
                         <div class="form-group">
                             <label class="form-label" for="contact_mobile">Mobile Number (WhatsApp Preferred) *</label>
                             <input type="tel" id="contact_mobile" name="mobile_number" class="form-control" placeholder="10-digit Mobile" required>
@@ -125,7 +125,7 @@ include __DIR__ . '/includes/header.php';
                         </div>
                     </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                    <div class="form-row-2col">
                         <div class="form-group">
                             <label class="form-label" for="contact_course">Course of Interest *</label>
                             <select id="contact_course" name="course_interest" class="form-control" required>

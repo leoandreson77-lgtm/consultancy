@@ -1869,16 +1869,88 @@ h6 { font-size: 0.95rem; }
   left: 0;
   right: 0;
   z-index: 995;
-  background-color: #FFFFFF;
-  border-top: 1px solid var(--border-light);
-  box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
-  padding: 0.65rem 1rem;
+  background-color: #0B2545;
+  border-top: 1.5px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 -4px 18px rgba(0,0,0,0.3);
+  padding: 0.45rem 0.65rem;
+  height: 58px;
+  box-sizing: border-box;
 }
 
 .mobile-sticky-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-btn-call {
+  flex: 1;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.mobile-btn-call:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.mobile-btn-whatsapp {
+  flex: 1.15;
+  height: 40px;
+  background: #25D366;
+  color: #FFFFFF !important;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.35);
+  white-space: nowrap;
+}
+
+.mobile-btn-whatsapp:hover {
+  background: #20bd5a;
+}
+
+.mobile-btn-enquire {
+  flex: 1.25;
+  height: 40px;
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+  color: #06152D !important;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.mobile-btn-enquire:hover {
+  background: linear-gradient(135deg, #e5bf43 0%, #c9930f 100%);
 }
 
 /* Modal Popup Window */
@@ -2343,32 +2415,27 @@ h6 { font-size: 0.95rem; }
     display: none !important;
   }
 
-  /* WhatsApp button neatly placed above bottom sticky bar */
+  /* On mobile: Hide redundant circular WhatsApp icon because WhatsApp button is directly in the mobile sticky bar */
   .floating-whatsapp {
-    bottom: 74px;
-    right: 14px;
-    width: 48px;
-    height: 48px;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.45);
+    display: none !important;
   }
 
-  .floating-whatsapp svg {
-    width: 26px;
-    height: 26px;
+  /* Scroll to top button cleanly positioned above the sticky bar */
+  .scroll-to-top {
+    bottom: 68px !important;
+    right: 12px !important;
+    width: 38px !important;
+    height: 38px !important;
+    z-index: 994 !important;
   }
 
   .mobile-sticky-bar {
-    display: block;
-    padding: 0.55rem 0.75rem;
-  }
-
-  .mobile-sticky-bar .btn {
-    padding: 0.65rem 0.5rem;
-    font-size: 0.825rem;
+    display: flex !important;
+    align-items: center;
   }
 
   body {
-    padding-bottom: 68px; /* Offset for sticky mobile bottom bar */
+    padding-bottom: 66px; /* Offset for sticky mobile bottom bar */
   }
 }
 
@@ -3209,17 +3276,22 @@ h6 { font-size: 0.95rem; }
   .slider-btn-prev { left: 0.5rem; }
   .slider-btn-next { right: 0.5rem; }
 
-  /* Live Enroll Popup placement on mobile */
+  /* Live Enroll Popup placement on mobile: strictly above 58px sticky bar with zero overlap */
   .live-enroll-popup {
-    bottom: 74px;
-    left: 10px;
-    right: 10px;
-    max-width: calc(100vw - 20px);
+    bottom: 66px !important;
+    left: 8px !important;
+    right: 8px !important;
+    max-width: calc(100vw - 16px) !important;
+    z-index: 996 !important;
   }
 
   .live-enroll-card {
-    max-width: 100%;
-    padding: 0.75rem 1rem;
+    max-width: 100% !important;
+    padding: 0.65rem 0.85rem !important;
+    background: rgba(11, 37, 69, 0.98) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1.5px solid var(--accent-gold) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
   }
 
   /* Wall of Fame Selections on Mobile */
@@ -3332,6 +3404,152 @@ h6 { font-size: 0.95rem; }
   }
 }
 
+/* ============================================================
+   29. UNIVERSAL MULTI-PAGE MOBILE RESPONSIVE ENGINE
+   ============================================================ */
 
+/* Contact Page Grid */
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 3.5rem;
+  align-items: start;
+}
 
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
 
+/* Blog Single Article Grid */
+.blog-detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* Facility Showcase Rows */
+.facility-showcase-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+/* Results Selection Spotlight */
+.results-poster-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
+
+/* Selection Feature Grid */
+.selection-feature-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+/* Director Profile Box */
+.director-profile-box {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 3rem 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Media Overrides for Tablet (<= 992px) */
+@media (max-width: 992px) {
+  .contact-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .blog-detail-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .facility-showcase-row {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .results-poster-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .selection-feature-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .director-profile-box {
+    padding: 2.25rem 1.75rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+/* Media Overrides for Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .contact-layout-grid,
+  .form-row-2col,
+  .blog-detail-layout,
+  .facility-showcase-row,
+  .results-poster-grid,
+  .selection-feature-grid,
+  .director-detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .facility-showcase-row > div:first-child {
+    order: 1 !important;
+  }
+  .facility-showcase-row > div:last-child {
+    order: 2 !important;
+  }
+
+  .director-detail-grid {
+    text-align: center !important;
+  }
+
+  .director-detail-grid img {
+    margin: 0 auto !important;
+  }
+
+  .director-profile-box {
+    padding: 1.5rem 1.15rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* General Form Inputs on Mobile: Prevent auto-zoom and ensure 100% width */
+  .form-control {
+    font-size: 16px !important;
+    width: 100% !important;
+  }
+}
+
+/* Media Overrides for Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .director-profile-box {
+    padding: 1.25rem 0.85rem !important;
+  }
+  
+  .contact-info-panel h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .table-responsive {
+    margin: 0 -0.5rem;
+    border-radius: 0;
+  }
+}

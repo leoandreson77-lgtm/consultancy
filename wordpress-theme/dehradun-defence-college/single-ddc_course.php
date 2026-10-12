@@ -19,7 +19,7 @@ get_header();
     </section>
 
     <div class="section-padding bg-slate">
-        <div class="container" style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: 3.5rem; align-items: start;">
+        <div class="container course-detail-layout">
             <main id="primary" class="site-main" style="background: #FFFFFF; padding: 3rem 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); line-height: 1.85;">
                 <?php
                 while (have_posts()) : the_post();

@@ -24,7 +24,7 @@ $address = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Brid
     </section>
 
     <section class="section-padding bg-slate">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1.35fr; gap: 3.5rem; align-items: start;">
+        <div class="container contact-layout-grid">
             <!-- Left Info Cards -->
             <div>
                 <span class="badge-navy">Admissions Office</span>
@@ -76,7 +76,7 @@ $address = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Brid
                         <div class="form-error-feedback"></div>
                     </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                    <div class="form-row-2col">
                         <div class="form-group">
                             <label class="form-label">Mobile Number *</label>
                             <input type="tel" name="mobile_number" class="form-control" placeholder="10-digit Mobile" required>

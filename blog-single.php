@@ -37,9 +37,9 @@ include __DIR__ . '/includes/header.php';
 
     <!-- Article Content Grid -->
     <section class="section-padding bg-slate">
-        <div class="container" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3.5rem; align-items: start;">
+        <div class="container blog-detail-layout">
             <!-- Article Body -->
-            <article style="background: #FFFFFF; padding: 3rem 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); line-height: 1.85; font-size: 1.05rem; color: var(--text-main);">
+            <article class="article-content-box" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); line-height: 1.85; font-size: 1.05rem; color: var(--text-main);">
                 
                 <img src="assets/images/classroom-training.jpg" alt="NDA Preparation in Class" style="border-radius: var(--radius-md); width: 100%; margin-bottom: 2rem;">
 

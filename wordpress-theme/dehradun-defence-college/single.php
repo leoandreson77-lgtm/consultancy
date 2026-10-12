@@ -20,7 +20,7 @@ get_header();
     </section>
 
     <div class="section-padding bg-slate">
-        <div class="container" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3.5rem; align-items: start;">
+        <div class="container blog-detail-layout">
             <main id="primary" class="site-main" style="background: #FFFFFF; padding: 3rem 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); line-height: 1.85; font-size: 1.05rem;">
                 <?php
                 while (have_posts()) : the_post();

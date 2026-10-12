@@ -31,7 +31,7 @@
                 <div class="form-error-feedback"></div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-row-2col">
                 <div class="form-group">
                     <label class="form-label">Mobile Number *</label>
                     <input type="tel" name="mobile_number" class="form-control" placeholder="10-Digit Mobile" required>
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-row-2col">
                 <div class="form-group">
                     <label class="form-label">Course of Interest *</label>
                     <select name="course_interest" class="form-control" required>

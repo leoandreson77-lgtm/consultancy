@@ -363,7 +363,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- High-Res Official Poster & Officer Spotlight Grid -->
-            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem; align-items: center; margin-bottom: 3.5rem;">
+            <div class="selection-feature-grid">
                 <!-- Left: Framed Poster -->
                 <div class="selection-poster-frame">
                     <img src="assets/images/ddc-selections-2025-2026.jpg" alt="Official Merit Poster - Our Latest Selection of 2025-2026" class="selection-poster-img" loading="lazy">
@@ -384,7 +384,7 @@ include __DIR__ . '/includes/header.php';
                     </p>
 
                     <!-- Top 2 Star Cadets Feature Cards -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="form-row-2col" style="margin-bottom: 1.5rem;">
                         <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm);">
                             <span class="cadet-card-badge cadet-badge-iaf">Air Force Commission</span>
                             <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin: 0.35rem 0 0.2rem 0;">Aadarsh Mishra</h4>

@@ -114,7 +114,7 @@ include __DIR__ . '/includes/header.php';
                 <p>Everything our cadets need to live, study, train, and succeed under one secure umbrella in Dehradun.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div class="facility-showcase-row">
                 <div>
                     <img src="assets/images/campus-hostel.jpg" alt="Hostel and Campus Buildings" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
                 </div>
@@ -145,7 +145,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div class="facility-showcase-row">
                 <div>
                     <span class="badge-gold">Live GTO Ground</span>
                     <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">2. Full-Scale Outdoor Obstacle Course</h3>
@@ -176,7 +176,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div class="facility-showcase-row">
                 <div>
                     <img src="assets/images/classroom-batch-study.jpg" alt="Cadet Classroom Batch Study & Newspaper Analysis" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
                 </div>
@@ -207,7 +207,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div class="facility-showcase-row">
                 <div>
                     <span class="badge-gold">Personality & OLQ Development</span>
                     <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">4. Interactive Smart Panel & Cadet Lecturette Dais</h3>
@@ -238,7 +238,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
+            <div class="facility-showcase-row">
                 <div>
                     <img src="assets/images/kabaddi-outdoor-ground.jpg" alt="Outdoor Kabaddi and Sports Grounds" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
                 </div>
@@ -269,7 +269,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+            <div class="facility-showcase-row">
                 <div>
                     <span class="badge-saffron">Mind Gym & Military Values</span>
                     <h3 style="font-size: 1.85rem; margin: 0.75rem 0 1rem 0;">6. Tactical Chess Room & Defence Motivation Wall</h3>

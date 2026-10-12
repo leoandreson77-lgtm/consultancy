@@ -29,7 +29,7 @@ require_once __DIR__ . '/../config.php';
                 <div class="form-error-feedback"></div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-row-2col">
                 <div class="form-group">
                     <label class="form-label" for="modal_mobile">Mobile Number *</label>
                     <input type="tel" id="modal_mobile" name="mobile_number" class="form-control" placeholder="10-Digit Mobile" required>
@@ -43,7 +43,7 @@ require_once __DIR__ . '/../config.php';
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-row-2col">
                 <div class="form-group">
                     <label class="form-label" for="modal_course">Course of Interest *</label>
                     <select id="modal_course" name="course_interest" class="form-control" required>
