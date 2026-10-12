@@ -507,7 +507,9 @@ include __DIR__ . '/includes/header.php';
                 <!-- 21 Final Selections in Last 2 Years Official Banner Box -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-md); margin-bottom: 2.5rem; display: grid; grid-template-columns: 320px 1fr; align-items: center;" class="selection-banner-2col">
                     <div style="background: #0B1B3D; padding: 0.75rem; display: flex; align-items: center; justify-content: center;">
-                        <img src="assets/images/selection-21-nda-banner.jpg" alt="21 Final Selections in NDA - Official Poster" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; border-radius: var(--radius-sm);" loading="lazy">
+                        <a href="assets/images/selection-21-nda-banner.jpg" data-lightbox="true" style="display: block; width: 100%; text-align: center; cursor: zoom-in;" title="Click to enlarge 21 Final Selections in NDA Official Poster">
+                            <img src="assets/images/selection-21-nda-banner.jpg" alt="21 Final Selections in NDA - Official Poster" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; border-radius: var(--radius-sm);" loading="lazy">
+                        </a>
                     </div>
                     <div style="padding: 2rem 2.25rem;">
                         <span class="badge-gold">Proven Track Record</span>

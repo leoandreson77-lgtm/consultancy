@@ -202,19 +202,30 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // -------------------------------------------------------------
-  // 6. Gallery Lightbox Preview
+  // 6. Universal Lightbox Preview (Gallery & High-Res Selection Posters)
   // -------------------------------------------------------------
   const lightboxModal = document.getElementById('galleryLightbox');
-  const galleryItems = document.querySelectorAll('.gallery-item');
   const lightboxImg = document.getElementById('lightboxImg');
 
-  if (lightboxModal && galleryItems.length > 0 && lightboxImg) {
-    galleryItems.forEach(function (item) {
-      item.addEventListener('click', function () {
-        const fullSrc = item.getAttribute('data-src') || item.querySelector('img').src;
-        lightboxImg.src = fullSrc;
-        lightboxModal.classList.add('is-active');
-        document.body.style.overflow = 'hidden';
+  if (lightboxModal && lightboxImg) {
+    const lightboxTriggers = document.querySelectorAll(
+      '.gallery-item, .slide-selection-poster-link, .slide-selection-poster-bar a, .selection-poster-frame a, .individual-selection-card, [data-lightbox="true"]'
+    );
+
+    lightboxTriggers.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        let fullSrc = item.getAttribute('data-src') || item.getAttribute('href');
+        if (!fullSrc || fullSrc === '#' || fullSrc.startsWith('#')) {
+          const img = item.querySelector('img');
+          if (img) fullSrc = img.src;
+        }
+
+        if (fullSrc && (fullSrc.endsWith('.jpg') || fullSrc.endsWith('.jpeg') || fullSrc.endsWith('.png') || fullSrc.endsWith('.webp') || fullSrc.indexOf('assets/images/') !== -1 || fullSrc.indexOf('dehradun-defence-college/assets/images/') !== -1)) {
+          e.preventDefault();
+          lightboxImg.src = fullSrc;
+          lightboxModal.classList.add('is-active');
+          document.body.style.overflow = 'hidden';
+        }
       });
     });
 
@@ -230,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     lightboxModal.addEventListener('click', function (e) {
-      if (e.target === lightboxModal) {
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-backdrop')) {
         closeLightbox();
       }
     });

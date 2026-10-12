@@ -3472,59 +3472,175 @@ h6 { font-size: 0.95rem; }
   }
 
   .hero-slider {
-    min-height: 520px;
+    min-height: 560px;
+    height: auto;
+  }
+
+  .hero-slide {
+    align-items: flex-start;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .hero-slide-overlay,
   .hero-selection-overlay {
-    background: linear-gradient(180deg, rgba(6, 21, 45, 0.92) 0%, rgba(6, 21, 45, 0.78) 52%, rgba(6, 21, 45, 0.90) 100%) !important;
-  }
-
-  .slide-selection-layout {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .slide-selection-poster-box {
-    max-height: 290px;
-  }
-
-  .slide-selection-poster-img {
-    max-height: 240px;
-  }
-
-  .hero-cadet-photos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-  }
-
-  .hero-cadet-photo-item {
-    padding: 0.45rem 0.3rem;
-  }
-
-  .hero-cadet-photo-thumb {
-    width: 44px;
-    height: 44px;
+    background: linear-gradient(180deg, rgba(6, 21, 45, 0.95) 0%, rgba(6, 21, 45, 0.82) 50%, rgba(6, 21, 45, 0.94) 100%) !important;
   }
 
   .hero-slide-content {
-    padding: 2rem 1.25rem 3.25rem 1.25rem;
+    padding: 1.35rem 1rem 2.25rem 1rem !important;
   }
 
-  .hero-slide-content h1,
+  .hero-slide-content h1 {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin: 0.35rem 0 0.5rem 0;
+  }
+
   .hero-slide-content h2 {
-    font-size: 1.65rem;
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin: 0.35rem 0 0.5rem 0;
   }
 
   .hero-slide-subtext {
-    font-size: 0.9rem;
-    margin-bottom: 1.25rem;
+    font-size: 0.825rem;
+    line-height: 1.45;
+    margin-bottom: 0.85rem;
+  }
+
+  /* Slide 2: Dedicated Mobile Layout for Selection Showcase */
+  .slide-selection-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.45rem !important;
+    width: 100% !important;
+  }
+
+  .slide-selection-text {
+    display: contents !important;
+  }
+
+  .slide-selection-text .hero-badge-wrap {
+    order: 1 !important;
+    margin-bottom: 0.15rem !important;
+    gap: 0.35rem !important;
+  }
+
+  .slide-selection-text h2 {
+    order: 2 !important;
+    font-size: 1.22rem !important;
+    line-height: 1.22 !important;
+    margin: 0.15rem 0 0.35rem 0 !important;
+  }
+
+  .slide-selection-text .hero-slide-subtext {
+    order: 3 !important;
+    display: none !important;
+  }
+
+  /* Centerpiece Official Poster: High resolution, gold framed, zero cropping */
+  .slide-selection-poster-box {
+    order: 4 !important;
+    width: 100% !important;
+    max-height: none !important;
+    border-radius: var(--radius-sm) !important;
+    border: 1.5px solid var(--accent-gold) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7), 0 0 12px rgba(212, 175, 55, 0.35) !important;
+    margin: 0.15rem 0 0.35rem 0 !important;
+    background: #06152d !important;
+  }
+
+  .slide-selection-poster-link {
+    display: block !important;
+    width: 100% !important;
+    background: #06152d !important;
+  }
+
+  .slide-selection-poster-img {
+    width: 100% !important;
+    height: 160px !important;
+    max-height: 170px !important;
+    object-fit: contain !important;
+    display: block !important;
+    background: #06152d !important;
+  }
+
+  .slide-selection-poster-bar {
+    padding: 0.3rem 0.6rem !important;
+    background: rgba(11, 27, 61, 0.98) !important;
+  }
+
+  .slide-selection-poster-bar span {
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+  }
+
+  .slide-selection-poster-bar a {
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    color: var(--accent-gold) !important;
+  }
+
+  /* 4 Real Cadet Selection Photos in 1 Single Sleek Row */
+  .hero-cadet-photos-grid {
+    order: 5 !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.35rem !important;
+    margin: 0.25rem 0 0.45rem 0 !important;
+  }
+
+  .hero-cadet-photo-item {
+    padding: 0.3rem 0.15rem !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .hero-cadet-photo-thumb {
+    width: 38px !important;
+    height: 38px !important;
+    margin-bottom: 0.2rem !important;
+    border-width: 1.5px !important;
+  }
+
+  .hero-cadet-photo-name {
+    font-size: 0.65rem !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+  }
+
+  .hero-cadet-photo-sub {
+    font-size: 0.56rem !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Action Buttons for Slide 2: Side-by-side balanced row */
+  .slide-selection-layout .hero-actions {
+    order: 6 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0.45rem !important;
+    margin-top: 0.2rem !important;
+    width: 100% !important;
+  }
+
+  .slide-selection-layout .hero-actions .btn {
+    flex: 1 !important;
+    width: auto !important;
+    padding: 0.45rem 0.4rem !important;
+    font-size: 0.75rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
   }
 
   .hero-actions {
     flex-direction: column;
     width: 100%;
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
   .hero-actions .btn {
@@ -3534,15 +3650,18 @@ h6 { font-size: 0.95rem; }
   .hero-trust-bullets {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
   .slider-btn {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
+    top: 40%;
+    background: rgba(11, 37, 69, 0.9);
+    border-width: 1.5px;
   }
-  .slider-btn-prev { left: 0.5rem; }
-  .slider-btn-next { right: 0.5rem; }
+  .slider-btn-prev { left: 0.25rem; }
+  .slider-btn-next { right: 0.25rem; }
 
   /* Live Enroll Popup placement on mobile: strictly above 58px sticky bar with zero overlap */
   .live-enroll-popup {

@@ -143,6 +143,14 @@ $theme_uri    = get_template_directory_uri();
         </div>
     </footer>
 
+    <!-- Gallery Lightbox Modal Container -->
+    <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+        <div class="lightbox-content-wrap">
+            <button type="button" class="lightbox-close-btn" aria-label="Close Preview">&times;</button>
+            <img src="" alt="Enlarged Campus View" id="lightboxImg">
+        </div>
+    </div>
+
     <!-- Template Parts: Modal & WhatsApp Button -->
     <?php get_template_part('template-parts/enquiry-modal'); ?>
     <?php get_template_part('template-parts/whatsapp-btn'); ?>
