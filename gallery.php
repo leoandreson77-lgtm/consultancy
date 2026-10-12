@@ -12,38 +12,68 @@ include __DIR__ . '/includes/header.php';
 
 $gallery_images = [
     [
-        'src'      => 'assets/images/logo.png',
-        'title'    => 'Official Emblem — Dehradun Defence College (Gurukul of Next Generation)',
+        'src'      => 'assets/images/campus-building-main.jpg',
+        'title'    => 'Main Campus Building — Cadets Battalion Flag Assembly & Academic Complex in Maldevta Foothills',
         'category' => 'campus'
     ],
     [
-        'src'      => 'assets/images/classroom-batch-study.jpg',
-        'title'    => 'Interactive Classroom Batch — Daily Newspaper Reading & Current Affairs Analysis',
-        'category' => 'classroom'
-    ],
-    [
-        'src'      => 'assets/images/smart-class-lecture.jpg',
-        'title'    => 'Smart Interactive Digital Display — Audio-Visual Defence Concept Classes',
-        'category' => 'classroom'
-    ],
-    [
-        'src'      => 'assets/images/cadet-lecturette-1.jpg',
-        'title'    => 'Cadet Public Speaking & Individual Lecturette Practice at the Dais',
-        'category' => 'classroom'
-    ],
-    [
-        'src'      => 'assets/images/cadet-lecturette-2.jpg',
-        'title'    => 'SSB Officer-Like Quality (OLQ) Presentation & Classroom Discussion',
-        'category' => 'classroom'
-    ],
-    [
-        'src'      => 'assets/images/chess-indoor-session.jpg',
-        'title'    => 'Indoor Chess Strategy Session — Cadets Building Tactical Thinking & Decision-Making',
+        'src'      => 'assets/images/campus-front-office.jpg',
+        'title'    => 'Official Front Office & Admission Helpdesk — Cadets & Counseling Staff at Sahastradhara Road',
         'category' => 'campus'
     ],
     [
-        'src'      => 'assets/images/chess-closeup-focus.jpg',
-        'title'    => 'Focused Strategic Chess Play — Enhancing Analytical & Problem-Solving Skills',
+        'src'      => 'assets/images/cadets-parade-assembly.jpg',
+        'title'    => 'Grand Parade Ground Assembly — Cadets in Formation with Majestic Himalayan Valley Backdrop',
+        'category' => 'parade'
+    ],
+    [
+        'src'      => 'assets/images/nda-girls-wing-formation.jpg',
+        'title'    => 'Dehradun\'s First Dedicated In-House NDA (Girls) Wing — Cadets Morning Formation in Uniform',
+        'category' => 'parade'
+    ],
+    [
+        'src'      => 'assets/images/classroom-lecture-hall-real.jpg',
+        'title'    => 'Stepped Smart Lecture Theatre — Cadets in Full Uniform Engaged in UPSC Defence Examination Prep',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/classroom-faculty-session.jpg',
+        'title'    => 'Senior Defence Faculty Mentorship — Conceptual Academic Instruction & Problem Solving',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/classroom-smart-board-real.jpg',
+        'title'    => 'Interactive Smart Board Audio-Visual Lecture — Modern Defence Pedagogy & Exam Strategy',
+        'category' => 'classroom'
+    ],
+    [
+        'src'      => 'assets/images/campus-study-library.jpg',
+        'title'    => 'Cadet Study Hall & Self-Study Facility — Structured Evening Study with Resident Mentors',
+        'category' => 'campus'
+    ],
+    [
+        'src'      => 'assets/images/campus-ground-physical-training.jpg',
+        'title'    => 'Cadet Physical Agility & Endurance Drills on Campus Training Grounds',
+        'category' => 'obstacle'
+    ],
+    [
+        'src'      => 'assets/images/campus-obstacle-drill-ground.jpg',
+        'title'    => 'Campus Obstacle Course & Physical Conditioning Ground in Scenic Maldevta Valley',
+        'category' => 'obstacle'
+    ],
+    [
+        'src'      => 'assets/images/campus-ceremony-celebration.jpg',
+        'title'    => 'Campus Investiture & Annual Cadets Honor Ceremony Celebrating Defence Achievements',
+        'category' => 'celebrations'
+    ],
+    [
+        'src'      => 'assets/images/cadet-officer-portrait.jpg',
+        'title'    => 'Cadet in Academy Uniform — Bearing, Pride, and Officer-Like Discipline',
+        'category' => 'parade'
+    ],
+    [
+        'src'      => 'assets/images/cadet-indoor-training.jpg',
+        'title'    => 'Indoor Academy Conditioning & Officer-Like Quality Development',
         'category' => 'campus'
     ],
     [
@@ -67,43 +97,23 @@ $gallery_images = [
         'category' => 'classroom'
     ],
     [
-        'src'      => 'assets/images/smart-class-cadet-lecturette.jpg',
-        'title'    => 'Cadet Public Speaking & Current Affairs Lecturette at the Smart Panel Dais',
-        'category' => 'classroom'
-    ],
-    [
-        'src'      => 'assets/images/faculty-classroom-mentorship.jpg',
-        'title'    => 'Senior Defence Faculty Mentoring & Interactive Academic Guidance',
-        'category' => 'classroom'
-    ],
-    [
         'src'      => 'assets/images/badminton-outdoor-court.jpg',
         'title'    => 'Outdoor Badminton & Sports Session — Physical Agility & Reflex Conditioning',
         'category' => 'obstacle'
     ],
     [
-        'src'      => 'assets/images/cadet-presentation-smart-board.jpg',
-        'title'    => 'Cadet Presentation & Audio-Visual Defence Analysis Under Officer Mentorship',
-        'category' => 'classroom'
-    ],
-    [
-        'src'      => 'assets/images/hero-cadets.jpg',
-        'title'    => 'Morning Parade & Roll Call Formation',
-        'category' => 'parade'
-    ],
-    [
-        'src'      => 'assets/images/campus-hostel.jpg',
-        'title'    => '10-Acre Campus & Residential Hostels in Maldevta Valley',
+        'src'      => 'assets/images/chess-indoor-session.jpg',
+        'title'    => 'Indoor Chess Strategy Session — Cadets Building Tactical Thinking & Decision-Making',
         'category' => 'campus'
     ],
     [
         'src'      => 'assets/images/ssb-gto-ground.jpg',
-        'title'    => 'SSB GTO Obstacle Ground Training',
+        'title'    => 'SSB GTO Obstacle Ground Training — Burma Bridge, Commando Walk & PGT',
         'category' => 'obstacle'
     ],
     [
         'src'      => 'assets/images/nda-success-cadets.jpg',
-        'title'    => 'Recommendation Letter Celebrations & Qualified Cadets',
+        'title'    => 'Recommendation Letter Celebrations & Qualified Cadets Joining Armed Forces',
         'category' => 'celebrations'
     ],
     [
@@ -125,11 +135,6 @@ $gallery_images = [
         'src'      => 'assets/images/director-neha.jpg',
         'title'    => 'Ms. Neha Kukreja — Director & College Enrollment Specialist',
         'category' => 'campus'
-    ],
-    [
-        'src'      => 'assets/images/classroom-training.jpg',
-        'title'    => 'UPSC Written Examination Doubt Clearing & Mentoring Session',
-        'category' => 'classroom'
     ]
 ];
 ?>

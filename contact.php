@@ -191,8 +191,48 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- Authentic Campus & Front Office Visual Preview -->
+    <section class="section-padding" style="background: #FFFFFF; border-bottom: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-navy">Visit Our Campus</span>
+                <h2>Front Office Reception & Residential Academy</h2>
+                <div class="gold-divider"></div>
+                <p>Experience our state-of-the-art infrastructure, transparent parent counseling, and authentic military gurukul atmosphere.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                <div style="background: var(--bg-slate); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <div style="height: 260px; overflow: hidden;">
+                        <img src="assets/images/campus-front-office.jpg" alt="Official Front Office Reception & Admission Helpdesk" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <span class="badge-gold" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Central Reception</span>
+                        <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem;">Front Office & Admission Helpdesk</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                            Located on Sahastradhara Road, Dehradun. Meet senior admission directors for one-on-one SSB eligibility roadmaps, fee structures, and immediate prospectus allotment.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-slate); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+                    <div style="height: 260px; overflow: hidden;">
+                        <img src="assets/images/campus-building-main.jpg" alt="Dehradun Defence College Main Campus Building and Hostels" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Maldevta Valley</span>
+                        <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem;">10-Acre Residential Campus</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                            Dehradun's 1st defence academy with 100% in-house separate boys & girls hostels, full-scale outdoor obstacle grounds, and distraction-free Himalayan foothill surroundings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Google Map Embed & How to Reach Instructions -->
-    <section class="section-padding" id="how-to-reach" style="background-color: #FFFFFF;">
+    <section class="section-padding" id="how-to-reach" style="background-color: var(--bg-slate);">
         <div class="container">
             <div class="section-header">
                 <span class="badge-gold">Directions</span>

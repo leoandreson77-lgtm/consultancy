@@ -49,11 +49,15 @@ include __DIR__ . '/includes/header.php';
                         $category = 'ssb';
                     }
 
-                    $img = 'assets/images/classroom-batch-study.jpg';
+                    $img = 'assets/images/classroom-lecture-hall-real.jpg';
                     if (strpos($slug, 'ssb') !== false) $img = 'assets/images/ssb-gto-ground.jpg';
-                    if (strpos($slug, 'girls') !== false) $img = 'assets/images/nda-success-cadets.jpg';
-                    if (strpos($slug, 'target') !== false) $img = 'assets/images/hero-cadets.jpg';
-                    if (strpos($slug, 'afcat') !== false) $img = 'assets/images/smart-class-lecture.jpg';
+                    if (strpos($slug, 'girls') !== false) $img = 'assets/images/nda-girls-wing-formation.jpg';
+                    if (strpos($slug, 'target') !== false) $img = 'assets/images/classroom-lecture-hall-real.jpg';
+                    if (strpos($slug, 'foundation') !== false) $img = 'assets/images/campus-building-main.jpg';
+                    if (strpos($slug, 'cds') !== false) $img = 'assets/images/cadets-parade-assembly.jpg';
+                    if (strpos($slug, 'rimc') !== false || strpos($slug, 'rms') !== false) $img = 'assets/images/campus-building-main.jpg';
+                    if (strpos($slug, 'mns') !== false) $img = 'assets/images/nda-girls-wing-formation.jpg';
+                    if (strpos($slug, 'afcat') !== false) $img = 'assets/images/classroom-smart-board-real.jpg';
                 ?>
                 <div class="course-card" data-category="<?php echo $category; ?>">
                     <div class="course-card-banner">

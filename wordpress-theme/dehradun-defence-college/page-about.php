@@ -111,13 +111,19 @@ $theme_uri = get_template_directory_uri();
                         </div>
                     </div>
 
-                    <div style="text-align: center; background: var(--bg-slate); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
-                        <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; font-size: 1.15rem;">Institutional Synergy</h4>
-                        <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem;">
-                            Integrated Academic Schooling via <strong>Doon Public Senior Secondary School</strong> & Defence Academy Training at <strong>Dehradun Defence College</strong>.
-                        </p>
-                        <div style="border-top: 1px solid var(--border-light); padding-top: 1rem; font-size: 0.85rem; color: var(--primary-navy); font-weight: 700;">
-                            Maldevta Valley Campus • Dehradun
+                    <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md);">
+                        <div style="height: 240px; overflow: hidden; position: relative;">
+                            <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-building-main.jpg'); ?>" alt="Dehradun Defence College Campus Building and Cadets Flag Assembly" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span class="badge-gold" style="position: absolute; top: 12px; left: 12px; font-size: 0.75rem;">Maldevta Valley Campus</span>
+                        </div>
+                        <div style="padding: 1.5rem; text-align: center;">
+                            <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; font-size: 1.15rem;">Institutional Synergy</h4>
+                            <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Integrated Academic Schooling via <strong>Doon Public Senior Secondary School</strong> & Defence Academy Training at <strong>Dehradun Defence College</strong>.
+                            </p>
+                            <div style="border-top: 1px solid var(--border-light); padding-top: 0.75rem; font-size: 0.85rem; color: var(--primary-navy); font-weight: 700;">
+                                100% In-House Separate Hostels • Dehradun
+                            </div>
                         </div>
                     </div>
                 </div>

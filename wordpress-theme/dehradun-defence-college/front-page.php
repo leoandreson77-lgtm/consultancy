@@ -17,7 +17,7 @@ $theme_uri = get_template_directory_uri();
             <div class="hero-slider-wrap">
                 <div class="hero-slider" id="hero-slider" aria-label="Hero Highlights Slider">
                     <!-- Slide 1: Welcome & Best NDA Coaching -->
-                    <div class="hero-slide active" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/hero-cadets.jpg'); ?>');">
+                    <div class="hero-slide active" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/campus-building-main.jpg'); ?>');">
                         <div class="hero-slide-overlay"></div>
                         <div class="hero-slide-content">
                             <div class="hero-badge-wrap">
@@ -99,7 +99,7 @@ $theme_uri = get_template_directory_uri();
                     </div>
 
                     <!-- Slide 3: Dehradun's 1st In-House Separate Hostels -->
-                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/campus-hostel.jpg'); ?>');">
+                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/cadets-parade-assembly.jpg'); ?>');">
                         <div class="hero-slide-overlay"></div>
                         <div class="hero-slide-content">
                             <div class="hero-badge-wrap">
@@ -177,7 +177,7 @@ $theme_uri = get_template_directory_uri();
                     </div>
 
                     <!-- Slide 5: RIMC, RMS, MNS & AFMC NEET Wings -->
-                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/smart-classroom-lecture-hall.jpg'); ?>');">
+                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/classroom-lecture-hall-real.jpg'); ?>');">
                         <div class="hero-slide-overlay"></div>
                         <div class="hero-slide-content">
                             <div class="hero-badge-wrap">
@@ -461,6 +461,35 @@ $theme_uri = get_template_directory_uri();
                         </p>
                     </div>
                 </div>
+
+                <!-- Real Campus & In-House Hostels Photo Showcase -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-lg); overflow: hidden;">
+                        <div style="height: 220px; overflow: hidden; position: relative;">
+                            <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-building-main.jpg'); ?>" alt="Authentic Dehradun Defence College Campus Building and In-House Boys Hostel" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span class="badge-gold" style="position: absolute; top: 10px; left: 10px; font-size: 0.75rem;">Boys In-House Wing & Campus Complex</span>
+                        </div>
+                        <div style="padding: 1.25rem; text-align: left;">
+                            <h4 style="color: #FFFFFF; font-size: 1.1rem; margin-bottom: 0.35rem;">Grand 10-Acre Foothills Campus</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                Multi-storey residential complex with full cadet formation, flag post, badminton & kabaddi courts in tranquil Maldevta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-lg); overflow: hidden;">
+                        <div style="height: 220px; overflow: hidden; position: relative;">
+                            <img src="<?php echo esc_url($theme_uri . '/assets/images/nda-girls-wing-formation.jpg'); ?>" alt="Dedicated NDA Girls Wing Cadets Morning Drill in Uniform" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span class="badge-gold" style="position: absolute; top: 10px; left: 10px; font-size: 0.75rem;">Dedicated In-House Girls Wing</span>
+                        </div>
+                        <div style="padding: 1.25rem; text-align: left;">
+                            <h4 style="color: #FFFFFF; font-size: 1.1rem; margin-bottom: 0.35rem;">Dehradun's 1st Secure Girls Wing</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                100% separate residential quarters, dedicated female wardens, morning drill formations, and biometric surveillance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -476,35 +505,75 @@ $theme_uri = get_template_directory_uri();
             </div>
 
             <div class="activities-masonry-grid">
+                <!-- Activity 1: Grand Campus Building -->
                 <div class="activity-tile">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/badminton-outdoor-court.jpg'); ?>" alt="Outdoor Badminton Court" loading="lazy">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-building-main.jpg'); ?>" alt="Dehradun Defence College Campus Building and Cadets Flag Assembly" loading="lazy">
                     <div class="activity-tile-overlay">
-                        <span class="activity-tile-tag">Outdoor Sports Ground</span>
-                        <h4 class="activity-tile-title">Badminton Court in Foothills</h4>
+                        <span class="activity-tile-tag">Main Campus Complex</span>
+                        <h4 class="activity-tile-title">Academic & Hostel Complex in Foothills</h4>
                     </div>
                 </div>
 
+                <!-- Activity 2: Front Office Reception Desk -->
                 <div class="activity-tile">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/kabaddi-outdoor-ground.jpg'); ?>" alt="Kabaddi and Physical Agility Ground" loading="lazy">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-front-office.jpg'); ?>" alt="Official Front Office Reception & Admission Counseling Helpdesk" loading="lazy">
+                    <div class="activity-tile-overlay">
+                        <span class="activity-tile-tag">Central Reception</span>
+                        <h4 class="activity-tile-title">Front Office & Admission Helpdesk</h4>
+                    </div>
+                </div>
+
+                <!-- Activity 3: Grand Parade Ground Assembly -->
+                <div class="activity-tile">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets-parade-assembly.jpg'); ?>" alt="Cadets Drill and Morning Parade Assembly with Himalayan Backdrop" loading="lazy">
+                    <div class="activity-tile-overlay">
+                        <span class="activity-tile-tag">Morning Parade Assembly</span>
+                        <h4 class="activity-tile-title">Cadets Drill in Foothills Valley</h4>
+                    </div>
+                </div>
+
+                <!-- Activity 4: Dedicated NDA Girls Wing -->
+                <div class="activity-tile">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/nda-girls-wing-formation.jpg'); ?>" alt="Dehradun First Dedicated NDA Girls Wing in Morning Drill Formation" loading="lazy">
+                    <div class="activity-tile-overlay">
+                        <span class="activity-tile-tag">Dedicated Girls Wing</span>
+                        <h4 class="activity-tile-title">NDA (Girls) Wing Morning Parade</h4>
+                    </div>
+                </div>
+
+                <!-- Activity 5: Stepped Smart Lecture Halls -->
+                <div class="activity-tile">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-lecture-hall-real.jpg'); ?>" alt="Stepped Smart Lecture Hall Packed with Uniform Cadets in UPSC Prep" loading="lazy">
+                    <div class="activity-tile-overlay">
+                        <span class="activity-tile-tag">Academic Rigor</span>
+                        <h4 class="activity-tile-title">Stepped UPSC Lecture Theatres</h4>
+                    </div>
+                </div>
+
+                <!-- Activity 6: Physical Conditioning & Agility Drills -->
+                <div class="activity-tile">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-ground-physical-training.jpg'); ?>" alt="Cadet Physical Training and Obstacle Agility Grounds" loading="lazy">
                     <div class="activity-tile-overlay">
                         <span class="activity-tile-tag">Physical Conditioning</span>
-                        <h4 class="activity-tile-title">Kabaddi & Agility Drills</h4>
+                        <h4 class="activity-tile-title">Physical Training & Agility Grounds</h4>
                     </div>
                 </div>
 
+                <!-- Activity 7: Campus Investiture & Annual Celebrations -->
                 <div class="activity-tile">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/chess-indoor-session.jpg'); ?>" alt="Tactical Chess" loading="lazy">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-ceremony-celebration.jpg'); ?>" alt="Annual Campus Investiture & Cadets Achievement Ceremony" loading="lazy">
                     <div class="activity-tile-overlay">
-                        <span class="activity-tile-tag">Tactical Mind Gym</span>
-                        <h4 class="activity-tile-title">Strategic Chess Conditioning</h4>
+                        <span class="activity-tile-tag">Campus Celebrations</span>
+                        <h4 class="activity-tile-title">Investiture & Honor Ceremony</h4>
                     </div>
                 </div>
 
+                <!-- Activity 8: Cadet Study Hall & Library -->
                 <div class="activity-tile">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/cadet-presentation-smart-board.jpg'); ?>" alt="Cadet Lecturette" loading="lazy">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-study-library.jpg'); ?>" alt="Cadet Evening Study Hall and Reference Library" loading="lazy">
                     <div class="activity-tile-overlay">
-                        <span class="activity-tile-tag">OLQ Development</span>
-                        <h4 class="activity-tile-title">Cadet Dais & Lecturette Drills</h4>
+                        <span class="activity-tile-tag">Focused Gurukul</span>
+                        <h4 class="activity-tile-title">Mentored Evening Study Hall</h4>
                     </div>
                 </div>
             </div>

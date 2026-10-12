@@ -110,49 +110,65 @@ $theme_uri = get_template_directory_uri();
 
             <div class="facilities-grid">
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-hostel.jpg'); ?>" alt="Hostel and Mess">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-building-main.jpg'); ?>" alt="Authentic Dehradun Defence College Campus Building and Hostels">
                     <div class="facility-card-overlay">
-                        <h4>Residential Hostels & Mess</h4>
-                        <p>Separate boys & girls hostels with 4 nutritious meals daily and strict discipline.</p>
+                        <h4>In-Campus Hostels & Academic Complex</h4>
+                        <p>Dehradun's 1st campus with 100% in-house separate boys & girls wings, biometric security, and 4 military mess meals.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/ssb-gto-ground.jpg'); ?>" alt="GTO Ground">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets-parade-assembly.jpg'); ?>" alt="Cadets Parade Ground Assembly and Obstacle Course">
                     <div class="facility-card-overlay">
-                        <h4>Live Outdoor Obstacle Ground</h4>
-                        <p>Burma Bridge, Tarzan Swing, Tiger Leap, and full Progressive Group Tasks setup.</p>
+                        <h4>Grand Parade & Obstacle Grounds</h4>
+                        <p>Massive drill grounds with Himalayan backdrop, Burma Bridge, Tiger Leap, and full Progressive Group Tasks setup.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/smart-classroom-lecture-hall.jpg'); ?>" alt="Smart Classrooms and Lecture Hall">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/classroom-lecture-hall-real.jpg'); ?>" alt="Authentic Stepped Smart Lecture Hall with Cadets in Uniform">
                     <div class="facility-card-overlay">
-                        <h4>Smart Classroom Lecture Hall</h4>
-                        <p>Tiered lecture halls with interactive digital smart panels, daily newspaper study, and UPSC mock exams.</p>
+                        <h4>Stepped Smart Lecture Halls</h4>
+                        <p>Tiered lecture theatres packed with uniform cadets, daily morning newspaper analysis, and 20-year UPSC prep.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/ssb-smart-panel-instruction.jpg'); ?>" alt="SSB Digital Panel and Cadet Dais">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/nda-girls-wing-formation.jpg'); ?>" alt="NDA Girls Wing Cadets Morning Formation in Uniform">
                     <div class="facility-card-overlay">
-                        <h4>Interactive SSB Strategy Panel</h4>
-                        <p>Digital obstacle scenario analysis and cadet dais for 3-minute lecturettes and SSB interview grooming.</p>
+                        <h4>Dedicated NDA (Girls) Wing</h4>
+                        <p>Independent residential quarters, 24/7 female wardens, morning drill formations, and tailored SSB personality grooming.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/kabaddi-outdoor-ground.jpg'); ?>" alt="Sports Ground & Outdoor Conditioning">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-front-office.jpg'); ?>" alt="Official Front Office Reception & Admission Counseling Helpdesk">
                     <div class="facility-card-overlay">
-                        <h4>Outdoor Sports & Kabaddi/Badminton</h4>
-                        <p>Dedicated sports grounds in Maldevta foothills building agility, physical stamina, and team spirit.</p>
+                        <h4>Front Office & Admission Helpdesk</h4>
+                        <p>Centrally located on Sahastradhara Road for one-on-one career roadmaps, parent counseling, and campus tours.</p>
                     </div>
                 </div>
 
                 <div class="facility-card">
-                    <img src="<?php echo esc_url($theme_uri . '/assets/images/chess-indoor-session.jpg'); ?>" alt="Indoor Chess & Motivation Wall">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-ground-physical-training.jpg'); ?>" alt="Cadet Physical Agility & Endurance Grounds">
                     <div class="facility-card-overlay">
-                        <h4>Tactical Chess & Motivation Center</h4>
+                        <h4>Physical Conditioning & Obstacle Drills</h4>
+                        <p>Outdoor cross-country trails, agility conditioning, and sports sessions in scenic Maldevta foothills.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-study-library.jpg'); ?>" alt="Cadet Evening Study Hall and Reference Library">
+                    <div class="facility-card-overlay">
+                        <h4>Cadet Study Hall & Library</h4>
+                        <p>Structured evening self-study supervised by resident mentors with comprehensive defence literature.</p>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="<?php echo esc_url($theme_uri . '/assets/images/chess-indoor-session.jpg'); ?>" alt="Indoor Chess & Tactical Motivation Center">
+                    <div class="facility-card-overlay">
+                        <h4>Tactical Chess & Mind Gym</h4>
                         <p>Indoor strategic games cultivating foresight, mental resilience, and military values.</p>
                     </div>
                 </div>

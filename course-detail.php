@@ -157,10 +157,41 @@ include __DIR__ . '/includes/header.php';
 
                 <!-- Visual Campus Facilities for Course -->
                 <div class="course-content-block" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
-                    <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Residential Life & Daily Conditioning</h2>
-                    <img src="assets/images/ssb-gto-ground.jpg" alt="Outdoor Training for Cadets" style="border-radius: var(--radius-md); margin-bottom: 1.25rem; width: 100%;">
-                    <p style="color: var(--text-muted); line-height: 1.7;">
-                        Every enrolled student has access to our dedicated in-campus residential hostel with hygienic boarding, nutritious mess, parade grounds, and physical instructors to ensure full medical fitness for the Armed Forces.
+                    <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Residential Campus & Military Training Grounds</h2>
+                    <?php
+                        $facility_img1 = 'assets/images/campus-building-main.jpg';
+                        $facility_cap1 = 'Dehradun Defence College 10-Acre Campus & Residential Hostels';
+                        
+                        $facility_img2 = 'assets/images/classroom-lecture-hall-real.jpg';
+                        $facility_cap2 = 'Tiered Smart Lecture Hall With Cadets in Uniform';
+                        
+                        if (strpos($course_slug, 'girls') !== false) {
+                            $facility_img2 = 'assets/images/nda-girls-wing-formation.jpg';
+                            $facility_cap2 = 'Dedicated In-House NDA (Girls) Wing Morning Parade Drill';
+                        } elseif (strpos($course_slug, 'ssb') !== false) {
+                            $facility_img2 = 'assets/images/cadets-parade-assembly.jpg';
+                            $facility_cap2 = 'Live SSB GTO Obstacle Course & Cadets Drill Formation';
+                        } elseif (strpos($course_slug, 'cds') !== false) {
+                            $facility_img2 = 'assets/images/cadets-parade-assembly.jpg';
+                            $facility_cap2 = 'Cadets Morning Assembly with Himalayan Foothills Backdrop';
+                        }
+                    ?>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+                        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light);">
+                            <img src="<?php echo $facility_img1; ?>" alt="<?php echo $facility_cap1; ?>" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div style="padding: 0.5rem 0.75rem; font-size: 0.8rem; background: var(--bg-slate); color: var(--primary-navy); font-weight: 600;">
+                                <?php echo $facility_cap1; ?>
+                            </div>
+                        </div>
+                        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light);">
+                            <img src="<?php echo $facility_img2; ?>" alt="<?php echo $facility_cap2; ?>" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div style="padding: 0.5rem 0.75rem; font-size: 0.8rem; background: var(--bg-slate); color: var(--primary-navy); font-weight: 600;">
+                                <?php echo $facility_cap2; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-muted); line-height: 1.7; margin: 0;">
+                        Every enrolled cadet has access to our 100% in-house residential campus with separate boys and girls hostel wings, 4-meal nutritious military mess, outdoor sports grounds, obstacle courses, and resident faculty mentorship in the peaceful Maldevta foothills.
                     </p>
                 </div>
             </div>

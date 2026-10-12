@@ -76,18 +76,19 @@ include __DIR__ . '/includes/header.php';
                         </div>
                     </div>
 
-                    <div style="text-align: center; background: var(--bg-slate); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
-                        <div class="brand-crest" style="margin: 0 auto 1rem auto; width: 64px; height: 64px; border-radius: 50%; background: var(--primary-navy); display: flex; align-items: center; justify-content: center;">
-                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2">
-                                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
-                            </svg>
+                    <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-md);">
+                        <div style="height: 240px; overflow: hidden; position: relative;">
+                            <img src="assets/images/campus-building-main.jpg" alt="Dehradun Defence College Campus Building and Cadets Flag Assembly" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span class="badge-gold" style="position: absolute; top: 12px; left: 12px; font-size: 0.75rem;">Maldevta Valley Campus</span>
                         </div>
-                        <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; font-size: 1.15rem;">Institutional Synergy</h4>
-                        <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem;">
-                            Integrated Academic Schooling via <strong>Doon Public Senior Secondary School</strong> & Defence Academy Training at <strong>Dehradun Defence College</strong>.
-                        </p>
-                        <div style="border-top: 1px solid var(--border-light); padding-top: 1rem; font-size: 0.85rem; color: var(--primary-navy); font-weight: 700;">
-                            Maldevta Valley Campus • Dehradun
+                        <div style="padding: 1.5rem; text-align: center;">
+                            <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; font-size: 1.15rem;">Institutional Synergy</h4>
+                            <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Integrated Academic Schooling via <strong>Doon Public Senior Secondary School</strong> & Defence Academy Training at <strong>Dehradun Defence College</strong>.
+                            </p>
+                            <div style="border-top: 1px solid var(--border-light); padding-top: 0.75rem; font-size: 0.85rem; color: var(--primary-navy); font-weight: 700;">
+                                100% In-House Separate Hostels • Dehradun
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,7 +175,7 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <div>
-                <img src="assets/images/hero-cadets.jpg" alt="Dehradun Defence College Cadets on Parade" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
+                <img src="assets/images/cadets-parade-assembly.jpg" alt="Dehradun Defence College Cadets Assembly on Parade Ground with Mountain Hills" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%;">
             </div>
         </div>
     </section>
