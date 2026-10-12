@@ -319,3 +319,116 @@ function ddc_ajax_submit_enquiry_handler() {
 }
 add_action('wp_ajax_ddc_submit_enquiry', 'ddc_ajax_submit_enquiry_handler');
 add_action('wp_ajax_nopriv_ddc_submit_enquiry', 'ddc_ajax_submit_enquiry_handler');
+
+/**
+ * Get Latest DDCIAN Selections of 2025-2026
+ */
+function ddc_get_latest_selections() {
+    return [
+        [
+            'name'   => 'Aadarsh Mishra (DDCIAN)',
+            'role'   => 'Flying Officer',
+            'org'    => 'Indian Air Force',
+            'badge'  => 'Commissioned Officer',
+            'detail' => 'Joined Indian Air Force as Flying Officer',
+            'tag'    => 'Air Force Pilot'
+        ],
+        [
+            'name'   => 'Sanskar Jha (DDCIAN)',
+            'role'   => 'Cadet',
+            'org'    => 'National Defence Academy',
+            'badge'  => 'Cleared Written & SSB',
+            'detail' => 'Cleared NDA Written Exam & Recommended for NDA Entry',
+            'tag'    => 'NDA Cadet'
+        ],
+        [
+            'name'   => 'Arindam',
+            'role'   => 'Officer Cadet',
+            'org'    => 'OTA Chennai',
+            'badge'  => 'Chest #4',
+            'detail' => 'Recommended for Officers Training Academy (OTA)',
+            'tag'    => 'OTA Army'
+        ],
+        [
+            'name'   => 'Praneet Singh',
+            'role'   => 'Cadet',
+            'org'    => 'NDA - 18 SSB Allahabad',
+            'badge'  => 'Chest #4',
+            'detail' => 'Cleared NDA Examination & Recommended from 18 SSB Allahabad',
+            'tag'    => 'NDA Army'
+        ],
+        [
+            'name'   => 'Karuna',
+            'role'   => 'Cadet (Girls Wing)',
+            'org'    => 'SSB Bhopal, NDA',
+            'badge'  => 'Chest #20',
+            'detail' => 'Proud DDCIAN Cadet recommended for National Defence Academy',
+            'tag'    => 'NDA Girls'
+        ],
+        [
+            'name'   => 'Rishabh Kala',
+            'role'   => 'Gentleman Cadet',
+            'org'    => 'CDS, 18 SSB Allahabad',
+            'badge'  => 'Chest #21',
+            'detail' => 'Recommended for Indian Military Academy via Combined Defence Services',
+            'tag'    => 'CDS IMA'
+        ],
+        [
+            'name'   => 'Ayush Pathak',
+            'role'   => 'Air Force Cadet',
+            'org'    => '18-SSB Allahabad Board',
+            'badge'  => 'Chest #7',
+            'detail' => 'Air Force Uniform entry recommended through 18 SSB Allahabad',
+            'tag'    => 'Air Force'
+        ],
+        [
+            'name'   => 'Leroy Fernandes',
+            'role'   => 'Cadet',
+            'org'    => 'NDA - 143 Course',
+            'badge'  => 'Chest #3',
+            'detail' => 'Recommended for prestigious NDA 143 Course at Khadakwasla',
+            'tag'    => 'NDA 143'
+        ],
+        [
+            'name'   => 'Pooja Ahlawat',
+            'role'   => 'Cadet (Girls Wing)',
+            'org'    => 'NDA Selection',
+            'badge'  => 'Chest #6',
+            'detail' => 'Selected for National Defence Academy from DDC Girls Residential Wing',
+            'tag'    => 'NDA Girls'
+        ],
+        [
+            'name'   => 'Kshitij Pandey',
+            'role'   => 'Cadet',
+            'org'    => 'NDA Selection',
+            'badge'  => 'Chest #32',
+            'detail' => 'Cleared NDA Written & SSB Interview with flying colours',
+            'tag'    => 'NDA Cadet'
+        ],
+        [
+            'name'   => 'Yashraj Yadav',
+            'role'   => 'Cadet',
+            'org'    => '19 SSB Allahabad, NDA-143',
+            'badge'  => 'Chest #02',
+            'detail' => 'Recommended from 19 SSB Allahabad for NDA 143 Batch',
+            'tag'    => 'NDA 143'
+        ],
+        [
+            'name'   => 'Akhand Pratap Singh',
+            'role'   => 'Star Performer',
+            'org'    => 'IIT-JEE Main 2025-26 & NDA',
+            'badge'  => 'Dual Qualifier',
+            'detail' => 'Outstanding merit in IIT-JEE Main alongside NDA Written qualification',
+            'tag'    => 'Engineering & NDA'
+        ],
+        [
+            'name'   => 'Sujal Singh',
+            'role'   => 'Star Performer',
+            'org'    => 'IIT-JEE Main 2025-26 & NDA',
+            'badge'  => 'Dual Qualifier',
+            'detail' => 'Cracked IIT-JEE Main 2025-26 and qualified NDA defence entrance',
+            'tag'    => 'Engineering & NDA'
+        ]
+    ];
+}
+

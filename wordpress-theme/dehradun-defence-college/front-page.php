@@ -62,79 +62,78 @@ $theme_uri = get_template_directory_uri();
                         </div>
                     </div>
 
-                    <!-- Slide 2: Latest Selection of 2025-2026 -->
-                    <div class="hero-slide slide-selection-showcase" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>');">
-                        <div class="hero-slide-overlay hero-selection-overlay"></div>
+                    <!-- Slide 2: Latest Selection of 2025-2026 (Unobstructed Crystal Clear Showcase) -->
+                    <div class="hero-slide slide-selection-showcase" style="background: radial-gradient(ellipse at 70% 30%, #0d2850 0%, #06152d 100%);">
+                        <div class="hero-slide-overlay" style="background: linear-gradient(90deg, rgba(6, 21, 45, 0.75) 0%, rgba(6, 21, 45, 0.35) 100%);"></div>
                         <div class="hero-slide-content">
-                            <div class="hero-badge-wrap">
-                                <span class="badge-saffron">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                    Our Pride: Selections 2025-2026
-                                </span>
-                                <span class="badge-campus-tag">
-                                    🎖️ 13+ Cadets Selected in Armed Forces
-                                </span>
-                            </div>
-                            <h2>
-                                Saluting Our Heroes: <br>
-                                <span class="gold-highlight">13+ Cadets Selected</span> in Uniform
-                            </h2>
-                            <p class="hero-slide-subtext">
-                                Real DDCIAN stars proudly recommended for <strong>Indian Air Force, NDA Khadakwasla, OTA Chennai, IMA & Armed Forces</strong>.
-                            </p>
+                            <div class="slide-selection-layout">
+                                <!-- Left Column: Text & 4 Real Cadet Selection Photos -->
+                                <div class="slide-selection-text">
+                                    <div class="hero-badge-wrap">
+                                        <span class="badge-saffron">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                            Hall of Fame: 2025-2026
+                                        </span>
+                                        <span class="badge-campus-tag">
+                                            🎖️ 13+ Cadets in Uniform
+                                        </span>
+                                    </div>
+                                    <h2 style="font-size: clamp(1.4rem, 2.4vw, 2.1rem); margin: 0.5rem 0 0.6rem 0;">
+                                        Saluting Our Heroes: <br>
+                                        <span class="gold-highlight">DDCIANs in Uniform</span>
+                                    </h2>
+                                    <p class="hero-slide-subtext" style="font-size: 0.88rem; margin-bottom: 0.75rem; line-height: 1.5;">
+                                        Flying Officer <strong>Aadarsh Mishra</strong> (IAF), <strong>Sanskar Jha</strong> (NDA), <strong>Karuna</strong> (NDA Girls), <strong>Arindam</strong> (OTA), and our proud achievers!
+                                    </p>
 
-                            <!-- Dedicated Visible Selection Cadets Spotlight -->
-                            <div class="hero-cadets-strip">
-                                <div class="hero-cadet-mini-card">
-                                    <div class="hero-cadet-avatar" style="background: #003366; color: #FFD700;">✈️</div>
-                                    <div class="hero-cadet-meta">
-                                        <div class="hero-cadet-name">Aadarsh Mishra</div>
-                                        <div class="hero-cadet-rank">Flying Officer (IAF)</div>
+                                    <!-- 4 Individual Cadet Celebration Cards with Real Photos -->
+                                    <div class="hero-cadet-photos-grid">
+                                        <a href="#selections" class="hero-cadet-photo-item" title="Aravind Kumar - Congratulations!">
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-aravind-kumar.jpg'); ?>" alt="Aravind Kumar Selection" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Aravind Kumar</span>
+                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        </a>
+                                        <a href="#selections" class="hero-cadet-photo-item" title="Rajesh Sharma - Congratulations!">
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-rajesh-sharma.jpg'); ?>" alt="Rajesh Sharma Selection" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Rajesh Sharma</span>
+                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        </a>
+                                        <a href="#selections" class="hero-cadet-photo-item" title="Vikram Singh - Congratulations!">
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-vikram-singh.jpg'); ?>" alt="Vikram Singh Selection" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Vikram Singh</span>
+                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        </a>
+                                        <a href="#selections" class="hero-cadet-photo-item" title="Sanjay Gupta - Congratulations!">
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-sanjay-gupta.jpg'); ?>" alt="Sanjay Gupta Selection" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Sanjay Gupta</span>
+                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="hero-cadet-mini-card">
-                                    <div class="hero-cadet-avatar" style="background: #1a472a; color: #FFD700;">⚔️</div>
-                                    <div class="hero-cadet-meta">
-                                        <div class="hero-cadet-name">Sanskar Jha</div>
-                                        <div class="hero-cadet-rank">Cadet (NDA Written & SSB)</div>
-                                    </div>
-                                </div>
-                                <div class="hero-cadet-mini-card">
-                                    <div class="hero-cadet-avatar" style="background: #8b0000; color: #FFD700;">🎖️</div>
-                                    <div class="hero-cadet-meta">
-                                        <div class="hero-cadet-name">Karuna</div>
-                                        <div class="hero-cadet-rank">SSB Bhopal (NDA Girls)</div>
-                                    </div>
-                                </div>
-                                <div class="hero-cadet-mini-card">
-                                    <div class="hero-cadet-avatar" style="background: #0B1B3D; color: #FFD700;">🇮🇳</div>
-                                    <div class="hero-cadet-meta">
-                                        <div class="hero-cadet-name">Arindam & Rishabh</div>
-                                        <div class="hero-cadet-rank">OTA Chennai & CDS IMA</div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!-- Clickable Zoom Badge for Official Poster with Thumbnail -->
-                            <div class="hero-poster-preview-pill">
-                                <a href="#selections" class="hero-poster-pill-btn">
-                                    <img src="<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>" alt="Official Selection Poster" class="hero-poster-pill-thumb">
-                                    <span>
-                                        <strong>Official 2025-2026 Merit Poster</strong>
-                                        <small>Tap to view all 13+ cadet photos & details ↓</small>
-                                    </span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                                </a>
-                            </div>
+                                    <div class="hero-actions" style="margin-top: 0.5rem;">
+                                        <a href="#selections" class="btn btn-gold btn-md" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                                            <span>View All Selections Below</span>
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                        </a>
+                                        <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-outline-white btn-md" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                                            <span>Full Hall of Fame</span>
+                                        </a>
+                                    </div>
+                                </div>
 
-                            <div class="hero-actions">
-                                <a href="#selections" class="btn btn-gold btn-lg">
-                                    <span>View Selection Wall & Poster</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                                </a>
-                                <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-outline-white btn-lg">
-                                    <span>Full Hall of Fame</span>
-                                </a>
+                                <!-- Right Column: Crystal Clear, Unobstructed Official Merit Board -->
+                                <div class="slide-selection-poster-box">
+                                    <a href="<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>" target="_blank" rel="noopener" class="slide-selection-poster-link" title="Click to view full high-resolution merit poster">
+                                        <img src="<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>" alt="Official Merit Poster - 13+ Cadets Selected" class="slide-selection-poster-img" loading="eager">
+                                    </a>
+                                    <div class="slide-selection-poster-bar">
+                                        <span>Official 2025-2026 Merit Board</span>
+                                        <a href="<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>" target="_blank" rel="noopener">
+                                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                            Click to Zoom
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -445,11 +444,117 @@ $theme_uri = get_template_directory_uri();
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <button type="button" class="btn btn-gold open-enquiry-modal" data-course="Direct Admission 2026 Batch">
                             <span>Join Next Officer Batch 2026</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </button>
                         <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-outline-navy">
                             <span>View All Results</span>
                         </a>
                     </div>
+                </div>
+            </div>
+
+            <!-- Dedicated Individual Selection Cards Showcase -->
+            <div style="margin-top: 2.5rem;">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <span class="badge-saffron">★ Individual Congratulations Spotlight</span>
+                    <h3 style="font-size: 1.65rem; color: var(--primary-navy); margin: 0.5rem 0;">
+                        Congratulations to Our Star DDCIAN Qualifiers
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 650px; margin: 0 auto;">
+                        Authentic qualification cards honoring students who achieved their dream uniform recommendations through Dehradun Defence College.
+                    </p>
+                </div>
+
+                <div class="individual-selections-grid">
+                    <div class="individual-selection-card">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-aravind-kumar.jpg'); ?>" alt="Aravind Kumar - Congratulations Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Aravind Kumar</h4>
+                            <p>Recommended & Commissioned • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-rajesh-sharma.jpg'); ?>" alt="Rajesh Sharma - Congratulations Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Recommended & Commissioned • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-vikram-singh.jpg'); ?>" alt="Vikram Singh - Congratulations Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Vikram Singh</h4>
+                            <p>Recommended & Commissioned • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-sanjay-gupta.jpg'); ?>" alt="Sanjay Gupta - Congratulations Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Sanjay Gupta</h4>
+                            <p>Recommended & Commissioned • DDCIAN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 21 Final Selections in Last 2 Years Official Banner Box -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-md); margin-bottom: 2.5rem; display: grid; grid-template-columns: 320px 1fr; align-items: center;" class="selection-banner-2col">
+                    <div style="background: #0B1B3D; padding: 0.75rem; display: flex; align-items: center; justify-content: center;">
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-21-nda-banner.jpg'); ?>" alt="21 Final Selections in NDA - Official Poster" style="width: 100%; height: auto; max-height: 280px; object-fit: contain; border-radius: var(--radius-sm);" loading="lazy">
+                    </div>
+                    <div style="padding: 2rem 2.25rem;">
+                        <span class="badge-gold">Proven Track Record</span>
+                        <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin: 0.5rem 0 0.75rem 0;">
+                            21+ Final Selections in NDA in Last 2 Years
+                        </h3>
+                        <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 1rem;">
+                            Dehradun Defence College has consistently set benchmark records in Uttarakhand with exceptional UPSC written hit-rates and SSB recommendations. Our holistic Gurukul model provides comprehensive NDA coaching, SSB GTO outdoor obstacle practice, and daily personal psychology assessment.
+                        </p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-gold btn-sm"><span>View All Academy Selections</span></a>
+                            <button type="button" class="btn btn-outline-navy btn-sm open-enquiry-modal" data-course="NDA Coaching 2026 Batch"><span>Enquire for April 2026 Batch</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete 13 Selected Cadets Grid -->
+            <div style="margin-top: 1rem;">
+                <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-bottom: 1.25rem; text-align: center;">
+                    Roll of Honor: 2025-2026 Recommended DDCIANs
+                </h3>
+                <div class="selection-cadets-grid">
+                    <?php 
+                    $cadets = function_exists('ddc_get_latest_selections') ? ddc_get_latest_selections() : [];
+                    foreach ($cadets as $cadet): 
+                    ?>
+                        <div class="cadet-card">
+                            <div>
+                                <?php 
+                                    $badge_class = 'cadet-badge-nda';
+                                    if (strpos($cadet['tag'], 'Air Force') !== false) {
+                                        $badge_class = 'cadet-badge-iaf';
+                                    } elseif (strpos($cadet['tag'], 'OTA') !== false || strpos($cadet['tag'], 'CDS') !== false) {
+                                        $badge_class = 'cadet-badge-ota';
+                                    } elseif (strpos($cadet['tag'], 'Girls') !== false) {
+                                        $badge_class = 'cadet-badge-girls';
+                                    } elseif (strpos($cadet['tag'], 'JEE') !== false) {
+                                        $badge_class = 'cadet-badge-jee';
+                                    }
+                                ?>
+                                <span class="cadet-card-badge <?php echo $badge_class; ?>">
+                                    <?php echo esc_html($cadet['tag']); ?>
+                                </span>
+                                <h4 class="cadet-name"><?php echo esc_html($cadet['name']); ?></h4>
+                                <div class="cadet-role"><?php echo esc_html($cadet['role']); ?> • <?php echo esc_html($cadet['org']); ?></div>
+                            </div>
+                            <div>
+                                <p class="cadet-detail"><?php echo esc_html($cadet['detail']); ?></p>
+                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                    <?php echo esc_html($cadet['badge']); ?>
+                                </span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
