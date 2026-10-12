@@ -10,258 +10,305 @@ get_header();
 $theme_uri = get_template_directory_uri();
 ?>
 
-    <!-- 1. Hero Dynamic Carousel (Front Slider) -->
-    <section class="hero-slider" id="hero-slider" aria-label="Dehradun Defence College Hero Carousel">
-        <!-- Slide 1: Welcome & Best NDA Coaching -->
-        <div class="hero-slide active" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/hero-cadets.jpg'); ?>');">
-            <div class="hero-slide-overlay"></div>
-            <div class="container">
-                <div class="hero-slide-grid">
-                    <div class="hero-content">
-                        <div class="hero-badge-wrap">
-                            <span class="badge-gold">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                India’s Premier Defence Training Gurukul
-                            </span>
-                        </div>
-                        <h1>
-                            Where Excellence Meets Uniform: <br>
-                            <span class="gold-highlight">Best NDA Coaching</span> in Dehradun
-                        </h1>
-                        <p class="hero-subtext">
-                            Transforming young aspirants into commissioned officers of the Indian Armed Forces. Specialized preparation for <strong>NDA (Foundation & Target), CDS, AFCAT & SSB Interviews</strong> with ex-defence officers, comprehensive UPSC academics, and in-campus residential hostel.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#courses" class="btn btn-gold btn-lg">
-                                <span>Explore Courses</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </a>
-                            <button type="button" class="btn btn-outline-white btn-lg open-enquiry-modal" data-course="NDA 2026 Batch">
-                                <span>Enquire Now</span>
-                            </button>
-                        </div>
-                        <div class="hero-trust-bullets">
-                            <div class="hero-trust-item">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                                <span>400+ DDCIAN Officers & Recommended</span>
+    <!-- 1. Hero Split Section: Dynamic Carousel (Left) & Persistent Enquiry Form (Right) -->
+    <section class="hero-split-section" id="hero" aria-label="Dehradun Defence College Hero Showcase">
+        <div class="container hero-split-grid">
+            <!-- Left Side: Dynamic Multi-Slide Showcase Carousel -->
+            <div class="hero-slider-wrap">
+                <div class="hero-slider" id="hero-slider" aria-label="Hero Highlights Slider">
+                    <!-- Slide 1: Welcome & Best NDA Coaching -->
+                    <div class="hero-slide active" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/hero-cadets.jpg'); ?>');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="hero-slide-content">
+                            <div class="hero-badge-wrap">
+                                <span class="badge-gold">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    India’s Premier Defence Gurukul
+                                </span>
                             </div>
-                            <div class="hero-trust-item">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                                <span>1st Campus: Separate Hostels Boys & Girls</span>
+                            <h1>
+                                Where Excellence Meets Uniform: <br>
+                                <span class="gold-highlight">Best NDA Coaching</span> in Dehradun
+                            </h1>
+                            <p class="hero-slide-subtext">
+                                Transforming young aspirants into commissioned officers of the Indian Armed Forces. Specialized preparation for <strong>NDA (Foundation & Target), CDS, AFCAT & SSB Interviews</strong> with ex-defence officers, comprehensive UPSC academics, and in-campus residential hostel.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#courses" class="btn btn-gold btn-lg">
+                                    <span>Explore Courses</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </a>
+                                <a href="#selections" class="btn btn-outline-white btn-lg">
+                                    <span>2025-2026 Selections</span>
+                                </a>
                             </div>
-                            <div class="hero-trust-item">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                                <span>Live 2-Acre SSB Obstacle GTO Ground</span>
+                            <div class="hero-trust-bullets">
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>400+ DDCIAN Officers Commissioned</span>
+                                </div>
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>1st In-House Separate Hostels</span>
+                                </div>
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>Live 2-Acre SSB Obstacle GTO Ground</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Admission Form Card Docked in Hero -->
-                    <div class="hero-form-card">
-                        <div class="hero-form-header">
-                            <span class="badge-saffron">Admissions Open 2026 Batch</span>
-                            <h3>Register For Admission</h3>
-                            <p>Get batch counseling, fee structure & scholarship guidance</p>
+                    <!-- Slide 2: Latest Selection of 2025-2026 -->
+                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="hero-slide-content">
+                            <div class="hero-badge-wrap">
+                                <span class="badge-saffron">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Our Pride: Selections 2025-2026
+                                </span>
+                            </div>
+                            <h2>
+                                Saluting Our Heroes: <br>
+                                <span class="gold-highlight">13+ Cadets Selected</span> in Uniform
+                            </h2>
+                            <p class="hero-slide-subtext">
+                                Flying Officer <strong>Aadarsh Mishra</strong> (IAF), <strong>Sanskar Jha</strong> (NDA), <strong>Karuna</strong> (SSB Bhopal, NDA), <strong>Arindam</strong> (OTA), <strong>Rishabh Kala</strong> (CDS IMA), <strong>Ayush Pathak</strong> (Air Force), and <strong>Leroy Fernandes</strong> (NDA 143)!
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#selections" class="btn btn-gold btn-lg">
+                                    <span>View Selection Wall & Poster</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-outline-white btn-lg">
+                                    <span>Full Hall of Fame</span>
+                                </a>
+                            </div>
+                            <div class="hero-trust-bullets">
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>Air Force Flying Officer Commission</span>
+                                </div>
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>NDA-143, OTA & CDS Recommendations</span>
+                                </div>
+                            </div>
                         </div>
-                        <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST" class="ddc-enquiry-form" novalidate>
-                            <input type="hidden" name="action" value="ddc_lead_enquiry">
-                            <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
-                            <input type="hidden" name="form_start_time" value="<?php echo time(); ?>">
-                            <div class="form-status-alert" role="alert"></div>
-                            <div class="form-group">
-                                <label class="form-label" for="hero_name_wp">Student's Full Name *</label>
-                                <input type="text" id="hero_name_wp" name="full_name" class="form-control" placeholder="e.g. Aman Sharma" required>
-                                <div class="form-error-feedback"></div>
+                    </div>
+
+                    <!-- Slide 3: Dehradun's 1st In-House Separate Hostels -->
+                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/campus-hostel.jpg'); ?>');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="hero-slide-content">
+                            <div class="hero-badge-wrap">
+                                <span class="badge-gold">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Dehradun's First Dedicated Defence Campus
+                                </span>
                             </div>
-                            <div class="form-group">
-                                <label class="form-label" for="hero_mobile_wp">Contact Mobile Number *</label>
-                                <input type="tel" id="hero_mobile_wp" name="mobile_number" class="form-control" placeholder="10-digit Mobile Number" required>
-                                <div class="form-error-feedback"></div>
+                            <h2>
+                                In-House Separate Hostels <br>
+                                <span class="gold-highlight">for Boys & Girls</span>
+                            </h2>
+                            <p class="hero-slide-subtext">
+                                Complete security, zero travel fatigue, 24/7 dedicated female wardens, biometric safety, hygienic 4-meal military mess, and focused evening academic study in peaceful Maldevta valley.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#hostel-usp" class="btn btn-gold btn-lg">
+                                    <span>Explore Hostel Facilities</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </a>
+                                <a href="<?php echo esc_url(home_url('/faculty-facilities/')); ?>" class="btn btn-outline-white btn-lg">
+                                    <span>Campus Infrastructure</span>
+                                </a>
                             </div>
-                            <div class="form-group">
-                                <label class="form-label" for="hero_email_wp">Email Address *</label>
-                                <input type="email" id="hero_email_wp" name="email" class="form-control" placeholder="candidate@email.com" required>
-                                <div class="form-error-feedback"></div>
+                            <div class="hero-trust-bullets">
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>100% In-Campus Distinct Wings</span>
+                                </div>
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>Dietitian-Balanced 4-Meal Mess</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="form-label" for="hero_course_wp">Course of Interest *</label>
-                                <select id="hero_course_wp" name="course_interest" class="form-control" required>
-                                    <option value="">Select Course</option>
-                                    <option value="NDA Foundation after 10th">NDA Foundation after 10th (2 Years)</option>
-                                    <option value="NDA (Girls) Special Wing">NDA (Girls) Special Wing</option>
-                                    <option value="NDA Target after 12th">NDA Target / Dropper Batch (After 12th)</option>
-                                    <option value="Pre-NDA Foundation (8th-10th)">Pre-NDA Foundation (8th to 10th)</option>
-                                    <option value="RIMC / RMS Military Schools">RIMC & RMS Military Schools (Class 6 & 9)</option>
-                                    <option value="CDS / AFCAT Graduate Entry">CDS (IMA/OTA) & AFCAT Coaching</option>
-                                    <option value="SSB 14-Day Practical Ground">SSB Interview 14-Day Practical Camp</option>
-                                    <option value="MNS / AFMC NEET Wing">Military Nursing (MNS) & AFMC NEET</option>
-                                </select>
-                                <div class="form-error-feedback"></div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Real Live SSB GTO Ground & Ex-Officers -->
+                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/ssb-gto-ground.jpg'); ?>');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="hero-slide-content">
+                            <div class="hero-badge-wrap">
+                                <span class="badge-gold">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Authentic Military Obstacle Grounds
+                                </span>
                             </div>
-                            <div class="form-check">
-                                <input type="checkbox" id="hero_consent_wp" name="privacy_consent" checked required>
-                                <label for="hero_consent_wp">
-                                    I authorize Dehradun Defence College to contact me with admission details.
-                                </label>
-                                <div class="form-error-feedback"></div>
+                            <h2>
+                                Live SSB GTO Ground & <br>
+                                <span class="gold-highlight">Ex-Defence Officer Mentors</span>
+                            </h2>
+                            <p class="hero-slide-subtext">
+                                Train on Burma Bridge, Tiger Leap, Tarzan Swing, Commando Walk, PGT & HGT obstacles built to exact military testing dimensions. Individual psychological dossiers assessed by retired board psychologists.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#courses" class="btn btn-gold btn-lg">
+                                    <span>SSB 14-Day Practical Camp</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </a>
+                                <a href="<?php echo esc_url($theme_uri . '/assets/downloads/ddc-nda-target-timetable.pdf'); ?>" download class="btn btn-outline-white btn-lg">
+                                    <span>SSB Daily Schedule</span>
+                                </a>
                             </div>
-                            <button type="submit" class="btn btn-gold" style="width: 100%;">
-                                <span>Register Now</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </button>
-                        </form>
+                            <div class="hero-trust-bullets">
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>Ex-Colonel & Brigadier Assessors</span>
+                                </div>
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>Personal Mock Interviews & Dais Speech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: RIMC, RMS, MNS & AFMC NEET Wings -->
+                    <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/smart-classroom-lecture-hall.jpg'); ?>');">
+                        <div class="hero-slide-overlay"></div>
+                        <div class="hero-slide-content">
+                            <div class="hero-badge-wrap">
+                                <span class="badge-saffron">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Junior & Medical Defence Wings
+                                </span>
+                            </div>
+                            <h2>
+                                RIMC, RMS Military Schools, <br>
+                                <span class="gold-highlight">MNS & AFMC NEET</span> Wings
+                            </h2>
+                            <p class="hero-slide-subtext">
+                                Specialized coaching for <strong>RIMC Dehradun & RMS (Class 6 & 9 CET)</strong>, alongside our dedicated women wing for <strong>Military Nursing Service (MNS)</strong> and <strong>AFMC Pune MBBS via NEET UG</strong>.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#courses" class="btn btn-gold btn-lg">
+                                    <span>View All Programs</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                </a>
+                                <a href="#fee-structure" class="btn btn-outline-white btn-lg">
+                                    <span>Fee Structure</span>
+                                </a>
+                            </div>
+                            <div class="hero-trust-bullets">
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>RIMC & RMS CET Comprehensive Prep</span>
+                                </div>
+                                <div class="hero-trust-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>MNS Lieutenant Commission & NEET PCB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Navigation Controls -->
+                    <button type="button" class="slider-btn slider-btn-prev" aria-label="Previous Slide">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button type="button" class="slider-btn slider-btn-next" aria-label="Next Slide">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+
+                    <!-- Slider Pagination Dots -->
+                    <div class="slider-dots">
+                        <span class="slider-dot active" data-slide="0" role="button" aria-label="Slide 1"></span>
+                        <span class="slider-dot" data-slide="1" role="button" aria-label="Slide 2"></span>
+                        <span class="slider-dot" data-slide="2" role="button" aria-label="Slide 3"></span>
+                        <span class="slider-dot" data-slide="3" role="button" aria-label="Slide 4"></span>
+                        <span class="slider-dot" data-slide="4" role="button" aria-label="Slide 5"></span>
+                    </div>
+
+                    <!-- Auto slide progress bar -->
+                    <div class="slider-progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- Right Side: Persistent Eye-Catching Enquiry / Admission Registration Form Card -->
+            <div class="hero-persistent-form-wrap">
+                <div class="eye-catchy-form-card" id="hero-enquiry-card">
+                    <div class="pulse-live-badge">
+                        <span class="live-dot"></span>
+                        <span>Admissions Open • 2026-2027 Batch</span>
+                    </div>
+                    <h3 class="form-card-title">Register For Admission</h3>
+                    <p class="form-card-sub">Get personalized counseling, fee structure & scholarship guidance</p>
+
+                    <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="POST" class="ddc-enquiry-form" novalidate>
+                        <input type="hidden" name="action" value="ddc_lead_enquiry">
+                        <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
+                        <input type="hidden" name="form_start_time" value="<?php echo time(); ?>">
+
+                        <div class="form-status-alert" role="alert"></div>
+
+                        <div class="form-group" style="margin-bottom: 0.85rem;">
+                            <label class="form-label" for="hero_split_name_wp" style="color: #FFFFFF; font-size: 0.825rem;">Student's Full Name *</label>
+                            <input type="text" id="hero_split_name_wp" name="full_name" class="form-control" placeholder="e.g. Aman Sharma" required style="background: rgba(255,255,255,0.95); height: 44px;">
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0.85rem;">
+                            <label class="form-label" for="hero_split_mobile_wp" style="color: #FFFFFF; font-size: 0.825rem;">Contact Mobile Number *</label>
+                            <input type="tel" id="hero_split_mobile_wp" name="mobile_number" class="form-control" placeholder="10-digit Mobile Number" required style="background: rgba(255,255,255,0.95); height: 44px;">
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0.85rem;">
+                            <label class="form-label" for="hero_split_email_wp" style="color: #FFFFFF; font-size: 0.825rem;">Email Address *</label>
+                            <input type="email" id="hero_split_email_wp" name="email" class="form-control" placeholder="candidate@email.com" required style="background: rgba(255,255,255,0.95); height: 44px;">
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 0.85rem;">
+                            <label class="form-label" for="hero_split_course_wp" style="color: #FFFFFF; font-size: 0.825rem;">Course of Interest *</label>
+                            <select id="hero_split_course_wp" name="course_interest" class="form-control" required style="background: rgba(255,255,255,0.95); height: 44px;">
+                                <option value="">Select Course</option>
+                                <option value="NDA Foundation after 10th">NDA Foundation after 10th (2 Years + Schooling)</option>
+                                <option value="NDA (Girls) Special Wing">NDA (Girls) Special Wing + Safe Hostel</option>
+                                <option value="NDA Target after 12th">NDA Target / Dropper Batch (After 12th)</option>
+                                <option value="Pre-NDA Foundation (8th-10th)">Pre-NDA Foundation (8th to 10th Class)</option>
+                                <option value="RIMC / RMS Military Schools">RIMC & RMS Military Schools (Class 6 & 9)</option>
+                                <option value="CDS / AFCAT Graduate Entry">CDS (IMA/OTA) & AFCAT Coaching</option>
+                                <option value="SSB 14-Day Practical Ground">SSB Interview 14-Day Practical Camp</option>
+                                <option value="MNS / AFMC NEET Wing">Military Nursing (MNS) & AFMC NEET</option>
+                            </select>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-check" style="margin-bottom: 1rem;">
+                            <input type="checkbox" id="hero_split_consent_wp" name="privacy_consent" checked required>
+                            <label for="hero_split_consent_wp" style="color: rgba(255,255,255,0.85); font-size: 0.775rem;">
+                                I authorize DDC to contact me regarding admission & scholarship details.
+                            </label>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-lg" style="width: 100%; height: 48px; font-weight: 800; font-size: 1rem; box-shadow: 0 4px 15px rgba(212,175,55,0.45);">
+                            <span>Register Now (April 2026 Batch)</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </form>
+
+                    <div class="form-guarantee-note">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <span>Fast 15-Minute Callback • Zero Hidden Charges</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Slide 2: Latest Selection of 2025-2026 -->
-        <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/ddc-selections-2025-2026.jpg'); ?>');">
-            <div class="hero-slide-overlay"></div>
-            <div class="container">
-                <div class="hero-slide-grid">
-                    <div class="hero-content">
-                        <div class="hero-badge-wrap">
-                            <span class="badge-saffron">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                Our Pride: Selections 2025-2026
-                            </span>
-                        </div>
-                        <h2 style="font-size: 2.85rem; color: #FFFFFF; font-family: var(--font-heading); margin-bottom: 1rem;">
-                            Saluting Our Heroes: <br>
-                            <span class="gold-highlight">13+ Cadets Selected</span> in Defence Forces
-                        </h2>
-                        <p class="hero-subtext">
-                            Heartiest Congratulations to <strong>Flying Officer Aadarsh Mishra</strong> (Joined Indian Air Force), <strong>Cadet Sanskar Jha</strong> (NDA), <strong>Karuna</strong> (SSB Bhopal, NDA), <strong>Arindam</strong> (OTA Chennai), <strong>Rishabh Kala</strong> (CDS 18 SSB), <strong>Ayush Pathak</strong> (Air Force), and <strong>Leroy Fernandes</strong> (NDA 143)!
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#selections" class="btn btn-gold btn-lg">
-                                <span>View 2025-2026 Selection Wall</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </a>
-                            <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-outline-white btn-lg">
-                                <span>Complete Hall of Fame</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="background: rgba(11, 37, 69, 0.85); backdrop-filter: blur(10px); border: 2px solid var(--accent-gold); border-radius: var(--radius-lg); padding: 2rem; color: #FFFFFF; text-align: center;">
-                        <span class="badge-gold" style="margin-bottom: 0.75rem;">Official Merit Board</span>
-                        <h3 style="font-size: 1.4rem; color: #FFFFFF; margin-bottom: 0.5rem;">Selections of 2025-2026</h3>
-                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-bottom: 1.25rem;">“One who is an officer is an officer now, and will remain one, rest of one's life for!”</p>
-                        <a href="#selections" class="btn btn-gold" style="width: 100%;">
-                            <span>See All Selected Cadets</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 3: In-House Separate Hostels -->
-        <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/campus-hostel.jpg'); ?>');">
-            <div class="hero-slide-overlay"></div>
-            <div class="container">
-                <div class="hero-slide-grid">
-                    <div class="hero-content">
-                        <div class="hero-badge-wrap">
-                            <span class="badge-gold">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                Dehradun's First Dedicated Defence Campus
-                            </span>
-                        </div>
-                        <h2 style="font-size: 2.85rem; color: #FFFFFF; font-family: var(--font-heading); margin-bottom: 1rem;">
-                            Dehradun's 1st Campus with <br>
-                            <span class="gold-highlight">In-House Separate Hostels</span> for Boys & Girls
-                        </h2>
-                        <p class="hero-subtext">
-                            Zero travel fatigue, complete safety, 24/7 dedicated female wardens for girls, biometric security, hygienic 4-meal military mess, and focused evening academic study in peaceful Maldevta valley.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#hostel-usp" class="btn btn-gold btn-lg">
-                                <span>Explore Hostel Facilities</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 4: Live GTO Ground -->
-        <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/ssb-gto-ground.jpg'); ?>');">
-            <div class="hero-slide-overlay"></div>
-            <div class="container">
-                <div class="hero-slide-grid">
-                    <div class="hero-content">
-                        <div class="hero-badge-wrap">
-                            <span class="badge-gold">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                Authentic Military Obstacle Grounds
-                            </span>
-                        </div>
-                        <h2 style="font-size: 2.85rem; color: #FFFFFF; font-family: var(--font-heading); margin-bottom: 1rem;">
-                            Live SSB GTO Ground & <br>
-                            <span class="gold-highlight">Ex-Defence Officer Mentors</span>
-                        </h2>
-                        <p class="hero-subtext">
-                            Train on Burma Bridge, Tiger Leap, Tarzan Swing, Commando Walk, PGT & HGT obstacles built to exact military testing dimensions.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#courses" class="btn btn-gold btn-lg">
-                                <span>SSB 14-Day Practical Camp</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 5: RIMC, RMS, MNS & AFMC NEET -->
-        <div class="hero-slide" style="background-image: url('<?php echo esc_url($theme_uri . '/assets/images/smart-classroom-lecture-hall.jpg'); ?>');">
-            <div class="hero-slide-overlay"></div>
-            <div class="container">
-                <div class="hero-slide-grid">
-                    <div class="hero-content">
-                        <div class="hero-badge-wrap">
-                            <span class="badge-saffron">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                Junior & Medical Defence Wings
-                            </span>
-                        </div>
-                        <h2 style="font-size: 2.85rem; color: #FFFFFF; font-family: var(--font-heading); margin-bottom: 1rem;">
-                            RIMC, RMS Military Schools, <br>
-                            <span class="gold-highlight">MNS & AFMC NEET</span> Wings
-                        </h2>
-                        <p class="hero-subtext">
-                            Specialized coaching for RIMC Dehradun & RMS (Class 6 & 9 CET), Military Nursing Service (MNS), and AFMC Pune MBBS via NEET UG.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#courses" class="btn btn-gold btn-lg">
-                                <span>Explore All Programs</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slider Navigation Controls -->
-        <button type="button" class="slider-btn slider-btn-prev" aria-label="Previous Slide">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </button>
-        <button type="button" class="slider-btn slider-btn-next" aria-label="Next Slide">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </button>
-
-        <!-- Slider Pagination Dots -->
-        <div class="slider-dots">
-            <span class="slider-dot active" data-slide="0" role="button" aria-label="Slide 1"></span>
-            <span class="slider-dot" data-slide="1" role="button" aria-label="Slide 2"></span>
-            <span class="slider-dot" data-slide="2" role="button" aria-label="Slide 3"></span>
-            <span class="slider-dot" data-slide="3" role="button" aria-label="Slide 4"></span>
-            <span class="slider-dot" data-slide="4" role="button" aria-label="Slide 5"></span>
-        </div>
-
-        <div class="slider-progress-bar"></div>
     </section>
 
     <!-- 2. Statistics Strip -->

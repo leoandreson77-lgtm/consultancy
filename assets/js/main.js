@@ -545,4 +545,107 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(0);
     startAutoSlide();
   }
+
+  /* ==========================================================
+     13. Live Recent Enrollment Notification Ticker ("Side Enroll Popups")
+     ========================================================== */
+  const liveEnrollPopup = document.getElementById('liveEnrollPopup');
+  if (liveEnrollPopup) {
+    const enrollments = [
+      {
+        name: 'Aman Sharma (Dehradun)',
+        action: 'Enrolled in NDA Foundation 2026 (Class 11+12)',
+        time: 'Just now',
+        avatar: '🎖️'
+      },
+      {
+        name: 'Priya Rawat (Haridwar)',
+        action: 'Booked seat in NDA (Girls) Wing + In-House Hostel',
+        time: '3 mins ago',
+        avatar: '⭐'
+      },
+      {
+        name: 'Rohit Negi (Rishikesh)',
+        action: 'Joined SSB 14-Day Practical GTO Ground Camp',
+        time: '6 mins ago',
+        avatar: '⚔️'
+      },
+      {
+        name: 'Ananya Verma (Haldwani)',
+        action: 'Enrolled in MNS BSc Nursing + NEET UG Batch',
+        time: '8 mins ago',
+        avatar: '🩺'
+      },
+      {
+        name: 'Vikas Chauhan (Roorkee)',
+        action: 'Registered for RIMC & RMS Military School CET',
+        time: '11 mins ago',
+        avatar: '🎯'
+      },
+      {
+        name: 'Ayush Joshi (Nainital)',
+        action: 'Joined CDS (IMA/OTA) Target Written & SSB Batch',
+        time: '14 mins ago',
+        avatar: '✈️'
+      },
+      {
+        name: 'Kunal Tomar (Saharanpur)',
+        action: 'Enrolled in NDA Dropper Batch with Separate Hostel',
+        time: '17 mins ago',
+        avatar: '🇮🇳'
+      },
+      {
+        name: 'Seat Intake Notice',
+        action: 'Only 5 Residential Hostel Beds Left for April 2026 Batch',
+        time: 'Live Alert',
+        avatar: '🚨'
+      }
+    ];
+
+    let currentIdx = 0;
+    let isDismissed = false;
+
+    const nameEl = document.getElementById('enrollName');
+    const actionEl = document.getElementById('enrollAction');
+    const timeEl = document.getElementById('enrollTime');
+    const avatarEl = document.getElementById('enrollAvatar');
+    const closeBtn = document.getElementById('closeEnrollPopup');
+
+    function showNextEnrollment() {
+      if (isDismissed) return;
+      const item = enrollments[currentIdx];
+      if (nameEl) nameEl.textContent = item.name;
+      if (actionEl) actionEl.textContent = item.action;
+      if (timeEl) timeEl.textContent = item.time;
+      if (avatarEl) avatarEl.textContent = item.avatar;
+
+      liveEnrollPopup.classList.add('show');
+
+      // Stay visible for 4.8 seconds
+      setTimeout(function () {
+        liveEnrollPopup.classList.remove('show');
+      }, 4800);
+
+      currentIdx = (currentIdx + 1) % enrollments.length;
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        liveEnrollPopup.classList.remove('show');
+        isDismissed = true;
+        // Re-enable after 50 seconds
+        setTimeout(function () {
+          isDismissed = false;
+        }, 50000);
+      });
+    }
+
+    // Launch first popup after 2 seconds, cycle every 8.5 seconds
+    setTimeout(function () {
+      showNextEnrollment();
+      setInterval(showNextEnrollment, 8800);
+    }, 2000);
+  }
 });
+
