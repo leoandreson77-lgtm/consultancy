@@ -93,18 +93,20 @@ include __DIR__ . '/includes/header.php';
 
                     <!-- Top 2 Star Cadets Feature Cards -->
                     <div class="form-row-2col" style="margin-bottom: 1.5rem;">
-                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm);">
+                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm); text-align: center;">
+                            <img src="assets/images/cadets/cadet-aadarsh-mishra.jpg" alt="Aadarsh Mishra Flying Officer" class="cadet-card-photo" loading="lazy" width="76" height="76">
                             <span class="cadet-card-badge cadet-badge-iaf">Air Force Commission</span>
                             <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin: 0.35rem 0 0.2rem 0;">Aadarsh Mishra</h4>
                             <p style="font-size: 0.825rem; color: var(--accent-gold-hover); font-weight: 700; margin-bottom: 0.25rem;">(DDCIAN)</p>
                             <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Joined Indian Air Force as <strong>Flying Officer</strong></p>
                         </div>
 
-                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm);">
+                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm); text-align: center;">
+                            <img src="assets/images/cadets/cadet-sanskar-jha.jpg" alt="Sanskar Jha NDA Cadet" class="cadet-card-photo" loading="lazy" width="76" height="76">
                             <span class="cadet-card-badge cadet-badge-nda">NDA Recommendation</span>
                             <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin: 0.35rem 0 0.2rem 0;">Sanskar Jha</h4>
                             <p style="font-size: 0.825rem; color: var(--accent-gold-hover); font-weight: 700; margin-bottom: 0.25rem;">(DDCIAN)</p>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Cleared <strong>NDA Written Exam & SSB Board</strong></p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Cleared <strong>NDA Written Exam &amp; SSB Board</strong></p>
                         </div>
                     </div>
 
@@ -191,6 +193,9 @@ include __DIR__ . '/includes/header.php';
                     <?php foreach ($DDC_LATEST_SELECTIONS_2026 as $cadet): ?>
                         <div class="cadet-card">
                             <div>
+                                <?php if (!empty($cadet['photo'])): ?>
+                                    <img src="<?php echo htmlspecialchars($cadet['photo']); ?>" alt="<?php echo htmlspecialchars($cadet['name']); ?> Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                                <?php endif; ?>
                                 <?php 
                                     $badge_class = 'cadet-badge-nda';
                                     if (strpos($cadet['tag'], 'Air Force') !== false) {

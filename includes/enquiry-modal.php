@@ -107,3 +107,52 @@ require_once __DIR__ . '/../config.php';
         </form>
     </div>
 </div>
+
+<!-- Dedicated Scholarship & Fee Concession Modal (Client Requested) -->
+<div class="ddc-modal-overlay" id="scholarshipModal" role="dialog" aria-modal="true" aria-labelledby="scholarshipTitle">
+    <div class="ddc-modal-box scholarship-modal-card">
+        <button type="button" class="ddc-modal-close close-scholarship-modal" aria-label="Close Modal">&times;</button>
+        
+        <div class="hero-form-header" style="margin-top: 0.25rem;">
+            <span class="badge-gold">National Defence Scholarship 2026-2027</span>
+            <h3 id="scholarshipTitle" style="margin-top: 0.4rem; color: var(--primary-navy);">Defence & Meritorious Scholarship Scheme</h3>
+            <p>Dehradun Defence College honors national service with special institutional concessions and grants.</p>
+        </div>
+
+        <div class="scholarship-scheme-grid">
+            <div class="scholarship-scheme-item">
+                <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: #166534;"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    Veer Naris & Martyr's Children
+                </h4>
+                <p><strong>100% Tuition Fee Waiver</strong> in honor of their ultimate supreme sacrifice for Bharat. Full academic preparation for NDA, CDS, AFCAT & SSB.</p>
+            </div>
+
+            <div class="scholarship-scheme-item">
+                <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: #9D174D;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    Betiyon Ka Raksha Samman
+                </h4>
+                <p>Special fee grants for meritorious female cadets applying for <strong>NDA (Girls) Wing</strong> and <strong>MNS BSc Nursing + NEET UG</strong> residential batches.</p>
+            </div>
+
+            <div class="scholarship-scheme-item">
+                <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent-gold-hover);"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    Serving & Ex-Servicemen Wards
+                </h4>
+                <p>Up to <strong>25% Fee Concession</strong> for children of Army, Navy, Air Force, Coast Guard & Paramilitary personnel.</p>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button type="button" class="btn btn-gold open-enquiry-modal close-scholarship-modal" data-course="Scholarship & Fee Concession" style="flex: 1; justify-content: center;">
+                <span>Apply for Scholarship / Concession</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button type="button" class="btn btn-outline-navy close-scholarship-modal" style="justify-content: center;">
+                <span>Close</span>
+            </button>
+        </div>
+    </div>
+</div>

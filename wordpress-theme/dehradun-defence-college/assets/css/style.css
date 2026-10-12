@@ -413,6 +413,161 @@ h6 { font-size: 0.95rem; }
   transform: translateY(-1px);
 }
 
+.top-visiting-hours {
+  color: #FFD700;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-top-schedule-tour {
+  background: var(--accent-gold);
+  color: #06152D;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #FFE066;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.btn-top-schedule-tour:hover {
+  background: #FFFFFF;
+  color: #06152D;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.4);
+}
+
+/* --- 5.1 TOP SCHOLARSHIP ANNOUNCEMENT BAR & POPUP MODAL --- */
+.top-scholarship-bar {
+  background: linear-gradient(90deg, #8B1E0F 0%, #B8470E 50%, #8B1E0F 100%);
+  color: #FFFFFF;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+  border-bottom: 1.5px solid var(--accent-gold);
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.top-scholarship-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.top-scholarship-left {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.top-scholarship-badge {
+  background: #FFD700;
+  color: #0B1B3D;
+  font-weight: 900;
+  font-size: 0.7rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.top-scholarship-text {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+}
+
+.top-scholarship-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-scholarship-apply {
+  background: #0B1B3D;
+  color: #FFD700;
+  border: 1.5px solid #FFD700;
+  font-weight: 800;
+  font-size: 0.72rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-scholarship-apply:hover {
+  background: #FFD700;
+  color: #0B1B3D;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.btn-scholarship-close {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.3rem;
+  transition: color 0.2s;
+}
+
+.btn-scholarship-close:hover {
+  color: #FFFFFF;
+}
+
+/* Scholarship Scheme Grid inside Modal */
+.scholarship-scheme-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+}
+
+.scholarship-scheme-item {
+  background: rgba(11, 37, 69, 0.04);
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.scholarship-scheme-item h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.scholarship-scheme-item p {
+  margin: 0;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* --- 6. STICKY HEADER & NAVIGATION --- */
 .site-header {
   position: sticky;
@@ -3183,6 +3338,24 @@ h6 { font-size: 0.95rem; }
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
   border-color: var(--accent-gold);
+}
+
+.cadet-card-photo {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0.35rem auto 0.65rem auto;
+  border: 2.5px solid var(--accent-gold);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  display: block;
+  background: #0B1B3D;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cadet-card:hover .cadet-card-photo {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
 }
 
 .cadet-card-badge {

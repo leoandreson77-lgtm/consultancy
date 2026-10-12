@@ -97,13 +97,17 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
             <div class="top-notice-left">
                 <span class="top-notice-item">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <span>Admissions Helpdesk:</span>
+                    <span>Admissions:</span>
                     <a href="tel:<?php echo CONTACT_PHONE_1_RAW; ?>"><?php echo CONTACT_PHONE_1; ?></a>
                 </span>
-                <span class="top-notice-item">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <a href="mailto:<?php echo CONTACT_EMAIL; ?>"><?php echo CONTACT_EMAIL; ?></a>
+                <span class="top-notice-item top-visiting-hours">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Monday - Sunday: 8:00 AM - 6:00 PM</span>
                 </span>
+                <button type="button" class="btn-top-schedule-tour open-enquiry-modal" data-course="Schedule Campus Tour">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>SCHEDULE CAMPUS TOUR</span>
+                </button>
             </div>
 
             <div class="top-marquee-wrap">
@@ -126,6 +130,28 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
                 <a href="<?php echo YOUTUBE_LINK; ?>" target="_blank" rel="noopener" aria-label="YouTube">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Scholarship Announcement Bar (Client Requested) -->
+    <div class="top-scholarship-bar" id="topScholarshipBar">
+        <div class="container top-scholarship-inner">
+            <div class="top-scholarship-left">
+                <span class="top-scholarship-badge">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    SCHOLARSHIP NOTICE
+                </span>
+                <span class="top-scholarship-text">
+                    <strong>Veer Naris &amp; Martyr's Children:</strong> 100% Tuition Fee Waiver &bull; <strong>Betiyon Ka Raksha Samman:</strong> Special grants for NDA Girls &amp; MNS Nursing
+                </span>
+            </div>
+            <div class="top-scholarship-actions">
+                <button type="button" class="btn-scholarship-apply" id="openScholarshipPopup">
+                    <span>APPLY FOR SCHOLARSHIP / FEE CONCESSION</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <button type="button" class="btn-scholarship-close" id="closeScholarshipBar" aria-label="Dismiss Scholarship Notice">&times;</button>
             </div>
         </div>
     </div>

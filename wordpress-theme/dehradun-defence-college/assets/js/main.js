@@ -172,6 +172,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = '';
   }
 
+  // Auto-Popup Registration / Admission Modal on Website Open (Client Requested)
+  if (modalOverlay) {
+    const hasSeenAutoModal = sessionStorage.getItem('ddc_auto_registration_shown');
+    if (!hasSeenAutoModal) {
+      setTimeout(function () {
+        openEnquiryModal('Direct Admission 2026 Batch');
+        sessionStorage.setItem('ddc_auto_registration_shown', 'true');
+      }, 2500); // Pops up automatically after 2.5 seconds on initial site visit
+    }
+  }
+
   openModalBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
@@ -200,6 +211,40 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // Scholarship Announcement Bar & Popup Triggers
+  const closeScholarshipBarBtn = document.getElementById('closeScholarshipBar');
+  const topScholarshipBar = document.getElementById('topScholarshipBar');
+  if (closeScholarshipBarBtn && topScholarshipBar) {
+    closeScholarshipBarBtn.addEventListener('click', function () {
+      topScholarshipBar.style.display = 'none';
+    });
+  }
+
+  const openScholarshipBtns = document.querySelectorAll('#openScholarshipPopup, .open-scholarship-modal');
+  openScholarshipBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const scholarshipModal = document.getElementById('scholarshipModal');
+      if (scholarshipModal) {
+        scholarshipModal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      } else {
+        openEnquiryModal('Scholarship & Fee Concession');
+      }
+    });
+  });
+
+  const closeScholarshipModalBtns = document.querySelectorAll('.close-scholarship-modal');
+  closeScholarshipModalBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const scholarshipModal = document.getElementById('scholarshipModal');
+      if (scholarshipModal) {
+        scholarshipModal.classList.remove('is-open');
+        document.body.style.overflow = '';
+      }
+    });
+  });
 
   // -------------------------------------------------------------
   // 6. Universal Lightbox Preview (Gallery & High-Res Selection Posters)
@@ -564,46 +609,82 @@ document.addEventListener('DOMContentLoaded', function () {
   if (liveEnrollPopup) {
     const enrollments = [
       {
-        name: 'Aman Sharma (Dehradun)',
-        action: 'Enrolled in NDA Foundation 2026 (Class 11+12)',
+        name: 'Sai Vardhan (Visakhapatnam, AP)',
+        action: 'Enrolled in NDA Foundation 2-Year Residential Batch',
         time: 'Just now',
+        avatar: '🇮🇳'
+      },
+      {
+        name: 'Omkar Shinde (Pune, Maharashtra)',
+        action: 'Booked seat in NDA Target Batch + In-House Hostel',
+        time: '2 mins ago',
         avatar: '🎖️'
       },
       {
-        name: 'Priya Rawat (Haridwar)',
-        action: 'Booked seat in NDA (Girls) Wing + In-House Hostel',
-        time: '3 mins ago',
+        name: 'Harshil Patel (Ahmedabad, Gujarat)',
+        action: 'Registered for NDA Written + SSB Interview Camp',
+        time: '4 mins ago',
         avatar: '⭐'
       },
       {
-        name: 'Rohit Negi (Rishikesh)',
-        action: 'Joined SSB 14-Day Practical GTO Ground Camp',
+        name: 'Gurpreet Singh (Amritsar, Punjab)',
+        action: 'Joined CDS (IMA/OTA) + SSB Live GTO Ground Training',
         time: '6 mins ago',
         avatar: '⚔️'
       },
       {
-        name: 'Ananya Verma (Haldwani)',
-        action: 'Enrolled in MNS BSc Nursing + NEET UG Batch',
+        name: 'Deepak Malik (Rohtak, Haryana)',
+        action: 'Enrolled in NDA Dropper Batch with Separate Hostel',
         time: '8 mins ago',
-        avatar: '🩺'
-      },
-      {
-        name: 'Vikas Chauhan (Roorkee)',
-        action: 'Registered for RIMC & RMS Military School CET',
-        time: '11 mins ago',
         avatar: '🎯'
       },
       {
-        name: 'Ayush Joshi (Nainital)',
-        action: 'Joined CDS (IMA/OTA) Target Written & SSB Batch',
-        time: '14 mins ago',
+        name: 'Aryan Shukla (Lucknow, UP)',
+        action: 'Booked seat in NDA 2026-2027 Officer Foundation Batch',
+        time: '11 mins ago',
+        avatar: '🪖'
+      },
+      {
+        name: 'Aditya Sharma (Dwarka, Delhi)',
+        action: 'Enrolled in NDA Foundation (Class 11th + 12th Integrated)',
+        time: '13 mins ago',
         avatar: '✈️'
       },
       {
-        name: 'Kunal Tomar (Saharanpur)',
-        action: 'Enrolled in NDA Dropper Batch with Separate Hostel',
-        time: '17 mins ago',
+        name: 'Rohit Dogra (Jammu, J&K)',
+        action: 'Joined 14-Day Practical SSB GTO Ground & Interview Camp',
+        time: '15 mins ago',
+        avatar: '🎖️'
+      },
+      {
+        name: 'Shivam Tiwari (Bhopal, MP)',
+        action: 'Registered for NDA Target Course with Residential Hostel',
+        time: '18 mins ago',
         avatar: '🇮🇳'
+      },
+      {
+        name: 'Yuvraj Rathore (Jaipur, Rajasthan)',
+        action: 'Enrolled in NDA Officer Training Batch',
+        time: '21 mins ago',
+        avatar: '⚔️'
+      },
+      {
+        name: 'Ananya Verma (Dehradun, Uttarakhand)',
+        action: 'Enrolled in MNS BSc Nursing + NEET UG Defence Batch',
+        time: '24 mins ago',
+        avatar: '🩺'
+      },
+      {
+        name: 'Rishabh Anand (Patna, Bihar)',
+        action: 'Registered for RIMC & RMS Military School CET Coaching',
+        time: '27 mins ago',
+        avatar: '🎯'
+      },
+      {
+        name: 'Aniket Thakur (Shimla, Himachal)',
+        action: 'Joined CDS (OTA) Target Written & Daily SSB Ground',
+        time: '30 mins ago',
+        avatar: '⭐'
       },
       {
         name: 'Seat Intake Notice',

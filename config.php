@@ -462,6 +462,7 @@ $DDC_FEE_STRUCTURE = [
 $DDC_LATEST_SELECTIONS_2026 = [
     [
         'name'        => 'Aadarsh Mishra (DDCIAN)',
+        'photo'       => 'assets/images/cadets/cadet-aadarsh-mishra.jpg',
         'role'        => 'Flying Officer',
         'org'         => 'Indian Air Force',
         'badge'       => 'Commissioned Officer',
@@ -470,6 +471,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Sanskar Jha (DDCIAN)',
+        'photo'       => 'assets/images/cadets/cadet-sanskar-jha.jpg',
         'role'        => 'Cadet',
         'org'         => 'National Defence Academy',
         'badge'       => 'Cleared Written & SSB',
@@ -478,6 +480,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Arindam',
+        'photo'       => 'assets/images/cadets/cadet-arindam.jpg',
         'role'        => 'Officer Cadet',
         'org'         => 'OTA Chennai',
         'badge'       => 'Chest #4',
@@ -486,6 +489,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Praneet Singh',
+        'photo'       => 'assets/images/cadets/cadet-praneet-singh.jpg',
         'role'        => 'Cadet',
         'org'         => 'NDA - 18 SSB Allahabad',
         'badge'       => 'Chest #4',
@@ -494,6 +498,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Karuna',
+        'photo'       => 'assets/images/cadets/cadet-karuna.jpg',
         'role'        => 'Cadet (Girls Wing)',
         'org'         => 'SSB Bhopal, NDA',
         'badge'       => 'Chest #20',
@@ -502,6 +507,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Rishabh Kala',
+        'photo'       => 'assets/images/cadets/cadet-rishabh-kala.jpg',
         'role'        => 'Gentleman Cadet',
         'org'         => 'CDS, 18 SSB Allahabad',
         'badge'       => 'Chest #21',
@@ -510,6 +516,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Ayush Pathak',
+        'photo'       => 'assets/images/cadets/cadet-ayush-pathak.jpg',
         'role'        => 'Air Force Cadet',
         'org'         => '18-SSB Allahabad Board',
         'badge'       => 'Chest #7',
@@ -518,6 +525,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Leroy Fernandes',
+        'photo'       => 'assets/images/cadets/cadet-leroy-fernandes.jpg',
         'role'        => 'Cadet',
         'org'         => 'NDA - 143 Course',
         'badge'       => 'Chest #3',
@@ -526,6 +534,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Pooja Ahlawat',
+        'photo'       => 'assets/images/cadets/cadet-pooja-ahlawat.jpg',
         'role'        => 'Cadet (Girls Wing)',
         'org'         => 'NDA Selection',
         'badge'       => 'Chest #6',
@@ -534,6 +543,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Kshitij Pandey',
+        'photo'       => 'assets/images/cadets/cadet-kshitij-pandey.jpg',
         'role'        => 'Cadet',
         'org'         => 'NDA Selection',
         'badge'       => 'Chest #32',
@@ -542,6 +552,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Yashraj Yadav',
+        'photo'       => 'assets/images/cadets/cadet-yashraj-yadav.jpg',
         'role'        => 'Cadet',
         'org'         => '19 SSB Allahabad, NDA-143',
         'badge'       => 'Chest #02',
@@ -550,6 +561,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Akhand Pratap Singh',
+        'photo'       => 'assets/images/cadets/cadet-akhand-pratap-singh.jpg',
         'role'        => 'Star Performer',
         'org'         => 'IIT-JEE Main 2025-26 & NDA',
         'badge'       => 'Dual Qualifier',
@@ -558,6 +570,7 @@ $DDC_LATEST_SELECTIONS_2026 = [
     ],
     [
         'name'        => 'Sujal Singh',
+        'photo'       => 'assets/images/cadets/cadet-sujal-singh.jpg',
         'role'        => 'Star Performer',
         'org'         => 'IIT-JEE Main 2025-26 & NDA',
         'badge'       => 'Dual Qualifier',

@@ -85,13 +85,17 @@
             <div class="top-notice-left">
                 <span class="top-notice-item">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <span>Admissions Helpdesk:</span>
+                    <span>Admissions:</span>
                     <a href="tel:+919719104024">+91 9719104024</a>
                 </span>
-                <span class="top-notice-item">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <a href="mailto:dehradundefencecollege@gmail.com">dehradundefencecollege@gmail.com</a>
+                <span class="top-notice-item top-visiting-hours">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Monday - Sunday: 8:00 AM - 6:00 PM</span>
                 </span>
+                <button type="button" class="btn-top-schedule-tour open-enquiry-modal" data-course="Schedule Campus Tour">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>SCHEDULE CAMPUS TOUR</span>
+                </button>
             </div>
 
             <div class="top-marquee-wrap">
@@ -114,6 +118,28 @@
                 <a href="https://www.youtube.com/@dehradundefencecollege" target="_blank" rel="noopener" aria-label="YouTube">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Scholarship Announcement Bar (Client Requested) -->
+    <div class="top-scholarship-bar" id="topScholarshipBar">
+        <div class="container top-scholarship-inner">
+            <div class="top-scholarship-left">
+                <span class="top-scholarship-badge">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    SCHOLARSHIP NOTICE
+                </span>
+                <span class="top-scholarship-text">
+                    <strong>Veer Naris &amp; Martyr's Children:</strong> 100% Tuition Fee Waiver &bull; <strong>Betiyon Ka Raksha Samman:</strong> Special grants for NDA Girls &amp; MNS Nursing
+                </span>
+            </div>
+            <div class="top-scholarship-actions">
+                <button type="button" class="btn-scholarship-apply" id="openScholarshipPopup">
+                    <span>APPLY FOR SCHOLARSHIP / FEE CONCESSION</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+                <button type="button" class="btn-scholarship-close" id="closeScholarshipBar" aria-label="Dismiss Scholarship Notice">&times;</button>
             </div>
         </div>
     </div>
@@ -610,18 +636,20 @@
 
                     <!-- Top 2 Star Cadets Feature Cards -->
                     <div class="form-row-2col" style="margin-bottom: 1.5rem;">
-                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm);">
+                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm); text-align: center;">
+                            <img src="assets/images/cadets/cadet-aadarsh-mishra.jpg" alt="Aadarsh Mishra Flying Officer" class="cadet-card-photo" loading="lazy" width="76" height="76">
                             <span class="cadet-card-badge cadet-badge-iaf">Air Force Commission</span>
                             <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin: 0.35rem 0 0.2rem 0;">Aadarsh Mishra</h4>
                             <p style="font-size: 0.825rem; color: var(--accent-gold-hover); font-weight: 700; margin-bottom: 0.25rem;">(DDCIAN)</p>
                             <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Joined Indian Air Force as <strong>Flying Officer</strong></p>
                         </div>
 
-                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm);">
+                        <div style="background: #FFFFFF; border-radius: var(--radius-md); padding: 1.25rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-sm); text-align: center;">
+                            <img src="assets/images/cadets/cadet-sanskar-jha.jpg" alt="Sanskar Jha NDA Cadet" class="cadet-card-photo" loading="lazy" width="76" height="76">
                             <span class="cadet-card-badge cadet-badge-nda">NDA Recommendation</span>
                             <h4 style="font-size: 1.1rem; color: var(--primary-navy); margin: 0.35rem 0 0.2rem 0;">Sanskar Jha</h4>
                             <p style="font-size: 0.825rem; color: var(--accent-gold-hover); font-weight: 700; margin-bottom: 0.25rem;">(DDCIAN)</p>
-                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Cleared <strong>NDA Written Exam & SSB Board</strong></p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Cleared <strong>NDA Written Exam &amp; SSB Board</strong></p>
                         </div>
                     </div>
 
@@ -709,176 +737,189 @@
                     Roll of Honor: 2025-2026 Recommended DDCIANs
                 </h3>
                 <div class="selection-cadets-grid">
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-iaf">
-                                    Air Force Pilot                                </span>
-                                <h4 class="cadet-name">Aadarsh Mishra (DDCIAN)</h4>
-                                <div class="cadet-role">Flying Officer • Indian Air Force</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Joined Indian Air Force as Flying Officer</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Commissioned Officer                                </span>
-                            </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-aadarsh-mishra.jpg" alt="Aadarsh Mishra (DDCIAN) Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-iaf">Air Force Pilot</span>
+                            <h4 class="cadet-name">Aadarsh Mishra (DDCIAN)</h4>
+                            <div class="cadet-role">Flying Officer • Indian Air Force</div>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    NDA Cadet                                </span>
-                                <h4 class="cadet-name">Sanskar Jha (DDCIAN)</h4>
-                                <div class="cadet-role">Cadet • National Defence Academy</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Cleared NDA Written Exam &amp; Recommended for NDA Entry</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Cleared Written &amp; SSB                                </span>
-                            </div>
+                        <div>
+                            <p class="cadet-detail">Joined Indian Air Force as Flying Officer</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Commissioned Officer
+                            </span>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-ota">
-                                    OTA Army                                </span>
-                                <h4 class="cadet-name">Arindam</h4>
-                                <div class="cadet-role">Officer Cadet • OTA Chennai</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Recommended for Officers Training Academy (OTA)</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #4                                </span>
-                            </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-sanskar-jha.jpg" alt="Sanskar Jha (DDCIAN) Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">NDA Cadet</span>
+                            <h4 class="cadet-name">Sanskar Jha (DDCIAN)</h4>
+                            <div class="cadet-role">Cadet • National Defence Academy</div>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    NDA Army                                </span>
-                                <h4 class="cadet-name">Praneet Singh</h4>
-                                <div class="cadet-role">Cadet • NDA - 18 SSB Allahabad</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Cleared NDA Examination &amp; Recommended from 18 SSB Allahabad</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #4                                </span>
-                            </div>
+                        <div>
+                            <p class="cadet-detail">Cleared NDA Written Exam &amp; Recommended for NDA Entry</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Cleared Written &amp; SSB
+                            </span>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-girls">
-                                    NDA Girls                                </span>
-                                <h4 class="cadet-name">Karuna</h4>
-                                <div class="cadet-role">Cadet (Girls Wing) • SSB Bhopal, NDA</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Proud DDCIAN Cadet recommended for National Defence Academy</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #20                                </span>
-                            </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-arindam.jpg" alt="Arindam Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-ota">OTA Army</span>
+                            <h4 class="cadet-name">Arindam</h4>
+                            <div class="cadet-role">Officer Cadet • OTA Chennai</div>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-ota">
-                                    CDS IMA                                </span>
-                                <h4 class="cadet-name">Rishabh Kala</h4>
-                                <div class="cadet-role">Gentleman Cadet • CDS, 18 SSB Allahabad</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Recommended for Indian Military Academy via Combined Defence Services</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #21                                </span>
-                            </div>
+                        <div>
+                            <p class="cadet-detail">Recommended for Officers Training Academy (OTA)</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #4
+                            </span>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-iaf">
-                                    Air Force                                </span>
-                                <h4 class="cadet-name">Ayush Pathak</h4>
-                                <div class="cadet-role">Air Force Cadet • 18-SSB Allahabad Board</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Air Force Uniform entry recommended through 18 SSB Allahabad</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #7                                </span>
-                            </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-praneet-singh.jpg" alt="Praneet Singh Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">NDA Army</span>
+                            <h4 class="cadet-name">Praneet Singh</h4>
+                            <div class="cadet-role">Cadet • NDA - 18 SSB Allahabad</div>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    NDA 143                                </span>
-                                <h4 class="cadet-name">Leroy Fernandes</h4>
-                                <div class="cadet-role">Cadet • NDA - 143 Course</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Recommended for prestigious NDA 143 Course at Khadakwasla</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #3                                </span>
-                            </div>
+                        <div>
+                            <p class="cadet-detail">Cleared NDA Examination &amp; Recommended from 18 SSB Allahabad</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #4
+                            </span>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-girls">
-                                    NDA Girls                                </span>
-                                <h4 class="cadet-name">Pooja Ahlawat</h4>
-                                <div class="cadet-role">Cadet (Girls Wing) • NDA Selection</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Selected for National Defence Academy from DDC Girls Residential Wing</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #6                                </span>
-                            </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-karuna.jpg" alt="Karuna Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-girls">NDA Girls</span>
+                            <h4 class="cadet-name">Karuna</h4>
+                            <div class="cadet-role">Cadet (Girls Wing) • SSB Bhopal, NDA</div>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    NDA Cadet                                </span>
-                                <h4 class="cadet-name">Kshitij Pandey</h4>
-                                <div class="cadet-role">Cadet • NDA Selection</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Cleared NDA Written &amp; SSB Interview with flying colours</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #32                                </span>
-                            </div>
+                        <div>
+                            <p class="cadet-detail">Proud DDCIAN Cadet recommended for National Defence Academy</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #20
+                            </span>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    NDA 143                                </span>
-                                <h4 class="cadet-name">Yashraj Yadav</h4>
-                                <div class="cadet-role">Cadet • 19 SSB Allahabad, NDA-143</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Recommended from 19 SSB Allahabad for NDA 143 Batch</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Chest #02                                </span>
-                            </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-rishabh-kala.jpg" alt="Rishabh Kala Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-ota">CDS IMA</span>
+                            <h4 class="cadet-name">Rishabh Kala</h4>
+                            <div class="cadet-role">Gentleman Cadet • CDS, 18 SSB Allahabad</div>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    Engineering &amp; NDA                                </span>
-                                <h4 class="cadet-name">Akhand Pratap Singh</h4>
-                                <div class="cadet-role">Star Performer • IIT-JEE Main 2025-26 &amp; NDA</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Outstanding merit in IIT-JEE Main alongside NDA Written qualification</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Dual Qualifier                                </span>
-                            </div>
+                        <div>
+                            <p class="cadet-detail">Recommended for Indian Military Academy via Combined Defence Services</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #21
+                            </span>
                         </div>
-                                            <div class="cadet-card">
-                            <div>
-                                                                <span class="cadet-card-badge cadet-badge-nda">
-                                    Engineering &amp; NDA                                </span>
-                                <h4 class="cadet-name">Sujal Singh</h4>
-                                <div class="cadet-role">Star Performer • IIT-JEE Main 2025-26 &amp; NDA</div>
-                            </div>
-                            <div>
-                                <p class="cadet-detail">Cracked IIT-JEE Main 2025-26 and qualified NDA defence entrance</p>
-                                <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
-                                    Dual Qualifier                                </span>
-                            </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-ayush-pathak.jpg" alt="Ayush Pathak Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-iaf">Air Force</span>
+                            <h4 class="cadet-name">Ayush Pathak</h4>
+                            <div class="cadet-role">Air Force Cadet • 18-SSB Allahabad Board</div>
                         </div>
-                                    </div>
+                        <div>
+                            <p class="cadet-detail">Air Force Uniform entry recommended through 18 SSB Allahabad</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #7
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-leroy-fernandes.jpg" alt="Leroy Fernandes Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">NDA 143</span>
+                            <h4 class="cadet-name">Leroy Fernandes</h4>
+                            <div class="cadet-role">Cadet • NDA - 143 Course</div>
+                        </div>
+                        <div>
+                            <p class="cadet-detail">Recommended for prestigious NDA 143 Course at Khadakwasla</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #3
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-pooja-ahlawat.jpg" alt="Pooja Ahlawat Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-girls">NDA Girls</span>
+                            <h4 class="cadet-name">Pooja Ahlawat</h4>
+                            <div class="cadet-role">Cadet (Girls Wing) • NDA Selection</div>
+                        </div>
+                        <div>
+                            <p class="cadet-detail">Selected for National Defence Academy from DDC Girls Residential Wing</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #6
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-kshitij-pandey.jpg" alt="Kshitij Pandey Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">NDA Cadet</span>
+                            <h4 class="cadet-name">Kshitij Pandey</h4>
+                            <div class="cadet-role">Cadet • NDA Selection</div>
+                        </div>
+                        <div>
+                            <p class="cadet-detail">Cleared NDA Written &amp; SSB Interview with flying colours</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #32
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-yashraj-yadav.jpg" alt="Yashraj Yadav Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">NDA 143</span>
+                            <h4 class="cadet-name">Yashraj Yadav</h4>
+                            <div class="cadet-role">Cadet • 19 SSB Allahabad, NDA-143</div>
+                        </div>
+                        <div>
+                            <p class="cadet-detail">Recommended from 19 SSB Allahabad for NDA 143 Batch</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Chest #02
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-akhand-pratap-singh.jpg" alt="Akhand Pratap Singh Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">Engineering &amp; NDA</span>
+                            <h4 class="cadet-name">Akhand Pratap Singh</h4>
+                            <div class="cadet-role">Star Performer • IIT-JEE Main 2025-26 &amp; NDA</div>
+                        </div>
+                        <div>
+                            <p class="cadet-detail">Outstanding merit in IIT-JEE Main alongside NDA Written qualification</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Dual Qualifier
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cadet-card">
+                        <div>
+                            <img src="assets/images/cadets/cadet-sujal-singh.jpg" alt="Sujal Singh Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                            <span class="cadet-card-badge cadet-badge-nda">Engineering &amp; NDA</span>
+                            <h4 class="cadet-name">Sujal Singh</h4>
+                            <div class="cadet-role">Star Performer • IIT-JEE Main 2025-26 &amp; NDA</div>
+                        </div>
+                        <div>
+                            <p class="cadet-detail">Cracked IIT-JEE Main 2025-26 and qualified NDA defence entrance</p>
+                            <span style="display: inline-block; margin-top: 0.65rem; font-size: 0.75rem; font-weight: 700; color: var(--accent-gold-hover); background: var(--bg-light-blue); padding: 0.2rem 0.55rem; border-radius: var(--radius-sm);">
+                                Dual Qualifier
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -2450,6 +2491,55 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
         </form>
+    </div>
+</div>
+
+<!-- Dedicated Scholarship & Fee Concession Modal (Client Requested) -->
+<div class="ddc-modal-overlay" id="scholarshipModal" role="dialog" aria-modal="true" aria-labelledby="scholarshipTitle">
+    <div class="ddc-modal-box scholarship-modal-card">
+        <button type="button" class="ddc-modal-close close-scholarship-modal" aria-label="Close Modal">&times;</button>
+        
+        <div class="hero-form-header" style="margin-top: 0.25rem;">
+            <span class="badge-gold">National Defence Scholarship 2026-2027</span>
+            <h3 id="scholarshipTitle" style="margin-top: 0.4rem; color: var(--primary-navy);">Defence &amp; Meritorious Scholarship Scheme</h3>
+            <p>Dehradun Defence College honors national service with special institutional concessions and grants.</p>
+        </div>
+
+        <div class="scholarship-scheme-grid">
+            <div class="scholarship-scheme-item">
+                <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: #166534;"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    Veer Naris &amp; Martyr's Children
+                </h4>
+                <p><strong>100% Tuition Fee Waiver</strong> in honor of their ultimate supreme sacrifice for Bharat. Full academic preparation for NDA, CDS, AFCAT &amp; SSB.</p>
+            </div>
+
+            <div class="scholarship-scheme-item">
+                <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: #9D174D;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    Betiyon Ka Raksha Samman
+                </h4>
+                <p>Special fee grants for meritorious female cadets applying for <strong>NDA (Girls) Wing</strong> and <strong>MNS BSc Nursing + NEET UG</strong> residential batches.</p>
+            </div>
+
+            <div class="scholarship-scheme-item">
+                <h4>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent-gold-hover);"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    Serving &amp; Ex-Servicemen Wards
+                </h4>
+                <p>Up to <strong>25% Fee Concession</strong> for children of Army, Navy, Air Force, Coast Guard &amp; Paramilitary personnel.</p>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button type="button" class="btn btn-gold open-enquiry-modal close-scholarship-modal" data-course="Scholarship &amp; Fee Concession" style="flex: 1; justify-content: center;">
+                <span>Apply for Scholarship / Concession</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button type="button" class="btn btn-outline-navy close-scholarship-modal" style="justify-content: center;">
+                <span>Close</span>
+            </button>
+        </div>
     </div>
 </div>
 

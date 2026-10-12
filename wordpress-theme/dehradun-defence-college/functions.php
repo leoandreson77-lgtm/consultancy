@@ -327,6 +327,7 @@ function ddc_get_latest_selections() {
     return [
         [
             'name'   => 'Aadarsh Mishra (DDCIAN)',
+            'photo'  => 'cadet-aadarsh-mishra.jpg',
             'role'   => 'Flying Officer',
             'org'    => 'Indian Air Force',
             'badge'  => 'Commissioned Officer',
@@ -335,6 +336,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Sanskar Jha (DDCIAN)',
+            'photo'  => 'cadet-sanskar-jha.jpg',
             'role'   => 'Cadet',
             'org'    => 'National Defence Academy',
             'badge'  => 'Cleared Written & SSB',
@@ -343,6 +345,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Arindam',
+            'photo'  => 'cadet-arindam.jpg',
             'role'   => 'Officer Cadet',
             'org'    => 'OTA Chennai',
             'badge'  => 'Chest #4',
@@ -351,6 +354,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Praneet Singh',
+            'photo'  => 'cadet-praneet-singh.jpg',
             'role'   => 'Cadet',
             'org'    => 'NDA - 18 SSB Allahabad',
             'badge'  => 'Chest #4',
@@ -359,6 +363,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Karuna',
+            'photo'  => 'cadet-karuna.jpg',
             'role'   => 'Cadet (Girls Wing)',
             'org'    => 'SSB Bhopal, NDA',
             'badge'  => 'Chest #20',
@@ -367,6 +372,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Rishabh Kala',
+            'photo'  => 'cadet-rishabh-kala.jpg',
             'role'   => 'Gentleman Cadet',
             'org'    => 'CDS, 18 SSB Allahabad',
             'badge'  => 'Chest #21',
@@ -375,6 +381,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Ayush Pathak',
+            'photo'  => 'cadet-ayush-pathak.jpg',
             'role'   => 'Air Force Cadet',
             'org'    => '18-SSB Allahabad Board',
             'badge'  => 'Chest #7',
@@ -383,6 +390,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Leroy Fernandes',
+            'photo'  => 'cadet-leroy-fernandes.jpg',
             'role'   => 'Cadet',
             'org'    => 'NDA - 143 Course',
             'badge'  => 'Chest #3',
@@ -391,6 +399,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Pooja Ahlawat',
+            'photo'  => 'cadet-pooja-ahlawat.jpg',
             'role'   => 'Cadet (Girls Wing)',
             'org'    => 'NDA Selection',
             'badge'  => 'Chest #6',
@@ -399,6 +408,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Kshitij Pandey',
+            'photo'  => 'cadet-kshitij-pandey.jpg',
             'role'   => 'Cadet',
             'org'    => 'NDA Selection',
             'badge'  => 'Chest #32',
@@ -407,6 +417,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Yashraj Yadav',
+            'photo'  => 'cadet-yashraj-yadav.jpg',
             'role'   => 'Cadet',
             'org'    => '19 SSB Allahabad, NDA-143',
             'badge'  => 'Chest #02',
@@ -415,6 +426,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Akhand Pratap Singh',
+            'photo'  => 'cadet-akhand-pratap-singh.jpg',
             'role'   => 'Star Performer',
             'org'    => 'IIT-JEE Main 2025-26 & NDA',
             'badge'  => 'Dual Qualifier',
@@ -423,6 +435,7 @@ function ddc_get_latest_selections() {
         ],
         [
             'name'   => 'Sujal Singh',
+            'photo'  => 'cadet-sujal-singh.jpg',
             'role'   => 'Star Performer',
             'org'    => 'IIT-JEE Main 2025-26 & NDA',
             'badge'  => 'Dual Qualifier',
