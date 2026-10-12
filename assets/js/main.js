@@ -174,13 +174,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Auto-Popup Registration / Admission Modal on Website Open (Client Requested)
   if (modalOverlay) {
-    const hasSeenAutoModal = sessionStorage.getItem('ddc_auto_registration_shown');
-    if (!hasSeenAutoModal) {
-      setTimeout(function () {
-        openEnquiryModal('Direct Admission 2026 Batch');
-        sessionStorage.setItem('ddc_auto_registration_shown', 'true');
-      }, 2500); // Pops up automatically after 2.5 seconds on initial site visit
-    }
+    setTimeout(function () {
+      openEnquiryModal('Direct Admission 2026 Batch');
+    }, 800); // Pops up promptly 800ms after website open
   }
 
   openModalBtns.forEach(function (btn) {
@@ -511,6 +507,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
 
+      // Dynamic height update for mobile to guarantee ZERO clipping of text/buttons
+      updateSliderHeight();
+
       // Animate progress bar
       if (progressBar) {
         progressBar.style.transition = 'none';
@@ -519,6 +518,22 @@ document.addEventListener('DOMContentLoaded', function () {
           progressBar.style.transition = 'width ' + intervalDuration + 'ms linear';
           progressBar.style.width = '100%';
         }, 50);
+      }
+    }
+
+    function updateSliderHeight() {
+      if (window.innerWidth <= 992) {
+        const activeSlide = slides[currentIndex];
+        if (activeSlide) {
+          const content = activeSlide.querySelector('.hero-slide-content');
+          if (content) {
+            const contentH = content.scrollHeight || content.offsetHeight;
+            const neededH = Math.max(contentH + 48, 510);
+            heroSlider.style.minHeight = neededH + 'px';
+          }
+        }
+      } else {
+        heroSlider.style.minHeight = '';
       }
     }
 
@@ -600,6 +615,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize slide 0 and timer
     showSlide(0);
     startAutoSlide();
+    window.addEventListener('resize', updateSliderHeight, { passive: true });
   }
 
   /* ==========================================================

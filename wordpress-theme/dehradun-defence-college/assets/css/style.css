@@ -3641,52 +3641,77 @@ h6 { font-size: 0.95rem; }
 
 @media (max-width: 768px) {
   .hero-split-section {
-    padding: 1.25rem 0 2.5rem 0;
+    padding: 1rem 0 2.25rem 0;
+  }
+
+  .hero-slider-wrap {
+    border-radius: var(--radius-md);
   }
 
   .hero-slider {
-    min-height: 560px;
+    min-height: 520px;
     height: auto;
+    position: relative;
+    overflow: hidden;
   }
 
   .hero-slide {
-    align-items: flex-start;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    overflow: visible;
   }
 
   .hero-slide-overlay,
   .hero-selection-overlay {
-    background: linear-gradient(180deg, rgba(6, 21, 45, 0.95) 0%, rgba(6, 21, 45, 0.82) 50%, rgba(6, 21, 45, 0.94) 100%) !important;
+    background: linear-gradient(180deg, rgba(6, 21, 45, 0.96) 0%, rgba(6, 21, 45, 0.84) 48%, rgba(6, 21, 45, 0.96) 100%) !important;
   }
 
   .hero-slide-content {
-    padding: 1.35rem 1rem 2.25rem 1rem !important;
+    padding: 1.25rem 1rem 3.25rem 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
-  .hero-slide-content h1 {
-    font-size: 1.45rem;
-    line-height: 1.25;
-    margin: 0.35rem 0 0.5rem 0;
+  .hero-badge-wrap {
+    gap: 0.35rem !important;
+    margin-bottom: 0.35rem !important;
   }
 
+  .hero-badge-wrap .badge-gold,
+  .hero-badge-wrap .badge-saffron,
+  .hero-badge-wrap .badge-campus-tag {
+    font-size: 0.72rem !important;
+    padding: 0.22rem 0.55rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-slide-content h1,
   .hero-slide-content h2 {
-    font-size: 1.35rem;
-    line-height: 1.25;
-    margin: 0.35rem 0 0.5rem 0;
+    font-size: clamp(1.28rem, 4.2vw, 1.6rem) !important;
+    line-height: 1.24 !important;
+    margin: 0.3rem 0 0.45rem 0 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.01em !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
   }
 
   .hero-slide-subtext {
-    font-size: 0.825rem;
-    line-height: 1.45;
-    margin-bottom: 0.85rem;
+    font-size: 0.825rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.75rem !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
   }
 
   /* Slide 2: Dedicated Mobile Layout for Selection Showcase */
   .slide-selection-layout {
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.45rem !important;
+    gap: 0.35rem !important;
     width: 100% !important;
   }
 
@@ -3702,7 +3727,7 @@ h6 { font-size: 0.95rem; }
 
   .slide-selection-text h2 {
     order: 2 !important;
-    font-size: 1.22rem !important;
+    font-size: 1.25rem !important;
     line-height: 1.22 !important;
     margin: 0.15rem 0 0.35rem 0 !important;
   }
@@ -3716,11 +3741,11 @@ h6 { font-size: 0.95rem; }
   .slide-selection-poster-box {
     order: 4 !important;
     width: 100% !important;
-    max-height: none !important;
+    max-width: 380px !important;
+    margin: 0.2rem auto 0.35rem auto !important;
     border-radius: var(--radius-sm) !important;
     border: 1.5px solid var(--accent-gold) !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7), 0 0 12px rgba(212, 175, 55, 0.35) !important;
-    margin: 0.15rem 0 0.35rem 0 !important;
     background: #06152d !important;
   }
 
@@ -3732,25 +3757,25 @@ h6 { font-size: 0.95rem; }
 
   .slide-selection-poster-img {
     width: 100% !important;
-    height: 160px !important;
-    max-height: 170px !important;
+    height: 140px !important;
+    max-height: 150px !important;
     object-fit: contain !important;
     display: block !important;
     background: #06152d !important;
   }
 
   .slide-selection-poster-bar {
-    padding: 0.3rem 0.6rem !important;
+    padding: 0.25rem 0.6rem !important;
     background: rgba(11, 27, 61, 0.98) !important;
   }
 
   .slide-selection-poster-bar span {
-    font-size: 0.72rem !important;
+    font-size: 0.7rem !important;
     font-weight: 700 !important;
   }
 
   .slide-selection-poster-bar a {
-    font-size: 0.7rem !important;
+    font-size: 0.68rem !important;
     font-weight: 700 !important;
     color: var(--accent-gold) !important;
   }
@@ -3765,19 +3790,19 @@ h6 { font-size: 0.95rem; }
   }
 
   .hero-cadet-photo-item {
-    padding: 0.3rem 0.15rem !important;
+    padding: 0.25rem 0.15rem !important;
     border-radius: var(--radius-sm) !important;
   }
 
   .hero-cadet-photo-thumb {
-    width: 38px !important;
-    height: 38px !important;
+    width: 36px !important;
+    height: 36px !important;
     margin-bottom: 0.2rem !important;
     border-width: 1.5px !important;
   }
 
   .hero-cadet-photo-name {
-    font-size: 0.65rem !important;
+    font-size: 0.64rem !important;
     line-height: 1.15 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
@@ -3786,46 +3811,66 @@ h6 { font-size: 0.95rem; }
   }
 
   .hero-cadet-photo-sub {
-    font-size: 0.56rem !important;
+    font-size: 0.55rem !important;
     line-height: 1.1 !important;
   }
 
-  /* Action Buttons for Slide 2: Side-by-side balanced row */
+  /* Action CTA Buttons: Sleek balanced row */
+  .hero-actions,
   .slide-selection-layout .hero-actions {
     order: 6 !important;
     display: flex !important;
     flex-direction: row !important;
-    gap: 0.45rem !important;
-    margin-top: 0.2rem !important;
+    gap: 0.5rem !important;
+    margin-top: 0.35rem !important;
     width: 100% !important;
   }
 
+  .hero-actions .btn,
   .slide-selection-layout .hero-actions .btn {
     flex: 1 !important;
     width: auto !important;
-    padding: 0.45rem 0.4rem !important;
-    font-size: 0.75rem !important;
+    padding: 0.58rem 0.45rem !important;
+    font-size: 0.8rem !important;
     justify-content: center !important;
     text-align: center !important;
     white-space: nowrap !important;
+    border-radius: var(--radius-md) !important;
   }
 
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.65rem;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-  }
-
+  /* Trust Bullets: Sleek Military Badge Wrap */
   .hero-trust-bullets {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.35rem 0.55rem !important;
+    margin-top: 0.75rem !important;
+    padding-top: 0.65rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
   }
 
+  .hero-trust-item {
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.94) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.3rem !important;
+    background: rgba(6, 21, 45, 0.65) !important;
+    padding: 0.2rem 0.55rem !important;
+    border-radius: 50px !important;
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  }
+
+  .hero-trust-item svg {
+    width: 13px !important;
+    height: 13px !important;
+    color: var(--accent-gold) !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Slider Controls */
   .slider-btn {
     width: 34px;
     height: 34px;
@@ -3835,6 +3880,39 @@ h6 { font-size: 0.95rem; }
   }
   .slider-btn-prev { left: 0.25rem; }
   .slider-btn-next { right: 0.25rem; }
+
+  .slider-dots {
+    bottom: 0.75rem !important;
+    gap: 0.45rem !important;
+  }
+
+  .slider-dot {
+    width: 9px !important;
+    height: 9px !important;
+  }
+
+  .slider-dot.active {
+    width: 22px !important;
+  }
+
+  .hero-persistent-form-wrap {
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+
+  .eye-catchy-form-card {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+
+  .form-card-title {
+    font-size: 1.35rem;
+  }
+
+  .form-card-sub {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
 
   /* Live Enroll Popup placement on mobile: strictly above 58px sticky bar with zero overlap */
   .live-enroll-popup {
@@ -3929,18 +4007,31 @@ h6 { font-size: 0.95rem; }
   }
 }
 
+@media (max-width: 576px) {
+  .slider-btn {
+    display: none !important; /* Hide side arrows on phones to guarantee zero text obstruction; touch swipe active */
+  }
+}
+
 @media (max-width: 480px) {
   .hero-slider {
-    min-height: 440px;
+    min-height: 490px; /* Ample height to completely prevent any content clipping */
   }
 
   .hero-slide-content {
-    padding: 1.75rem 1rem 3rem 1rem;
+    padding: 1.15rem 0.85rem 3.25rem 0.85rem !important;
   }
 
   .hero-slide-content h1,
   .hero-slide-content h2 {
-    font-size: 1.45rem;
+    font-size: 1.32rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-actions .btn,
+  .slide-selection-layout .hero-actions .btn {
+    padding: 0.52rem 0.35rem !important;
+    font-size: 0.76rem !important;
   }
 
   .activities-masonry-grid {
@@ -3952,7 +4043,7 @@ h6 { font-size: 0.95rem; }
   }
 
   .eye-catchy-form-card {
-    padding: 1.5rem 1.15rem;
+    padding: 1.35rem 1rem;
   }
 
   .brand-title {
@@ -3961,6 +4052,23 @@ h6 { font-size: 0.95rem; }
 
   .top-notice-bar {
     display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-slider {
+    min-height: 520px;
+  }
+
+  .hero-actions,
+  .slide-selection-layout .hero-actions {
+    flex-direction: column !important;
+    gap: 0.35rem !important;
+  }
+
+  .hero-actions .btn,
+  .slide-selection-layout .hero-actions .btn {
+    width: 100% !important;
   }
 }
 
