@@ -296,7 +296,7 @@ include __DIR__ . '/includes/header.php';
                 </p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.75rem;">
+            <div class="ddc-distinction-grid">
                 <div style="background: var(--bg-slate); padding: 2rem 1.5rem; border-radius: var(--radius-lg); border-top: 4px solid var(--accent-gold);">
                     <div style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--accent-gold);">⚔️</div>
                     <h3 style="font-size: 1.2rem; color: var(--primary-navy); margin-bottom: 0.5rem;">Largest SSB GTO Ground</h3>

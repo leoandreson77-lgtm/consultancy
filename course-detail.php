@@ -54,7 +54,7 @@ include __DIR__ . '/includes/header.php';
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Batch Duration:</span>
                             <div style="font-weight: 700; color: var(--primary-navy);" class="course-duration-dynamic"><?php echo htmlspecialchars($c['duration']); ?></div>
                         </div>
-                        <div style="grid-column: span 2;">
+                        <div class="course-specs-full">
                             <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Eligibility Requirement:</span>
                             <div style="font-weight: 700; color: var(--primary-navy);" class="course-eligibility-dynamic"><?php echo htmlspecialchars($c['eligibility']); ?></div>
                         </div>
@@ -90,7 +90,7 @@ include __DIR__ . '/includes/header.php';
                     </div>
 
                     <div class="table-responsive" style="border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 1.25rem;">
-                        <table style="width: 100%; border-collapse: collapse; font-size: 0.925rem;">
+                        <table class="course-routine-table" style="width: 100%; border-collapse: collapse; font-size: 0.925rem;">
                             <thead>
                                 <tr style="background-color: var(--primary-navy); color: #FFFFFF; text-align: left;">
                                     <th style="padding: 0.85rem 1.25rem; font-family: var(--font-heading); width: 28%;">Time / Slot</th>
@@ -176,7 +176,7 @@ include __DIR__ . '/includes/header.php';
                             $facility_cap2 = 'Cadets Morning Assembly with Himalayan Foothills Backdrop';
                         }
                     ?>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+                    <div class="course-facilities-preview-grid">
                         <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light);">
                             <img src="<?php echo $facility_img1; ?>" alt="<?php echo $facility_cap1; ?>" style="width: 100%; height: 200px; object-fit: cover;">
                             <div style="padding: 0.5rem 0.75rem; font-size: 0.8rem; background: var(--bg-slate); color: var(--primary-navy); font-weight: 600;">

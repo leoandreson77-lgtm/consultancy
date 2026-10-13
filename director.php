@@ -178,7 +178,7 @@ include __DIR__ . '/includes/header.php';
                     </p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.75rem;">
+                <div class="directors-milestones-grid">
                     <div style="background: rgba(255,255,255,0.06); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.12);">
                         <h4 style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 0.5rem;"> 100% Transparent Tracking</h4>
                         <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.6; margin: 0;">

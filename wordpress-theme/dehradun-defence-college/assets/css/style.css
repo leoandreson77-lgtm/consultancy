@@ -70,6 +70,9 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -79,6 +82,9 @@ body {
   color: var(--text-main);
   background-color: var(--bg-white);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
 }
 
 img, svg, video {
@@ -2536,12 +2542,62 @@ h6 { font-size: 0.95rem; }
   background-color: var(--bg-slate);
   padding: 1.25rem;
   border-radius: var(--radius-md);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.course-specs-full {
+  grid-column: span 2;
+}
+
+.course-facilities-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.ddc-distinction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.campus-hostels-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.directors-milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.75rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .video-features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .timetable-banner-card {
@@ -2576,6 +2632,8 @@ h6 { font-size: 0.95rem; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   display: block;
   border-radius: var(--radius-md);
 }
@@ -2588,10 +2646,103 @@ h6 { font-size: 0.95rem; }
 }
 
 @media (max-width: 768px) {
+  /* 0. Viewport & Universal Grid Shrink Safety */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .course-detail-layout,
+  .registration-layout-grid,
+  .contact-layout-grid,
+  .directors-grid,
+  .about-grid,
+  .hero-grid,
+  .stats-grid,
+  .courses-grid,
+  .facilities-grid,
+  .footer-grid,
+  .timetable-dl-grid,
+  .contact-cards-grid,
+  .ddc-distinction-grid,
+  .campus-hostels-showcase-grid,
+  .directors-milestones-grid,
+  .course-facilities-preview-grid,
+  .why-choose-grid,
+  .testimonials-grid,
+  .gallery-grid,
+  .video-features-grid,
+  .hostel-pillars-grid,
+  .fee-table-wrap {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .course-detail-layout > *,
+  .registration-layout-grid > *,
+  .contact-layout-grid > *,
+  .course-main-content,
+  .course-sidebar-col,
+  .registration-form-card,
+  .registration-sidebar-box {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Top Scholarship Bar Mobile Responsiveness */
+  .top-scholarship-bar {
+    padding: 0.5rem 0 !important;
+  }
+
+  .top-scholarship-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+  }
+
+  .top-scholarship-left {
+    width: 100% !important;
+    gap: 0.4rem !important;
+  }
+
+  .top-scholarship-text {
+    font-size: 0.76rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .top-scholarship-actions {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+  }
+
+  .btn-scholarship-apply {
+    flex: 1 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 0.4rem 0.65rem !important;
+    font-size: 0.72rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .btn-scholarship-close {
+    flex-shrink: 0 !important;
+    width: 28px !important;
+    height: 28px !important;
+  }
+
   /* 1. Global Spacing & Typography */
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .section-padding {
@@ -2733,14 +2884,54 @@ h6 { font-size: 0.95rem; }
   }
 
   .course-specs-grid {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    padding: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    padding: 1rem !important;
+  }
+
+  .course-specs-full {
+    grid-column: span 1 !important;
+  }
+
+  .course-facilities-preview-grid,
+  .contact-cards-grid,
+  .ddc-distinction-grid,
+  .campus-hostels-showcase-grid,
+  .directors-milestones-grid,
+  .why-choose-grid,
+  .testimonials-grid,
+  .gallery-grid,
+  .video-features-grid,
+  .hostel-pillars-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
   }
 
   /* 6. Responsive Tables */
-  .table-responsive table {
+  .table-responsive {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+  }
+
+  .table-responsive table.fee-table,
+  .table-responsive table.table-comparison,
+  .table-responsive table.table-wide {
     min-width: 520px;
+  }
+
+  .table-responsive table.course-routine-table {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .course-routine-table th,
+  .course-routine-table td {
+    padding: 0.75rem 0.65rem !important;
+    font-size: 0.825rem !important;
   }
 
   .table-responsive th,
@@ -2791,27 +2982,41 @@ h6 { font-size: 0.95rem; }
 }
 
 @media (max-width: 576px) {
+  .header-container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    gap: 0.4rem !important;
+  }
+
   .brand-logo {
-    gap: 0.5rem;
+    gap: 0.45rem;
+    max-width: calc(100% - 130px);
   }
 
   .brand-logo-img {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   .brand-title {
-    font-size: 0.9rem;
-    letter-spacing: -0.02em;
+    font-size: 0.825rem;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
   }
 
   .brand-subtitle {
-    font-size: 0.525rem;
-    letter-spacing: 0.08em;
+    font-size: 0.5rem;
+    letter-spacing: 0.05em;
   }
 
   .header-cta-group .btn-gold {
-    display: none;
+    display: inline-flex !important;
+    padding: 0.35rem 0.55rem !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap !important;
+    border-radius: var(--radius-sm) !important;
   }
 
   .section-header h2 {
@@ -3172,6 +3377,23 @@ h6 { font-size: 0.95rem; }
   margin: 0;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.88);
+}
+
+@media (max-width: 992px) {
+  .individual-selections-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .selection-banner-2col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .individual-selections-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 /* Persistent Side Enquire Form Card on Right */
@@ -4107,7 +4329,8 @@ h6 { font-size: 0.95rem; }
     bottom: 66px !important;
     left: 8px !important;
     right: 8px !important;
-    max-width: calc(100vw - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+    width: auto !important;
     z-index: 996 !important;
   }
 
@@ -4411,8 +4634,8 @@ h6 { font-size: 0.95rem; }
   }
 
   .table-responsive {
-    margin: 0 -0.5rem;
-    border-radius: 0;
+    margin: 0 0 1.25rem 0 !important;
+    border-radius: var(--radius-sm);
   }
 }
 

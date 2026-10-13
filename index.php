@@ -631,7 +631,7 @@ include __DIR__ . '/includes/header.php';
                 </div>
 
                 <!-- Real Campus & In-House Hostels Photo Showcase -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+                <div class="campus-hostels-showcase-grid">
                     <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-lg); overflow: hidden;">
                         <div style="height: 220px; overflow: hidden; position: relative;">
                             <img src="assets/images/campus-building-main.jpg" alt="Authentic Dehradun Defence College Campus Building and In-House Boys Hostel" style="width: 100%; height: 100%; object-fit: cover;">

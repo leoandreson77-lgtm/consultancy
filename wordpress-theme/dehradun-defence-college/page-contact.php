@@ -133,7 +133,7 @@ $address = get_theme_mod('ddc_address', 'Maldevta Road, Near Laal Pull (Red Brid
                 <p>Experience our state-of-the-art infrastructure, transparent parent counseling, and authentic military gurukul atmosphere.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+            <div class="contact-cards-grid">
                 <div style="background: var(--bg-slate); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
                     <div style="height: 260px; overflow: hidden;">
                         <img src="<?php echo esc_url($theme_uri . '/assets/images/campus-front-office.jpg'); ?>" alt="Official Front Office Reception & Admission Helpdesk" style="width: 100%; height: 100%; object-fit: cover;">
