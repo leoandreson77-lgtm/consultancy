@@ -34,51 +34,53 @@ get_header();
             </main>
 
             <!-- Course Sidebar Form -->
-            <aside style="background: #FFFFFF; padding: 2.25rem; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); position: sticky; top: 100px;">
-                <div class="hero-form-header">
-                    <span class="badge-saffron">Enrollment 2026</span>
-                    <h3 style="font-size: 1.5rem; margin-top: 0.5rem;">Register for this Course</h3>
-                    <p>Direct admission guidance & fee breakdown for <strong><?php the_title(); ?></strong></p>
+            <aside class="course-sidebar-col">
+                <div class="course-sidebar-card">
+                    <div class="hero-form-header">
+                        <span class="badge-saffron">Enrollment 2026</span>
+                        <h3>Register for this Course</h3>
+                        <p>Direct admission guidance & fee breakdown for <strong><?php the_title(); ?></strong></p>
+                    </div>
+
+                    <form action="<?php echo esc_url(admin_url('admin-ajax.php')); ?>" method="POST" class="ddc-enquiry-form" novalidate>
+                        <input type="hidden" name="action" value="ddc_submit_enquiry">
+                        <input type="hidden" name="nonce" value="<?php echo wp_create_nonce('ddc_enquiry_nonce'); ?>">
+                        <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
+                        <input type="hidden" name="form_start_time" value="<?php echo time(); ?>">
+
+                        <div class="form-status-alert" role="alert"></div>
+
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" name="full_name" class="form-control" placeholder="Candidate's Name" required>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Mobile Number *</label>
+                            <input type="tel" name="mobile_number" class="form-control" placeholder="10-digit Mobile" required>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <input type="hidden" name="course_interest" value="<?php the_title_attribute(); ?>">
+
+                        <div class="form-check">
+                            <input type="checkbox" id="wp_course_consent" name="privacy_consent" checked required>
+                            <label for="wp_course_consent" style="font-size: 0.8rem;">I agree to the privacy policy.</label>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-course-submit">
+                            <span>Submit Registration</span>
+                        </button>
+                    </form>
                 </div>
-
-                <form action="<?php echo esc_url(admin_url('admin-ajax.php')); ?>" method="POST" class="ddc-enquiry-form" novalidate>
-                    <input type="hidden" name="action" value="ddc_submit_enquiry">
-                    <input type="hidden" name="nonce" value="<?php echo wp_create_nonce('ddc_enquiry_nonce'); ?>">
-                    <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
-                    <input type="hidden" name="form_start_time" value="<?php echo time(); ?>">
-
-                    <div class="form-status-alert" role="alert"></div>
-
-                    <div class="form-group">
-                        <label class="form-label">Full Name *</label>
-                        <input type="text" name="full_name" class="form-control" placeholder="Candidate's Name" required>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Mobile Number *</label>
-                        <input type="tel" name="mobile_number" class="form-control" placeholder="10-digit Mobile" required>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Email Address *</label>
-                        <input type="email" name="email" class="form-control" placeholder="your.email@example.com" required>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <input type="hidden" name="course_interest" value="<?php the_title_attribute(); ?>">
-
-                    <div class="form-check">
-                        <input type="checkbox" id="wp_course_consent" name="privacy_consent" checked required>
-                        <label for="wp_course_consent" style="font-size: 0.8rem;">I agree to the privacy policy.</label>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <button type="submit" class="btn btn-gold" style="width: 100%;">
-                        <span>Submit Registration</span>
-                    </button>
-                </form>
             </aside>
         </div>
     </div>

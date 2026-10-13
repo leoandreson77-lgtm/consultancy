@@ -405,73 +405,75 @@
             </div>
 
             <!-- Right Sidebar: Direct Course Registration Form -->
-            <div class="course-sidebar-card" style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-lg); position: sticky; top: 100px;">
-                <div class="hero-form-header">
-                    <span class="badge-saffron">Enrollment 2026</span>
-                    <h3 style="font-size: 1.5rem; margin-top: 0.5rem;">Register for this Course</h3>
-                    <p>Direct admission guidance & fee breakdown for <strong>NDA Foundation After 10th</strong></p>
-                </div>
-
-                <form action="send-enquiry" method="POST" class="ddc-enquiry-form" novalidate>
-                    <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
-                    <input type="hidden" name="form_start_time" value="1791853946">
-
-                    <div class="form-status-alert" role="alert"></div>
-
-                    <div class="form-group">
-                        <label class="form-label">Full Name *</label>
-                        <input type="text" name="full_name" class="form-control" placeholder="Candidate's Name" required>
-                        <div class="form-error-feedback"></div>
+            <aside class="course-sidebar-col">
+                <div class="course-sidebar-card">
+                    <div class="hero-form-header">
+                        <span class="badge-saffron">Enrollment 2026</span>
+                        <h3>Register for this Course</h3>
+                        <p>Direct admission guidance & fee breakdown for <strong>NDA Foundation After 10th</strong></p>
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label">Mobile Number *</label>
-                        <input type="tel" name="mobile_number" class="form-control" placeholder="10-digit Mobile" required>
-                        <div class="form-error-feedback"></div>
+                    <form action="send-enquiry" method="POST" class="ddc-enquiry-form" novalidate>
+                        <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
+                        <input type="hidden" name="form_start_time" value="1791854676">
+
+                        <div class="form-status-alert" role="alert"></div>
+
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" name="full_name" class="form-control" placeholder="Candidate's Name" required>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Mobile Number *</label>
+                            <input type="tel" name="mobile_number" class="form-control" placeholder="10-digit Mobile" required>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Selected Course</label>
+                            <select name="course_interest" class="form-control" required>
+                                <option value="NDA Foundation After 10th" selected>NDA Foundation After 10th</option>
+                            </select>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Hostel Accommodation Needed?</label>
+                            <select name="education_level" class="form-control">
+                                <option value="Hostel Accommodation Required">Yes, Need Residential Hostel</option>
+                                <option value="Day Scholar (Local Dehradun)">No, Day Scholar (Local Dehradun)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" id="cd_consent" name="privacy_consent" checked required>
+                            <label for="cd_consent">I agree to the privacy policy & admissions terms.</label>
+                            <div class="form-error-feedback"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-course-submit">
+                            <span>Submit Registration</span>
+                        </button>
+                    </form>
+
+                    <div class="course-sidebar-help">
+                        <p>Prefer instant WhatsApp assistance?</p>
+                        <a href="https://wa.me/919719104024?text=Hello+Dehradun+Defence+College%2C+I+am+interested+in+admission+for+NDA%2FDefence+exam+coaching.+Please+share+course+and+batch+details." class="btn btn-primary btn-sm" style="width: 100%;" target="_blank" rel="noopener">
+                            <span>Chat With Admission Desk</span>
+                        </a>
                     </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Email Address *</label>
-                        <input type="email" name="email" class="form-control" placeholder="your.email@example.com" required>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Selected Course</label>
-                        <select name="course_interest" class="form-control" required>
-                            <option value="NDA Foundation After 10th" selected>NDA Foundation After 10th</option>
-                        </select>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Hostel Accommodation Needed?</label>
-                        <select name="education_level" class="form-control">
-                            <option value="Hostel Accommodation Required">Yes, Need Residential Hostel</option>
-                            <option value="Day Scholar (Local Dehradun)">No, Day Scholar (Local Dehradun)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="checkbox" id="cd_consent" name="privacy_consent" checked required>
-                        <label for="cd_consent">I agree to the privacy policy & admissions terms.</label>
-                        <div class="form-error-feedback"></div>
-                    </div>
-
-                    <button type="submit" class="btn btn-gold" style="width: 100%;">
-                        <span>Submit Registration</span>
-                    </button>
-                </form>
-
-                <div style="margin-top: 1.5rem; text-align: center; border-top: 1px solid var(--border-light); padding-top: 1.25rem;">
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Prefer instant WhatsApp assistance?</p>
-                    <a href="https://wa.me/919719104024?text=Hello+Dehradun+Defence+College%2C+I+am+interested+in+admission+for+NDA%2FDefence+exam+coaching.+Please+share+course+and+batch+details." class="btn btn-primary btn-sm" style="width: 100%;" target="_blank" rel="noopener">
-                        <span>Chat With Admission Desk</span>
-                    </a>
                 </div>
 
                 <!-- Sidebar Timetable Download Card -->
-                                <div id="course-sidebar-timetable-box" style="background: linear-gradient(135deg, #0B1B3D 0%, #162B56 100%); color: #FFFFFF; padding: 1.5rem; border-radius: var(--radius-lg); margin-top: 1.5rem; border: 2px solid var(--accent-gold); box-shadow: var(--shadow-md);">
+                                <div id="course-sidebar-timetable-box" class="course-sidebar-timetable">
                     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
                         <div style="width: 40px; height: 40px; border-radius: 8px; background: rgba(212,175,55,0.2); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); flex-shrink: 0;">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
@@ -489,7 +491,7 @@
                         <span>Download Timetable (PDF)</span>
                     </a>
                 </div>
-                            </div>
+                            </aside>
         </div>
     </section>
 
@@ -723,7 +725,7 @@
         <form action="send-enquiry" method="POST" class="ddc-enquiry-form" novalidate>
             <!-- Anti-Spam Hidden Fields -->
             <input type="text" name="website_url_check" class="hp-field" tabindex="-1" autocomplete="off">
-            <input type="hidden" name="form_start_time" value="1791853946">
+            <input type="hidden" name="form_start_time" value="1791854676">
 
             <!-- Form Status Messages -->
             <div class="form-status-alert" role="alert"></div>
