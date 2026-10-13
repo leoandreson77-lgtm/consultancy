@@ -108,6 +108,10 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                     <span>SCHEDULE CAMPUS TOUR</span>
                 </button>
+                <a href="online-registration-form.php" class="btn-top-schedule-tour" style="background: var(--accent-gold); color: var(--primary-navy); font-weight: 800; border-color: var(--accent-gold); text-decoration: none;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    <span>ONLINE REGISTRATION</span>
+                </a>
             </div>
 
             <div class="top-marquee-wrap">
@@ -196,6 +200,7 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
                 <a href="faculty-facilities.php" class="nav-link <?php echo ($current_page === 'faculty-facilities') ? 'active' : ''; ?>">Faculty & Campus</a>
                 <a href="results.php" class="nav-link <?php echo ($current_page === 'results') ? 'active' : ''; ?>">Selections 2026</a>
                 <a href="gallery.php" class="nav-link <?php echo ($current_page === 'gallery') ? 'active' : ''; ?>">Activities</a>
+                <a href="online-registration-form.php" class="nav-link <?php echo ($current_page === 'online-registration-form') ? 'active' : ''; ?>">Online Registration</a>
                 <a href="contact.php" class="nav-link <?php echo ($current_page === 'contact') ? 'active' : ''; ?>">Contact</a>
 
                 <div class="mobile-nav-footer">
@@ -216,9 +221,9 @@ $canonical_url = $canonical_url ?? (SITE_URL . '/' . ($current_page === 'home' ?
                     <span>Call Now</span>
                 </a>
 
-                <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="General Enquiry">
-                    <span>Enquire Now</span>
-                </button>
+                <a href="online-registration-form.php" class="btn btn-gold btn-sm" style="font-weight: 800; gap: 0.4rem; display: inline-flex; align-items: center;">
+                    <span>Register Now</span>
+                </a>
 
                 <!-- Mobile Hamburger Toggle -->
                 <button type="button" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">

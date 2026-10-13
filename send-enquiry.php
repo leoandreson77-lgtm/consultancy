@@ -68,13 +68,19 @@ function ddc_clean_string($input) {
 }
 
 $full_name         = ddc_clean_string($_POST['full_name'] ?? '');
+$father_name       = ddc_clean_string($_POST['father_name'] ?? '');
 $email             = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 $mobile            = ddc_clean_string($_POST['mobile_number'] ?? '');
+$parent_mobile     = ddc_clean_string($_POST['parent_mobile'] ?? '');
+$dob               = ddc_clean_string($_POST['dob'] ?? '');
+$gender            = ddc_clean_string($_POST['gender'] ?? 'Not Specified');
+$city_state        = ddc_clean_string($_POST['city_state'] ?? '');
 $course_interest   = ddc_clean_string($_POST['course_interest'] ?? '');
 $education_level   = ddc_clean_string($_POST['education_level'] ?? 'Not Specified');
 $preferred_contact = ddc_clean_string($_POST['preferred_contact'] ?? 'Call');
 $message           = ddc_clean_string($_POST['message'] ?? '');
 $privacy_consent   = isset($_POST['privacy_consent']) && ($_POST['privacy_consent'] === '1' || $_POST['privacy_consent'] === 'on' || $_POST['privacy_consent'] === 'yes');
+$form_type         = ddc_clean_string($_POST['form_type'] ?? 'enquiry');
 
 $errors = [];
 
@@ -143,9 +149,15 @@ if (!empty($errors)) {
 $lead_entry = [
     'id'                => uniqid('DDC_', true),
     'timestamp'         => date('Y-m-d H:i:s'),
+    'form_type'         => $form_type,
     'full_name'         => $full_name,
+    'father_name'       => $father_name,
     'email'             => $email,
     'mobile_number'     => $cleaned_mobile,
+    'parent_mobile'     => $parent_mobile,
+    'dob'               => $dob,
+    'gender'            => $gender,
+    'city_state'        => $city_state,
     'course_interest'   => $course_interest,
     'education_level'   => $education_level,
     'preferred_contact' => $preferred_contact,
@@ -176,50 +188,69 @@ $leads[] = $lead_entry;
 // 6. Build & Dispatch Notifications
 // -------------------------------------------------------------
 $admin_email = ADMIN_ENQUIRY_EMAIL;
-$email_subject = "New Admission Enquiry: {$full_name} ({$course_interest}) - Dehradun Defence College";
+$is_registration = ($form_type === 'online_registration');
+$email_subject = $is_registration 
+    ? "★ NEW ONLINE REGISTRATION: {$full_name} ({$course_interest}) - Dehradun Defence College"
+    : "New Admission Enquiry: {$full_name} ({$course_interest}) - Dehradun Defence College";
 
 $admin_email_html = "
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>New Admission Enquiry</title>
+    <title>" . ($is_registration ? 'New Online Registration' : 'New Admission Enquiry') . "</title>
 </head>
 <body style='font-family: Arial, sans-serif; line-height: 1.6; color: #1e293b; background-color: #f8fafc; margin: 0; padding: 20px;'>
     <div style='max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);'>
         <div style='background-color: #0b1b3d; color: #ffffff; padding: 20px 24px; border-bottom: 4px solid #d4af37;'>
             <h2 style='margin: 0; font-size: 20px; font-weight: 700; color: #ffffff;'>Dehradun Defence College</h2>
-            <p style='margin: 4px 0 0; font-size: 13px; color: #d4af37;'>Official Admission Portal Notification</p>
+            <p style='margin: 4px 0 0; font-size: 13px; color: #d4af37;'>" . ($is_registration ? 'Official Online Registration Portal (Session 2026-2027)' : 'Official Admission Portal Notification') . "</p>
         </div>
         <div style='padding: 24px;'>
-            <p style='margin-top: 0;'>A new admission enquiry has been received through the website portal:</p>
+            <p style='margin-top: 0;'>A new " . ($is_registration ? 'candidate online registration' : 'admission enquiry') . " has been received:</p>
             <table style='width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;'>
                 <tr style='border-bottom: 1px solid #f1f5f9;'>
                     <td style='padding: 10px 0; font-weight: bold; width: 35%; color: #475569;'>Candidate Name:</td>
                     <td style='padding: 10px 0; color: #0b1b3d; font-weight: 600;'>{$full_name}</td>
-                </tr>
+                </tr>" . (!empty($father_name) ? "
                 <tr style='border-bottom: 1px solid #f1f5f9;'>
-                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Mobile Number:</td>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Father's / Guardian Name:</td>
+                    <td style='padding: 10px 0; color: #0b1b3d;'>{$father_name}</td>
+                </tr>" : "") . "
+                <tr style='border-bottom: 1px solid #f1f5f9;'>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Candidate Mobile:</td>
                     <td style='padding: 10px 0;'><a href='tel:+91{$cleaned_mobile}' style='color: #0284c7; text-decoration: none; font-weight: 600;'>+91 {$cleaned_mobile}</a></td>
-                </tr>
+                </tr>" . (!empty($parent_mobile) ? "
+                <tr style='border-bottom: 1px solid #f1f5f9;'>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Parents Mobile:</td>
+                    <td style='padding: 10px 0;'><a href='tel:+91{$parent_mobile}' style='color: #0284c7; text-decoration: none;'>+91 {$parent_mobile}</a></td>
+                </tr>" : "") . (!empty($dob) ? "
+                <tr style='border-bottom: 1px solid #f1f5f9;'>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Date of Birth:</td>
+                    <td style='padding: 10px 0;'>{$dob}</td>
+                </tr>" : "") . (!empty($gender) && $gender !== 'Not Specified' ? "
+                <tr style='border-bottom: 1px solid #f1f5f9;'>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Gender:</td>
+                    <td style='padding: 10px 0;'>{$gender}</td>
+                </tr>" : "") . (!empty($city_state) ? "
+                <tr style='border-bottom: 1px solid #f1f5f9;'>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>City / State:</td>
+                    <td style='padding: 10px 0;'>{$city_state}</td>
+                </tr>" : "") . "
                 <tr style='border-bottom: 1px solid #f1f5f9;'>
                     <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Email Address:</td>
                     <td style='padding: 10px 0;'><a href='mailto:{$email}' style='color: #0284c7; text-decoration: none;'>{$email}</a></td>
                 </tr>
                 <tr style='border-bottom: 1px solid #f1f5f9;'>
-                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Course of Interest:</td>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Applied Course:</td>
                     <td style='padding: 10px 0; color: #0b1b3d; font-weight: bold;'>{$course_interest}</td>
                 </tr>
                 <tr style='border-bottom: 1px solid #f1f5f9;'>
-                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Education Level:</td>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Hostel Preference:</td>
                     <td style='padding: 10px 0;'>{$education_level}</td>
                 </tr>
-                <tr style='border-bottom: 1px solid #f1f5f9;'>
-                    <td style='padding: 10px 0; font-weight: bold; color: #475569;'>Preferred Contact:</td>
-                    <td style='padding: 10px 0;'>{$preferred_contact}</td>
-                </tr>
                 <tr>
-                    <td style='padding: 10px 0; font-weight: bold; color: #475569; vertical-align: top;'>Candidate Message:</td>
+                    <td style='padding: 10px 0; font-weight: bold; color: #475569; vertical-align: top;'>Additional Information:</td>
                     <td style='padding: 10px 0; color: #334155;'>" . (empty($message) ? '<em>No specific message provided</em>' : nl2br($message)) . "</td>
                 </tr>
             </table>

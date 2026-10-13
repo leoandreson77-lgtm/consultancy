@@ -9,20 +9,21 @@ $_SERVER['REQUEST_URI'] = '/';
 $_SERVER['SCRIPT_NAME'] = '/index.php';
 
 $pages = [
-    'index.php'              => 'index.html',
-    'about.php'              => 'about.html',
-    'director.php'           => 'director.html',
-    'courses.php'            => 'courses.html',
-    'course-detail.php'      => 'course-detail.html',
-    'faculty-facilities.php' => 'faculty-facilities.html',
-    'gallery.php'            => 'gallery.html',
-    'results.php'            => 'results.html',
-    'blog.php'               => 'blog.html',
-    'blog-single.php'        => 'blog-single.html',
-    'contact.php'            => 'contact.html',
-    'privacy-policy.php'     => 'privacy-policy.html',
-    'terms.php'              => 'terms.html',
-    '404.php'                => '404.html'
+    'index.php'                  => 'index.html',
+    'about.php'                  => 'about.html',
+    'director.php'               => 'director.html',
+    'courses.php'                => 'courses.html',
+    'course-detail.php'          => 'course-detail.html',
+    'online-registration-form.php' => 'online-registration-form.html',
+    'faculty-facilities.php'     => 'faculty-facilities.html',
+    'gallery.php'                => 'gallery.html',
+    'results.php'                => 'results.html',
+    'blog.php'                   => 'blog.html',
+    'blog-single.php'            => 'blog-single.html',
+    'contact.php'                => 'contact.html',
+    'privacy-policy.php'         => 'privacy-policy.html',
+    'terms.php'                  => 'terms.html',
+    '404.php'                    => '404.html'
 ];
 
 $dir = __DIR__;
@@ -40,7 +41,8 @@ function clean_static_links($html) {
 
     // 3. Other internal pages
     $staticPages = [
-        'about', 'director', 'courses', 'faculty-facilities', 'gallery',
+        'about', 'director', 'courses', 'course-detail', 'online-registration-form',
+        'faculty-facilities', 'gallery',
         'results', 'blog', 'blog-single', 'contact',
         'privacy-policy', 'terms', '404'
     ];

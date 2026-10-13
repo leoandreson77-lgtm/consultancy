@@ -4415,3 +4415,158 @@ h6 { font-size: 0.95rem; }
     border-radius: 0;
   }
 }
+
+/* --- Online Registration Form Page Styles --- */
+.registration-hero-banner {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 16px 40px rgba(11, 27, 61, 0.16);
+  margin-bottom: 2.5rem;
+  background-color: #0B1B3D;
+  position: relative;
+}
+
+.registration-hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.registration-hero-banner:hover img {
+  transform: scale(1.015);
+}
+
+.registration-layout-grid {
+  display: grid;
+  grid-template-columns: 1.85fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.registration-form-card {
+  background: #FFFFFF;
+  padding: 2.75rem 2.5rem;
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 16px 40px rgba(11, 27, 61, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--tricolor-saffron) 0%, var(--accent-gold) 50%, var(--tricolor-green) 100%);
+}
+
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.registration-sidebar-box {
+  background: #FFFFFF;
+  padding: 2rem 1.75rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.admission-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.admission-step-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.admission-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-navy) 0%, #162B56 100%);
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  border: 2px solid var(--accent-gold);
+}
+
+.admission-step-content h4 {
+  font-size: 1rem;
+  color: var(--primary-navy);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.admission-step-content p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.bank-details-card {
+  background: linear-gradient(135deg, #0B1B3D 0%, #162B56 100%);
+  color: #FFFFFF;
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--accent-gold);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .registration-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-grid-2col,
+  .form-grid-3col {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .registration-form-card {
+    padding: 1.75rem 1.35rem !important;
+  }
+  .registration-hero-banner {
+    margin-bottom: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .registration-form-card {
+    padding: 1.35rem 1rem !important;
+    border-radius: var(--radius-lg) !important;
+  }
+  .registration-sidebar-box {
+    padding: 1.35rem 1rem !important;
+  }
+}
+

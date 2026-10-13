@@ -34,4 +34,4 @@ for hf in sorted(html_files):
 
 print(f"\nMobile Audit Complete. Total potential issues: {issues}")
 if issues == 0:
-    print("[SUCCESS] ALL 14 PAGES PASSED MOBILE RESPONSIVENESS AND STRUCTURAL INTEGRITY AUDIT!")
+    print(f"[SUCCESS] ALL {len(html_files)} PAGES PASSED MOBILE RESPONSIVENESS AND STRUCTURAL INTEGRITY AUDIT!")
