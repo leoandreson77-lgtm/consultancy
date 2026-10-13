@@ -538,9 +538,6 @@ include __DIR__ . '/includes/header.php';
                     <?php foreach ($DDC_LATEST_SELECTIONS_2026 as $cadet): ?>
                         <div class="cadet-card">
                             <div>
-                                <?php if (!empty($cadet['photo'])): ?>
-                                    <img src="<?php echo htmlspecialchars($cadet['photo']); ?>" alt="<?php echo htmlspecialchars($cadet['name']); ?> Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
-                                <?php endif; ?>
                                 <?php 
                                     $badge_class = 'cadet-badge-nda';
                                     if (strpos($cadet['tag'], 'Air Force') !== false) {
@@ -556,6 +553,9 @@ include __DIR__ . '/includes/header.php';
                                 <span class="cadet-card-badge <?php echo $badge_class; ?>">
                                     <?php echo htmlspecialchars($cadet['tag']); ?>
                                 </span>
+                                <?php if (!empty($cadet['photo'])): ?>
+                                    <img src="<?php echo htmlspecialchars($cadet['photo']); ?>" alt="<?php echo htmlspecialchars($cadet['name']); ?> Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                                <?php endif; ?>
                                 <h4 class="cadet-name"><?php echo htmlspecialchars($cadet['name']); ?></h4>
                                 <div class="cadet-role"><?php echo htmlspecialchars($cadet['role']); ?> • <?php echo htmlspecialchars($cadet['org']); ?></div>
                             </div>

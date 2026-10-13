@@ -533,9 +533,6 @@ $theme_uri = get_template_directory_uri();
                     ?>
                         <div class="cadet-card">
                             <div>
-                                <?php if (!empty($cadet['photo'])): ?>
-                                    <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/' . $cadet['photo']); ?>" alt="<?php echo esc_attr($cadet['name']); ?> Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
-                                <?php endif; ?>
                                 <?php 
                                     $badge_class = 'cadet-badge-nda';
                                     if (strpos($cadet['tag'], 'Air Force') !== false) {
@@ -551,6 +548,9 @@ $theme_uri = get_template_directory_uri();
                                 <span class="cadet-card-badge <?php echo $badge_class; ?>">
                                     <?php echo esc_html($cadet['tag']); ?>
                                 </span>
+                                <?php if (!empty($cadet['photo'])): ?>
+                                    <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/' . $cadet['photo']); ?>" alt="<?php echo esc_attr($cadet['name']); ?> Selection" class="cadet-card-photo" loading="lazy" width="76" height="76">
+                                <?php endif; ?>
                                 <h4 class="cadet-name"><?php echo esc_html($cadet['name']); ?></h4>
                                 <div class="cadet-role"><?php echo esc_html($cadet['role']); ?> • <?php echo esc_html($cadet['org']); ?></div>
                             </div>

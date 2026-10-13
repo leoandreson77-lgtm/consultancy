@@ -3942,6 +3942,12 @@ h6 { font-size: 0.95rem; }
     padding: 1rem 0.75rem;
   }
 
+  .cadet-card-photo {
+    width: 68px;
+    height: 68px;
+    margin: 0.35rem auto 0.5rem auto;
+  }
+
   .cadet-name {
     font-size: 0.925rem;
   }
