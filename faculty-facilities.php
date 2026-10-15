@@ -22,6 +22,54 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
+    <!-- Academic Teaching Faculty Showcase -->
+    <section class="section-padding bg-white" id="academic-faculty">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-saffron">Subject Matter Experts</span>
+                <h2>Distinguished Academic Faculty</h2>
+                <div class="gold-divider"></div>
+                <p>Guided by seasoned educators and NIT/IIT post-graduates who turn rigorous science and mathematics into high-scoring competitive mastery.</p>
+            </div>
+
+            <div class="faculty-showcase-container" style="margin-bottom: 3.5rem;">
+                <?php foreach ($DDC_FACULTY_MEMBERS as $fac): ?>
+                    <div class="faculty-member-card">
+                        <div class="faculty-member-sidebar">
+                            <div class="faculty-member-photo-frame">
+                                <img src="<?php echo htmlspecialchars($fac['photo']); ?>" alt="<?php echo htmlspecialchars($fac['name']); ?> - <?php echo htmlspecialchars($fac['role']); ?>" class="faculty-member-photo" loading="lazy">
+                            </div>
+                            <span class="faculty-badge-role"><?php echo htmlspecialchars($fac['role']); ?></span>
+                            <h3 class="faculty-member-name"><?php echo htmlspecialchars($fac['name']); ?></h3>
+                            <div class="faculty-member-qual"><?php echo htmlspecialchars($fac['education']); ?></div>
+                            <div class="faculty-exp-badge">★ <?php echo htmlspecialchars($fac['experience']); ?> ★</div>
+                        </div>
+
+                        <div class="faculty-member-content">
+                            <div class="faculty-quote-banner">
+                                <p>“<?php echo htmlspecialchars($fac['quote']); ?>”</p>
+                            </div>
+
+                            <p class="faculty-bio-text"><?php echo htmlspecialchars($fac['bio']); ?></p>
+
+                            <div>
+                                <div class="faculty-exams-label">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Target Competitive Exams Mastered:</span>
+                                </div>
+                                <div class="faculty-exam-tags-wrap">
+                                    <?php foreach ($fac['exams'] as $exam): ?>
+                                        <span class="faculty-exam-pill"><?php echo htmlspecialchars($exam); ?></span>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
     <!-- Faculty Leadership Section -->
     <section class="section-padding bg-slate" id="faculty">
         <div class="container">
@@ -33,36 +81,36 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <div class="facilities-grid">
-                <!-- Director 1: Zaheer Ahmed -->
+                <!-- Director 1: Mahendra Kukreja -->
+                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
+                    <img src="assets/images/director-mahendra.jpg" alt="Mr. Mahendra Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
+                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Mahendra Kukreja</h3>
+                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Managing Director</p>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Managing Director — Dehradun Defence College</span>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+                        Managing Director guiding defence entrance pedagogy, cadet lifestyle conditioning, and sustained excellence in Armed Forces selections.
+                    </p>
+                </div>
+
+                <!-- Director 2: Zaheer Ahmed -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
                     <img src="assets/images/director-zaheer.jpg" alt="Mr. Zaheer Ahmed" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
                     <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Zaheer Ahmed</h3>
                     <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
-                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Owner — Doon Public Sr. Sec. School</span>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Director — DDC & Managing Director — Doon Public Senior Secondary School</span>
                     <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
-                        Visionary educational founder establishing the bedrock of academic discipline, values, and holistic cadet growth in Dehradun.
+                        Director of DDC and Managing Director of Doon Public Senior Secondary School, establishing the bedrock of academic discipline and holistic cadet growth.
                     </p>
                 </div>
 
-                <!-- Director 2: Gaurav Sharma -->
+                <!-- Director 3: Gaurav Sharma -->
                 <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
                     <img src="assets/images/director-gaurav.jpg" alt="Mr. Gaurav Sharma" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
                     <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Gaurav Sharma</h3>
                     <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director & Principal</p>
-                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Director — DDC & Principal — Doon Public School</span>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Director — DDC & Principal — Doon Public Senior Secondary School</span>
                     <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
-                        Leading institutional academic operations, board exam integration, UPSC syllabus mastery, and Officer-Like Qualities (OLQ) development.
-                    </p>
-                </div>
-
-                <!-- Director 3: Mahendra Kukreja -->
-                <div style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); text-align: center; padding: 2rem 1.5rem;">
-                    <img src="assets/images/director-mahendra.jpg" alt="Mr. Mahendra Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
-                    <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Mr. Mahendra Kukreja</h3>
-                    <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
-                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Founder & Director — Dehradun Defence College</span>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
-                        Visionary mentor guiding defence entrance pedagogy, cadet lifestyle conditioning, and sustained excellence in Armed Forces selections.
+                        Director of DDC and Principal of Doon Public Senior Secondary School, spearheading strategic NDA preparation and UPSC academic mastery.
                     </p>
                 </div>
 
@@ -71,9 +119,9 @@ include __DIR__ . '/includes/header.php';
                     <img src="assets/images/director-neha.jpg" alt="Ms. Neha Kukreja" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.25rem auto; border: 3px solid var(--accent-gold);">
                     <h3 style="font-size: 1.25rem; color: var(--primary-navy);">Ms. Neha Kukreja</h3>
                     <p style="color: var(--tricolor-saffron); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.25rem;">Director</p>
-                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">College Enrollment Specialist</span>
+                    <span class="badge-navy" style="font-size: 0.725rem; margin-bottom: 0.75rem; display: inline-block;">Director — Dehradun Defence College (DDC)</span>
                     <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
-                        Directing student admissions, parent counseling, eligibility roadmaps, and seamless enrollment into residential wings.
+                        Director of Dehradun Defence College, directing student admissions, parent counseling, eligibility roadmaps, and seamless enrollment into residential wings.
                     </p>
                 </div>
 

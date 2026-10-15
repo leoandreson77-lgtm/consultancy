@@ -326,6 +326,24 @@ add_action('wp_ajax_nopriv_ddc_submit_enquiry', 'ddc_ajax_submit_enquiry_handler
 function ddc_get_latest_selections() {
     return [
         [
+            'name'   => 'Durshya Biradar',
+            'photo'  => 'cadet-durshya-biradar.jpg',
+            'role'   => 'Cadet',
+            'org'    => 'NDA-2 (Sep 2026)',
+            'badge'  => 'Written NDA Qualified',
+            'detail' => 'Cleared UPSC NDA-2 Written Examination • Sep 2026 Selection Batch',
+            'tag'    => 'NDA Written'
+        ],
+        [
+            'name'   => 'Akshant Chuksey',
+            'photo'  => 'cadet-akshant-chuksey.jpg',
+            'role'   => 'Cadet',
+            'org'    => 'NDA-1 (April 2026)',
+            'badge'  => 'NDA-1 Selection',
+            'detail' => 'Selected & Cleared UPSC NDA-1 Examination • April 2026 Entry',
+            'tag'    => 'NDA Cadet'
+        ],
+        [
             'name'   => 'Aadarsh Mishra (DDCIAN)',
             'photo'  => 'cadet-aadarsh-mishra.jpg',
             'role'   => 'Flying Officer',
@@ -444,4 +462,193 @@ function ddc_get_latest_selections() {
         ]
     ];
 }
+
+/**
+ * Get Academic Teaching Faculty Members
+ */
+function ddc_get_faculty_members() {
+    return [
+        [
+            'name'        => 'Shekhar Malik',
+            'role'        => 'PGT Physics',
+            'department'  => 'Senior Physics Faculty • Head of Physical Sciences',
+            'photo'       => 'faculty-shekhar-malik.jpg',
+            'experience'  => '15+ Years Teaching Experience',
+            'education'   => 'M.Tech in Mechanical Engineering (NIT)',
+            'quote'       => 'Physics is not just a collection of equation on a whiteboard , It is a systematic language built to decode the universe, in our lecture room and laboratories we challenge students to look beyond theoretical memorization, actively applying mechanical laws to build tangible real word innovations',
+            'bio'         => 'I have completed my M.Tech in Mechanical engineering from National Institute of Technology. I have 15 years of experience of teaching PHYSICS at academic level and various competitive exams like NDA, IIT-JEE, NEET , AFCAT, CDS ,AIRFORCE (X), MERCHANT NAVY,MNS,BITSAT, UGEE,CUET,MHT CET, COMEDK, WBJEE, VITEEE. I love to breakdown difficult topics  in to easy one for students with daily life examples and concept building.',
+            'exams'       => ['NDA', 'IIT-JEE', 'NEET', 'AFCAT', 'CDS', 'AIRFORCE (X)', 'MERCHANT NAVY', 'MNS', 'BITSAT', 'UGEE', 'CUET', 'MHT CET', 'COMEDK', 'WBJEE', 'VITEEE']
+        ],
+        [
+            'name'        => 'Tarandeep Singh Kukreja (Ex-IMA)',
+            'role'        => 'Mathematics Faculty • Ex-IMA',
+            'department'  => 'Ex-Officer Cadet IMA (155 Regular Course) • AIR 16 UPSC CDS • 4-Time SSB Recommended',
+            'photo'       => 'faculty-tarandeep-singh.jpg',
+            'experience'  => '6+ Years Experience • 100% Written Success',
+            'education'   => 'Ex-Cadet Indian Military Academy (IMA 155) • AIR 16 UPSC CDS (AFA) • AIR 74 CDS',
+            'quote'       => 'Building strong mathematical fundamentals, developing analytical problem-solving skills, and simplifying complex concepts through structured and exam-oriented instruction.',
+            'bio'         => 'Tarandeep Singh Kukreja is an accomplished Mathematics faculty member at Dehradun Defence College, bringing over six years of teaching experience and a strong background in defence examination preparation. An ex-Officer Cadet of the Indian Military Academy (IMA), 155 Regular Course, he combines academic expertise with firsthand experience of the selection process for the Indian Armed Forces. He has secured AIR 16 in UPSC CDS I 2025 for the Air Force Academy (AFA) and AIR 74 in UPSC CDS II 2022, along with several other notable ranks in the AFCAT examination. A four-time SSB-recommended candidate, he possesses a deep understanding of the academic requirements and competitive standards of defence entrance examinations. Since beginning his teaching journey in 2020, he has maintained a 100% success rate in the written examinations of NDA, CDS, and AFCAT among his students, reflecting his commitment to effective teaching, conceptual clarity, and result-oriented preparation.',
+            'exams'       => ['NDA', 'UPSC CDS', 'AFCAT', 'SSB Interview', 'Air Force Academy (AFA)', 'Indian Military Academy (IMA)']
+        ],
+        [
+            'name'        => 'Mr. Hemant Dubey',
+            'role'        => 'Chemistry Faculty • 2x IIT GATE',
+            'department'  => 'Senior Chemistry Faculty • NEET, JEE Main, CBSE, NDA & CDS Specialist',
+            'photo'       => 'faculty-hemant-dubey.jpg',
+            'experience'  => '10+ Years Teaching Experience',
+            'education'   => 'B.Tech in Mechanical Engineering • 2x IIT GATE Qualified',
+            'quote'       => 'Chemistry is mastered through strong fundamentals, analytical clarity, and connecting theoretical equations with tangible practical applications.',
+            'bio'         => 'Mr. Hemant Dubey is an experienced Chemistry educator with over 10+ years of teaching experience and a strong academic background in Mechanical Engineering (B.Tech). Having qualified the IIT GATE examination twice, he brings analytical thinking, conceptual clarity, and a structured approach to Chemistry teaching. He has extensive experience in preparing students for various competitive and academic examinations, including NEET, JEE Main, CBSE Board Examinations, NDA and CDS. His teaching methodology emphasizes building strong fundamentals, simplifying complex concepts, developing problem-solving skills, and connecting theoretical knowledge with practical applications.',
+            'exams'       => ['NEET', 'JEE Main', 'CBSE Board', 'NDA', 'CDS', 'IIT GATE']
+        ],
+        [
+            'name'        => 'Ashish Shukla',
+            'role'        => 'PGT Biology',
+            'department'  => 'Senior Biology Faculty • M.Sc (Zoology), B.Ed',
+            'photo'       => 'faculty-ashish-shukla.jpg',
+            'experience'  => '9+ Years Teaching Experience',
+            'education'   => 'M.Sc (Zoology) • B.Sc (Chem, Botany, Zoology) Univ of Rajasthan • B.Ed (Biological Science)',
+            'quote'       => 'Biology is the study of life, and teaching biology is the art of inspiring life.',
+            'bio'         => 'Ashish Shukla is a seasoned PGT Biology mentor with 9 years of teaching experience at college level and senior secondary school level across CBSE and RBSE Boards. He holds an M.Sc in Zoology and B.Sc in Chemistry, Botany, and Zoology from the University of Rajasthan, along with a Bachelor of Education (B.Ed) in Biological Science from CRSU. An accomplished scholar with District-Level Hindi Essay Competition Award (2012), MSME Certificate (2017), and National Level Science Conference Certificate from Jaipur National University, he prepares cadets and students for competitive examinations including NEET, NDA, CDS, CUET, and M.Sc Zoology entrance exams with high conceptual retention.',
+            'exams'       => ['NEET', 'NDA', 'CDS', 'CUET', 'CBSE Board', 'RBSE Board', 'M.Sc Entrance (Zoology)']
+        ],
+        [
+            'name'        => 'Rishabh Sir',
+            'role'        => 'GS Faculty • CDS OTA AIR 59',
+            'department'  => 'General Studies Specialist • 2x SSB Recommended (18 SSB & 24 SSB)',
+            'photo'       => 'faculty-rishabh.jpg',
+            'experience'  => '7+ Years Experience • AIR 59 CDS OTA',
+            'education'   => 'M.A. (English), M.A. (Economics), B.Ed., NCC \'C\' Certificate',
+            'quote'       => 'Transforming General Studies from mere memorization into an engaging, analytical learning experience with mind maps, structured concepts, and SSB-level critical thinking.',
+            'bio'         => 'Rishabh Sir transforms General Studies from a subject of mere memorization into an engaging, analytical learning experience. Leveraging his strong academic background in Humanities and real-world experience, he breaks down complex topics in History, Geography, Polity, and Economics into clear, structured concepts. His teaching seamlessly bridges theoretical knowledge with exam-focused strategies—incorporating mind maps, real-world examples, interactive discussions, and previous years\' question analysis. Having himself cracked competitive defence exams and SSB interviews, he instills critical thinking, discipline, and practical application in his students, ensuring they not only master the GS syllabus for NDA, CDS, UPSC CSE, and CBSE exams but also develop the confidence to excel in competitive scenarios.',
+            'exams'       => ['NDA', 'CDS OTA', 'UPSC CSE', 'SSB Interview', 'CBSE Board', 'AFCAT', 'NCC Special Entry']
+        ],
+        [
+            'name'        => 'Apoorva Chatterjee',
+            'role'        => 'English Faculty • UGC NET',
+            'department'  => 'Senior English & Communication Faculty • UGC NET Qualified',
+            'photo'       => 'faculty-apoorva-chatterjee.jpg',
+            'experience'  => '6+ Years Teaching Experience',
+            'education'   => 'M.A. English (Manipal Univ) • B.A. English (RDVV) • UGC NET • Symbiosis Certified',
+            'quote'       => 'Language and literature are the ultimate tools for confident communication, officer-grade expression, and competitive exam mastery.',
+            'bio'         => 'I am an English educator with six years of teaching experience across English academics, communication skills, and phonics. I hold a Master\'s degree in English Literature from Manipal University and a Bachelor\'s degree in English Literature from Rani Durgawati Vishwavidyalaya. I am UGC NET qualified and also hold a certification in Creative Writing from Symbiosis. My teaching blends a strong grounding in literature with a practical focus on clear, confident communication and creative expression. I work with students at every level, from building early reading and pronunciation skills through phonics to developing language, writing, and literary analysis. I also have experience preparing candidates for competitive exams such as NDA and CDS, with a focus on grammar, vocabulary, comprehension, and exam strategy.',
+            'exams'       => ['NDA', 'CDS', 'AFCAT', 'SSB Interview', 'UGC NET', 'CBSE Board', 'Communication Skills']
+        ]
+    ];
+}
+
+/**
+ * Automatic One-Click Page Setup for Dehradun Defence College Theme
+ */
+function ddc_auto_setup_pages() {
+    $pages = [
+        [
+            'title'    => 'Home',
+            'slug'     => 'home',
+            'template' => 'front-page.php',
+            'is_front' => true,
+        ],
+        [
+            'title'    => 'About Us',
+            'slug'     => 'about',
+            'template' => 'page-about.php',
+        ],
+        [
+            'title'    => 'Director Desk',
+            'slug'     => 'director',
+            'template' => 'page-director.php',
+        ],
+        [
+            'title'    => 'Courses',
+            'slug'     => 'courses',
+            'template' => 'page-courses.php',
+        ],
+        [
+            'title'    => 'Online Registration Form',
+            'slug'     => 'online-registration-form',
+            'template' => 'page-online-registration-form.php',
+        ],
+        [
+            'title'    => 'Faculty & Facilities',
+            'slug'     => 'faculty-facilities',
+            'template' => 'page-faculty-facilities.php',
+        ],
+        [
+            'title'    => 'Gallery',
+            'slug'     => 'gallery',
+            'template' => 'page-gallery.php',
+        ],
+        [
+            'title'    => 'Results & Hall of Fame',
+            'slug'     => 'results',
+            'template' => 'page-results.php',
+        ],
+        [
+            'title'    => 'Contact Us',
+            'slug'     => 'contact',
+            'template' => 'page-contact.php',
+        ],
+    ];
+
+    $created_home_id = 0;
+
+    foreach ($pages as $p) {
+        $existing = get_page_by_path($p['slug']);
+        if (!$existing) {
+            $page_id = wp_insert_post([
+                'post_title'     => $p['title'],
+                'post_name'      => $p['slug'],
+                'post_status'    => 'publish',
+                'post_type'      => 'page',
+                'comment_status' => 'closed',
+            ]);
+            if (!is_wp_error($page_id) && $page_id) {
+                if (!empty($p['template'])) {
+                    update_post_meta($page_id, '_wp_page_template', $p['template']);
+                }
+                if (!empty($p['is_front'])) {
+                    $created_home_id = $page_id;
+                }
+            }
+        } else {
+            if (!empty($p['template'])) {
+                update_post_meta($existing->ID, '_wp_page_template', $p['template']);
+            }
+            if (!empty($p['is_front'])) {
+                $created_home_id = $existing->ID;
+            }
+        }
+    }
+
+    if ($created_home_id) {
+        update_option('show_on_front', 'page');
+        update_option('page_on_front', $created_home_id);
+    }
+
+    // Set postname permalinks
+    if (get_option('permalink_structure') !== '/%postname%/') {
+        update_option('permalink_structure', '/%postname%/');
+    }
+    flush_rewrite_rules();
+}
+add_action('after_switch_theme', 'ddc_auto_setup_pages');
+
+// Admin notice with One-Click Setup button
+function ddc_admin_setup_notice() {
+    if (isset($_GET['ddc_do_setup']) && check_admin_referer('ddc_setup_action')) {
+        ddc_auto_setup_pages();
+        echo '<div class="notice notice-success is-dismissible"><p><strong>Success!</strong> All Dehradun Defence College pages, templates, and homepage settings have been created and configured successfully.</p></div>';
+        return;
+    }
+
+    $home_page = get_page_by_path('results');
+    if (!$home_page) {
+        $setup_url = wp_nonce_url(admin_url('themes.php?ddc_do_setup=1'), 'ddc_setup_action');
+        echo '<div class="notice notice-info is-dismissible" style="border-left-color: #D4AF37;">';
+        echo '<p><strong>Dehradun Defence College Theme Activated!</strong> Click the button below to automatically create and configure all website pages (Home, Results, Courses, Gallery, About, Contact):</p>';
+        echo '<p><a href="' . esc_url($setup_url) . '" class="button button-primary" style="background:#0B1B3D; border-color:#D4AF37;">✨ Setup All DDC Pages in 1 Click</a></p>';
+        echo '</div>';
+    }
+}
+add_action('admin_notices', 'ddc_admin_setup_notice');
 

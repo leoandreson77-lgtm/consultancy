@@ -4831,3 +4831,176 @@ h6 { font-size: 0.95rem; }
   }
 }
 
+/* --- FACULTY SHOWCASE CARDS --- */
+.faculty-showcase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.faculty-member-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.faculty-member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.faculty-member-sidebar {
+  background: linear-gradient(180deg, #0B1B3D 0%, #162B56 100%);
+  padding: 2.25rem 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.faculty-member-photo-frame {
+  position: relative;
+  width: 220px;
+  height: 270px;
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 3px solid var(--accent-gold);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.faculty-member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.faculty-badge-role {
+  display: inline-block;
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+  color: #0B1B3D;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.faculty-member-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin: 0.25rem 0;
+  font-weight: 800;
+}
+
+.faculty-member-qual {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.faculty-exp-badge {
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.faculty-member-content {
+  padding: 2.5rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faculty-quote-banner {
+  background: var(--bg-slate);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.faculty-quote-banner p {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--primary-navy);
+  line-height: 1.65;
+  margin: 0;
+  font-weight: 600;
+}
+
+.faculty-bio-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.faculty-exams-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faculty-exam-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.faculty-exam-pill {
+  background: var(--bg-light-blue);
+  color: var(--primary-navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(11, 27, 61, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.faculty-exam-pill:hover {
+  background: var(--primary-navy);
+  color: var(--accent-gold);
+}
+
+@media (max-width: 900px) {
+  .faculty-member-card {
+    grid-template-columns: 1fr;
+  }
+  .faculty-member-sidebar {
+    padding: 2rem 1.5rem;
+  }
+  .faculty-member-photo-frame {
+    width: 200px;
+    height: 240px;
+  }
+  .faculty-member-content {
+    padding: 2rem 1.5rem;
+  }
+}
+

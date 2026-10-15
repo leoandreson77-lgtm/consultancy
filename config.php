@@ -65,37 +65,37 @@ $DDC_SEO_KEYWORDS = [
 define('SITE_KEYWORDS', implode(', ', $DDC_SEO_KEYWORDS));
 
 // Director & Leadership Team
-define('DIRECTOR_NAME', 'Mr. Zaheer Ahmed, Mr. Gaurav Sharma & Mr. Mahendra Kukreja');
+define('DIRECTOR_NAME', 'Mr. Mahendra Kukreja (Managing Director), Mr. Zaheer Ahmed, Mr. Gaurav Sharma & Ms. Neha Kukreja (Directors)');
 define('DIRECTOR_ROLE', 'Board of Directors');
 
 $DDC_LEADERSHIP = [
+    'mahendra_kukreja' => [
+        'name'  => 'Mr. Mahendra Kukreja',
+        'role'  => 'Managing Director',
+        'badge' => 'Managing Director — Dehradun Defence College',
+        'image' => 'assets/images/director-mahendra.jpg',
+        'bio'   => 'Managing Director of Dehradun Defence College, guiding defence coaching pedagogy, institutional excellence, and mentoring cadets to build unshakeable character and Officer-Like Qualities.'
+    ],
     'zaheer_ahmed' => [
         'name'  => 'Mr. Zaheer Ahmed',
         'role'  => 'Director',
-        'badge' => 'Owner — Doon Public Senior Secondary School',
+        'badge' => 'Director — DDC & Managing Director — Doon Public Senior Secondary School',
         'image' => 'assets/images/director-zaheer.jpg',
-        'bio'   => 'Visionary educational founder and owner of Doon Public Senior Secondary School, establishing the foundation of academic discipline and holistic cadet development in Dehradun.'
+        'bio'   => 'Director of Dehradun Defence College and Managing Director of Doon Public Senior Secondary School, establishing the bedrock of academic schooling, values, and holistic youth empowerment in Dehradun.'
     ],
     'gaurav_sharma' => [
         'name'  => 'Mr. Gaurav Sharma',
         'role'  => 'Director & Principal',
-        'badge' => 'Director — DDC & Principal — Doon Public Sr. Sec. School',
+        'badge' => 'Director — DDC & Principal — Doon Public Senior Secondary School',
         'image' => 'assets/images/director-gaurav.jpg',
-        'bio'   => 'Director of Dehradun Defence College and Principal of Doon Public Senior Secondary School, leading integrated board schooling, UPSC defence curriculum, and SSB officer grooming.'
-    ],
-    'mahendra_kukreja' => [
-        'name'  => 'Mr. Mahendra Kukreja',
-        'role'  => 'Director',
-        'badge' => 'Founder & Director — Dehradun Defence College',
-        'image' => 'assets/images/director-mahendra.jpg',
-        'bio'   => 'Visionary mentor with extensive experience in defence coaching pedagogy, guiding cadets to build unshakeable character, discipline, and Officer-Like Qualities.'
+        'bio'   => 'Director of Dehradun Defence College and Principal of Doon Public Senior Secondary School, spearheading strategic NDA examination preparation, UPSC academic mastery, and Officer-Like Qualities (OLQ) development.'
     ],
     'neha_kukreja' => [
         'name'  => 'Ms. Neha Kukreja',
         'role'  => 'Director',
-        'badge' => 'College Enrollment Specialist',
+        'badge' => 'Director — Dehradun Defence College (DDC)',
         'image' => 'assets/images/director-neha.jpg',
-        'bio'   => 'Directing admissions, parent counseling, and student batch allocations with personalized guidance for residential hostel and academic batches.'
+        'bio'   => 'Director of Dehradun Defence College, leading academic admissions, candidate counseling roadmaps, batch enrollments, and student-parent onboarding.'
     ]
 ];
 
@@ -461,6 +461,24 @@ $DDC_FEE_STRUCTURE = [
 // -------------------------------------------------------------
 $DDC_LATEST_SELECTIONS_2026 = [
     [
+        'name'        => 'Durshya Biradar',
+        'photo'       => 'assets/images/cadets/cadet-durshya-biradar.jpg',
+        'role'        => 'Cadet',
+        'org'         => 'NDA-2 (Sep 2026)',
+        'badge'       => 'Written NDA Qualified',
+        'detail'      => 'Cleared UPSC NDA-2 Written Examination • Sep 2026 Selection Batch',
+        'tag'         => 'NDA Written'
+    ],
+    [
+        'name'        => 'Akshant Chuksey',
+        'photo'       => 'assets/images/cadets/cadet-akshant-chuksey.jpg',
+        'role'        => 'Cadet',
+        'org'         => 'NDA-1 (April 2026)',
+        'badge'       => 'NDA-1 Selection',
+        'detail'      => 'Selected & Cleared UPSC NDA-1 Examination • April 2026 Entry',
+        'tag'         => 'NDA Cadet'
+    ],
+    [
         'name'        => 'Aadarsh Mishra (DDCIAN)',
         'photo'       => 'assets/images/cadets/cadet-aadarsh-mishra.jpg',
         'role'        => 'Flying Officer',
@@ -576,6 +594,78 @@ $DDC_LATEST_SELECTIONS_2026 = [
         'badge'       => 'Dual Qualifier',
         'detail'      => 'Cracked IIT-JEE Main 2025-26 and qualified NDA defence entrance',
         'tag'         => 'Engineering & NDA'
+    ]
+];
+
+// -------------------------------------------------------------
+// Academic Teaching Faculty Members
+// -------------------------------------------------------------
+$DDC_FACULTY_MEMBERS = [
+    [
+        'name'        => 'Shekhar Malik',
+        'role'        => 'PGT Physics',
+        'department'  => 'Senior Physics Faculty • Head of Physical Sciences',
+        'photo'       => 'assets/images/faculty-shekhar-malik.jpg',
+        'experience'  => '15+ Years Teaching Experience',
+        'education'   => 'M.Tech in Mechanical Engineering (NIT)',
+        'quote'       => 'Physics is not just a collection of equation on a whiteboard , It is a systematic language built to decode the universe, in our lecture room and laboratories we challenge students to look beyond theoretical memorization, actively applying mechanical laws to build tangible real word innovations',
+        'bio'         => 'I have completed my M.Tech in Mechanical engineering from National Institute of Technology. I have 15 years of experience of teaching PHYSICS at academic level and various competitive exams like NDA, IIT-JEE, NEET , AFCAT, CDS ,AIRFORCE (X), MERCHANT NAVY,MNS,BITSAT, UGEE,CUET,MHT CET, COMEDK, WBJEE, VITEEE. I love to breakdown difficult topics  in to easy one for students with daily life examples and concept building.',
+        'exams'       => ['NDA', 'IIT-JEE', 'NEET', 'AFCAT', 'CDS', 'AIRFORCE (X)', 'MERCHANT NAVY', 'MNS', 'BITSAT', 'UGEE', 'CUET', 'MHT CET', 'COMEDK', 'WBJEE', 'VITEEE']
+    ],
+    [
+        'name'        => 'Tarandeep Singh Kukreja (Ex-IMA)',
+        'role'        => 'Mathematics Faculty • Ex-IMA',
+        'department'  => 'Ex-Officer Cadet IMA (155 Regular Course) • AIR 16 UPSC CDS • 4-Time SSB Recommended',
+        'photo'       => 'assets/images/faculty-tarandeep-singh.jpg',
+        'experience'  => '6+ Years Experience • 100% Written Success',
+        'education'   => 'Ex-Cadet Indian Military Academy (IMA 155) • AIR 16 UPSC CDS (AFA) • AIR 74 CDS',
+        'quote'       => 'Building strong mathematical fundamentals, developing analytical problem-solving skills, and simplifying complex concepts through structured and exam-oriented instruction.',
+        'bio'         => 'Tarandeep Singh Kukreja is an accomplished Mathematics faculty member at Dehradun Defence College, bringing over six years of teaching experience and a strong background in defence examination preparation. An ex-Officer Cadet of the Indian Military Academy (IMA), 155 Regular Course, he combines academic expertise with firsthand experience of the selection process for the Indian Armed Forces. He has secured AIR 16 in UPSC CDS I 2025 for the Air Force Academy (AFA) and AIR 74 in UPSC CDS II 2022, along with several other notable ranks in the AFCAT examination. A four-time SSB-recommended candidate, he possesses a deep understanding of the academic requirements and competitive standards of defence entrance examinations. Since beginning his teaching journey in 2020, he has maintained a 100% success rate in the written examinations of NDA, CDS, and AFCAT among his students, reflecting his commitment to effective teaching, conceptual clarity, and result-oriented preparation.',
+        'exams'       => ['NDA', 'UPSC CDS', 'AFCAT', 'SSB Interview', 'Air Force Academy (AFA)', 'Indian Military Academy (IMA)']
+    ],
+    [
+        'name'        => 'Mr. Hemant Dubey',
+        'role'        => 'Chemistry Faculty • 2x IIT GATE',
+        'department'  => 'Senior Chemistry Faculty • NEET, JEE Main, CBSE, NDA & CDS Specialist',
+        'photo'       => 'assets/images/faculty-hemant-dubey.jpg',
+        'experience'  => '10+ Years Teaching Experience',
+        'education'   => 'B.Tech in Mechanical Engineering • 2x IIT GATE Qualified',
+        'quote'       => 'Chemistry is mastered through strong fundamentals, analytical clarity, and connecting theoretical equations with tangible practical applications.',
+        'bio'         => 'Mr. Hemant Dubey is an experienced Chemistry educator with over 10+ years of teaching experience and a strong academic background in Mechanical Engineering (B.Tech). Having qualified the IIT GATE examination twice, he brings analytical thinking, conceptual clarity, and a structured approach to Chemistry teaching. He has extensive experience in preparing students for various competitive and academic examinations, including NEET, JEE Main, CBSE Board Examinations, NDA and CDS. His teaching methodology emphasizes building strong fundamentals, simplifying complex concepts, developing problem-solving skills, and connecting theoretical knowledge with practical applications.',
+        'exams'       => ['NEET', 'JEE Main', 'CBSE Board', 'NDA', 'CDS', 'IIT GATE']
+    ],
+    [
+        'name'        => 'Ashish Shukla',
+        'role'        => 'PGT Biology',
+        'department'  => 'Senior Biology Faculty • M.Sc (Zoology), B.Ed',
+        'photo'       => 'assets/images/faculty-ashish-shukla.jpg',
+        'experience'  => '9+ Years Teaching Experience',
+        'education'   => 'M.Sc (Zoology) • B.Sc (Chem, Botany, Zoology) Univ of Rajasthan • B.Ed (Biological Science)',
+        'quote'       => 'Biology is the study of life, and teaching biology is the art of inspiring life.',
+        'bio'         => 'Ashish Shukla is a seasoned PGT Biology mentor with 9 years of teaching experience at college level and senior secondary school level across CBSE and RBSE Boards. He holds an M.Sc in Zoology and B.Sc in Chemistry, Botany, and Zoology from the University of Rajasthan, along with a Bachelor of Education (B.Ed) in Biological Science from CRSU. An accomplished scholar with District-Level Hindi Essay Competition Award (2012), MSME Certificate (2017), and National Level Science Conference Certificate from Jaipur National University, he prepares cadets and students for competitive examinations including NEET, NDA, CDS, CUET, and M.Sc Zoology entrance exams with high conceptual retention.',
+        'exams'       => ['NEET', 'NDA', 'CDS', 'CUET', 'CBSE Board', 'RBSE Board', 'M.Sc Entrance (Zoology)']
+    ],
+    [
+        'name'        => 'Rishabh Sir',
+        'role'        => 'GS Faculty • CDS OTA AIR 59',
+        'department'  => 'General Studies Specialist • 2x SSB Recommended (18 SSB & 24 SSB)',
+        'photo'       => 'assets/images/faculty-rishabh.jpg',
+        'experience'  => '7+ Years Experience • AIR 59 CDS OTA',
+        'education'   => 'M.A. (English), M.A. (Economics), B.Ed., NCC \'C\' Certificate',
+        'quote'       => 'Transforming General Studies from mere memorization into an engaging, analytical learning experience with mind maps, structured concepts, and SSB-level critical thinking.',
+        'bio'         => 'Rishabh Sir transforms General Studies from a subject of mere memorization into an engaging, analytical learning experience. Leveraging his strong academic background in Humanities and real-world experience, he breaks down complex topics in History, Geography, Polity, and Economics into clear, structured concepts. His teaching seamlessly bridges theoretical knowledge with exam-focused strategies—incorporating mind maps, real-world examples, interactive discussions, and previous years\' question analysis. Having himself cracked competitive defence exams and SSB interviews, he instills critical thinking, discipline, and practical application in his students, ensuring they not only master the GS syllabus for NDA, CDS, UPSC CSE, and CBSE exams but also develop the confidence to excel in competitive scenarios.',
+        'exams'       => ['NDA', 'CDS OTA', 'UPSC CSE', 'SSB Interview', 'CBSE Board', 'AFCAT', 'NCC Special Entry']
+    ],
+    [
+        'name'        => 'Apoorva Chatterjee',
+        'role'        => 'English Faculty • UGC NET',
+        'department'  => 'Senior English & Communication Faculty • UGC NET Qualified',
+        'photo'       => 'assets/images/faculty-apoorva-chatterjee.jpg',
+        'experience'  => '6+ Years Teaching Experience',
+        'education'   => 'M.A. English (Manipal Univ) • B.A. English (RDVV) • UGC NET • Symbiosis Certified',
+        'quote'       => 'Language and literature are the ultimate tools for confident communication, officer-grade expression, and competitive exam mastery.',
+        'bio'         => 'I am an English educator with six years of teaching experience across English academics, communication skills, and phonics. I hold a Master\'s degree in English Literature from Manipal University and a Bachelor\'s degree in English Literature from Rani Durgawati Vishwavidyalaya. I am UGC NET qualified and also hold a certification in Creative Writing from Symbiosis. My teaching blends a strong grounding in literature with a practical focus on clear, confident communication and creative expression. I work with students at every level, from building early reading and pronunciation skills through phonics to developing language, writing, and literary analysis. I also have experience preparing candidates for competitive exams such as NDA and CDS, with a focus on grammar, vocabulary, comprehension, and exam strategy.',
+        'exams'       => ['NDA', 'CDS', 'AFCAT', 'SSB Interview', 'UGC NET', 'CBSE Board', 'Communication Skills']
     ]
 ];
 

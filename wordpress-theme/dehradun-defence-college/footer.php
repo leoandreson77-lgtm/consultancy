@@ -31,8 +31,8 @@ $theme_uri    = get_template_directory_uri();
                     <div style="margin-top: 1.5rem;">
                         <span class="badge-gold">Board of Directors</span>
                         <p style="margin-top: 0.4rem; font-weight: 700; color: #FFFFFF; font-size: 0.9rem; line-height: 1.5;">
-                            Mr. Zaheer Ahmed, Mr. Gaurav Sharma & Mr. Mahendra Kukreja (Directors)<br>
-                            <span style="font-weight: 400; color: rgba(255,255,255,0.75); font-size: 0.825rem;">Ms. Neha Kukreja (Director & College Enrollment Specialist)</span>
+                            Mr. Mahendra Kukreja (Managing Director)<br>
+                            <span style="font-weight: 400; color: rgba(255,255,255,0.85); font-size: 0.825rem;">Mr. Zaheer Ahmed, Mr. Gaurav Sharma &amp; Ms. Neha Kukreja (Directors)</span>
                         </p>
                     </div>
                 </div>

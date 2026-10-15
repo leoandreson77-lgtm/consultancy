@@ -117,8 +117,13 @@ $gallery_images = [
         'category' => 'celebrations'
     ],
     [
+        'src'      => 'assets/images/director-mahendra.jpg',
+        'title'    => 'Mr. Mahendra Kukreja — Managing Director, Dehradun Defence College',
+        'category' => 'campus'
+    ],
+    [
         'src'      => 'assets/images/director-zaheer.jpg',
-        'title'    => 'Mr. Zaheer Ahmed — Director (Owner, Doon Public Sr. Sec. School)',
+        'title'    => 'Mr. Zaheer Ahmed — Director, DDC & Managing Director, Doon Public Sr. Sec. School',
         'category' => 'campus'
     ],
     [
@@ -127,13 +132,8 @@ $gallery_images = [
         'category' => 'campus'
     ],
     [
-        'src'      => 'assets/images/director-mahendra.jpg',
-        'title'    => 'Mr. Mahendra Kukreja — Founder & Director, Dehradun Defence College',
-        'category' => 'campus'
-    ],
-    [
         'src'      => 'assets/images/director-neha.jpg',
-        'title'    => 'Ms. Neha Kukreja — Director & College Enrollment Specialist',
+        'title'    => 'Ms. Neha Kukreja — Director, Dehradun Defence College',
         'category' => 'campus'
     ]
 ];

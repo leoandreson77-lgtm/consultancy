@@ -52,10 +52,10 @@ $theme_uri = get_template_directory_uri();
                     ['src' => $theme_uri . '/assets/images/chess-indoor-session.jpg', 'title' => 'Indoor Chess Strategy Session — Tactical Thinking & Decision-Making'],
                     ['src' => $theme_uri . '/assets/images/ssb-gto-ground.jpg', 'title' => 'SSB GTO Obstacle Ground Training — Burma Bridge, Commando Walk & PGT'],
                     ['src' => $theme_uri . '/assets/images/nda-success-cadets.jpg', 'title' => 'Recommendation Celebrations & Qualified Cadets Joining Armed Forces'],
-                    ['src' => $theme_uri . '/assets/images/director-zaheer.jpg', 'title' => 'Mr. Zaheer Ahmed — Director (Owner, Doon Public Sr. Sec. School)'],
-                    ['src' => $theme_uri . '/assets/images/director-gaurav.jpg', 'title' => 'Mr. Gaurav Sharma — Director, DDC & Principal, Doon Public School'],
-                    ['src' => $theme_uri . '/assets/images/director-mahendra.jpg', 'title' => 'Mr. Mahendra Kukreja — Founder & Director, Dehradun Defence College'],
-                    ['src' => $theme_uri . '/assets/images/director-neha.jpg', 'title' => 'Ms. Neha Kukreja — Director & College Enrollment Specialist'],
+                    ['src' => $theme_uri . '/assets/images/director-mahendra.jpg', 'title' => 'Mr. Mahendra Kukreja — Managing Director, Dehradun Defence College'],
+                    ['src' => $theme_uri . '/assets/images/director-zaheer.jpg', 'title' => 'Mr. Zaheer Ahmed — Director, DDC & Managing Director, Doon Public Sr. Sec. School'],
+                    ['src' => $theme_uri . '/assets/images/director-gaurav.jpg', 'title' => 'Mr. Gaurav Sharma — Director, DDC & Principal, Doon Public Sr. Sec. School'],
+                    ['src' => $theme_uri . '/assets/images/director-neha.jpg', 'title' => 'Ms. Neha Kukreja — Director, Dehradun Defence College'],
                 ];
                 foreach ($gallery_items as $item):
                 ?>

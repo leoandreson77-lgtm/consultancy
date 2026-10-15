@@ -6,7 +6,7 @@
 require_once __DIR__ . '/config.php';
 
 $page_title = "Leadership & Directors' Desk | Dehradun Defence College";
-$page_desc = "Meet the directors of Dehradun Defence College - Managing Director Dr. Neha Kukreja and Executive Director Mahendra Kukreja. Dedicated mentorship, character building, and officer grooming.";
+$page_desc = "Meet the leadership of Dehradun Defence College - Managing Director Mr. Mahendra Kukreja, Director Ms. Neha Kukreja, Director Mr. Zaheer Ahmed, and Director & Principal Mr. Gaurav Sharma.";
 $current_page = 'about';
 
 include __DIR__ . '/includes/header.php';
@@ -43,17 +43,17 @@ include __DIR__ . '/includes/header.php';
                 </p>
             </div>
 
-            <!-- UPPER SIDE: Dr. Neha Kukreja (Managing Director) -->
+            <!-- UPPER SIDE: Ms. Neha Kukreja (Director) -->
             <div class="director-profile-box" style="border: 2px solid var(--accent-gold);">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
                         <div style="position: relative; display: inline-block;">
-                            <img src="assets/images/director-neha.jpg" alt="Dr. Neha Kukreja - Managing Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--accent-gold); box-shadow: var(--shadow-md);">
-                            <span class="badge-navy" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem;">Managing Director</span>
+                            <img src="assets/images/director-neha.jpg" alt="Ms. Neha Kukreja - Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--accent-gold); box-shadow: var(--shadow-md);">
+                            <span class="badge-navy" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem;">Director</span>
                         </div>
-                        <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-top: 1.75rem; margin-bottom: 0.25rem;">Dr. Neha Kukreja</h3>
-                        <p style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Managing Director & Chief Student Mentor</p>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">College Enrollment & Residential Welfare</p>
+                        <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-top: 1.75rem; margin-bottom: 0.25rem;">Ms. Neha Kukreja</h3>
+                        <p style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Director — Dehradun Defence College</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">College Admissions & Student Onboarding</p>
                     </div>
 
                     <div>
@@ -86,16 +86,16 @@ include __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <!-- LOWER SIDE: Mahendra Kukreja (Executive Director) -->
+            <!-- LOWER SIDE: Mr. Mahendra Kukreja (Managing Director) -->
             <div class="director-profile-box" style="border: 2px solid var(--border-light);">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
                         <div style="position: relative; display: inline-block;">
-                            <img src="assets/images/director-mahendra.jpg" alt="Mahendra Kukreja - Executive Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--primary-navy); box-shadow: var(--shadow-md);">
-                            <span class="badge-saffron" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem;">Executive Director</span>
+                            <img src="assets/images/director-mahendra.jpg" alt="Mr. Mahendra Kukreja - Managing Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--primary-navy); box-shadow: var(--shadow-md);">
+                            <span class="badge-gold" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem; font-weight: 800;">Managing Director</span>
                         </div>
                         <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-top: 1.75rem; margin-bottom: 0.25rem;">Mr. Mahendra Kukreja</h3>
-                        <p style="color: var(--primary-navy); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Executive Director & Personality Development Assessor</p>
+                        <p style="color: var(--primary-navy); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Managing Director — Dehradun Defence College</p>
                         <p style="font-size: 0.85rem; color: var(--text-muted);">Defence Pedagogy & OLQ Cultivation</p>
                     </div>
 
@@ -140,12 +140,12 @@ include __DIR__ . '/includes/header.php';
                 <div class="directors-grid">
                     <div class="director-card">
                         <div class="director-img-wrap">
-                            <img src="assets/images/director-zaheer.jpg" alt="Mr. Zaheer Ahmed - Director Doon Public School" class="director-img">
-                            <span class="director-badge">Schooling Patron</span>
+                            <img src="assets/images/director-zaheer.jpg" alt="Mr. Zaheer Ahmed - Director" class="director-img">
+                            <span class="director-badge">Director</span>
                         </div>
                         <div class="director-content">
                             <h3>Mr. Zaheer Ahmed</h3>
-                            <p class="director-role">Director, Doon Public Senior Secondary School</p>
+                            <p class="director-role">Director — DDC & Managing Director — Doon Public Senior Secondary School</p>
                             <p class="director-bio">
                                 Ensuring seamless synchronization between CBSE Senior Secondary academic schooling and UPSC defence entrance syllabus, keeping board performance stellar.
                             </p>
@@ -154,12 +154,12 @@ include __DIR__ . '/includes/header.php';
 
                     <div class="director-card">
                         <div class="director-img-wrap">
-                            <img src="assets/images/director-gaurav.jpg" alt="Mr. Gaurav Sharma - Director Academics" class="director-img">
-                            <span class="director-badge">Academic Head</span>
+                            <img src="assets/images/director-gaurav.jpg" alt="Mr. Gaurav Sharma - Director & Principal" class="director-img">
+                            <span class="director-badge">Director & Principal</span>
                         </div>
                         <div class="director-content">
                             <h3>Mr. Gaurav Sharma</h3>
-                            <p class="director-role">Director & Head of Academic Faculty</p>
+                            <p class="director-role">Director — DDC & Principal — Doon Public Senior Secondary School</p>
                             <p class="director-bio">
                                 Master of UPSC Mathematics pedagogy and shortcut methodologies, overseeing curriculum execution, weekly doubt clearing, and continuous test simulations.
                             </p>

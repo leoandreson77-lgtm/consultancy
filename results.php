@@ -133,6 +133,20 @@ include __DIR__ . '/includes/header.php';
 
                 <div class="individual-selections-grid">
                     <div class="individual-selection-card">
+                        <img src="assets/images/cadets/cadet-durshya-biradar.jpg" alt="Durshya Biradar - NDA-2 Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Durshya Biradar</h4>
+                            <p>NDA-2 Written Selection • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <img src="assets/images/cadets/cadet-akshant-chuksey.jpg" alt="Akshant Chuksey - NDA-1 Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Akshant Chuksey</h4>
+                            <p>NDA-1 Selection • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
                         <img src="assets/images/selection-aravind-kumar.jpg" alt="Aravind Kumar - Congratulations Selection" class="individual-selection-img" loading="lazy">
                         <div class="individual-selection-meta">
                             <h4>Aravind Kumar</h4>

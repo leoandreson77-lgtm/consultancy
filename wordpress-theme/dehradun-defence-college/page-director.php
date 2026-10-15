@@ -42,16 +42,17 @@ $theme_uri = get_template_directory_uri();
             </div>
 
             <!-- UPPER SIDE: Dr. Neha Kukreja (Managing Director) -->
+            <!-- UPPER SIDE: Ms. Neha Kukreja (Director) -->
             <div class="director-profile-box" style="border: 2px solid var(--accent-gold);">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
                         <div style="position: relative; display: inline-block;">
-                            <img src="<?php echo esc_url($theme_uri . '/assets/images/director-neha.jpg'); ?>" alt="Dr. Neha Kukreja - Managing Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--accent-gold); box-shadow: var(--shadow-md);">
-                            <span class="badge-navy" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem;">Managing Director</span>
+                            <img src="<?php echo esc_url($theme_uri . '/assets/images/director-neha.jpg'); ?>" alt="Ms. Neha Kukreja - Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--accent-gold); box-shadow: var(--shadow-md);">
+                            <span class="badge-navy" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem;">Director</span>
                         </div>
-                        <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-top: 1.75rem; margin-bottom: 0.25rem;">Dr. Neha Kukreja</h3>
-                        <p style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Managing Director & Chief Student Mentor</p>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">College Enrollment & Residential Welfare</p>
+                        <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-top: 1.75rem; margin-bottom: 0.25rem;">Ms. Neha Kukreja</h3>
+                        <p style="color: var(--accent-gold-hover); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Director — Dehradun Defence College</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">College Admissions & Student Onboarding</p>
                     </div>
 
                     <div>
@@ -72,7 +73,7 @@ $theme_uri = get_template_directory_uri();
                         </p>
 
                         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="Direct Counseling - Dr. Neha Kukreja">
+                            <button type="button" class="btn btn-gold btn-sm open-enquiry-modal" data-course="Direct Counseling - Neha Kukreja">
                                 <span>Book Direct Counseling</span>
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                             </button>
@@ -84,23 +85,23 @@ $theme_uri = get_template_directory_uri();
                 </div>
             </div>
 
-            <!-- LOWER SIDE: Mr. Mahendra Kukreja (Executive Director) -->
+            <!-- LOWER SIDE: Mr. Mahendra Kukreja (Managing Director) -->
             <div class="director-profile-box" style="border: 2px solid var(--border-light);">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
                         <div style="position: relative; display: inline-block;">
-                            <img src="<?php echo esc_url($theme_uri . '/assets/images/director-mahendra.jpg'); ?>" alt="Mr. Mahendra Kukreja - Executive Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--primary-navy); box-shadow: var(--shadow-md);">
-                            <span class="badge-saffron" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem;">Executive Director</span>
+                            <img src="<?php echo esc_url($theme_uri . '/assets/images/director-mahendra.jpg'); ?>" alt="Mr. Mahendra Kukreja - Managing Director" style="width: 240px; height: 260px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--primary-navy); box-shadow: var(--shadow-md);">
+                            <span class="badge-gold" style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.8rem; padding: 0.35rem 0.85rem; font-weight: 800;">Managing Director</span>
                         </div>
                         <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-top: 1.75rem; margin-bottom: 0.25rem;">Mr. Mahendra Kukreja</h3>
-                        <p style="color: var(--primary-navy); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Executive Director & Personality Development Assessor</p>
+                        <p style="color: var(--primary-navy); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem;">Managing Director — Dehradun Defence College</p>
                         <p style="font-size: 0.85rem; color: var(--text-muted);">Defence Pedagogy & OLQ Cultivation</p>
                     </div>
 
                     <div>
                         <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--tricolor-saffron)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            <h3 style="font-size: 1.65rem; color: var(--primary-navy); margin: 0;">Executive Director's Vision</h3>
+                            <h3 style="font-size: 1.65rem; color: var(--primary-navy); margin: 0;">Managing Director's Vision</h3>
                         </div>
                         <div style="width: 60px; height: 3px; background: var(--tricolor-saffron); margin-bottom: 1.25rem;"></div>
 
@@ -130,9 +131,10 @@ $theme_uri = get_template_directory_uri();
                     <img src="<?php echo esc_url($theme_uri . '/assets/images/director-zaheer.jpg'); ?>" alt="Mr. Zaheer Ahmed" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-gold); flex-shrink: 0;">
                     <div>
                         <h4 style="font-size: 1.2rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Mr. Zaheer Ahmed</h4>
-                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Director & Patron</span>
+                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Director</span>
+                        <p style="font-size: 0.85rem; color: var(--primary-navy); font-weight: 700; margin-bottom: 0.35rem;">Director — DDC &amp; Managing Director — Doon Public Senior Secondary School</p>
                         <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
-                            Owner, Doon Public Senior Secondary School. Educational pioneer anchoring strong CBSE academic standards and character discipline.
+                            Educational pioneer anchoring strong CBSE academic standards and character discipline.
                         </p>
                     </div>
                 </div>
@@ -141,7 +143,8 @@ $theme_uri = get_template_directory_uri();
                     <img src="<?php echo esc_url($theme_uri . '/assets/images/director-gaurav.jpg'); ?>" alt="Mr. Gaurav Sharma" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-gold); flex-shrink: 0;">
                     <div>
                         <h4 style="font-size: 1.2rem; color: var(--primary-navy); margin-bottom: 0.25rem;">Mr. Gaurav Sharma</h4>
-                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Director & Principal</span>
+                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Director &amp; Principal</span>
+                        <p style="font-size: 0.85rem; color: var(--primary-navy); font-weight: 700; margin-bottom: 0.35rem;">Director — DDC &amp; Principal — Doon Public Senior Secondary School</p>
                         <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
                             Leading academic curriculum synergy between board syllabus and UPSC NDA written competitive examination.
                         </p>

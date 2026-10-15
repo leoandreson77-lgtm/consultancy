@@ -477,6 +477,20 @@ include __DIR__ . '/includes/header.php';
 
                 <div class="individual-selections-grid">
                     <div class="individual-selection-card">
+                        <img src="assets/images/cadets/cadet-durshya-biradar.jpg" alt="Durshya Biradar - NDA-2 Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Durshya Biradar</h4>
+                            <p>NDA-2 Written Selection • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <img src="assets/images/cadets/cadet-akshant-chuksey.jpg" alt="Akshant Chuksey - NDA-1 Selection" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Akshant Chuksey</h4>
+                            <p>NDA-1 Selection • DDCIAN</p>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
                         <img src="assets/images/selection-aravind-kumar.jpg" alt="Aravind Kumar - Congratulations Selection" class="individual-selection-img" loading="lazy">
                         <div class="individual-selection-meta">
                             <h4>Aravind Kumar</h4>
@@ -1378,17 +1392,17 @@ include __DIR__ . '/includes/header.php';
                 <p>Guided by visionary leaders dedicated to parent trust, cadet welfare, and India's finest defence training standards.</p>
             </div>
 
-            <!-- UPPER SIDE: Dr. Neha Kukreja -->
+            <!-- UPPER SIDE: Ms. Neha Kukreja -->
             <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--accent-gold); box-shadow: var(--shadow-md); padding: 2.5rem 2rem; margin-bottom: 2.5rem;">
                 <div style="display: grid; grid-template-columns: 240px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
-                        <img src="assets/images/director-neha.jpg" alt="Dr. Neha Kukreja - Managing Director" style="width: 200px; height: 220px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--accent-gold); margin: 0 auto; box-shadow: var(--shadow-sm);">
-                        <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-top: 1rem; margin-bottom: 0.2rem;">Dr. Neha Kukreja</h3>
-                        <span class="badge-navy" style="font-size: 0.75rem; padding: 0.25rem 0.65rem;">Managing Director</span>
-                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem;">College Enrollment & Student Welfare</p>
+                        <img src="assets/images/director-neha.jpg" alt="Ms. Neha Kukreja - Director" style="width: 200px; height: 220px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--accent-gold); margin: 0 auto; box-shadow: var(--shadow-sm);">
+                        <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-top: 1rem; margin-bottom: 0.2rem;">Ms. Neha Kukreja</h3>
+                        <span class="badge-navy" style="font-size: 0.75rem; padding: 0.25rem 0.65rem;">Director</span>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem;">Director — DDC & Student Welfare</p>
                     </div>
                     <div>
-                        <span class="badge-saffron" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Managing Director's Pledge to Parents</span>
+                        <span class="badge-saffron" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Director's Pledge to Parents</span>
                         <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 0.75rem;">
                             “A Sacred Responsibility to Sculpt Officers & Leaders”
                         </h3>
@@ -1400,7 +1414,7 @@ include __DIR__ . '/includes/header.php';
                                 <span>Read Full Message on Director Page</span>
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                             </a>
-                            <button type="button" class="btn btn-outline-navy btn-sm open-enquiry-modal" data-course="Direct Counseling - Dr. Neha Kukreja">
+                            <button type="button" class="btn btn-outline-navy btn-sm open-enquiry-modal" data-course="Direct Counseling - Ms. Neha Kukreja">
                                 <span>Counseling with Director</span>
                             </button>
                         </div>
@@ -1412,13 +1426,13 @@ include __DIR__ . '/includes/header.php';
             <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 2px solid var(--border-light); box-shadow: var(--shadow-md); padding: 2.5rem 2rem; margin-bottom: 2rem;">
                 <div style="display: grid; grid-template-columns: 240px 1fr; gap: 2.5rem; align-items: center;" class="director-detail-grid">
                     <div style="text-align: center;">
-                        <img src="assets/images/director-mahendra.jpg" alt="Mr. Mahendra Kukreja - Executive Director" style="width: 200px; height: 220px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--primary-navy); margin: 0 auto; box-shadow: var(--shadow-sm);">
+                        <img src="assets/images/director-mahendra.jpg" alt="Mr. Mahendra Kukreja - Managing Director" style="width: 200px; height: 220px; object-fit: cover; border-radius: var(--radius-md); border: 3px solid var(--primary-navy); margin: 0 auto; box-shadow: var(--shadow-sm);">
                         <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-top: 1rem; margin-bottom: 0.2rem;">Mr. Mahendra Kukreja</h3>
-                        <span class="badge-saffron" style="font-size: 0.75rem; padding: 0.25rem 0.65rem;">Executive Director</span>
-                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem;">Defence Pedagogy & OLQ Cultivation</p>
+                        <span class="badge-gold" style="font-size: 0.75rem; padding: 0.25rem 0.65rem; font-weight: 800;">Managing Director</span>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem;">Managing Director — Dehradun Defence College</p>
                     </div>
                     <div>
-                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Executive Director's Vision</span>
+                        <span class="badge-navy" style="font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">Managing Director's Vision</span>
                         <h3 style="font-size: 1.5rem; color: var(--primary-navy); margin-bottom: 0.75rem;">
                             “Discipline, Stamina & Unbroken Character”
                         </h3>
