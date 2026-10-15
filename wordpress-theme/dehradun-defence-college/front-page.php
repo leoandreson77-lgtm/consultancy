@@ -70,49 +70,53 @@ $theme_uri = get_template_directory_uri();
                                 <!-- Left Column: Text & 4 Real Cadet Selection Photos -->
                                 <div class="slide-selection-text">
                                     <div class="hero-badge-wrap">
-                                        <span class="badge-saffron">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                            Hall of Fame: 2025-2026
+                                        <span class="badge-saffron pulse-badge">
+                                            <span class="pulsing-dot-white"></span>
+                                            🔥 LATEST 2026 SELECTIONS
                                         </span>
                                         <span class="badge-campus-tag">
-                                            🎖️ 13+ Cadets in Uniform
+                                            🎖️ Durshya (Sep 2026) &amp; Akshant (Apr 2026)
                                         </span>
                                     </div>
                                     <h2 style="font-size: clamp(1.4rem, 2.4vw, 2.1rem); margin: 0.5rem 0 0.6rem 0;">
-                                        Saluting Our Heroes: <br>
-                                        <span class="gold-highlight">DDCIANs in Uniform</span>
+                                        Saluting Our Latest Heroes: <br>
+                                        <span class="gold-highlight">2026 DDCIAN Qualifiers</span>
                                     </h2>
                                     <p class="hero-slide-subtext" style="font-size: 0.88rem; margin-bottom: 0.75rem; line-height: 1.5;">
-                                        Flying Officer <strong>Aadarsh Mishra</strong> (IAF), <strong>Sanskar Jha</strong> (NDA), <strong>Karuna</strong> (NDA Girls), <strong>Arindam</strong> (OTA), and our proud achievers!
+                                        Huge congratulations to <strong style="color: #FFD700; text-shadow: 0 0 10px rgba(255,215,0,0.5);">Durshya Biradar</strong> (NDA-2 Sep 2026 Written), <strong style="color: #FFD700; text-shadow: 0 0 10px rgba(255,215,0,0.5);">Akshant Chuksey</strong> (NDA-1 April 2026), Flying Officer <strong>Aadarsh Mishra</strong> (IAF), <strong>Sanskar Jha</strong> (NDA) &amp; our 13+ champions!
                                     </p>
 
-                                    <!-- 4 Individual Cadet Celebration Cards with Real Photos -->
+                                    <!-- 4 Individual Cadet Celebration Cards with Real Photos & Glowing Badges -->
                                     <div class="hero-cadet-photos-grid">
-                                        <a href="#selections" class="hero-cadet-photo-item" title="Aravind Kumar - Congratulations!">
-                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-aravind-kumar.jpg'); ?>" alt="Aravind Kumar Selection" class="hero-cadet-photo-thumb">
-                                            <span class="hero-cadet-photo-name">Aravind Kumar</span>
-                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        <a href="#selections" class="hero-cadet-photo-item is-latest-highlight" title="Durshya Biradar - NDA-2 (Sep 2026) Written Selection!">
+                                            <span class="hero-cadet-pill-badge">★ NEW 2026</span>
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-durshya-biradar.jpg'); ?>" alt="Durshya Biradar NDA-2 Selection" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Durshya Biradar</span>
+                                            <span class="hero-cadet-photo-sub">NDA-2 (Sep 2026)</span>
                                         </a>
-                                        <a href="#selections" class="hero-cadet-photo-item" title="Rajesh Sharma - Congratulations!">
-                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-rajesh-sharma.jpg'); ?>" alt="Rajesh Sharma Selection" class="hero-cadet-photo-thumb">
-                                            <span class="hero-cadet-photo-name">Rajesh Sharma</span>
-                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        <a href="#selections" class="hero-cadet-photo-item is-latest-highlight" title="Akshant Chuksey - NDA-1 (April 2026) Selection!">
+                                            <span class="hero-cadet-pill-badge">★ NEW 2026</span>
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-akshant-chuksey.jpg'); ?>" alt="Akshant Chuksey NDA-1 Selection" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Akshant Chuksey</span>
+                                            <span class="hero-cadet-photo-sub">NDA-1 (Apr 2026)</span>
                                         </a>
-                                        <a href="#selections" class="hero-cadet-photo-item" title="Vikram Singh - Congratulations!">
-                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-vikram-singh.jpg'); ?>" alt="Vikram Singh Selection" class="hero-cadet-photo-thumb">
-                                            <span class="hero-cadet-photo-name">Vikram Singh</span>
-                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        <a href="#selections" class="hero-cadet-photo-item" title="Flying Officer Aadarsh Mishra - Commissioned IAF!">
+                                            <span class="hero-cadet-pill-badge pill-officer">OFFICER</span>
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-aadarsh-mishra.jpg'); ?>" alt="Aadarsh Mishra IAF" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Aadarsh Mishra</span>
+                                            <span class="hero-cadet-photo-sub">Flying Officer IAF</span>
                                         </a>
-                                        <a href="#selections" class="hero-cadet-photo-item" title="Sanjay Gupta - Congratulations!">
-                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/selection-sanjay-gupta.jpg'); ?>" alt="Sanjay Gupta Selection" class="hero-cadet-photo-thumb">
-                                            <span class="hero-cadet-photo-name">Sanjay Gupta</span>
-                                            <span class="hero-cadet-photo-sub">NDA Selected</span>
+                                        <a href="#selections" class="hero-cadet-photo-item" title="Sanskar Jha - NDA Recommended!">
+                                            <span class="hero-cadet-pill-badge pill-nda">NDA SSB</span>
+                                            <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-sanskar-jha.jpg'); ?>" alt="Sanskar Jha NDA" class="hero-cadet-photo-thumb">
+                                            <span class="hero-cadet-photo-name">Sanskar Jha</span>
+                                            <span class="hero-cadet-photo-sub">NDA Recommended</span>
                                         </a>
                                     </div>
 
                                     <div class="hero-actions" style="margin-top: 0.5rem;">
                                         <a href="#selections" class="btn btn-gold btn-md" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
-                                            <span>View All Selections Below</span>
+                                            <span>View 2026 Selections Below</span>
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                                         </a>
                                         <a href="<?php echo esc_url(home_url('/results-selections/')); ?>" class="btn btn-outline-white btn-md" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
@@ -468,18 +472,40 @@ $theme_uri = get_template_directory_uri();
                 </div>
 
                 <div class="individual-selections-grid">
-                    <div class="individual-selection-card">
+                    <div class="individual-selection-card is-latest-selection">
+                        <span class="selection-ribbon-badge">★ LATEST 2026 SELECTION</span>
                         <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-durshya-biradar.jpg'); ?>" alt="Durshya Biradar - NDA-2 Selection" class="individual-selection-img" loading="lazy">
                         <div class="individual-selection-meta">
                             <h4>Durshya Biradar</h4>
                             <p>NDA-2 Written Selection • DDCIAN</p>
+                            <span class="selection-exam-tag">UPSC NDA-2 (Sep 2026)</span>
                         </div>
                     </div>
-                    <div class="individual-selection-card">
+                    <div class="individual-selection-card is-latest-selection">
+                        <span class="selection-ribbon-badge">★ LATEST 2026 SELECTION</span>
                         <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-akshant-chuksey.jpg'); ?>" alt="Akshant Chuksey - NDA-1 Selection" class="individual-selection-img" loading="lazy">
                         <div class="individual-selection-meta">
                             <h4>Akshant Chuksey</h4>
                             <p>NDA-1 Selection • DDCIAN</p>
+                            <span class="selection-exam-tag">UPSC NDA-1 (April 2026)</span>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <span class="hero-cadet-pill-badge pill-officer" style="top: 12px; left: 12px; transform: none; font-size: 0.65rem; padding: 3px 8px;">COMMISSIONED</span>
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-aadarsh-mishra.jpg'); ?>" alt="Aadarsh Mishra - Flying Officer IAF" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Aadarsh Mishra</h4>
+                            <p>Flying Officer • Indian Air Force</p>
+                            <span class="selection-exam-tag" style="background: rgba(0, 119, 182, 0.25); border-color: rgba(0, 119, 182, 0.6); color: #90e0ef;">IAF Commissioned</span>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <span class="hero-cadet-pill-badge pill-nda" style="top: 12px; left: 12px; transform: none; font-size: 0.65rem; padding: 3px 8px;">RECOMMENDED</span>
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-sanskar-jha.jpg'); ?>" alt="Sanskar Jha - NDA Recommended" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Sanskar Jha</h4>
+                            <p>NDA Written &amp; SSB Cleared • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(45, 106, 79, 0.25); border-color: rgba(45, 106, 79, 0.6); color: #95d5b2;">NDA Recommended</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -487,6 +513,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Aravind Kumar</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -494,6 +521,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Rajesh Sharma</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -501,6 +529,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Vikram Singh</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -508,6 +537,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Sanjay Gupta</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                 </div>

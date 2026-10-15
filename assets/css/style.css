@@ -3320,6 +3320,7 @@ h6 { font-size: 0.95rem; }
 }
 
 .hero-cadet-photo-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3329,7 +3330,7 @@ h6 { font-size: 0.95rem; }
   -webkit-backdrop-filter: blur(8px);
   border: 1.5px solid rgba(212, 175, 55, 0.5);
   border-radius: var(--radius-md);
-  padding: 0.6rem 0.35rem;
+  padding: 0.75rem 0.35rem 0.55rem 0.35rem;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   text-decoration: none;
 }
@@ -3339,6 +3340,106 @@ h6 { font-size: 0.95rem; }
   border-color: var(--accent-gold);
   background: rgba(15, 38, 85, 0.95);
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+}
+
+/* Floating Pill Badges on Cadet Avatars */
+.hero-cadet-pill-badge {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #FF9933 0%, #D4AF37 100%);
+  color: #0B1B3D;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 153, 51, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  z-index: 3;
+}
+
+.hero-cadet-pill-badge.pill-officer {
+  background: linear-gradient(135deg, #0077b6 0%, #0096c7 100%);
+  color: #FFFFFF;
+  border-color: rgba(255, 215, 0, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cadet-pill-badge.pill-nda {
+  background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+  color: #FFFFFF;
+  border-color: rgba(255, 215, 0, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Featured Latest 2026 Cadet Card in Hero */
+.hero-cadet-photo-item.is-latest-highlight {
+  background: linear-gradient(160deg, rgba(212, 175, 55, 0.28) 0%, rgba(11, 27, 61, 0.95) 80%);
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.55), inset 0 0 10px rgba(255, 215, 0, 0.2);
+  animation: heroCadetGlow 3s ease-in-out infinite;
+}
+
+@keyframes heroCadetGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.45), inset 0 0 8px rgba(255, 215, 0, 0.15);
+    border-color: #FFD700;
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(255, 215, 0, 0.85), 0 0 30px rgba(255, 153, 51, 0.4), inset 0 0 14px rgba(255, 215, 0, 0.3);
+    border-color: #FFA500;
+  }
+}
+
+.hero-cadet-photo-item.is-latest-highlight .hero-cadet-photo-thumb {
+  border: 2.5px solid #FFD700;
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.75);
+}
+
+.hero-cadet-photo-item.is-latest-highlight .hero-cadet-photo-name {
+  color: #FFFFFF;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-cadet-photo-item.is-latest-highlight .hero-cadet-photo-sub {
+  color: #FFD700;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.5);
+}
+
+.pulse-badge {
+  box-shadow: 0 0 12px rgba(255, 153, 51, 0.6) !important;
+  animation: badgePulse 2s infinite ease-in-out;
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255, 153, 51, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(255, 153, 51, 0.9), 0 0 25px rgba(212, 175, 55, 0.6);
+    transform: scale(1.02);
+  }
+}
+
+.pulsing-dot-white {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-right: 4px;
+  animation: dotFlash 1.4s infinite ease-in-out;
+}
+
+@keyframes dotFlash {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.25); }
 }
 
 .hero-cadet-photo-thumb {
@@ -3388,6 +3489,62 @@ h6 { font-size: 0.95rem; }
   transform: translateY(-6px);
   border-color: var(--accent-gold);
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 175, 55, 0.35);
+}
+
+/* Latest 2026 Selection Card Ultra Highlight */
+.individual-selection-card.is-latest-selection {
+  position: relative;
+  border: 2.5px solid #D4AF37;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.35);
+}
+
+.individual-selection-card.is-latest-selection:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 45px rgba(212, 175, 55, 0.5);
+  border-color: #FFD700;
+}
+
+.selection-ribbon-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #FF4500 0%, #FF9933 60%, #D4AF37 100%);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 153, 51, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.individual-selection-card.is-latest-selection .individual-selection-meta {
+  background: linear-gradient(180deg, #0B1B3D 0%, #06152d 100%);
+  border-top: 2px solid #D4AF37;
+}
+
+.individual-selection-card.is-latest-selection .individual-selection-meta h4 {
+  color: #FFD700;
+  font-size: 1.12rem;
+}
+
+.selection-exam-tag {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 3px 8px;
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: var(--radius-sm);
+  color: #FFD700;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
 }
 
 .individual-selection-img {
@@ -4243,8 +4400,15 @@ h6 { font-size: 0.95rem; }
   }
 
   .hero-cadet-photo-item {
-    padding: 0.25rem 0.15rem !important;
+    padding: 0.45rem 0.15rem 0.25rem 0.15rem !important;
     border-radius: var(--radius-sm) !important;
+  }
+
+  .hero-cadet-pill-badge {
+    top: -6px !important;
+    font-size: 0.48rem !important;
+    padding: 1px 4px !important;
+    line-height: 1 !important;
   }
 
   .hero-cadet-photo-thumb {

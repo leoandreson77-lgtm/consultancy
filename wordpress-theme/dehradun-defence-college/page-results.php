@@ -130,18 +130,40 @@ $theme_uri = get_template_directory_uri();
                 </div>
 
                 <div class="individual-selections-grid">
-                    <div class="individual-selection-card">
+                    <div class="individual-selection-card is-latest-selection">
+                        <span class="selection-ribbon-badge">★ LATEST 2026 SELECTION</span>
                         <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-durshya-biradar.jpg'); ?>" alt="Durshya Biradar - NDA-2 Selection" class="individual-selection-img" loading="lazy">
                         <div class="individual-selection-meta">
                             <h4>Durshya Biradar</h4>
                             <p>NDA-2 Written Selection • DDCIAN</p>
+                            <span class="selection-exam-tag">UPSC NDA-2 (Sep 2026)</span>
                         </div>
                     </div>
-                    <div class="individual-selection-card">
+                    <div class="individual-selection-card is-latest-selection">
+                        <span class="selection-ribbon-badge">★ LATEST 2026 SELECTION</span>
                         <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-akshant-chuksey.jpg'); ?>" alt="Akshant Chuksey - NDA-1 Selection" class="individual-selection-img" loading="lazy">
                         <div class="individual-selection-meta">
                             <h4>Akshant Chuksey</h4>
                             <p>NDA-1 Selection • DDCIAN</p>
+                            <span class="selection-exam-tag">UPSC NDA-1 (April 2026)</span>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <span class="hero-cadet-pill-badge pill-officer" style="top: 12px; left: 12px; transform: none; font-size: 0.65rem; padding: 3px 8px;">COMMISSIONED</span>
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-aadarsh-mishra.jpg'); ?>" alt="Aadarsh Mishra - Flying Officer IAF" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Aadarsh Mishra</h4>
+                            <p>Flying Officer • Indian Air Force</p>
+                            <span class="selection-exam-tag" style="background: rgba(0, 119, 182, 0.25); border-color: rgba(0, 119, 182, 0.6); color: #90e0ef;">IAF Commissioned</span>
+                        </div>
+                    </div>
+                    <div class="individual-selection-card">
+                        <span class="hero-cadet-pill-badge pill-nda" style="top: 12px; left: 12px; transform: none; font-size: 0.65rem; padding: 3px 8px;">RECOMMENDED</span>
+                        <img src="<?php echo esc_url($theme_uri . '/assets/images/cadets/cadet-sanskar-jha.jpg'); ?>" alt="Sanskar Jha - NDA Recommended" class="individual-selection-img" loading="lazy">
+                        <div class="individual-selection-meta">
+                            <h4>Sanskar Jha</h4>
+                            <p>NDA Written &amp; SSB Cleared • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(45, 106, 79, 0.25); border-color: rgba(45, 106, 79, 0.6); color: #95d5b2;">NDA Recommended</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -149,6 +171,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Aravind Kumar</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -156,6 +179,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Rajesh Sharma</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -163,6 +187,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Vikram Singh</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                     <div class="individual-selection-card">
@@ -170,6 +195,7 @@ $theme_uri = get_template_directory_uri();
                         <div class="individual-selection-meta">
                             <h4>Sanjay Gupta</h4>
                             <p>Recommended & Commissioned • DDCIAN</p>
+                            <span class="selection-exam-tag" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #e0e0e0;">NDA Commissioned</span>
                         </div>
                     </div>
                 </div>
